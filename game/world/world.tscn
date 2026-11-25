@@ -13,6 +13,8 @@
 [ext_resource type="Script" path="res://world/damage_numbers.gd" id="12_numbers"]
 [ext_resource type="PackedScene" path="res://ui/pause/pause_menu.tscn" id="13_pause"]
 [ext_resource type="PackedScene" path="res://ui/shop/shop_panel.tscn" id="14_shop"]
+[ext_resource type="Script" path="res://net/world_net.gd" id="15_net"]
+[ext_resource type="Script" path="res://systems/heroes/last_breath_system.gd" id="16_last_breath"]
 [ext_resource type="Script" path="res://systems/combat/status_system.gd" id="17_statuses"]
 [ext_resource type="Script" path="res://world/enemy_corpses.gd" id="18_corpses"]
 [ext_resource type="Script" path="res://systems/enemies/enemy_animator.gd" id="19_enemy_anim"]
@@ -48,6 +50,21 @@ collision_enabled = false
 z_index = -1
 script = ExtResource("18_corpses")
 
+[node name="Net" type="Node" parent="."]
+script = ExtResource("15_net")
+
+[node name="PlayerSpawner" type="MultiplayerSpawner" parent="Net"]
+spawn_path = NodePath("../../Players")
+
+[node name="EnemySpawner" type="MultiplayerSpawner" parent="Net"]
+spawn_path = NodePath("../../Enemies")
+
+[node name="PickupSpawner" type="MultiplayerSpawner" parent="Net"]
+spawn_path = NodePath("../../Pickups")
+
+[node name="PropSpawner" type="MultiplayerSpawner" parent="Net"]
+spawn_path = NodePath("../../Props")
+
 [node name="Systems" type="Node" parent="."]
 
 [node name="EnemyDirector" type="Node" parent="Systems"]
@@ -73,6 +90,9 @@ script = ExtResource("9_passives")
 
 [node name="LevelFlow" type="Node" parent="Systems"]
 script = ExtResource("6_flow")
+
+[node name="LastBreath" type="Node" parent="Systems"]
+script = ExtResource("16_last_breath")
 
 [node name="Statuses" type="Node" parent="Systems"]
 script = ExtResource("17_statuses")

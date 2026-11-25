@@ -4,7 +4,7 @@ extends SceneTree
 ## Запуск: godot --headless --path game --script res://tools/check_translations.gd
 
 const CSV_PATH := "res://localization/translations.csv"
-const SCAN_DIRS: PackedStringArray = ["res://ui", "res://data", "res://world", "res://entities", "res://systems", "res://hub"]
+const SCAN_DIRS: PackedStringArray = ["res://ui", "res://data", "res://world", "res://entities", "res://systems", "res://net", "res://hub"]
 const SCAN_EXTENSIONS: PackedStringArray = ["tscn", "tres", "gd"]
 
 

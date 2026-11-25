@@ -79,8 +79,13 @@ var _finished := false
 var _probe := false
 var _heavy := false
 ## Сколько узлов создано в World/Projectiles после разогрева: снаряды (Projectile) и следы (CombatFx).
+## До шага 5, часть 2 каждый был отдельной надёжной посылкой спавнера каждому клиенту — _spawn_bytes оценивает её
+## данные словарём, как их слал MultiplayerSpawner. Теперь они уходят пачками кадра (ProjectileStream): стенд
+## включает WorldNet.measure_stream и считает настоящие байты пачек (_stream_from — их счётчик на начало замера).
 var _spawned_shots := 0
 var _spawned_fx := 0
+var _spawn_bytes := 0
+var _stream_from := -1
 ## Сколько тиков было до включения PerfProbe: разбивка делится на тики после разогрева.
 var _probe_from := 0
 
@@ -103,6 +108,7 @@ func _ready() -> void:
 	RunConfig.start_new_run(DataRegistry.HEROES[0], false, 4242)
 	_world = load(ScenePaths.WORLD).instantiate()
 	add_child(_world)
+	_world.net.measure_stream = true
 	Events.level_up_offered.connect(func(peer_id: int, _cards: Array) -> void: _drain_offers.call_deferred(peer_id))
 	_world.projectiles.child_entered_tree.connect(_count_spawn)
 	while _world.find_player(1) == null:
@@ -214,13 +220,25 @@ func _move_bots() -> void:
 			bot.position = _host.position + Vector2.RIGHT.rotated(angle) * BOT_RADIUS
 
 
+## Оценка посылки спавнера: данные spawn_function (var_to_bytes) — у снаряда и следа свои поля.
 func _count_spawn(node: Node) -> void:
 	if not _measuring or _finished or _clock < WARMUP:
 		return
+	if _stream_from < 0:
+		_stream_from = _world.net.stream_bytes
 	if node is Projectile:
+		var p := node as Projectile
 		_spawned_shots += 1
+		_spawn_bytes += var_to_bytes({
+			"type": p.kind, "pos": p.position, "dir": p.direction, "speed": p.speed, "range": p.max_distance,
+			"damage": p.damage, "crit": p.crit, "pierce": p.pierce, "hostile": p.hostile, "owner": p.owner_peer,
+			"color": p.color, "radius": p.blast_radius, "fuse": p.fuse, "explode": p.explode, "return": p.returns,
+		}).size()
 	elif node is CombatFx:
 		_spawned_fx += 1
+		var fx := node as CombatFx
+		_spawn_bytes += var_to_bytes({"type": fx.kind, "pos": fx.position, "radius": fx.radius, "color": fx.color,
+			"dir": fx.direction, "points": fx.points}).size()
 
 
 func _refill_enemies() -> void:
@@ -271,6 +289,10 @@ func _finish() -> void:
 	var per_second := maxf(_measured, 0.1)
 	result["shots_per_s"] = snappedf(_spawned_shots / per_second, 0.1)
 	result["fx_per_s"] = snappedf(_spawned_fx / per_second, 0.1)
+	result["spawn_kb_per_s"] = snappedf(_spawn_bytes / per_second / 1024.0, 0.1)
+	result["stream_kb_per_s"] = snappedf((_world.net.stream_bytes - maxi(_stream_from, 0)) / per_second / 1024.0, 0.01)
+	print("  создано в World/Projectiles: снарядов %.0f/с, следов %.0f/с — пачками %.2f КБ/с на клиента (спавнером было бы ≈ %.1f КБ/с данных)" % [
+		result["shots_per_s"], result["fx_per_s"], result["stream_kb_per_s"], result["spawn_kb_per_s"]])
 	if _probe:
 		PerfProbe.enabled = false
 		var ticks_probed := maxi(_tick_ms.size() - _probe_from, 1)

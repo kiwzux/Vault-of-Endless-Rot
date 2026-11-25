@@ -22,6 +22,7 @@ Settings="*res://autoload/settings.gd"
 RunConfig="*res://autoload/run_config.gd"
 GameState="*res://autoload/game_state.gd"
 GenLog="*res://autoload/gen_log.gd"
+Net="*res://net/net_session.gd"
 Sound="*res://autoload/sound.gd"
 
 [editor_plugins]

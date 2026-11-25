@@ -5,7 +5,8 @@ extends CanvasLayer
 ## убийств и таймера (RunCounters). Над полем — отметка ХК, полоса босса, баннеры событий, испытание; снизу — баффы.
 ## Экипировка, резонансы и лист характеристик — в меню (кнопка «Меню», Esc, I).
 ## Ориентиры: миникарта и стрелки у края поля на босса, Ключ и открытый портал (стрелки не заходят под панели).
-## Экран победы и поражения со статистикой забега (RunStatsView).
+## Экран конца забега (победа/поражение) — со статистикой забега (RunStatsView); в кооперативе в Убежище всех
+## уводит хост, сессия остаётся (Net.return_to_hub).
 
 const BANNER_TIME := 2.5
 const BUFF_KEYS := {&"fountain": "BUFF_FOUNTAIN"}
@@ -46,7 +47,10 @@ var _hint_time := 0.0
 @onready var belt: PotionBelt = %Belt
 @onready var counters: RunCounters = %Counters
 @onready var passives: PassivesPanel = %Passives
+@onready var allies: AlliesPanel = %Allies
 
+## Свой герой был жив в прошлом кадре — чтобы заметить гибель (баннер «Последнего вздоха»).
+var _was_alive := true
 ## Статистика забега на экране конца забега (как в Megabonk); сводка приходит синхронизацией героя.
 var _run_stats: RunStatsView
 
@@ -65,7 +69,8 @@ func _ready() -> void:
 	$Center.move_child(_level_hint, 0)
 	minimap.world = world
 	markers.world = world
-	markers.obstacles.assign([left_panel, right_panel])
+	allies.world = world
+	markers.obstacles.assign([left_panel, right_panel, allies])
 	# Сложность забега над полем: «Хардкор», Скверна печатей (шаг 12.3) или обе через точку.
 	var difficulty := PackedStringArray()
 	if RunConfig.hardcore:
@@ -114,6 +119,7 @@ func _ready() -> void:
 		_challenge_left = 0.0
 		challenge_label.hide()
 		_show_banner(tr(ChallengeAltar.result_key(kind, success))))
+	Events.player_revived.connect(_on_player_revived)
 	Events.interactable_used.connect(_on_interactable_used)
 	skills.evolved.connect(func(skill: SkillData, stage: int) -> void:  # шаг 11.18: эволюцию видно — баннер и вспышка
 		var transformed := skill.is_evolution and stage == DataRegistry.UPGRADE_RULES.evolution_transform_stage
@@ -164,6 +170,11 @@ func _process(delta: float) -> void:
 		for id: StringName in _player.buffs:
 			buffs.append("%s %d" % [tr(_buff_key(id)), ceili(_player.buffs[id]["time"])])
 		buffs_label.text = "  ".join(buffs)
+		if _was_alive and not _player.alive and not allies.allies().is_empty():
+			# Кооператив: подсказать, что делать призраку (в одиночной игре сразу экран поражения).
+			_show_banner(tr("BANNER_FALLEN_HARDCORE" if RunConfig.hardcore else "BANNER_FALLEN_COOP"))
+		_was_alive = _player.alive
+
 	if end_panel.visible:
 		_run_stats.refresh(_player, World.of(self).get_players())
 
@@ -239,6 +250,16 @@ func _mark_phases(thresholds: PackedFloat32Array) -> void:
 		boss_bar.add_child(mark)
 
 
+## «Последний вздох»: своего героя подняли — или союзник снова в бою.
+func _on_player_revived(peer_id: int, _by_peer_id: int) -> void:
+	if peer_id == multiplayer.get_unique_id():
+		_show_banner(tr("BANNER_REVIVED_YOU"))
+		return
+	var ally := World.of(self).find_player(peer_id)
+	if ally != null:
+		_show_banner(tr("BANNER_ALLY_REVIVED").format({"hero": tr(ally.hero.name_key)}))
+
+
 func _on_obelisk_visited(count: int, needed: int) -> void:
 	_obelisks = count
 	_update_relics()
@@ -262,6 +283,10 @@ func _on_run_ended(victory: bool) -> void:
 	else:
 		end_details.text = tr("DEFEAT_DETAILS").format({"level": reached, "depth": index + 1})
 	end_details.text += "\n" + tr("RUN_SOULS").format({"souls": World.of(self).souls_earned()})
+	# Кооператив: в Убежище всех уводит хост (сессия остаётся); клиент ждёт его, а не покидает отряд.
+	var waiting := Net.is_online() and not Net.is_host()
+	%MenuButton.disabled = waiting
+	%MenuButton.text = "END_WAIT_HOST" if waiting else ("RETURN_TO_HUB_ALL" if Net.is_online() else "RETURN_TO_HUB")
 	end_panel.show()
 	_run_stats.refresh(_player, World.of(self).get_players())
 	%MenuButton.grab_focus()

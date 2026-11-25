@@ -45,6 +45,7 @@ func _ready() -> void:
 	_check_upgrade_pool()
 	_check_rune_pool()
 	_check_loot_roller()
+	_check_projectile_stream()
 	Events.level_up_offered.connect(_on_level_up_offered)
 	Events.wave_started.connect(func(index: int) -> void: _waves_started.append(index))
 	Events.boss_spawned.connect(func(_boss: Node) -> void: _bosses_spawned += 1)
@@ -639,6 +640,41 @@ func _check_loot_roller() -> void:
 	_check(accepted == 0, "испорченные предметы отклоняются (данные из сети)")
 
 
+## Шаг 5, часть 2: пачка событий снарядов (ProjectileStream) — клиент получает те же данные для фабрики, кроме
+## нужных только хосту; испорченная пачка отбрасывается целиком.
+func _check_projectile_stream() -> void:
+	var skill: StringName = DataRegistry.UPGRADES[0].id
+	var arrow := {"type": &"arrow", "pos": Vector2(12.5, -3.25), "dir": Vector2(0.6, 0.8), "speed": 230.0, "range": 310.0,
+		"owner": 1234567890, "skill": skill, "return": true, "damage": 99.0, "crit": true, "pierce": 2}
+	var warn := {"type": &"warn", "pos": Vector2(1, 2), "dir": Vector2.ZERO, "radius": 30.0, "fuse": 0.0, "line": true,
+		"hostile": true, "color": Color(1.0, 0.45, 0.15), "from": Vector2(5, 6)}
+	var chain := {"type": &"lightning", "pos": Vector2(0, 0), "points": PackedVector2Array([Vector2(1, 1), Vector2(9, 4)]),
+		"skill": &"нет_такого_навыка", "count": 3, "look": &"bats", "width": 6.0, "duration": 2.0, "phase": 0.5}
+	var stream := ProjectileStream.new()
+	stream.queue_spawn(7, arrow)
+	stream.queue_spawn(8, warn)
+	stream.queue_spawn(9, chain)
+	stream.queue_removal(5)
+	var bytes := stream.take()
+	var batch: Variant = ProjectileStream.decode(bytes)
+	var ok: bool = batch is Dictionary and batch["shots"].size() == 3 and batch["removed"] == PackedInt32Array([5])
+	if ok:
+		var a: Dictionary = batch["shots"][0][1]
+		var w: Dictionary = batch["shots"][1][1]
+		var c: Dictionary = batch["shots"][2][1]
+		ok = batch["shots"][0][0] == 7 and a["type"] == &"arrow" and a["pos"] == arrow["pos"] and a["dir"] == arrow["dir"] \
+				and a["speed"] == 230.0 and a["owner"] == 1234567890 and a["skill"] == skill and a["return"] == true \
+				and not a.has("damage") and not a.has("crit") and not a.has("pierce") and not a.has("hostile") \
+				and w["dir"] == Vector2.ZERO and w.has("fuse") and w["line"] and w["hostile"] and w["from"] == Vector2(5, 6) \
+				and absf(Color(w["color"]).g - 0.45) < 0.002 and absf(Color(w["color"]).b - 0.15) < 0.002 \
+				and c["points"] == chain["points"] \
+				and c["skill"] == &"нет_такого_навыка" and c["count"] == 3 and c["look"] == &"bats" and c["phase"] == 0.5
+	_check(ok, "снаряды пачкой: выстрел, телеграф и цепь доходят теми же данными без полей хоста (%d байт на 3 выстрела)"
+			% bytes.size())
+	_check(ProjectileStream.decode(bytes.slice(0, bytes.size() - 3)) == null and ProjectileStream.decode(PackedByteArray()) == null,
+			"снаряды пачкой: обрезанная или пустая пачка отбрасывается")
+
+
 # --- Сквозной забег ---
 
 func _check_run() -> void:
@@ -712,6 +748,7 @@ func _check_run() -> void:
 	await _check_challenges(knight)
 	await _check_character_sheet(knight)
 	_check_pause_menu()
+	await _check_last_breath(knight, sorceress)
 	_check_chronicle_recorder()
 	_check(_world.get_node("HUD").minimap.has_map(), "миникарта построена по LevelData")
 
@@ -2602,6 +2639,41 @@ func _check_soul_magnet(knight: Player) -> void:
 
 
 ## Esc во время забега — меню паузы, а не выход в главное меню; Esc сначала закрывает окна поверх мира.
+## «Последний вздох» (кооператив): павший герой — призрак; союзник рядом 3 с поднимает его с половиной
+## здоровья, отошёл — прогресс тает. HUD: панель союзников.
+func _check_last_breath(knight: Player, sorceress: Player) -> void:
+	var revived: Array = []
+	var on_revived := func(peer_id: int, by_peer_id: int) -> void: revived.append([peer_id, by_peer_id])
+	Events.player_revived.connect(on_revived)
+	var allies := _world.get_node("HUD").allies as AlliesPanel
+	_check(allies.allies().size() == 2, "HUD: в панели союзников двое (свой герой не показан)")
+	sorceress.alive = false
+	sorceress.health = 0.0
+	sorceress.position = knight.position + Vector2(400, 0)  # союзник далеко — никто не поднимает
+	await _seconds(1.0)
+	_check(not sorceress.alive and sorceress.revive_progress == 0.0, "павшего без союзника рядом не поднимают")
+	sorceress.position = knight.position + Vector2(10, 0)
+	await _seconds(1.5)
+	var progress := sorceress.revive_progress
+	_check(not sorceress.alive and progress > 0.3, "союзник рядом — кольцо воскрешения растёт")
+	sorceress.position = knight.position + Vector2(400, 0)
+	await _seconds(0.5)
+	_check(sorceress.revive_progress < progress and sorceress.revive_progress > 0.0, "союзник отошёл — прогресс тает")
+	sorceress.position = knight.position + Vector2(10, 0)
+	await _wait_until(func() -> bool: return sorceress.alive, 5.0)
+	_check(sorceress.alive and is_equal_approx(sorceress.health, sorceress.max_health * LastBreathSystem.REVIVE_HEALTH)
+			and sorceress.revive_progress == 0.0, "«Последний вздох»: союзник поднял героя с половиной здоровья")
+	_check(revived.size() == 1 and revived[0][0] == 2 and revived[0][1] != 2, "событие воскрешения: кого и кто поднял")
+	RunConfig.hardcore = true
+	sorceress.alive = false
+	await _seconds(4.0)
+	_check(not sorceress.alive, "в «Хардкоре» союзник павшего не поднимает")
+	RunConfig.hardcore = false
+	sorceress.revive()
+	sorceress.position = knight.position
+	Events.player_revived.disconnect(on_revived)
+
+
 func _check_pause_menu() -> void:
 	var pause := _world.get_node("PauseMenu") as PauseMenu
 	_press_key(KEY_ESCAPE)
@@ -3215,6 +3287,12 @@ func _check_statuses(knight: Player) -> void:
 	var fireball: SkillData = DataRegistry.upgrade(&"fireball")
 	neighbour.take_hit(knight.make_hit(10.0, DataRegistry.tag_mask(fireball.tags), fireball.on_hit))
 	_check(statuses.stacks_of(neighbour, &"burn") > 0, "огненный шар поджигает (статус из данных оружия)")
+
+	var snapshot := EnemySnapshot.new()
+	snapshot.pack([neighbour])
+	var record: Array = snapshot.unpack()[0]
+	_check(int(record[3]) & (1 << burn.visual_bit) != 0, "флаги статусов уходят клиентам в снимке врага")
+	snapshot.free()
 
 	var boss := _world.spawn_enemy({"id": &"dread_knight", "pos": far + Vector2(-60, 0)})
 	await _frames(1)
