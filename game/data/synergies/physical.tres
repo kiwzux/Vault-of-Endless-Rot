@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="SynergyData" format=3]
+
+[ext_resource type="Script" path="res://data/synergies/synergy_data.gd" id="1_j44t6"]
+
+[resource]
+script = ExtResource("1_j44t6")
+id = &"resonance_physical"
+tag = &"physical"
+thresholds = PackedInt32Array(2, 3, 4)
+tiers = Array[Dictionary]([{
+&"might:physical": 0.08
+}, {
+&"crit:physical": 0.03,
+&"might:physical": 0.15
+}, {
+&"crit:physical": 0.06,
+&"might:physical": 0.25
+}])

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="SfxData" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://data/audio/sfx_data.gd" id="1_sfx"]
+[ext_resource type="AudioStream" path="res://assets/audio/sfx/cast_physical_1.wav" id="2_cast_physical"]
+[ext_resource type="AudioStream" path="res://assets/audio/sfx/cast_physical_2.wav" id="3_cast_physical"]
+
+[resource]
+script = ExtResource("1_sfx")
+id = &"cast_physical"
+streams = Array[AudioStream]([ExtResource("2_cast_physical"), ExtResource("3_cast_physical")])
+volume_db = -11.0
+pitch_jitter = 0.08
+cooldown = 0.06
+max_voices = 3
+positional = true
+max_distance = 520.0

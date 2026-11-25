@@ -1,0 +1,1083 @@
+keys,ru,en
+GAME_TITLE,Vault of Endless Rot,Vault of Endless Rot
+MENU_START,Начать,Start
+MENU_SETTINGS,Настройки,Settings
+MENU_EXIT,Выход,Exit
+MENU_BUILD,Сборка {id},Build {id}
+MENU_BUILD_DEV,Запуск из редактора,Editor run
+MENU_BACK,Назад,Back
+HERO_KNIGHT,Рыцарь-отступник,Renegade Knight
+HERO_KNIGHT_DESC,"Изгнанный из ордена воин. Рубит мечом по дуге. Лидерство: союзники рядом наносят на 10% больше урона.","A warrior cast out of his order. Swings his sword in an arc. Leadership: nearby allies deal 10% more damage."
+HERO_NECROMANCER,Некромант,Necromancer
+HERO_NECROMANCER_DESC,"Повелитель мёртвых. Стреляет костяными стрелами. Некромантия: часть убитых врагов встаёт скелетами на вашей стороне.","Master of the dead. Fires bone arrows. Necromancy: some slain enemies rise as skeletons on your side."
+HERO_SORCERESS,Чародейка,Sorceress
+HERO_SORCERESS_DESC,"Повелительница стихий. Бьёт цепной молнией. Мана-щит: часть урона поглощает мана.","Mistress of the elements. Casts chain lightning. Mana Shield: mana absorbs part of the damage."
+HARDCORE,Хардкор,Hardcore
+HARDCORE_DESC,"Павший герой не воскрешается до конца уровня. Враги крепче и бьют сильнее. Души за забег удвоены.","A fallen hero cannot be revived until the level ends. Enemies are tougher and hit harder. Souls from the run are doubled."
+START_RUN,"В бой","Into battle"
+SETTINGS_TITLE,Настройки,Settings
+SETTINGS_LANGUAGE,Язык,Language
+SETTINGS_VOLUME,Громкость,Volume
+SETTINGS_MUSIC,Музыка,Music
+SETTINGS_SFX,Звуки,Sounds
+LANG_RU,Русский,Русский
+LANG_EN,English,English
+LEVEL_UP_TITLE,Новый уровень!,Level up!
+LEVEL_UP_HINT,Выберите улучшение: мышь или клавиши 1–3 · T — перебросить · Shift+1–3 — изгнать,Choose an upgrade: mouse or keys 1–3 · T — reroll · Shift+1–3 — banish
+LEVEL_UP_HINT_DEFER,Выберите улучшение: мышь или клавиши 1–3 · T — перебросить · Shift+1–3 — изгнать · R или Esc — позже,Choose an upgrade: mouse or keys 1–3 · T — reroll · Shift+1–3 — banish · R or Esc — later
+LEVEL_UP_READY,"Новый уровень! R — выбрать улучшение","Level up! R — choose an upgrade"
+LEVEL_UP_READY_MANY,"Улучшений к выбору: {count} · R — выбрать","Upgrades to choose: {count} · R — choose"
+UPGRADE_NEW,Новое!,New!
+UPGRADE_LEVEL,Уровень {level},Level {level}
+HUD_LEVEL,Ур. {level},Lv. {level}
+BANNER_BOSS_AWAKENED,Босс пробудился!,The boss has awakened!
+BANNER_BOSS_DEFEATED,"Босс повержен — заберите ключ","Boss slain — take the key"
+BANNER_PORTAL_OPEN,Портал открыт — идите за стрелкой,The portal is open — follow the arrow
+DEFEAT_TITLE,Вы пали,You have fallen
+DEFEAT_DETAILS,"Уровень героя: {level}. Глубина: {depth}.","Hero level: {level}. Depth: {depth}."
+ENEMY_SKELETON,Скелет,Skeleton
+ENEMY_GHOST,Призрак,Ghost
+ENEMY_ZOMBIE,Зомби,Zombie
+ENEMY_GHOUL,Упырь,Ghoul
+ENEMY_BONE_DRAGON,Костяной дракон,Bone Dragon
+WEAPON_SWORD_ARC,Меч,Sword
+WEAPON_SWORD_ARC_DESC,"Рубит врагов по широкой дуге перед героем. С 4-го уровня бьёт и назад.","Cleaves enemies in a wide arc in front of the hero. From level 4 it also strikes behind."
+WEAPON_BONE_ARROW,Костяная стрела,Bone Arrow
+WEAPON_BONE_ARROW_DESC,"Стреляет в ближайших врагов. Уровни добавляют стрелы и пробивание.","Fires at the nearest enemies. Levels add arrows and piercing."
+WEAPON_CHAIN_LIGHTNING,Цепная молния,Chain Lightning
+WEAPON_CHAIN_LIGHTNING_DESC,Бьёт ближайшего врага и перескакивает на соседних. Уровни добавляют прыжки.,Strikes the nearest enemy and jumps to others nearby. Levels add jumps.
+WEAPON_PLAGUE_AURA,Чумная аура,Plague Aura
+WEAPON_PLAGUE_AURA_DESC,"Постоянно ранит всех врагов рядом с героем. Уровни расширяют ауру.","Constantly harms every enemy near the hero. Levels widen the aura."
+PASSIVE_MIGHT,Мощь,Might
+PASSIVE_MIGHT_DESC,+4% урона за уровень.,+4% damage per level.
+PASSIVE_HASTE,Спешка,Haste
+PASSIVE_HASTE_DESC,Оружие перезаряжается на 2% быстрее за уровень.,Weapons recharge 2% faster per level.
+PASSIVE_SWIFTNESS,Проворство,Swiftness
+PASSIVE_SWIFTNESS_DESC,+2.5% скорости передвижения за уровень.,+2.5% movement speed per level.
+PASSIVE_VITALITY,Живучесть,Vitality
+PASSIVE_VITALITY_DESC,+8 к максимуму здоровья за уровень.,+8 maximum health per level.
+PASSIVE_MAGNET,Притяжение,Attraction
+PASSIVE_MAGNET_DESC,Опыт и монеты притягиваются на 12% дальше за уровень.,Experience and coins are drawn in from 12% farther per level.
+PASSIVE_ARMOR,Броня,Armor
+PASSIVE_ARMOR_DESC,Каждый удар по герою слабее на 0.3 за уровень.,Each hit on the hero deals 0.3 less damage per level.
+FILLER_POTION,Зелье лечения,Healing Potion
+FILLER_POTION_DESC,"Сразу восстанавливает 30% здоровья.","Instantly restores 30% of health."
+FILLER_ANCIENT_BLOOD,Кровь древних,Ancient Blood
+FILLER_ANCIENT_BLOOD_DESC,"+10 к максимуму здоровья. Можно брать сколько угодно.","+10 maximum health. Can be taken any number of times."
+FILLER_WHETSTONE,Точильный камень,Whetstone
+FILLER_WHETSTONE_DESC,"+3% урона. Можно брать сколько угодно.","+3% damage. Can be taken any number of times."
+BANNER_GENERATION_FAILED,"Склеп не сложился — вы в запасном зале","The vault failed to take shape — this is a fallback hall"
+UPGRADE_EVOLUTION,Эволюция!,Evolution!
+EVO_WHIRLING_BLADES,Вихрь клинков,Whirling Blades
+EVO_WHIRLING_BLADES_DESC,Эволюция меча (меч 10 ур. — ступень II). Клинки рубят всё вокруг героя.,Sword evolution (Sword lv. 10 — stage II). Blades cut everything around the hero.
+EVO_BONE_STORM,Костяной шторм,Bone Storm
+EVO_BONE_STORM_DESC,"Эволюция костяной стрелы (стрела 10 ур. — ступень II). Шесть стрел, прошивающих врагов.",Bone Arrow evolution (Arrow lv. 10 — stage II). Six piercing arrows.
+EVO_TEMPEST,Буря,Tempest
+EVO_TEMPEST_DESC,Эволюция цепной молнии (молния 10 ур. — ступень II). Молния прыгает по восьми врагам.,Chain Lightning evolution (Lightning lv. 10 — stage II). Lightning jumps across eight enemies.
+EVO_PLAGUE_WIND,Чумное поветрие,Plague Wind
+EVO_PLAGUE_WIND_DESC,"Эволюция чумной ауры (аура 10 ур. — ступень II). Широкая аура, разъедающая врагов.",Plague Aura evolution (Aura lv. 10 — stage II). A wide aura that eats away at enemies.
+ENEMY_SKELETON_WARRIOR,Скелет-воин,Skeleton Warrior
+ENEMY_WRAITH,Умертвие,Wraith
+ENEMY_PLAGUE_ZOMBIE,Чумной зомби,Plague Zombie
+ENEMY_LICH,Лич,Lich
+ENEMY_LICH_KING,Король-лич,Lich King
+ENEMY_POWER_LICH,Могучий лич,Power Lich
+ENEMY_IMP,Бес,Imp
+ENEMY_FAMILIAR,Чёрт,Familiar
+ENEMY_HELL_HOUND,Адская гончая,Hell Hound
+ENEMY_CERBERUS,Цербер,Cerberus
+ENEMY_DEMON,Демон,Demon
+ENEMY_HORNED_DEMON,Рогатый демон,Horned Demon
+ENEMY_GOG,Гог,Gog
+ENEMY_MAGOG,Магог,Magog
+ENEMY_STONE_GOLEM,Каменный голем,Stone Golem
+ENEMY_DREAD_KNIGHT,Рыцарь смерти,Dread Knight
+ENEMY_PIT_LORD,Владыка Бездны,Lord of the Abyss
+ENEMY_ARCHDEMON,"Архидемон, Владыка Пепла","Archdemon, Lord of Ash"
+ELITE_FAST,Быстрый,Fast
+ELITE_STONE_SKIN,Каменная кожа,Stone Skin
+ELITE_EXPLOSIVE,Взрывной,Explosive
+ELITE_VAMPIRE,Вампир,Vampire
+ELITE_FIERY,Огненный,Fiery
+ELITE_FROZEN,Ледяной,Frozen
+ELITE_TELEPORTING,Телепортирующийся,Teleporting
+ELITE_SUMMONER,Призыватель,Summoner
+ITEM_BLADE,Клинок,Blade
+ITEM_HELM,Шлем,Helm
+ITEM_CUIRASS,Кираса,Cuirass
+ITEM_GAUNTLETS,Перчатки,Gauntlets
+ITEM_BOOTS,Сапоги,Boots
+ITEM_AMULET,Амулет,Amulet
+AFFIX_OF_MIGHT,силы,of Might
+AFFIX_OF_HASTE,спешки,of Haste
+AFFIX_OF_SWIFTNESS,проворства,of Swiftness
+AFFIX_OF_VITALITY,живучести,of Vitality
+AFFIX_OF_DEFENSE,защиты,of Defense
+AFFIX_OF_ATTRACTION,притяжения,of Attraction
+AFFIX_OF_REGENERATION,восстановления,of Regeneration
+AFFIX_OF_MANA,маны,of Mana
+UNIQUE_ROTBLADE,Клинок Гнили,Rotblade
+UNIQUE_NECROPOLIS_CROWN,Венец Некрополя,Crown of the Necropolis
+UNIQUE_ARMOR_OF_WONDER,Доспех чудес,Armor of Wonder
+UNIQUE_EFREET_GAUNTLETS,Перчатки ифрита,Efreet Gauntlets
+UNIQUE_BOOTS_OF_SPEED,Сапоги-скороходы,Boots of Speed
+UNIQUE_PENDANT_OF_LIFE,Подвеска жизни,Pendant of Life
+RARITY_NORMAL,Обычный,Normal
+RARITY_MAGIC,Магический,Magic
+RARITY_RARE,Редкий,Rare
+SLOT_WEAPON,Оружие,Weapon
+SLOT_HELM,Голова,Head
+SLOT_ARMOR,Тело,Body
+SLOT_GLOVES,Руки,Hands
+SLOT_BOOTS,Ноги,Feet
+SLOT_AMULET,Шея,Neck
+STAT_LINE_MIGHT,+{value}% урона,+{value}% damage
+STAT_LINE_HASTE,+{value}% скорости перезарядки,+{value}% recharge speed
+STAT_LINE_SWIFTNESS,+{value}% скорости передвижения,+{value}% movement speed
+STAT_LINE_MAX_HEALTH,+{value} к здоровью,+{value} health
+STAT_LINE_ARMOR,+{value} к броне,+{value} armor
+STAT_LINE_MAGNET,+{value}% к радиусу притяжения,+{value}% pickup radius
+STAT_LINE_REGEN,+{value} здоровья в секунду,+{value} health per second
+STAT_LINE_MAX_MANA,+{value} к мане,+{value} mana
+INVENTORY_TITLE,Инвентарь,Inventory
+INVENTORY_HINT,"Каждый подобранный предмет навсегда прибавляет свои характеристики · на кукле — лучший предмет слота · I — закрыть","Every item you pick up adds its stats for good · the doll shows the best item per slot · I — close"
+INVENTORY_COLLECTED,"Собрано предметов: {count}","Items collected: {count}"
+INVENTORY_NOTHING_YET,"Пока ничего не подобрано","Nothing picked up yet"
+ITEM_TIP_STACK,"Подобранный — прибавит эти характеристики насовсем","Picked up — adds these stats for good"
+ITEM_TIP_COMPARE,Против надетого:,Versus equipped:
+BUFF_FOUNTAIN,Фонтан,Fountain
+HUD_OBELISKS,Обелиски {count}/{needed},Obelisks {count}/{needed}
+HUD_GRAIL,Грааль,Grail
+BIOME_FOREST,Проклятый лес,Cursed Forest
+BIOME_FLOODED_CRYPT,Затопленный склеп,Flooded Crypt
+BIOME_CATHEDRAL,Пылающий собор,Burning Cathedral
+BIOME_ABYSS,Бездна,The Abyss
+BANNER_LEVEL,"{biome} · уровень {stage} из {total}","{biome} · level {stage} of {total}"
+BANNER_CYCLE,Круг {cycle},Cycle {cycle}
+BANNER_FINAL_LAIR,Бездна — логово Владыки Бездны,The Abyss — Lair of the Lord of the Abyss
+BANNER_RUN_CHOICE,"Владыка Бездны пал! Выберите портал","The Lord of the Abyss has fallen! Choose a portal"
+BANNER_STATUE,Статуя пробудилась!,The statue awakens!
+BANNER_OBELISK,"Обелиск: фрагмент карты Грааля {count}/{needed}","Obelisk: Grail map fragment {count}/{needed}"
+BANNER_EVOLUTION,"Эволюция: {name}!","Evolution: {name}!"
+BANNER_EVOLUTION_STAGE,"Эволюция {stage}: {name}!","Evolution {stage}: {name}!"
+BANNER_GRAIL,Грааль найден! Сила отряда растёт,The Grail is found! The party grows stronger
+BANNER_ITEM,Найдено: {name},Found: {name}
+PORTAL_CONTINUE,Бесконечная гниль,Endless Rot
+PORTAL_FINISH,Завершить забег,End the run
+VICTORY_TITLE,Победа!,Victory!
+VICTORY_DETAILS,"Уровень героя: {level}. Пройдено кругов: {cycles}.","Hero level: {level}. Cycles cleared: {cycles}."
+WEAPON_ORBITING_SKULLS,Кружащие черепа,Orbiting Skulls
+WEAPON_ORBITING_SKULLS_DESC,"Черепа кружат вокруг героя и ранят врагов на пути. Уровни добавляют черепа.","Skulls circle the hero, harming enemies in their path. Levels add skulls."
+WEAPON_METEOR,Метеор,Meteor
+WEAPON_METEOR_DESC,Метеоры падают на случайных врагов рядом и взрываются. Уровни добавляют метеоры и расширяют взрыв.,Meteors fall on random nearby enemies and explode. Levels add meteors and widen the blast.
+WEAPON_FROST_RING,Кольцо холода,Frost Ring
+WEAPON_FROST_RING_DESC,"Ледяные осколки разлетаются во все стороны и замедляют врагов. Срабатывает, когда враг рядом.",Ice shards burst in every direction and slow enemies. Triggers when an enemy is near.
+EVO_DANSE_MACABRE,Пляска смерти,Danse Macabre
+EVO_DANSE_MACABRE_DESC,Эволюция кружащих черепов (черепа 10 ур. — ступень II). Шесть черепов кружат без перерыва.,Orbiting Skulls evolution (Skulls lv. 10 — stage II). Six skulls circle without pause.
+EVO_ARMAGEDDON,Армагеддон,Armageddon
+EVO_ARMAGEDDON_DESC,Эволюция метеора (метеор 10 ур. — ступень II). Огненный дождь из пяти метеоров.,Meteor evolution (Meteor lv. 10 — stage II). A fiery rain of five meteors.
+EVO_BLIZZARD,Пурга,Blizzard
+EVO_BLIZZARD_DESC,Эволюция кольца холода (кольцо 10 ур. — ступень II). Шестнадцать осколков и сильное замедление.,Frost Ring evolution (Ring lv. 10 — stage II). Sixteen shards and a heavy slow.
+PASSIVE_LUCK,Удача,Luck
+PASSIVE_LUCK_DESC,+1.5% к шансу удачного удара (двойной урон) за уровень. Чаще выпадают редкие карты.,+1.5% lucky strike chance (double damage) per level. Rare cards appear more often.
+PASSIVE_AREA,Размах,Reach
+PASSIVE_AREA_DESC,"+4% к зоне ударов, аур, взрывов и орбит за уровень.","+4% area for strikes, auras, blasts and orbits per level."
+PASSIVE_LEARNING,Обучаемость,Learning
+PASSIVE_LEARNING_DESC,+3% опыта за уровень.,+3% experience per level.
+PASSIVE_GREED,Алчность,Greed
+PASSIVE_GREED_DESC,+5% золота за уровень.,+5% gold per level.
+PASSIVE_RECOVERY,Восстановление,Recovery
+PASSIVE_RECOVERY_DESC,+0.12 здоровья в секунду за уровень.,+0.12 health per second per level.
+PASSIVE_VOLLEY,Залп,Volley
+PASSIVE_VOLLEY_DESC,"Каждые 5 уровней: +1 снаряд, прыжок молнии, метеор или череп; кольцам — +2 осколка.","Every 5 levels: +1 projectile, lightning jump, meteor or skull; +2 shards for rings."
+FILLER_GOLD_POUCH,Кошель золота,Purse of Gold
+FILLER_GOLD_POUCH_DESC,"+25 золота, на глубине больше. Можно брать сколько угодно.","+25 gold, more at depth. Can be taken any number of times."
+AFFIX_OF_LUCK,удачи,of Luck
+AFFIX_OF_GREED,алчности,of Greed
+STAT_LINE_CRIT,+{value}% к шансу удачного удара,+{value}% lucky strike chance
+STAT_LINE_GOLD_GAIN,+{value}% золота,+{value}% gold found
+STAT_LINE_AREA,+{value}% к зоне поражения,+{value}% area
+STAT_LINE_XP_GAIN,+{value}% опыта,+{value}% experience
+GOODS_HEALING_POTION,Флакон лечения,Healing Flask
+GOODS_HEALING_POTION_DESC,Ложится в пояс (до 4 флаконов). Q — выпить: +40% здоровья.,Goes into your belt (up to 4 flasks). Press Q to drink: +40% health.
+GOODS_ELIXIR_MIGHT,Эликсир силы,Elixir of Might
+GOODS_ELIXIR_MIGHT_DESC,+30% урона на 90 секунд.,+30% damage for 90 seconds.
+GOODS_ELIXIR_SWIFTNESS,Эликсир ветра,Elixir of Wind
+GOODS_ELIXIR_SWIFTNESS_DESC,+20% к скорости передвижения и +15% к скорости перезарядки на 90 секунд.,+20% movement speed and +15% recharge speed for 90 seconds.
+GOODS_ELIXIR_LUCK,Эликсир удачи,Elixir of Fortune
+GOODS_ELIXIR_LUCK_DESC,+20% к шансу удачного удара на 90 секунд.,+20% lucky strike chance for 90 seconds.
+GOODS_FRUIT_OF_KNOWLEDGE,Плод Древа знаний,Fruit of the Tree of Knowledge
+GOODS_FRUIT_OF_KNOWLEDGE_DESC,Сразу даёт герою новый уровень.,Instantly grants the hero a new level.
+GOODS_MYSTERY_BUNDLE,Загадочный свёрток,Mystery Bundle
+GOODS_MYSTERY_BUNDLE_DESC,"Случайный предмет: магический, редкий, а если повезёт — уникальный.","A random item: magic, rare, or, with luck, unique."
+MERCHANT_ARTIFACTS,Торговец артефактами,Artifact Merchant
+MERCHANT_ARTIFACTS_GREETING,"Редкости со всех земель. Что продано — то продано, назад не беру.","Rarities from every land. What is sold stays sold — I buy nothing back."
+MERCHANT_ALCHEMIST,Алхимик,Alchemist
+MERCHANT_ALCHEMIST_GREETING,"Зелья и эликсиры — свежие, почти без побочных эффектов.","Potions and elixirs — fresh, with almost no side effects."
+TRADE_PROMPT,E — торговать,E — trade
+SHOP_GOLD,Золото: {gold},Gold: {gold}
+SHOP_HINT,"ЛКМ — купить, E или Esc — уйти","LMB — buy, E or Esc — leave"
+SHOP_HINT_ITEMS,"ЛКМ — купить (характеристики предмета прибавятся насовсем), E или Esc — уйти","LMB — buy (the item's stats are added for good), E or Esc — leave"
+SHOP_SOLD_OUT,Продано,Sold out
+SHOP_PRICE,Цена: {price} золота,Price: {price} gold
+SHOP_GOODS_STOCK,В наличии: {stock},In stock: {stock}
+SHOP_SLOT_FREE,Слот свободен — предмет наденется сразу,The slot is empty — the item is equipped at once
+SHOP_EQUIPPED,Надето: {name},Equipped: {name}
+PAUSE_TITLE,Пауза,Paused
+PAUSE_RESUME,Продолжить,Resume
+PAUSE_EXIT,"Покинуть забег","Leave the run"
+PAUSE_EXIT_CONFIRM,"Забег закончится. Души за убитых и пройденные уровни сохранятся. Уйти в убежище?","The run will end. Souls for kills and cleared levels are kept. Return to the Sanctuary?"
+PAUSE_EXIT_YES,"Уйти","Leave"
+PAUSE_EXIT_NO,Остаться,Stay
+PAUSE_NET_NOTE,"Сетевая игра: мир не останавливается, остальные продолжают бой.","Online game: the world keeps going, the others are still fighting."
+PAUSE_CONTROLS,WASD — ходьба · Q — зелье · E — торговать · I — инвентарь · R — улучшение (кооп) · Esc — пауза · F11 — полный экран,WASD — move · Q — potion · E — trade · I — inventory · R — upgrade (co-op) · Esc — pause · F11 — fullscreen
+PAUSE_STATS_PLACE,{place} · глубина {depth},{place} · depth {depth}
+PAUSE_STATS_TIME,До босса: {time},Boss in: {time}
+PAUSE_STATS_HERO,"{hero}, уровень {level} · убито {kills} · золото {gold}","{hero}, level {level} · {kills} slain · {gold} gold"
+SETTINGS_DAMAGE_NUMBERS,Цифры урона,Damage numbers
+SETTINGS_DISPLAY_MODE,Экран,Display
+SETTINGS_WINDOW_SIZE,Размер окна,Window size
+DISPLAY_WINDOWED,В окне,Windowed
+DISPLAY_FULLSCREEN,Полный экран,Fullscreen
+LEVEL_UP_REROLL,Перебросить — {cost} золота,Reroll — {cost} gold
+UPGRADE_ANY_TIMES,Без предела,No limit
+CARD_KIND_WEAPON,Навык,Skill
+CARD_KIND_PASSIVE,Пассивка,Passive
+CARD_KIND_EVOLUTION,Эволюция,Evolution
+CARD_EVOLUTION_STAGE,Ступень {stage} из {max},Stage {stage} of {max}
+CARD_EVOLUTION_DESC,"Ступень эволюции усиливает навык до конца забега. Новая ступень — каждые {step} уровней навыка.","An evolution stage empowers the skill for the rest of the run. A new stage opens every {step} skill levels."
+CARD_EVOLUTION_BONUS,Урон +{damage} % · перезарядка −{cooldown} % · область +{area} %,Damage +{damage}% · cooldown −{cooldown}% · area +{area}%
+CARD_EVOLUTION_AMOUNT,количество +1,amount +1
+CARD_EVOLUTION_NEXT,Следующая ступень — на {level} ур. навыка,Next stage at skill level {level}
+CARD_EVOLUTION_NEXT_FORM,"Ступень {stage} (ур. {level}) — превращение: {name}","Stage {stage} (lv. {level}) transforms it: {name}"
+SKILL_EVOLUTION_STAGE,Эволюция {stage} из {max},Evolution {stage} of {max}
+CARD_KIND_GIFT,Дар,Gift
+CARD_STAT_DAMAGE,Урон: {value},Damage: {value}
+CARD_STAT_COOLDOWN,Перезарядка: {value} с,Recharge: {value} s
+CARD_DELTA_DAMAGE,Урон: {from} → {to},Damage: {from} → {to}
+CARD_DELTA_COOLDOWN,Перезарядка: {from} → {to} с,Recharge: {from} → {to} s
+CARD_DELTA_AMOUNT,Количество: {from} → {to},Count: {from} → {to}
+CARD_DELTA_PIERCE,Пробивание: {from} → {to},Pierce: {from} → {to}
+CARD_DELTA_RANGE,Радиус: {from} → {to},Radius: {from} → {to}
+CARD_TOTAL,Итого: {line},Total: {line}
+PORTAL_NEXT,Портал,Portal
+RUN_SUMMARY,Убито врагов: {kills} · Золото: {gold},Enemies slain: {kills} · Gold: {gold}
+WEAPON_FIREBALL,Огненный шар,Fireball
+WEAPON_FIREBALL_DESC,"Летит в ближайшего врага и взрывается, задевая всех рядом.","Flies at the nearest enemy and explodes, hitting everyone nearby."
+WEAPON_LIGHTNING_BOLT,Удар молнии,Lightning Bolt
+WEAPON_LIGHTNING_BOLT_DESC,Молния с неба бьёт случайного врага рядом. Уровни добавляют молнии.,Lightning from the sky strikes a random nearby enemy. Levels add bolts.
+WEAPON_DEATH_RIPPLE,Волна смерти,Death Ripple
+WEAPON_DEATH_RIPPLE_DESC,"Редкая, но широкая волна ранит всех врагов вокруг. Уровни расширяют её.",A slow but wide wave harms every enemy around. Levels widen it.
+WEAPON_FIRE_NOVA,Кольцо огня,Ring of Fire
+WEAPON_FIRE_NOVA_DESC,"Искры разлетаются во все стороны и прошивают врагов. Срабатывает, когда враг рядом.","Sparks burst in every direction, piercing enemies. Triggers when an enemy is near."
+EVO_INFERNO,Инферно,Inferno
+EVO_INFERNO_DESC,Эволюция огненного шара (шар 10 ур. — ступень II). Три шара с огромным взрывом.,Fireball evolution (Fireball lv. 10 — stage II). Three fireballs with a huge blast.
+EVO_THUNDERSTORM,Гроза,Thunderstorm
+EVO_THUNDERSTORM_DESC,Эволюция удара молнии (молния 10 ур. — ступень II). Четыре молнии за раз и быстрая перезарядка.,Lightning Bolt evolution (Bolt lv. 10 — stage II). Four bolts at once and a quick recharge.
+EVO_SOUL_HARVEST,Жатва душ,Soul Harvest
+EVO_SOUL_HARVEST_DESC,Эволюция волны смерти (волна 10 ур. — ступень II). Волна накрывает почти весь экран.,Death Ripple evolution (Ripple lv. 10 — stage II). The wave covers almost the whole screen.
+EVO_PHOENIX,Феникс,Phoenix
+EVO_PHOENIX_DESC,"Эволюция кольца огня (кольцо 10 ур. — ступень II). Двадцать искр, прошивающих толпу.",Ring of Fire evolution (Ring lv. 10 — stage II). Twenty sparks that pierce the crowd.
+PASSIVE_VAMPIRISM,Вампиризм,Vampirism
+PASSIVE_VAMPIRISM_DESC,0.3% нанесённого урона за уровень возвращается здоровьем.,0.3% of damage dealt per level returns as health.
+PASSIVE_EVASION,Уклонение,Evasion
+PASSIVE_EVASION_DESC,+1.2% к шансу увернуться от удара за уровень (не больше 50%).,+1.2% chance to dodge a hit per level (up to 50%).
+PASSIVE_THORNS,Шипы,Thorns
+PASSIVE_THORNS_DESC,"Враг, ударивший героя вплотную, получает 2 урона за уровень (растёт от Мощи).",An enemy that hits the hero in melee takes 2 damage per level (scales with Might).
+PASSIVE_RESILIENCE,Стойкость,Resilience
+PASSIVE_RESILIENCE_DESC,Урон по герою меньше на 1.2% за уровень (не больше 60%).,Damage taken is 1.2% lower per level (up to 60%).
+STAT_LINE_LIFESTEAL,{value}% урона возвращается здоровьем,{value}% of damage returns as health
+STAT_LINE_DODGE,+{value}% к шансу уклонения,+{value}% dodge chance
+STAT_LINE_THORNS,+{value} урона шипами,+{value} thorns damage
+STAT_LINE_RESILIENCE,{value}% урона по герою не проходит,{value}% of damage taken is prevented
+STAT_LINE_AMOUNT,"+{value} к снарядам, прыжкам, метеорам и черепам","+{value} projectiles, jumps, meteors and skulls"
+CARD_RARITY_RARE,Редкая,Rare
+CARD_RARITY_EPIC,Эпическая,Epic
+CARD_RARITY_LEGENDARY,Легендарная,Legendary
+UPGRADE_LEVEL_UP,Уровень {from} → {to},Level {from} → {to}
+UPGRADE_TIMES,Сила ×{times},Power ×{times}
+ENEMY_SKELETON_CROSSBOWMAN,"Скелет-арбалетчик","Skeleton Crossbowman"
+ENEMY_DEATH_RIDER,"Мёртвый всадник","Death Rider"
+ENEMY_BLOATED_CORPSE,"Раздутый труп","Bloated Corpse"
+ENEMY_DARK_PRIEST,"Тёмный жрец","Dark Priest"
+ENEMY_PHANTOM_MAGE,"Призрачный маг","Phantom Mage"
+ENEMY_EFREET,"Ифрит","Efreet"
+ENEMY_PYROMANCER,"Пиромант","Pyromancer"
+ENEMY_SUCCUBUS,"Суккуб","Succubus"
+ENEMY_ROT_BLOB,"Гнилостная масса","Rot Mass"
+ENEMY_ROT_DROPLET,"Гнилостная капля","Rot Droplet"
+ENEMY_PLAGUE_THROWER,"Чумной метатель","Plague Thrower"
+PASSIVE_CURSE,"Проклятие","Curse"
+PASSIVE_CURSE_DESC,"+4% врагов в волнах за уровень, но и +2% опыта, +3% золота.","+4% enemies in waves per level, but also +2% experience and +3% gold."
+PASSIVE_EXECUTE,"Казнь","Execution"
+PASSIVE_EXECUTE_DESC,"Враг (не босс), у которого после удара осталось меньше 0.8% здоровья за уровень, погибает сразу (до 30%).","An enemy (not a boss) left below 0.8% health per level after a hit dies at once (up to 30%)."
+PASSIVE_SECOND_WIND,"Второе дыхание","Second Wind"
+PASSIVE_SECOND_WIND_DESC,"Смертельный удар не убивает: герой встаёт с половиной здоровья. Раз за уровень карты.","A killing blow does not kill: the hero rises with half health. Once per card level."
+PASSIVE_CRUSHING,"Сокрушение","Crushing Blow"
+PASSIVE_CRUSHING_DESC,"Удачный удар сильнее: +6% к множителю за уровень (×2 → ×3.5).","Lucky hits strike harder: +6% to the multiplier per level (×2 → ×3.5)."
+PASSIVE_GIANT_SLAYER,"Губитель великанов","Giant Slayer"
+PASSIVE_GIANT_SLAYER_DESC,"+3% урона по элитам, мини-боссам и боссам за уровень.","+3% damage to elites, mini-bosses and bosses per level."
+PASSIVE_WARD,"Оберег","Ward"
+PASSIVE_WARD_DESC,"Заряд оберега поглощает удар целиком; заряжается за 10 с, каждый уровень — на 2.8% быстрее.","A ward charge absorbs a whole hit; it recharges in 10 s, 2.8% faster per level."
+PASSIVE_BERSERK,"Ярость","Berserk"
+PASSIVE_BERSERK_DESC,"Пока здоровья меньше половины: +3% урона за уровень.","While below half health: +3% damage per level."
+AFFIX_OF_CRUSHING,"сокрушения","of Crushing"
+AFFIX_OF_SLAYING,"истребления","of Slaying"
+STAT_LINE_CRIT_DAMAGE,"+{value}% к силе удачного удара","+{value}% lucky hit damage"
+STAT_LINE_GIANT_SLAYER,"+{value}% урона по элитам и боссам","+{value}% damage to elites and bosses"
+STAT_LINE_CURSE,"+{value}% врагов (Проклятие)","+{value}% enemies (Curse)"
+STAT_LINE_EXECUTE,"Казнь врагов ниже {value}% здоровья","Execute enemies below {value}% health"
+STAT_LINE_REVIVAL,"Второе дыхание: {value}","Second Wind: {value}"
+STAT_LINE_WARD,"Оберег заряжается на {value}% быстрее","Ward recharges {value}% faster"
+STAT_LINE_BERSERK,"+{value}% урона при малом здоровье","+{value}% damage at low health"
+STAT_LINE_LEADERSHIP,"+{value}% к Лидерству","+{value}% Leadership"
+STAT_LINE_NECROMANCY,"+{value}% к шансу Некромантии","+{value}% Necromancy chance"
+STAT_LINE_MANA_SHIELD,"+{value}% урона в Мана-щит","+{value}% damage to Mana Shield"
+TALENT_INHERITANCE,"Наследство","Inheritance"
+TALENT_INHERITANCE_DESC,"+{value} золота в начале забега за ранг: хватит на первый сундук.","+{value} gold at the start of a run per rank: enough for the first chest."
+TALENT_ANCESTRAL_WISDOM,"Мудрость предков","Ancestral Wisdom"
+TALENT_ANCESTRAL_WISDOM_DESC,"+{value}% опыта за ранг. Общий талант всех героев.","+{value}% experience per rank. Shared by all heroes."
+TALENT_SOUL_MENDING,"Исцеление души","Soul Mending"
+TALENT_SOUL_MENDING_DESC,"+{value} здоровья в секунду за ранг (до 4). Общий талант всех героев.","+{value} health per second per rank (up to 4). Shared by all heroes."
+TALENT_KNIGHT_VIGOR,"Закалка","Hardiness"
+TALENT_KNIGHT_VIGOR_DESC,"+{value} к здоровью за ранг.","+{value} health per rank."
+TALENT_KNIGHT_TRAINING,"Боевая выучка","Battle Drill"
+TALENT_KNIGHT_TRAINING_DESC,"+{value}% урона за ранг.","+{value}% damage per rank."
+TALENT_KNIGHT_PLATE,"Тяжёлые латы","Heavy Plate"
+TALENT_KNIGHT_PLATE_DESC,"+{value} к броне за ранг: каждый удар слабее.","+{value} armor per rank: every hit is weaker."
+TALENT_KNIGHT_MASTERY,"Мастер клинка","Blade Master"
+TALENT_KNIGHT_MASTERY_DESC,"Меч в начале забега выше на {value} ур. за ранг.","The sword starts {value} level higher per rank."
+TALENT_KNIGHT_BANNER,"Знамя полководца","Warlord's Banner"
+TALENT_KNIGHT_BANNER_DESC,"Лидерство сильнее на {value}% за ранг и действует на самого Рыцаря.","Leadership is {value}% stronger per rank and also empowers the Knight himself."
+TALENT_NECRO_VIGOR,"Нечестивая плоть","Unholy Flesh"
+TALENT_NECRO_VIGOR_DESC,"+{value} к здоровью за ранг.","+{value} health per rank."
+TALENT_NECRO_POWER,"Тёмная мощь","Dark Power"
+TALENT_NECRO_POWER_DESC,"+{value}% урона за ранг.","+{value}% damage per rank."
+TALENT_NECRO_BONE_ARMOR,"Костяной доспех","Bone Armor"
+TALENT_NECRO_BONE_ARMOR_DESC,"Стойкость +{value}% за ранг: доля урона не проходит.","Resilience +{value}% per rank: part of the damage never lands."
+TALENT_NECRO_MASTERY,"Мастер кости","Bone Master"
+TALENT_NECRO_MASTERY_DESC,"Костяная стрела в начале забега выше на {value} ур. за ранг.","The Bone Arrow starts {value} level higher per rank."
+TALENT_NECRO_LORD,"Повелитель мёртвых","Lord of the Dead"
+TALENT_NECRO_LORD_DESC,"Некромантия: +{value}% к шансу и +1 скелет к пределу за ранг.","Necromancy: +{value}% chance and +1 skeleton to the limit per rank."
+TALENT_SORC_VIGOR,"Защитные чары","Warding Charms"
+TALENT_SORC_VIGOR_DESC,"+{value} к здоровью за ранг.","+{value} health per rank."
+TALENT_SORC_POWER,"Чародейство","Sorcery"
+TALENT_SORC_POWER_DESC,"Заклинания перезаряжаются на {value}% быстрее за ранг.","Spells recharge {value}% faster per rank."
+TALENT_SORC_WELLSPRING,"Источник маны","Mana Wellspring"
+TALENT_SORC_WELLSPRING_DESC,"+{value} маны за ранг: Мана-щит держит дольше.","+{value} mana per rank: the Mana Shield holds longer."
+TALENT_SORC_MASTERY,"Мастер стихий","Elemental Master"
+TALENT_SORC_MASTERY_DESC,"Цепная молния в начале забега выше на {value} ур. за ранг.","Chain Lightning starts {value} level higher per rank."
+TALENT_SORC_SHIELD,"Нерушимый щит","Unbreakable Shield"
+TALENT_SORC_SHIELD_DESC,"Мана-щит принимает на {value}% урона больше за ранг.","The Mana Shield takes {value}% more damage per rank."
+HUB_TITLE,"Убежище","Sanctuary"
+HUB_SOULS,"Души: {souls}","Souls: {souls}"
+HUB_PARTY,"Отряд {count}/{max}: {list}","Party {count}/{max}: {list}"
+HUB_PARTY_SHORT,"Отряд {count}/{max}","Party {count}/{max}"
+HUB_PLAYER_TAG,"Игрок {n}","Player {n}"
+HUB_GATE_WAIT_HOST,"Забег начинает хост","The host starts the run"
+START_RUN_PARTY,"Отрядом в бой","Into battle with the party"
+HUB_REWARD,"Забег принёс душ: +{souls}","The run brought souls: +{souls}"
+PROFILE_RESTORED,"Профиль был повреждён — загружена последняя целая копия","The profile was damaged — the last intact copy was loaded"
+PROFILE_LOST,"Профиль повреждён, копий нет — начат новый (старый файл сохранён рядом)","The profile is damaged and has no copies — a new one was started (the old file is kept)"
+PROFILE_SAVE_FAILED,"Не удалось сохранить профиль","Failed to save the profile"
+HUB_RESPEC_DONE,"Таланты сброшены, возвращено душ: {souls}","Talents reset, souls returned: {souls}"
+HUB_UPGRADE,"Улучшить: {souls}","Upgrade: {souls}"
+HUB_MAXED,"Предел","Maxed"
+HUB_TALENT_HINT,"Таланты — навсегда. Души приносит каждый забег: за убитых, пройденные уровни и победу.","Talents are permanent. Every run brings souls: for kills, cleared levels and victory."
+HUB_TALENT_RANK,"ранг {rank} из {max}","rank {rank} of {max}"
+HUB_RESPEC,"Сбросить таланты класса","Reset class talents"
+HUB_STAT_HEALTH,"Здоровье: {value}","Health: {value}"
+HUB_STAT_MANA,"Мана: {value}","Mana: {value}"
+HUB_STAT_SPEED,"Скорость: {value}","Speed: {value}"
+HUB_STAT_WEAPON,"Навык: {name}","Skill: {name}"
+CHEST_PROMPT,"E — открыть сундук: {price} золота","E — open the chest: {price} gold"
+CHEST_PRICE,"Сундук: {price} золота","Chest: {price} gold"
+BANNER_CHEST_OPENED,"Сундук открыт: −{price} золота","Chest opened: −{price} gold"
+CHALLENGE_TRIAL,"Алтарь испытания","Altar of Trial"
+CHALLENGE_CURSED,"Проклятый тотем","Cursed Totem"
+CHALLENGE_STATUE,"Спящая статуя","Dormant Statue"
+CHALLENGE_PROMPT,"E — {name}","E — {name}"
+BANNER_TRIAL_STARTED,"Испытание! Продержитесь минуту","Trial! Hold out for a minute"
+BANNER_CURSED_STARTED,"Проклятие тотема: убейте чемпионов за 45 с","Totem curse: slay the champions within 45 s"
+BANNER_CHALLENGE_WON,"Испытание пройдено — награда ждёт","Trial passed — the reward awaits"
+BANNER_CHALLENGE_FAILED,"Испытание провалено","Trial failed"
+HUD_CHALLENGE,"{name}: {time} с","{name}: {time} s"
+BANNER_SECOND_WIND,"Второе дыхание!","Second Wind!"
+RUN_SOULS,"Души: +{souls}","Souls: +{souls}"
+RETURN_TO_HUB,"В убежище","To the Sanctuary"
+RETURN_TO_HUB_ALL,"Всем в убежище","Everyone to the Sanctuary"
+END_WAIT_HOST,"Ждём хоста: он вернёт отряд в убежище","Waiting for the host to bring the party back"
+CHARACTER_TITLE,"Герой","Hero"
+INVENTORY_EQUIPMENT,"Экипировка","Equipment"
+INVENTORY_PICK_HINT,"Наведите на предмет, чтобы сравнить с надетым.","Hover an item to compare it with what you wear."
+INVENTORY_EQUIPPED,"Надето","Equipped"
+CHAR_SECTION_BASE,"Основа","Basics"
+CHAR_SECTION_OFFENSE,"Нападение","Offense"
+CHAR_SECTION_DEFENSE,"Защита","Defense"
+CHAR_SECTION_UTILITY,"Добыча","Spoils"
+CHAR_LEVEL,"Уровень","Level"
+CHAR_HEALTH,"Здоровье","Health"
+CHAR_MANA,"Мана","Mana"
+CHAR_REGEN,"Восстановление в сек.","Regeneration per sec."
+CHAR_SPEED,"Скорость","Speed"
+CHAR_DAMAGE,"Урон","Damage"
+CHAR_HASTE,"Перезарядка","Recharge"
+CHAR_AREA,"Размах","Area"
+CHAR_AMOUNT,"Снаряды","Projectiles"
+CHAR_CRIT,"Удача","Luck"
+CHAR_CRIT_DAMAGE,"Удачный удар","Lucky hit"
+CHAR_GIANT_SLAYER,"По элитам и боссам","Vs elites and bosses"
+CHAR_EXECUTE,"Казнь","Execution"
+CHAR_BERSERK,"Ярость","Berserk"
+CHAR_LIFESTEAL,"Вампиризм","Life steal"
+CHAR_ARMOR,"Броня","Armor"
+CHAR_RESILIENCE,"Стойкость","Resilience"
+CHAR_DODGE,"Уклонение","Dodge"
+CHAR_THORNS,"Шипы","Thorns"
+CHAR_WARD,"Оберег","Ward"
+CHAR_REVIVAL,"Второе дыхание","Second Wind"
+CHAR_MAGNET,"Притяжение","Pickup radius"
+CHAR_XP_GAIN,"Опыт","Experience"
+CHAR_GOLD_GAIN,"Золото с врагов","Gold found"
+CHAR_CURSE,"Проклятие","Curse"
+CHAR_GOLD,"Золото","Gold"
+CHAR_CHEST_PRICE,"Цена сундука","Chest price"
+CHAR_KILLS,"Убито врагов","Enemies slain"
+MENU_COOP,Кооператив,Co-op
+LOBBY_TITLE,Кооператив,Co-op
+LOBBY_HERO,Ваш герой,Your hero
+LOBBY_ADDRESS,Адрес хоста,Host address
+LOBBY_PORT,Порт,Port
+LOBBY_HOST,Создать игру,Host game
+LOBBY_JOIN,Подключиться,Join
+LOBBY_LEAVE,Покинуть,Leave
+LOBBY_HINT,"Создайте игру или подключитесь к другу по его адресу. Таланты героя берутся из Убежища.","Host a game or join a friend by their address. Hero talents come from the Sanctuary."
+LOBBY_HOSTING,"Игра создана. Ждём друзей — до 4 игроков.","Game hosted. Waiting for friends — up to 4 players."
+LOBBY_CONNECTING,Подключение к {address}:{port}…,Connecting to {address}:{port}…
+LOBBY_WAIT_HOST,"Подключено. Ждём, когда хост начнёт забег.","Connected. Waiting for the host to start the run."
+LOBBY_BAD_PORT,Порт — число от 1024 до 65535,The port must be a number from 1024 to 65535
+LOBBY_BAD_ADDRESS,Укажите адрес хоста и порт,Enter the host address and port
+LOBBY_PLAYERS,Участники ({count}/{max}),Players ({count}/{max})
+LOBBY_PLAYER_ROW,Игрок {n} — {hero},Player {n} — {hero}
+LOBBY_MARK_HOST,(хост),(host)
+LOBBY_MARK_YOU,(вы),(you)
+LOBBY_HOST_INFO,"Друзья подключаются к адресу {addresses}, порт {port}. Порт в роутере для Интернета игра открывает сама (UPnP).","Friends connect to {addresses}, port {port}. The game opens the router port for the Internet itself (UPnP)."
+HUB_HOST_LOCAL,"Друзья в одной сети или Radmin VPN: {addresses}, порт {port}","Friends on the same network or Radmin VPN: {addresses}, port {port}"
+NET_UPNP_WORKING,Интернет: открываю порт в роутере (UPnP)…,Internet: opening the router port (UPnP)…
+NET_UPNP_OPEN,"Интернет: друзья подключаются к {address}, порт {port} — роутер открыл его (UPnP)","Internet: friends connect to {address}, port {port} — the router opened it (UPnP)"
+NET_UPNP_NO_ROUTER,"Интернет: роутер не ответил по UPnP — включите UPnP в настройках роутера или играйте через Radmin VPN","Internet: the router did not answer UPnP — enable UPnP in the router settings or play over Radmin VPN"
+NET_UPNP_REFUSED,"Интернет: роутер не открыл порт {port} (код {code}) — пробросьте UDP-порт вручную или играйте через Radmin VPN","Internet: the router refused port {port} (code {code}) — forward the UDP port manually or play over Radmin VPN"
+NET_UPNP_SHARED,"Интернет: у роутера адрес провайдера {address} — общий (CGNAT), из Интернета к нему не подключиться: играйте через Radmin VPN","Internet: the router's address {address} is shared by the provider (CGNAT) and unreachable from the Internet: play over Radmin VPN"
+NET_CONNECT_FAILED,Не удалось подключиться к хосту,Could not connect to the host
+NET_CONNECT_TIMEOUT,Хост не ответил за 5 секунд,The host did not respond within 5 seconds
+NET_HOST_FAILED,"Не удалось создать игру: порт {port} занят?","Could not host the game: is port {port} in use?"
+NET_HOST_LEFT,Хост покинул игру,The host has left the game
+NET_VERSION_MISMATCH,"Другая версия игры: у вас «{mine}», у хоста «{host}». Играть вместе можно только в одной сборке.","Different game version: yours is ""{mine}"", the host's is ""{host}"". Everyone must use the same build."
+NET_VERSION_UNCONFIRMED,"Хост не подтвердил версию игры — похоже, у него другая (старая) сборка","The host did not confirm the game version — it probably runs a different (older) build"
+HUD_ALLY_FALLEN,пал,fallen
+BANNER_FALLEN_COOP,"Вы пали! Союзник поднимет вас, если простоит рядом 3 секунды","You have fallen! An ally revives you by standing next to you for 3 seconds"
+BANNER_FALLEN_HARDCORE,"Вы пали. В «Хардкоре» герой встанет только на следующем уровне","You have fallen. In Hardcore you rise only on the next level"
+BANNER_REVIVED_YOU,Союзник поднял вас!,An ally has revived you!
+BANNER_ALLY_REVIVED,{hero} снова в бою,{hero} is back in the fight
+LEVEL_UP_BANISH,Изгнать ({left}),Banish ({left})
+LEVEL_UP_BANISH_TIP,Карта больше не выпадет до конца забега; на её место встанет другая,The card will not appear again this run; another one takes its place
+WEAPON_THROWING_DAGGERS,Метательные кинжалы,Throwing Daggers
+WEAPON_THROWING_DAGGERS_DESC,"Быстро мечет кинжалы в ближайших врагов. Уровни добавляют кинжалы, хороши с Удачей.","Rapidly hurls daggers at the nearest enemies. Levels add daggers, great with Luck."
+EVO_THOUSAND_BLADES,Тысяча клинков,Thousand Blades
+EVO_THOUSAND_BLADES_DESC,Эволюция кинжалов (кинжалы 10 ур. — ступень II). Шквал из шести кинжалов.,Throwing Daggers evolution (Daggers lv. 10 — stage II). A flurry of six daggers.
+WEAPON_BONE_SPEAR,Костяное копьё,Bone Spear
+WEAPON_BONE_SPEAR_DESC,Тяжёлое копьё прошивает целую линию врагов. Уровни добавляют пробивание и копья.,A heavy spear pierces a whole line of enemies. Levels add piercing and spears.
+EVO_DRAGONBANE,Драконобой,Dragonbane
+EVO_DRAGONBANE_DESC,Эволюция костяного копья (копьё 10 ур. — ступень II). Три копья пробивают всё на пути.,Bone Spear evolution (Spear lv. 10 — stage II). Three spears pierce everything in their path.
+WEAPON_BLOOD_WHIP,Кровавая плеть,Blood Whip
+WEAPON_BLOOD_WHIP_DESC,"Хлещет далеко, но узко — в сторону ближайшего врага. С 6-го уровня бьёт и назад.","Lashes far but narrow toward the nearest enemy. From level 6 it also strikes behind."
+EVO_CRIMSON_REAPER,Багровый жнец,Crimson Reaper
+EVO_CRIMSON_REAPER_DESC,Эволюция плети (плеть 10 ур. — ступень II). Широкие удары вперёд и назад.,Blood Whip evolution (Whip lv. 10 — stage II). Wide lashes in front and behind.
+WEAPON_BAT_SWARM,Рой летучих мышей,Bat Swarm
+WEAPON_BAT_SWARM_DESC,Летучие мыши кружат вокруг героя широким кольцом. Уровни добавляют мышей.,Bats circle the hero in a wide ring. Levels add bats.
+EVO_NIGHT_FLOCK,Ночная стая,Night Flock
+EVO_NIGHT_FLOCK_DESC,Эволюция роя (рой 10 ур. — ступень II). Восемь мышей кружат почти без перерыва.,Bat Swarm evolution (Swarm lv. 10 — stage II). Eight bats circle almost without pause.
+WEAPON_ACID_RAIN,Кислотный дождь,Acid Rain
+WEAPON_ACID_RAIN_DESC,"Кислотные капли падают на случайных врагов рядом, ранят и замедляют. Уровни добавляют капли.","Acid drops fall on random nearby enemies, harming and slowing them. Levels add drops."
+EVO_TOXIC_DELUGE,Ядовитый ливень,Toxic Deluge
+EVO_TOXIC_DELUGE_DESC,Эволюция кислотного дождя (дождь 10 ур. — ступень II). Семь капель и сильное замедление.,Acid Rain evolution (Rain lv. 10 — stage II). Seven drops and a heavy slow.
+WEAPON_REAPER_SICKLE,Серп жнеца,Reaper's Sickle
+WEAPON_REAPER_SICKLE_DESC,"Брошенный серп прошивает всех на пути и возвращается, раня их снова.",The thrown sickle cuts through everyone in its path and returns to cut them again.
+EVO_DEATHS_SCYTHE,Коса Смерти,Death's Scythe
+EVO_DEATHS_SCYTHE_DESC,Эволюция серпа (серп 10 ур. — ступень II). Три косы летят и возвращаются.,Reaper's Sickle evolution (Sickle lv. 10 — stage II). Three scythes fly out and return.
+TAG_PHYSICAL,Физический,Physical
+TAG_FIRE,Огонь,Fire
+TAG_COLD,Холод,Cold
+TAG_LIGHTNING,Молния,Lightning
+TAG_POISON,Яд,Poison
+TAG_DARK,Тьма,Darkness
+TAG_BLOOD,Кровь,Blood
+TAG_HOLY,Свет,Holy
+TAG_PROJECTILE,Снаряд,Projectile
+TAG_AREA,Область,Area
+TAG_MELEE,Ближний бой,Melee
+TAG_AURA,Аура,Aura
+TAG_SUMMON,Призыв,Summon
+TAG_CURSE,Проклятие,Curse
+TAG_CHAIN,Цепь,Chain
+TAG_ORBIT,Орбита,Orbit
+TAG_BEAM,Луч,Beam
+TAG_TRAP,Ловушка,Trap
+TAG_MOVEMENT,Рывок,Movement
+STATUS_BURN,Горение,Burning
+STATUS_POISON,Яд,Poison
+STATUS_BLEED,Кровотечение,Bleeding
+STATUS_SLOW,Замедление,Slow
+STATUS_CHILL,Холод,Chill
+STATUS_FREEZE,Заморозка,Freeze
+STATUS_STUN,Оглушение,Stun
+STATUS_HEX,Порча,Hex
+STATUS_FEAR,Страх,Fear
+STATUS_OIL,Масло,Oil
+REACTION_OIL_BURN,Взрыв масла!,Oil blast!
+REACTION_CHILL_FREEZE,Заморозка!,Frozen!
+REACTION_HEMORRHAGE,Кровоизлияние!,Hemorrhage!
+STAT_SCOPED,{line} ({tag}),{line} ({tag})
+CARD_APPLIES,Накладывает: {list},Inflicts: {list}
+CARD_RUNES,Руны: {list},Runes: {list}
+HERO_PYROMANCER,Пиромант,Pyromancer
+HERO_PYROMANCER_DESC,"Еретик, сжигающий всё вокруг. Начинает с луча пламени. Пиромания: огненные навыки сильнее на 10% и поджигают, +10% к зоне поражения.","A heretic who burns everything around him. Starts with Flame Ray. Pyromania: fire skills deal 10% more and ignite, +10% area."
+HERO_WITCH_HUNTER,Охотник на ведьм,Witch Hunter
+HERO_WITCH_HUNTER_DESC,"Инквизитор с арбалетом и серебром. Начинает с серебряных болтов. Клеймо охотника: снаряды и ловушки накладывают порчу, +15% урона по элитам и боссам.","An inquisitor with a crossbow and silver. Starts with Silver Bolts. Hunter's Brand: projectiles and traps hex foes, +15% damage to elites and bosses."
+HERO_BLOOD_PRIEST,Кровавый жрец,Blood Priest
+HERO_BLOOD_PRIEST_DESC,"Служитель тёмного алтаря. Начинает с кровавой жатвы. Кровавый обряд: кровавые навыки пускают кровь и лечат, +20% урона при малом здоровье.","A servant of the dark altar. Starts with Blood Harvest. Blood Rite: blood skills cause bleeding and heal, +20% damage at low health."
+TRAIT_PYROMANIA,Пиромания,Pyromania
+TRAIT_PYROMANIA_DESC,"Огненные навыки: +10% урона, поджигают в 25% ударов.","Fire skills: +10% damage, 25% of hits ignite."
+TRAIT_HUNTER_MARK,Клеймо охотника,Hunter's Brand
+TRAIT_HUNTER_MARK_DESC,"Снаряды и ловушки: +5% к удаче, накладывают порчу в 20% ударов.","Projectiles and traps: +5% luck, 20% of hits hex the target."
+TRAIT_BLOOD_RITE,Кровавый обряд,Blood Rite
+TRAIT_BLOOD_RITE_DESC,"Кровавые навыки: 2% урона возвращается здоровьем, кровотечение в 25% ударов.","Blood skills: 2% of damage returns as health, 25% of hits cause bleeding."
+SKILL_SILVER_BOLTS,Серебряные болты,Silver Bolts
+SKILL_SILVER_BOLTS_DESC,"Быстрый болт в ближайшего врага отскакивает к следующим и накладывает порчу.","A swift bolt at the nearest enemy ricochets to the next ones and may hex them."
+SKILL_HOLY_WATER,Святая вода,Holy Water
+SKILL_HOLY_WATER_DESC,"Склянка разбивается под врагом: освящённая лужа жжёт всех внутри.","A flask shatters under an enemy: the hallowed pool burns everyone inside."
+SKILL_BEAR_TRAP,Капкан,Bear Trap
+SKILL_BEAR_TRAP_DESC,"Капкан под врагом: взводится и защёлкивается на первом, кто подойдёт, — оглушает и пускает кровь.","A trap under an enemy arms and snaps on the first one to step close — stunning and bleeding."
+SKILL_FIRE_BEAM,Луч пламени,Flame Ray
+SKILL_FIRE_BEAM_DESC,"Луч огня в сторону ближайшего врага жжёт всех на линии и поджигает.","A ray of fire toward the nearest enemy burns everyone in line and ignites."
+SKILL_FLAME_DASH,Огненный рывок,Blazing Dash
+SKILL_FLAME_DASH_DESC,"Огненная тень проносится сквозь врагов к ближайшему и поджигает всех на пути.","A fiery shade rushes through enemies and sets everyone in its path ablaze."
+SKILL_OIL_FLASK,Горючая смесь,Oil Flask
+SKILL_OIL_FLASK_DESC,"Лужа смолы под врагами: обливает маслом и замедляет. Огонь по маслу — взрыв.","A puddle of pitch under enemies: coats them in oil and slows them. Fire on oil explodes."
+SKILL_BLOOD_HARVEST,Кровавая жатва,Blood Harvest
+SKILL_BLOOD_HARVEST_DESC,"Широкий взмах ритуальным серпом: пускает кровь, часть урона лечит жреца.","A wide sweep of the ritual sickle: causes bleeding, part of the damage heals the priest."
+SKILL_GHOUL_PACK,Стая упырей,Ghoul Pack
+SKILL_GHOUL_PACK_DESC,"Поднимает упырей-союзников: они бросаются на врагов, пока не истлеют.","Raises allied ghouls that rush the enemies until they rot away."
+SKILL_CRIMSON_NOVA,Кровавая вспышка,Crimson Burst
+SKILL_CRIMSON_NOVA_DESC,"Волна крови вокруг жреца: убитые ею враги взрываются, раня соседей.","A wave of blood around the priest: enemies it kills explode and hurt their neighbours."
+SKILL_SHIELD_CHARGE,Таран щитом,Shield Charge
+SKILL_SHIELD_CHARGE_DESC,"Призрак рыцаря тараном проходит сквозь строй и оглушает врагов.","A spectral knight rams through the enemy ranks and stuns them."
+MOD_RUNE_MIGHT,Руна силы,Rune of Might
+MOD_RUNE_MIGHT_DESC,+20% урона навыка.,+20% skill damage.
+MOD_RUNE_FURY,Руна ярости,Rune of Fury
+MOD_RUNE_FURY_DESC,"+40% урона, но перезарядка на 15% дольше.","+40% damage, but 15% longer recharge."
+MOD_RUNE_HASTE,Руна спешки,Rune of Haste
+MOD_RUNE_HASTE_DESC,Перезарядка на 15% короче.,15% faster recharge.
+MOD_RUNE_REACH,Руна размаха,Rune of Reach
+MOD_RUNE_REACH_DESC,+25% к области навыка.,+25% skill area.
+MOD_RUNE_RANGE,Руна дальнобойности,Rune of Range
+MOD_RUNE_RANGE_DESC,+25% к дальности навыка.,+25% skill range.
+MOD_RUNE_DURATION,Руна долготы,Rune of Duration
+MOD_RUNE_DURATION_DESC,"+30% длительности: орбиты, зоны, лучи, призыв, ловушки.","+30% duration: orbits, zones, beams, summons, traps."
+MOD_RUNE_VOLLEY,Руна залпа,Rune of Volley
+MOD_RUNE_VOLLEY_DESC,"+1 к количеству: снаряды, прыжки, удары, зоны, призванные.","+1 amount: projectiles, jumps, strikes, zones, summons."
+MOD_RUNE_BARRAGE,Руна шквала,Rune of Barrage
+MOD_RUNE_BARRAGE_DESC,"+2 к количеству, урон на 15% меньше.","+2 amount, 15% less damage."
+MOD_RUNE_PIERCE,Руна пробивания,Rune of Piercing
+MOD_RUNE_PIERCE_DESC,Снаряды прошивают ещё 2 врагов.,Projectiles pierce 2 more enemies.
+MOD_RUNE_VELOCITY,Руна полёта,Rune of Velocity
+MOD_RUNE_VELOCITY_DESC,"Снаряды на 40% быстрее, дальность +10%.","Projectiles 40% faster, +10% range."
+MOD_RUNE_SPLIT,Руна раскола,Rune of Splitting
+MOD_RUNE_SPLIT_DESC,"Снаряд при попадании раскалывается на 3 осколка (по 50% урона).","On hit, a projectile splits into 3 shards (50% damage each)."
+MOD_RUNE_RICOCHET,Руна рикошета,Rune of Ricochet
+MOD_RUNE_RICOCHET_DESC,Снаряд отскакивает к следующему врагу 2 раза.,Projectiles bounce to the next enemy twice.
+MOD_RUNE_BOOMERANG,Руна возврата,Rune of Return
+MOD_RUNE_BOOMERANG_DESC,"Снаряды долетают до края и возвращаются, раня снова.","Projectiles fly out and return, hitting again."
+MOD_RUNE_LUCK,Руна удачи,Rune of Luck
+MOD_RUNE_LUCK_DESC,+10% к шансу удачного удара навыка.,+10% lucky hit chance for the skill.
+MOD_RUNE_VAMPIRIC,Руна вампира,Rune of the Vampire
+MOD_RUNE_VAMPIRIC_DESC,3% урона навыка возвращается здоровьем.,3% of skill damage returns as health.
+MOD_RUNE_CORPSE_BLAST,Руна трупного взрыва,Rune of Corpse Blast
+MOD_RUNE_CORPSE_BLAST_DESC,"Убитые навыком враги взрываются (60% урона удара).","Enemies killed by the skill explode (60% of the hit)."
+MOD_RUNE_IGNITE,Руна поджога,Rune of Ignition
+MOD_RUNE_IGNITE_DESC,30% ударов поджигают.,30% of hits ignite.
+MOD_RUNE_INFERNO,Руна пекла,Rune of the Inferno
+MOD_RUNE_INFERNO_DESC,"Огненные навыки: каждый удар поджигает, +10% урона.","Fire skills: every hit ignites, +10% damage."
+MOD_RUNE_VENOM,Руна яда,Rune of Venom
+MOD_RUNE_VENOM_DESC,40% ударов отравляют.,40% of hits poison.
+MOD_RUNE_PLAGUE,Руна мора,Rune of Plague
+MOD_RUNE_PLAGUE_DESC,Ядовитые навыки: каждый удар даёт 2 стака яда.,Poison skills: every hit adds 2 stacks of poison.
+MOD_RUNE_BLOODLETTING,Руна кровопускания,Rune of Bloodletting
+MOD_RUNE_BLOODLETTING_DESC,35% ударов пускают кровь.,35% of hits cause bleeding.
+MOD_RUNE_ARTERY,Руна артерии,Rune of the Artery
+MOD_RUNE_ARTERY_DESC,Физические и кровавые навыки: каждый удар — 2 стака кровотечения.,Physical and blood skills: every hit adds 2 stacks of bleeding.
+MOD_RUNE_FROST,Руна инея,Rune of Frost
+MOD_RUNE_FROST_DESC,35% ударов холодят.,35% of hits chill.
+MOD_RUNE_DEEP_FREEZE,Руна стужи,Rune of Deep Freeze
+MOD_RUNE_DEEP_FREEZE_DESC,"Ледяные навыки: каждый удар — 2 стака холода, заморозка быстрее.","Cold skills: every hit adds 2 stacks of chill, freezing sooner."
+MOD_RUNE_THUNDER,Руна грома,Rune of Thunder
+MOD_RUNE_THUNDER_DESC,10% ударов оглушают.,10% of hits stun.
+MOD_RUNE_HEX,Руна порчи,Rune of Hex
+MOD_RUNE_HEX_DESC,"30% ударов накладывают порчу: враг получает больше урона.","30% of hits hex: the enemy takes more damage."
+MOD_RUNE_TERROR,Руна ужаса,Rune of Terror
+MOD_RUNE_TERROR_DESC,12% ударов пугают: враг бежит прочь.,12% of hits terrify: the enemy flees.
+MOD_RUNE_PITCH,Руна смолы,Rune of Pitch
+MOD_RUNE_PITCH_DESC,40% ударов обливают маслом: огонь по маслу — взрыв.,40% of hits coat in oil: fire on oil explodes.
+MOD_RUNE_MIRE,Руна вязкости,Rune of the Mire
+MOD_RUNE_MIRE_DESC,40% ударов замедляют.,40% of hits slow.
+MOD_RUNE_FIRE,Руна огня,Rune of Fire
+MOD_RUNE_FIRE_DESC,"Навык становится огненным: действуют прибавки к огню, +10% урона.","The skill becomes fire: fire bonuses apply, +10% damage."
+MOD_RUNE_COLD,Руна холода,Rune of Cold
+MOD_RUNE_COLD_DESC,"Навык становится ледяным, 20% ударов холодят.","The skill becomes cold, 20% of hits chill."
+MOD_RUNE_DARK,Руна тьмы,Rune of Darkness
+MOD_RUNE_DARK_DESC,"Навык становится тёмным, 20% ударов накладывают порчу.","The skill becomes dark, 20% of hits hex."
+MOD_RUNE_HOLY,Руна света,Rune of Light
+MOD_RUNE_HOLY_DESC,"Навык становится святым, +15% урона.","The skill becomes holy, +15% damage."
+MOD_RUNE_BLOOD,Руна крови,Rune of Blood
+MOD_RUNE_BLOOD_DESC,"Навык становится кровавым, 2% урона возвращается здоровьем.","The skill becomes blood, 2% of damage returns as health."
+MOD_RUNE_EXECUTIONER,Руна палача,Rune of the Executioner
+MOD_RUNE_EXECUTIONER_DESC,"+15% к шансу удачного удара, урон на 10% меньше.","+15% lucky hit chance, 10% less damage."
+MOD_RUNE_ECHO,Руна эха,Rune of Echoes
+MOD_RUNE_ECHO_DESC,"Перезарядка на 30% короче, урон на 20% меньше.","30% faster recharge, 20% less damage."
+MOD_RUNE_TITAN,Руна титана,Rune of the Titan
+MOD_RUNE_TITAN_DESC,"+50% к области, перезарядка на 20% дольше.","+50% area, 20% longer recharge."
+MOD_RUNE_SWARM,Руна роя,Rune of the Swarm
+MOD_RUNE_SWARM_DESC,"+3 к количеству, урон на 35% меньше.","+3 amount, 35% less damage."
+MOD_RUNE_STORM,Руна бури,Rune of the Storm
+MOD_RUNE_STORM_DESC,"Снаряд раскалывается на 4 осколка (по 40%) и отскакивает к следующему врагу.","A projectile splits into 4 shards (40% each) and bounces to the next enemy."
+MOD_RUNE_AVATAR,Руна аватара,Rune of the Avatar
+MOD_RUNE_AVATAR_DESC,"+60% урона и +30% к области.","+60% damage and +30% area."
+MOD_RUNE_REAPER,Руна жнеца,Rune of the Reaper
+MOD_RUNE_REAPER_DESC,"Убитые навыком враги взрываются (100% урона удара), 10% ударов пугают.","Enemies killed by the skill explode (100% of the hit), 10% of hits terrify."
+MOD_RUNE_ETERNITY,Руна вечности,Rune of Eternity
+MOD_RUNE_ETERNITY_DESC,"Вдвое дольше: орбиты, зоны, лучи, призыв, ловушки.","Twice as long: orbits, zones, beams, summons, traps."
+TALENT_PYRO_VIGOR,Жаростойкость,Heat Tempered
+TALENT_PYRO_VIGOR_DESC,+{value} к здоровью за ранг.,+{value} health per rank.
+TALENT_PYRO_POWER,Сердце пламени,Heart of Flame
+TALENT_PYRO_POWER_DESC,+{value}% урона огненных навыков за ранг.,+{value}% fire skill damage per rank.
+TALENT_PYRO_KINDLING,Растопка,Kindling
+TALENT_PYRO_KINDLING_DESC,+{value}% к зоне поражения за ранг.,+{value}% area per rank.
+TALENT_PYRO_MASTERY,Мастер огня,Master of Flame
+TALENT_PYRO_MASTERY_DESC,Луч пламени в начале забега выше на {value} ур. за ранг.,Flame Ray starts {value} level higher per rank.
+TALENT_PYRO_EMBER_HEART,Тлеющий уголь,Ember Heart
+TALENT_PYRO_EMBER_HEART_DESC,+{value}% к шансу удачного удара огненных навыков за ранг.,+{value}% lucky hit chance of fire skills per rank.
+TALENT_HUNTER_VIGOR,Закалённый странник,Seasoned Wanderer
+TALENT_HUNTER_VIGOR_DESC,+{value} к здоровью за ранг.,+{value} health per rank.
+TALENT_HUNTER_POWER,Освящённое серебро,Blessed Silver
+TALENT_HUNTER_POWER_DESC,+{value}% урона за ранг.,+{value}% damage per rank.
+TALENT_HUNTER_EYE,Зоркий глаз,Keen Eye
+TALENT_HUNTER_EYE_DESC,+{value}% к шансу удачного удара за ранг.,+{value}% lucky hit chance per rank.
+TALENT_HUNTER_MASTERY,Мастер арбалета,Crossbow Master
+TALENT_HUNTER_MASTERY_DESC,Серебряные болты в начале забега выше на {value} ур. за ранг.,Silver Bolts start {value} level higher per rank.
+TALENT_HUNTER_BRAND,Охотник на чудовищ,Monster Slayer
+TALENT_HUNTER_BRAND_DESC,+{value}% урона по элитам и боссам за ранг.,+{value}% damage to elites and bosses per rank.
+TALENT_BLOOD_VIGOR,Густая кровь,Thick Blood
+TALENT_BLOOD_VIGOR_DESC,+{value} к здоровью за ранг.,+{value} health per rank.
+TALENT_BLOOD_POWER,Жертвенный нож,Sacrificial Knife
+TALENT_BLOOD_POWER_DESC,+{value}% урона за ранг.,+{value}% damage per rank.
+TALENT_BLOOD_THIRST,Жажда,Thirst
+TALENT_BLOOD_THIRST_DESC,{value}% урона возвращается здоровьем за ранг.,{value}% of damage returns as health per rank.
+TALENT_BLOOD_MASTERY,Мастер обряда,Master of the Rite
+TALENT_BLOOD_MASTERY_DESC,Кровавая жатва в начале забега выше на {value} ур. за ранг.,Blood Harvest starts {value} level higher per rank.
+TALENT_BLOOD_FRENZY,Исступление,Frenzy
+TALENT_BLOOD_FRENZY_DESC,+{value}% урона при здоровье ниже половины за ранг.,+{value}% damage below half health per rank.
+CARD_KIND_RUNE,Руна,Rune
+CARD_RUNE_TARGET,"В навык: {skill}","Into: {skill}"
+CARD_RUNE_SLOT,"Гнездо {slot} из {max}","Socket {slot} of {max}"
+LEVEL_UP_BANISH_RUNE_TIP,"Руна больше не выпадет до конца забега ни в один навык; на её место встанет другая карта","This rune will not appear again this run for any skill; another card takes its place"
+CARD_SYNERGY,"Резонанс «{tag}»: {from} → {to}","{tag} resonance: {from} → {to}"
+CARD_SYNERGY_TIER,"Резонанс «{tag}»: {to} — новый порог!","{tag} resonance: {to} — new tier!"
+SYNERGY_NAME,"Резонанс: {tag}","{tag} Resonance"
+SYNERGY_COUNT,"навыков: {count}","skills: {count}"
+SYNERGY_NEXT,"Следующий порог (навыков: {count}):","Next tier ({count} skills):"
+ENEMY_BONE_SOLDIER,Костяной солдат,Bone Soldier
+SKILL_BONE_LEGION,Костяной легион,Bone Legion
+SKILL_BONE_LEGION_DESC,"Поднимает костяных солдат: они бьются за героя, пока не рассыплются. Уровни добавляют солдат.","Raises bone soldiers that fight for you until they crumble. Levels add soldiers."
+SKILL_ICE_BEAM,Ледяной луч,Frost Ray
+SKILL_ICE_BEAM_DESC,"Луч холода в сторону ближайшего врага: каждое касание — стак холода, пятый замораживает.","A ray of cold toward the nearest enemy: each touch adds a chill stack, the fifth freezes."
+SKILL_CURSE_CHAIN,Цепь проклятий,Chain of Curses
+SKILL_CURSE_CHAIN_DESC,"Проклятие прыгает между врагами и накладывает порчу: они получают больше урона.","A curse leaps between enemies and hexes them: they take more damage."
+SKILL_SILVER_NET,Серебряная сеть,Silver Net
+SKILL_SILVER_NET_DESC,"Сеть с серебряными крючьями ложится под врага и схлопывается на подошедших: замедляет и накладывает порчу.","A net of silver hooks lands under an enemy and snaps shut on those who come close, slowing and hexing them."
+SKILL_FIRE_WALL,Стена огня,Wall of Fire
+SKILL_FIRE_WALL_DESC,"Цепочка огненных луж от героя к ближайшему врагу жжёт всех внутри. Уровни удлиняют стену.","A line of fire pools from you toward the nearest enemy burns everyone inside. Levels lengthen the wall."
+SKILL_BLOOD_LANCE,Кровавое копьё,Blood Lance
+SKILL_BLOOD_LANCE_DESC,"Копьё из крови прошивает линию врагов и пускает им кровь.","A lance of blood pierces a line of enemies and makes them bleed."
+SKILL_HEAVEN_SMITE,Кара небес,Heaven's Smite
+SKILL_HEAVEN_SMITE_DESC,"Столп света бьёт по случайному врагу рядом: оглушает и накладывает порчу.","A pillar of light strikes a random nearby enemy, stunning and hexing it."
+SKILL_ROT_TOTEM,Гнилой тотем,Rot Totem
+SKILL_ROT_TOTEM_DESC,"Ставит у ног героя гнилой тотем: ядовитое облако травит всех вокруг.","Plants a rotten totem at your feet: a poison cloud sickens everyone around."
+SKILL_SHADOW_STEP,Теневой шаг,Shadow Step
+SKILL_SHADOW_STEP_DESC,"Тень героя проносится сквозь врагов, ранит их и обращает в бегство.","Your shade rushes through enemies, wounding and terrifying them."
+SKILL_FIRE_ORBS,Огненный круг,Circle of Flame
+SKILL_FIRE_ORBS_DESC,"Огненные сферы кружат вокруг героя и поджигают врагов на пути. Уровни добавляют сферы.","Fire orbs circle you and ignite enemies in their path. Levels add orbs."
+EVO_IRON_MAW,Железная пасть,Iron Maw
+EVO_IRON_MAW_DESC,"Эволюция капкана (капкан 10 ур. — ступень II). Три стальные пасти за раз: оглушают и пускают кровь вдвойне.","Bear Trap evolution (Trap lv. 10 — stage II). Three steel jaws at once: they stun and cause double bleeding."
+EVO_BLOOD_MOON_SCYTHE,Серп кровавой луны,Blood Moon Scythe
+EVO_BLOOD_MOON_SCYTHE_DESC,"Эволюция кровавой жатвы (жатва 10 ур. — ступень II). Огромный серп косит вперёд и назад и лечит героя.","Blood Harvest evolution (Harvest lv. 10 — stage II). A huge scythe reaps front and back and heals you."
+EVO_BLOOD_TIDE,Кровавый прилив,Blood Tide
+EVO_BLOOD_TIDE_DESC,"Эволюция кровавой вспышки (вспышка 10 ур. — ступень II). Широкая волна крови: убитые взрываются и пугают соседей.","Crimson Burst evolution (Burst lv. 10 — stage II). A wide tide of blood: the slain explode and terrify their neighbours."
+EVO_DRAGON_BREATH,Дыхание дракона,Dragon's Breath
+EVO_DRAGON_BREATH_DESC,"Эволюция луча пламени (луч 10 ур. — ступень II). Широкий и долгий поток огня поджигает всё на пути.","Flame Ray evolution (Ray lv. 10 — stage II). A wide, long stream of fire ignites everything in its way."
+EVO_ASH_WALK,Путь пепла,Ash Walk
+EVO_ASH_WALK_DESC,"Эволюция огненного рывка (рывок 10 ур. — ступень II). Тень проносится чаще и дальше и поджигает вдвойне.","Blazing Dash evolution (Dash lv. 10 — stage II). The shade dashes more often and farther and ignites twice as hard."
+EVO_GHOUL_HORDE,Орда упырей,Ghoul Horde
+EVO_GHOUL_HORDE_DESC,"Эволюция стаи упырей (стая 10 ур. — ступень II). Упыри встают по двое, их до шести, и живут дольше.","Ghoul Pack evolution (Pack lv. 10 — stage II). Ghouls rise two at a time, up to six, and last longer."
+EVO_HALLOWED_GROUND,Освящённая земля,Hallowed Ground
+EVO_HALLOWED_GROUND_DESC,"Эволюция святой воды (вода 10 ур. — ступень II). Три широкие освящённые лужи жгут и накладывают порчу.","Holy Water evolution (Water lv. 10 — stage II). Three wide hallowed pools burn and hex."
+EVO_GREEK_FIRE,Греческий огонь,Greek Fire
+EVO_GREEK_FIRE_DESC,"Эволюция горючей смеси (смесь 10 ур. — ступень II). Горящая смола обливает маслом и поджигает — враги взрываются.","Oil Flask evolution (Flask lv. 10 — stage II). Burning pitch drenches in oil and ignites — enemies explode."
+EVO_UNSTOPPABLE_CHARGE,Несокрушимый натиск,Unstoppable Charge
+EVO_UNSTOPPABLE_CHARGE_DESC,"Эволюция тарана щитом (таран 10 ур. — ступень II). Широкий таран чаще и дальше, почти всегда оглушает.","Shield Charge evolution (Charge lv. 10 — stage II). A wider charge, more often and farther, almost always stuns."
+EVO_SILVER_VERDICT,Серебряный приговор,Silver Verdict
+EVO_SILVER_VERDICT_DESC,"Эволюция серебряных болтов (болты 10 ур. — ступень II). Три быстрых болта прошивают, отскакивают и накладывают порчу.","Silver Bolts evolution (Bolts lv. 10 — stage II). Three swift bolts pierce, ricochet and hex."
+QUEST_NECROPOLIS,Под воду,Into the Depths
+QUEST_NECROPOLIS_DESC,Дойти до Затопленного склепа,Reach the Flooded Crypt
+QUEST_INFERNO,Огонь под сводами,Fire Beneath the Vaults
+QUEST_INFERNO_DESC,Дойти до Пылающего собора,Reach the Burning Cathedral
+QUEST_ABYSS_LORD,Конец Владыки Бездны,The Abyss Lord's End
+QUEST_ABYSS_LORD_DESC,Победить Владыку Бездны,Defeat the Lord of the Abyss
+QUEST_REAPER,Жнец,The Reaper
+QUEST_REAPER_DESC,Убить врагов за все забеги,Slay enemies across all runs
+QUEST_HEADHUNTER,Охотник за головами,Headhunter
+QUEST_HEADHUNTER_DESC,Повергнуть боссов,Defeat bosses
+QUEST_WANDERER,Странник,The Wanderer
+QUEST_WANDERER_DESC,Пройти уровни за все забеги,Clear levels across all runs
+QUEST_TREASURE,Кладоискатель,Treasure Hunter
+QUEST_TREASURE_DESC,Открыть сундуки,Open chests
+QUEST_TROPHIES,Собиратель реликвий,Relic Collector
+QUEST_TROPHIES_DESC,Найти разные легендарные предметы,Find different legendary items
+QUEST_BESTIARY,Знаток нечисти,Monster Scholar
+QUEST_BESTIARY_DESC,Встретить разных врагов,Encounter different enemies
+QUEST_VETERAN,Ветеран,Veteran
+QUEST_VETERAN_DESC,Сыграть забеги,Play runs
+QUEST_COMRADE,Плечом к плечу,Shoulder to Shoulder
+QUEST_COMRADE_DESC,Поднять павших союзников в кооперативе,Revive fallen allies in co-op
+QUEST_HARDCORE,Без права на ошибку,No Room for Error
+QUEST_HARDCORE_DESC,Победить в «Хардкоре»,Win on Hardcore
+QUEST_ENDLESS,Бесконечная гниль,Endless Rot
+QUEST_ENDLESS_DESC,Дойти до уровня {target} в бесконечном режиме,Reach level {target} in endless mode
+HUB_LOCKED,"Закрыто: {quest}","Locked: {quest}"
+HUB_CLOSE,Закрыть,Close
+HUB_CONTROLS,"WASD — идти · E — действие · Esc — закрыть / выйти","WASD — walk · E — interact · Esc — close / leave"
+HUB_PROMPT,"E — {action}","E — {action}"
+HUB_STATION_ALTAR,Алтарь душ,Altar of Souls
+HUB_STATION_BOARD,Доска заданий,Quest Board
+HUB_STATION_CHRONICLE,Летопись,Chronicle
+HUB_STATION_GATE,Врата бездны,Gate of the Abyss
+HUB_STATION_WAR_TABLE,Стол кооператива,Co-op War Table
+HUB_STATION_EXIT,В главное меню,To the main menu
+HUB_STATUE_CHOOSE,"E — стать: {name}","E — become: {name}"
+HUB_STATUE_CHOSEN,"{name} — ваш герой","{name} — your hero"
+HUB_HERO_CHOSEN,"Теперь ваш герой — {name}","Your hero is now {name}"
+HUB_ALTAR_TITLE,"Алтарь душ — {hero}","Altar of Souls — {hero}"
+HUB_BOARD_TITLE,Доска заданий,Quest Board
+HUB_QUEST_PROGRESS,"{value} / {target}","{value} / {target}"
+HUB_QUEST_CLAIM,Забрать,Claim
+HUB_QUEST_CLAIMED,Получено,Claimed
+HUB_QUEST_READY,На Доске заданий ждёт награда,A reward awaits on the Quest Board
+HUB_QUEST_DONE,"Задание «{name}» выполнено. {reward}","Quest “{name}” complete. {reward}"
+HUB_REWARD_LINE,"Награда: {reward}","Reward: {reward}"
+HUB_REWARD_HERO,"класс {name}","class {name}"
+HUB_REWARD_SKILL,"навык {name}","skill {name}"
+HUB_REWARD_SOULS,"{souls} душ","{souls} souls"
+HUB_CHRONICLE_TITLE,Летопись и Склеп трофеев,Chronicle and Trophy Crypt
+HUB_TAB_RECORDS,Летопись,Chronicle
+HUB_TAB_BESTIARY,Бестиарий,Bestiary
+HUB_TAB_TROPHIES,Трофеи,Trophies
+HUB_HERO_RECORDS,Рекорды героев,Hero records
+HUB_HERO_RECORD,"{name}: забегов {runs}, побед {victories}, глубина {depth}, рекорд убийств {kills}","{name}: runs {runs}, wins {victories}, depth {depth}, best kills {kills}"
+HUB_TROPHIES_COUNT,"Найдено легендарных предметов: {found} из {total}","Legendary items found: {found} of {total}"
+HUB_GATE_TITLE,Врата бездны,Gate of the Abyss
+HUB_GATE_TALENTS,"Рангов талантов уйдёт в забег: {ranks}","Talent ranks taken into the run: {ranks}"
+CHRONICLE_RUNS,Забегов,Runs
+CHRONICLE_VICTORIES,Побед,Victories
+CHRONICLE_HARDCORE_VICTORIES,Побед в «Хардкоре»,Hardcore victories
+CHRONICLE_KILLS,Убито врагов,Enemies slain
+CHRONICLE_LEVELS,Пройдено уровней,Levels cleared
+CHRONICLE_DEPTH,Лучшая глубина (уровень),Best depth (level)
+CHRONICLE_BOSSES,Повержено боссов,Bosses defeated
+CHRONICLE_CHESTS,Открыто сундуков,Chests opened
+CHRONICLE_REVIVES,Поднято союзников,Allies revived
+CHRONICLE_TROPHIES,Легендарных предметов,Legendary items
+CHRONICLE_BESTIARY,Видов нечисти,Kinds of foes
+RARITY_LEGENDARY,Легендарный,Legendary
+RARITY_CURSED,Проклятый,Cursed
+ITEM_CURSE_LINE,"Проклятие «{name}»: {line}","Curse “{name}”: {line}"
+ITEM_LEGEND_LINE,"Легендарная руна: {text}","Legendary rune: {text}"
+SETTINGS_LOOT_FILTER,Фильтр лута,Loot filter
+LOOT_FILTER_ALL,Показывать всё,Show everything
+LOOT_FILTER_MAGIC,Скрывать обычные,Hide normal items
+LOOT_FILTER_RARE,Только редкие и выше,Rare and above
+SETTINGS_QUALITY,Качество эффектов,Effects quality
+QUALITY_LOW,"Низкое (без света)",Low (no lighting)
+QUALITY_MEDIUM,Среднее,Medium
+QUALITY_HIGH,Высокое,High
+SETTINGS_SCREEN_SHAKE,Тряска камеры,Screen shake
+SETTINGS_HIT_STOP,Стоп-кадр при ударе,Hit stop
+SETTINGS_HIT_STOP_HINT,"Время замирает на миг при ране, смерти элиты и босса. Только в одиночной игре: в кооперативе время общее.","Time freezes for a moment on wounds and elite or boss kills. Solo only: co-op time is shared."
+SETTINGS_POST_EFFECTS,Пост-эффекты,Post effects
+SETTINGS_FPS_LIMIT,Предел FPS,FPS limit
+FPS_UNLIMITED,Без предела,Unlimited
+AFFIX_BLAZING_M,Пылающий,Blazing
+AFFIX_BLAZING_F,Пылающая,Blazing
+AFFIX_BLAZING_PL,Пылающие,Blazing
+AFFIX_FROZEN_M,Ледяной,Frozen
+AFFIX_FROZEN_F,Ледяная,Frozen
+AFFIX_FROZEN_PL,Ледяные,Frozen
+AFFIX_THUNDERING_M,Грозовой,Thundering
+AFFIX_THUNDERING_F,Грозовая,Thundering
+AFFIX_THUNDERING_PL,Грозовые,Thundering
+AFFIX_SHADOWED_M,Тёмный,Shadowed
+AFFIX_SHADOWED_F,Тёмная,Shadowed
+AFFIX_SHADOWED_PL,Тёмные,Shadowed
+AFFIX_VENOMOUS_M,Ядовитый,Venomous
+AFFIX_VENOMOUS_F,Ядовитая,Venomous
+AFFIX_VENOMOUS_PL,Ядовитые,Venomous
+AFFIX_BLOODTHIRSTY_M,Кровожадный,Bloodthirsty
+AFFIX_BLOODTHIRSTY_F,Кровожадная,Bloodthirsty
+AFFIX_BLOODTHIRSTY_PL,Кровожадные,Bloodthirsty
+AFFIX_SWEEPING_M,Размашистый,Sweeping
+AFFIX_SWEEPING_F,Размашистая,Sweeping
+AFFIX_SWEEPING_PL,Размашистые,Sweeping
+AFFIX_THORNED_M,Шипастый,Thorned
+AFFIX_THORNED_F,Шипастая,Thorned
+AFFIX_THORNED_PL,Шипастые,Thorned
+AFFIX_ELUSIVE_M,Ускользающий,Elusive
+AFFIX_ELUSIVE_F,Ускользающая,Elusive
+AFFIX_ELUSIVE_PL,Ускользающие,Elusive
+AFFIX_STALWART_M,Стойкий,Stalwart
+AFFIX_STALWART_F,Стойкая,Stalwart
+AFFIX_STALWART_PL,Стойкие,Stalwart
+AFFIX_WISE_M,Мудрый,Wise
+AFFIX_WISE_F,Мудрая,Wise
+AFFIX_WISE_PL,Мудрые,Wise
+AFFIX_BLAZING_N,Пылающее,Blazing
+AFFIX_FROZEN_N,Ледяное,Frozen
+AFFIX_THUNDERING_N,Грозовое,Thundering
+AFFIX_SHADOWED_N,Тёмное,Shadowed
+AFFIX_VENOMOUS_N,Ядовитое,Venomous
+AFFIX_BLOODTHIRSTY_N,Кровожадное,Bloodthirsty
+AFFIX_SWEEPING_N,Размашистое,Sweeping
+AFFIX_THORNED_N,Шипастое,Thorned
+AFFIX_ELUSIVE_N,Ускользающее,Elusive
+AFFIX_STALWART_N,Стойкое,Stalwart
+AFFIX_WISE_N,Мудрое,Wise
+ITEM_RING,Кольцо,Ring
+SLOT_RING,Палец,Finger
+UNIQUE_ASH_RING,Перстень пепла,Ring of Ashes
+LEGEND_ASH_RING_DESC,"огненные навыки: +20% урона.","fire skills: +20% damage."
+CURSE_WITHERING,Иссушение,Withering
+CURSE_BRITTLENESS,Хрупкость,Brittleness
+CURSE_SHACKLES,Оковы,Shackles
+CURSE_ROT,Гниение,Rot
+CURSE_LETHARGY,Вялость,Lethargy
+CURSE_MISFORTUNE,Невезение,Misfortune
+UNIQUE_STORM_EYE,Око бури,Eye of the Storm
+UNIQUE_SPLITTER,Раскалыватель,Splitter
+UNIQUE_RICOCHET_GLOVES,Перчатки рикошета,Ricochet Gloves
+UNIQUE_EXECUTIONER_MASK,Маска палача,Executioner's Mask
+UNIQUE_WINTER_STRIDE,Поступь зимы,Winter Stride
+UNIQUE_BLOOD_CUIRASS,Кираса крови,Blood Cuirass
+LEGEND_ROTBLADE_DESC,"все навыки: +10% урона, 35% ударов отравляют.","all skills: +10% damage, 35% of hits poison."
+LEGEND_NECROPOLIS_CROWN_DESC,"навыки призыва: +1 существо, +20% урона.","summon skills: +1 creature, +20% damage."
+LEGEND_ARMOR_OF_WONDER_DESC,"ауры: +30% области, +15% урона.","auras: +30% area, +15% damage."
+LEGEND_EFREET_GAUNTLETS_DESC,"огненные навыки: +20% урона, 40% ударов поджигают.","fire skills: +20% damage, 40% of hits ignite."
+LEGEND_BOOTS_OF_SPEED_DESC,"навыки движения: перезарядка на 25% короче, +25% урона.","movement skills: 25% shorter cooldown, +25% damage."
+LEGEND_PENDANT_OF_LIFE_DESC,"все навыки: 2% вампиризма.","all skills: 2% life steal."
+LEGEND_STORM_EYE_DESC,"навыки молнии: +1 снаряд или цель, +15% урона.","lightning skills: +1 projectile or target, +15% damage."
+LEGEND_SPLITTER_DESC,"снаряды при попадании раскалываются на 3 осколка (по 40% урона).","projectiles split into 3 shards on hit (40% damage each)."
+LEGEND_RICOCHET_GLOVES_DESC,"снаряды отскакивают к следующему врагу 2 раза.","projectiles bounce to the next enemy twice."
+LEGEND_EXECUTIONER_MASK_DESC,"убитые навыками враги взрываются (50% урона удара).","enemies killed by skills explode (50% of the hit)."
+LEGEND_WINTER_STRIDE_DESC,"навыки холода: +25% области, 50% ударов охлаждают.","cold skills: +25% area, 50% of hits chill."
+LEGEND_BLOOD_CUIRASS_DESC,"кровавые навыки: +30% урона, 3% вампиризма.","blood skills: +30% damage, 3% life steal."
+AFFIX_BLAZING,Пылающий,Blazing
+AFFIX_FROZEN,Ледяной,Frozen
+AFFIX_THUNDERING,Грозовой,Thundering
+AFFIX_SHADOWED,Тёмный,Shadowed
+AFFIX_VENOMOUS,Ядовитый,Venomous
+AFFIX_BLOODTHIRSTY,Кровожадный,Bloodthirsty
+AFFIX_SWEEPING,Размашистый,Sweeping
+AFFIX_THORNED,Шипастый,Thorned
+AFFIX_ELUSIVE,Ускользающий,Elusive
+AFFIX_STALWART,Стойкий,Stalwart
+AFFIX_WISE,Мудрый,Wise
+POINT_SHRINE_FURY,Святилище ярости,Shrine of Fury
+POINT_SHRINE_HASTE,Святилище быстроты,Shrine of Haste
+POINT_SHRINE_FORTUNE,Святилище удачи,Shrine of Fortune
+POINT_SHRINE_WARDING,Святилище защиты,Shrine of Warding
+POINT_SHRINE_WISDOM,Святилище мудрости,Shrine of Wisdom
+POINT_CURSE_ALTAR,Алтарь проклятий,Altar of Curses
+POINT_BARREL,Бочка,Barrel
+POINT_URN,Урна,Urn
+POINT_COFFIN,Гроб,Coffin
+POINT_LORE,Запись,Record
+POINT_PRISONER,Пленник,Prisoner
+INTERACT_PROMPT,"E — {name}: {effect}","E — {name}: {effect}"
+SHRINE_EFFECT,"{stats} на {time} с","{stats} for {time} s"
+CURSE_ALTAR_EFFECT,"враги +{health}% здоровья до конца уровня, награда +{reward}%","enemies +{health}% health until the level ends, rewards +{reward}%"
+PRISONER_EFFECT,освободить (нападёт стража),free him (the guards will attack)
+PRISONER_FIGHT,Перебейте стражу пленника!,Slay the prisoner's guards!
+LORE_PROMPT,"E — прочесть: {title}","E — read: {title}"
+LORE_CLOSE_HINT,E или Esc — закрыть,E or Esc — close
+BANNER_POINT_SHRINE,"{name}: благословение получено","{name}: blessing received"
+BANNER_POINT_CURSED,"{name}: враги крепче, награда щедрее","{name}: enemies are tougher, rewards are richer"
+BANNER_POINT_GUARDS,Стража пленника нападает!,The prisoner's guards attack!
+BANNER_POINT_FREED,Пленник свободен — он оставил награду,The prisoner is free — he left a reward
+BANNER_POINT_MIMIC,Это мимик!,It's a mimic!
+BANNER_POINT_USED,{name},{name}
+ENEMY_MIMIC,Мимик,Mimic
+MERCHANT_DEAL_DONE,Сделка заключена. Иди своей дорогой.,The deal is struck. Go your way.
+HUB_TAB_LORE,Записи,Records
+HUB_LORE_COUNT,"Прочитано записей: {found} из {total}","Records read: {found} of {total}"
+CHRONICLE_LORE,Прочитано записей,Records read
+CHRONICLE_RESCUED,Освобождено пленников,Prisoners freed
+QUEST_LOREKEEPER,Хранитель преданий,Lorekeeper
+QUEST_LOREKEEPER_DESC,Прочесть разные записи на картах,Read different records on the maps
+QUEST_LIBERATOR,Освободитель,Liberator
+QUEST_LIBERATOR_DESC,Освободить пленников,Free prisoners
+LORE_FOUNDING,Камень основания,Foundation Stone
+LORE_FOUNDING_TEXT,"Здесь, на краю проклятого леса, мы заложили Убежище. Пусть камень помнит: гниль пришла не снаружи — её разбудили внутри.","Here, at the edge of the cursed forest, we laid the Sanctuary. Let the stone remember: the rot did not come from outside — it was woken within."
+LORE_FIRST_ROT,Хроника первой гнили,Chronicle of the First Rot
+LORE_FIRST_ROT_TEXT,"В год безлунной зимы колодцы почернели. Монахи говорили о чуме, но мёртвые вставали раньше, чем их успевали отпеть.","In the year of the moonless winter the wells turned black. The monks spoke of plague, but the dead rose before they could be buried."
+LORE_LOST_SEEKER,Записка искателя,A Seeker's Note
+LORE_LOST_SEEKER_TEXT,"Если найдёшь это — не иди к северным вратам. Мы шли за сокровищем Хранилища, а нашли голод, который не насыщается.","If you find this — do not go to the northern gate. We came for the Vault's treasure and found a hunger that is never sated."
+LORE_NECROPOLIS_GATE,Надпись на вратах склепа,Inscription on the Crypt Gate
+LORE_NECROPOLIS_GATE_TEXT,"Входящий, оставь имя у порога: здесь его заберут вместе с плотью. Личи ведут счёт всем, кто прошёл.","You who enter, leave your name at the threshold: it will be taken here along with your flesh. The liches keep count of all who passed."
+LORE_LICH_OATH,Клятва лича,The Lich's Oath
+LORE_LICH_OATH_TEXT,"Я отдал сердце филактерии, чтобы пережить чуму. Чума ушла. Голод остался. Теперь я понимаю, почему мёртвые не спят.","I gave my heart to the phylactery to outlive the plague. The plague is gone. The hunger remains. Now I understand why the dead do not sleep."
+LORE_INFERNO_PACT,Договор на базальте,Pact on the Basalt
+LORE_INFERNO_PACT_TEXT,"Мы открыли путь вниз ради огня, что не гаснет. Огонь пришёл — и с ним те, кому он служит. Договор не расторгнуть.","We opened the way down for a fire that never dies. The fire came — and with it those it serves. The pact cannot be broken."
+LORE_LAST_PALADIN,Последний паладин,The Last Paladin
+LORE_LAST_PALADIN_TEXT,"Свет оставил меня у третьих врат. Я держал строй один, пока не кончились молитвы. Брат, если читаешь это — не дай им забрать мой меч.","The Light left me at the third gate. I held the line alone until my prayers ran out. Brother, if you read this — do not let them take my sword."
+LORE_ABYSS_LORD,Трактат о Владыке Бездны,Treatise on the Lord of the Abyss
+LORE_ABYSS_LORD_TEXT,"Он не рождён и не умирал. Гниль — его дыхание: всё, что слишком долго хранят, тлеет, пока он спит на дне. Хранилище строили, чтобы держать его. Оно стало ему домом.","He was never born and never died. Rot is his breath: all things kept too long decay while he sleeps below. The Vault was built to hold him. It became his home."
+LORE_ENDLESS,Знак бесконечности,The Sign of Endlessness
+LORE_ENDLESS_TEXT,"Круг замыкается: лес, склеп, собор, бездна — и снова лес. Кто спускается дважды, видит другие стены, но тот же голод.","The circle closes: forest, crypt, cathedral, abyss — and the forest again. Whoever descends twice sees other walls, but the same hunger."
+LORE_SEEKER_MAP,Карта искателя,A Seeker's Map
+LORE_SEEKER_MAP_TEXT,"На обороте карты неровные строчки: «Сундуки дышат. Не открывай тот, что улыбается».","On the back of the map, uneven lines: ""The chests breathe. Do not open the one that smiles."""
+RUN_STATS_TIME,Время,Time
+RUN_STATS_KILLS,Убийства,Kills
+RUN_STATS_XP,Опыт,XP
+RUN_STATS_GOLD,Золото,Gold
+RUN_STATS_ELITES,Элиты,Elites
+RUN_STATS_BOSSES,Боссы,Bosses
+RUN_STATS_DAMAGE_DEALT,Нанесено урона,Damage dealt
+RUN_STATS_DAMAGE_TAKEN,Получено урона,Damage taken
+RUN_STATS_SKILL,Навык,Skill
+RUN_STATS_LEVEL,Ур.,Lvl
+RUN_STATS_DAMAGE,Урон,Damage
+RUN_STATS_DPS,Урон/с,DPS
+RUN_STATS_SHARE,Доля,Share
+RUN_STATS_HERO,Герой,Hero
+RUN_STATS_NO_DATA,Нет данных,No data
+RUN_STATS_THORNS,Шипы,Thorns
+RUN_STATS_NECROMANCY,Некромантия,Necromancy
+RUN_STATS_OTHER,Прочее,Other
+NUM_K,K,K
+NUM_M,M,M
+NUM_DECIMAL,",",.
+BANNER_BOSS_PHASE,"{name} в ярости — фаза {phase}!","{name} grows furious — phase {phase}!"
+POINT_SECRET_WALL,Треснувшая стена,Cracked Wall
+SECRET_WALL_EFFECT,"разбить ({hits}/{total})","smash it ({hits}/{total})"
+POINT_HOARD,Тайный клад,Hidden Hoard
+POINT_GOLDEN_BUCKET,"Золотое ведро","Golden Bucket"
+BANNER_GOLDEN_BUCKET,"Пасхалка! Золотое ведро опрокинуто","Easter egg! The Golden Bucket tips over"
+POINT_RELIQUARY,Реликварий,Reliquary
+BANNER_POINT_SECRET,Стена рухнула — тайник открыт!,The wall crumbles — a secret room!
+CHRONICLE_SECRETS,Вскрыто тайников,Secret rooms opened
+QUEST_TREASURE_HUNTER,Кладоискатель,Treasure Hunter
+QUEST_TREASURE_HUNTER_DESC,Вскрыть тайники за треснувшими стенами,Open secret rooms behind cracked walls
+PAUSE_STATS_HAZARD,"{name}: {effect}","{name}: {effect}"
+HAZARD_BOG,Гнилая топь,Rotten Bog
+HAZARD_BOG_DESC,"у края травит героев, враги рядом отравлены","poisons heroes at the edge, enemies nearby are poisoned"
+HAZARD_WATER,Ледяная вода,Icy Water
+HAZARD_WATER_DESC,"у края замедляет героев и врагов","slows heroes and enemies at the edge"
+HAZARD_LAVA,Лава,Lava
+HAZARD_LAVA_DESC,"у края жжёт героев, враги рядом загораются","burns heroes at the edge, enemies nearby catch fire"
+HAZARD_CHASM,Провал,Chasm
+HAZARD_CHASM_DESC,"у края тянет жизнь из героев, враги рядом в страхе бегут","drains heroes at the edge, enemies nearby flee in fear"
+ENEMY_GHOUL_WOLF,Волк-упырь,Ghoul Wolf
+ENEMY_ROT_TREANT,Гнилой древень,Rotten Treant
+ENEMY_DROWNED,Утопленник,Drowned
+ENEMY_WATER_WRAITH,Морок вод,Water Wraith
+ENEMY_BURNING_CLERIC,Горящий клирик,Burning Cleric
+ENEMY_FALLEN_TEMPLAR,Падший храмовник,Fallen Templar
+ENEMY_VOID_EYE,Око бездны,Eye of the Abyss
+ENEMY_ABYSS_SPAWN,Порождение бездны,Abyss Spawn
+ENEMY_BANDIT,Бандит,Bandit
+ENEMY_ROGUE_ARCHER,Лучник-разбойник,Rogue Archer
+ENEMY_RENEGADE_GUARD,Стражник-ренегат,Renegade Guard
+ENEMY_RABID_WOLF,Бешеный волк,Rabid Wolf
+ENEMY_PLAGUE_RAT,Чумная крыса,Plague Rat
+ENEMY_CULTIST,Культист,Cultist
+ENEMY_SWAMP_SLIME,Болотный слизень,Swamp Slime
+ENEMY_SLIMELING,Слизнёныш,Slimeling
+ENEMY_WILD_BOAR,Дикий кабан,Wild Boar
+ENEMY_SCARECROW,Ожившее пугало,Living Scarecrow
+ENEMY_VILLAGE_WITCH,Деревенская ведьма,Village Witch
+ENEMY_GARRISON_COMMANDER,Командор Гарнизона,Garrison Commander
+ENEMY_SKELETON_ARCHER,Скелет-лучник,Skeleton Archer
+ENEMY_VAMPIRE_BAT,Летучая мышь-вампир,Vampire Bat
+ENEMY_NECRO_ACOLYTE,Некромант-послушник,Necromancer Acolyte
+ENEMY_BONE_SPIDER,Костяной паук,Bone Spider
+ENEMY_SPIDERLING,Паучок,Spiderling
+ENEMY_BANSHEE,Плакальщица,Banshee
+ENEMY_CRYPT_GOLEM,Склепный голем,Crypt Golem
+ENEMY_FIRE_SPIRIT,Огненный дух,Fire Spirit
+ENEMY_DEMON_BRUTE,Демон-громила,Demon Brute
+ENEMY_LAVA_SLIME,Лавовый слизень,Lava Slime
+ENEMY_MAGMA_DROPLET,Капля магмы,Magma Droplet
+ENEMY_CURSED_SOUL,Проклятая душа,Cursed Soul
+ENEMY_DEVOURER,Пожиратель,Devourer
+ENEMY_INFERNAL_GUARD,Инфернальный страж,Infernal Guard
+ENEMY_ABYSS_EYE,Адское око,Infernal Eye
+ENEMY_DEMON_CASTER,Демон-заклинатель,Demon Caster
+HUD_MENU,Меню,Menu
+PAUSE_TAB_HERO,Герой,Character
+PAUSE_TAB_SKILLS,Навыки и умения,Skills and traits
+PAUSE_TAB_QUIT,Выход,Quit
+PAUSE_TAB_SKILLS_LIST,Навыки,Skills
+PAUSE_TAB_PASSIVES,Пассивки,Passives
+PAUSE_TAB_RESONANCES,Резонансы,Resonances
+CHAR_ATTRIBUTE,Характеристика,Attribute
+CHAR_BASE,Основа,Base
+CHAR_TOTAL,Итог,Total
+RUN_STATS_DAMAGE_TOTAL,Всего урона,Total damage
+HUD_RESUME,В бой,Resume
+SEAL_VIGOR,Печать живучести,Seal of Vigor
+SEAL_VIGOR_DESC,Враги и боссы крепче: здоровье +{value} % за ранг.,Enemies and bosses are tougher: +{value}% health per rank.
+SEAL_WRATH,Печать ярости,Seal of Wrath
+SEAL_WRATH_DESC,Враги бьют сильнее: урон +{value} % за ранг.,Enemies hit harder: +{value}% damage per rank.
+SEAL_HASTE,Печать прыти,Seal of Haste
+SEAL_HASTE_DESC,Враги быстрее: скорость +{value} % за ранг.,Enemies move faster: +{value}% speed per rank.
+SEAL_HORDE,Печать орды,Seal of the Horde
+SEAL_HORDE_DESC,В волнах больше врагов: +{value} % за ранг (предел живых прежний).,Waves bring more enemies: +{value}% per rank (the cap on living enemies stays).
+SEAL_CHOSEN,Печать избранных,Seal of the Chosen
+SEAL_CHOSEN_DESC,Элиты чаще: шанс +{value} % за ранг.,Elites appear more often: +{value}% chance per rank.
+SEAL_TYRANT,Печать тирана,Seal of the Tyrant
+SEAL_TYRANT_DESC,Боссы ещё крепче: здоровье +{value} % за ранг.,Bosses are even tougher: +{value}% health per rank.
+SEAL_DROUGHT,Печать иссушения,Seal of Drought
+SEAL_DROUGHT_DESC,Лечение героев слабее на {value} % за ранг.,Hero healing is {value}% weaker per rank.
+SEAL_USURY,Печать ростовщика,Seal of Usury
+SEAL_USURY_DESC,"Сундуки, торговцы и переброс карт дороже на {value} % за ранг.","Chests, merchants and card rerolls cost {value}% more per rank."
+SEAL_DECAY,Печать тлена,Seal of Decay
+SEAL_DECAY_DESC,Опыта за врагов меньше на {value} % за ранг.,Enemies give {value}% less experience per rank.
+HUB_SEALS_TITLE,Печати Скверны,Seals of Corruption
+HUB_SEALS_HINT,Наложите печати на забег: каждый ранг усложняет его и даёт очки Скверны. Скверна умножает души за забег и шанс редкого лута.,Place seals on the run: each rank makes it harder and adds Corruption. Corruption multiplies the souls from the run and the chance of rare loot.
+HUB_SEALS_GUEST,Печати накладывает хост — для всего отряда.,The host places the seals for the whole party.
+HUB_SEALS_POINTS,{points} Скверны за ранг,{points} Corruption per rank
+HUB_SEALS_TOTAL,"Скверна {heat}: души +{souls} %, редкий лут +{loot} %","Corruption {heat}: souls +{souls}%, rare loot +{loot}%"
+HUB_SEALS_NONE,Печати Скверны не наложены,No Seals of Corruption
+HUB_SEALS_RESET,Снять все,Remove all
+HUB_SEALS_BACK,К Вратам,Back to the Gate
+HUB_SEALS_OPEN,Печати…,Seals…
+HUD_HEAT,Скверна {heat},Corruption {heat}
+CHRONICLE_HEAT,Лучшая Скверна победы,Best Corruption win
+QUEST_HEAT,Сквозь Скверну,Through Corruption
+QUEST_HEAT_DESC,Победить со Скверной 8 и выше,Win with Corruption 8 or higher

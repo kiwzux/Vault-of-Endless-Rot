@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="BossFan" format=3]
+
+[ext_resource type="Script" path="res://systems/enemies/boss_attacks/boss_fan.gd" id="1_script"]
+
+[resource]
+script = ExtResource("1_script")
+id = &"lk_frost_volley"
+max_range = 340
+windup = 0.7
+recovery = 1.4
+damage = 14
+color = Color(0.55, 0.85, 1, 1)
+count = 7
+spread_deg = 70
+volleys = 3
+volley_gap = 0.3
+speed = 125
+reach = 300

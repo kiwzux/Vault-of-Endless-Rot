@@ -1,0 +1,40 @@
+{
+  "run": "20261011-z64",
+  "exported_at": "2026-10-11T14:34:27",
+  "sha256": "c86352ad9f2ee37bdf529590cf85a4f84ee91d78c49ff82cce0c2a4e8966c656",
+  "size_mb": 4.071,
+  "opset": 18,
+  "onnxruntime": "1.30.0",
+  "torch": "2.14.1+cpu",
+  "config": {
+    "classes": 12,
+    "cond_dim": 8,
+    "size": 32,
+    "z_dim": 64,
+    "width": 64
+  },
+  "max_abs_diff_vs_torch": 2.2649765014648438e-06,
+  "argmax_agreement": 1.0,
+  "metrics": {
+    "val_accuracy": 0.8832169596354167,
+    "val_macro_accuracy": 0.2822784791598849,
+    "val_per_class": {
+      "VOID": 0.9615,
+      "FLOOR": 0.9563,
+      "WALL": 0.8694,
+      "HAZARD": 0.5593,
+      "RUBBLE": 0.0409,
+      "PLAYER_SPAWN": 0.0,
+      "EXIT": 0.0,
+      "ENEMY_SPAWN": 0.0,
+      "CHEST": 0.0,
+      "FOUNTAIN": 0.0,
+      "STATUE": 0.0,
+      "OBELISK": 0.0
+    },
+    "prior_unique_10pct": 1.0,
+    "prior_unique_20pct": 1.0,
+    "train_seconds": 744.1,
+    "kl_final": 132.11
+  }
+}

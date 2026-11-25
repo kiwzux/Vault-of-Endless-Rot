@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="InteractableData" format=3]
+
+[ext_resource type="Script" path="res://data/interactables/interactable_data.gd" id="1_data"]
+
+[resource]
+script = ExtResource("1_data")
+id = &"curse_altar"
+name_key = "POINT_CURSE_ALTAR"
+kind = 1
+placement = &"near_marker"
+color = Color(0.75, 0.15, 0.3, 1)
+light_radius = 60.0
+curse_health = 0.4
+curse_damage = 0.2
+curse_reward = 0.5

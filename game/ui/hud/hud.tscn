@@ -1,0 +1,297 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://ui/hud/hud.gd" id="1_hud"]
+[ext_resource type="Script" path="res://ui/hud/resource_orb.gd" id="2_orb"]
+[ext_resource type="Script" path="res://ui/hud/minimap.gd" id="3_minimap"]
+[ext_resource type="Script" path="res://ui/hud/offscreen_markers.gd" id="4_markers"]
+[ext_resource type="Script" path="res://ui/hud/skill_grid.gd" id="5_skills"]
+[ext_resource type="Script" path="res://ui/hud/potion_belt.gd" id="6_belt"]
+[ext_resource type="Script" path="res://ui/hud/run_counters.gd" id="7_counters"]
+[ext_resource type="Script" path="res://ui/hud/passives_panel.gd" id="8_passives"]
+[ext_resource type="Script" path="res://ui/hud/vitals_panel.gd" id="10_vitals"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bar_bg"]
+bg_color = Color(0.06, 0.045, 0.04, 0.9)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.45, 0.33, 0.17, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_boss"]
+bg_color = Color(0.55, 0.15, 0.6, 1)
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_hud")
+
+[node name="Top" type="VBoxContainer" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -120.0
+offset_top = 6.0
+offset_right = 120.0
+offset_bottom = 46.0
+grow_horizontal = 2
+mouse_filter = 2
+
+[node name="HardcoreLabel" type="Label" parent="Top"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"HeaderLabel"
+theme_override_colors/font_color = Color(0.85, 0.2, 0.15, 1)
+text = "HARDCORE"
+horizontal_alignment = 1
+
+[node name="BossBox" type="VBoxContainer" parent="Top"]
+unique_name_in_owner = true
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 2
+
+[node name="BossName" type="Label" parent="Top/BossBox"]
+unique_name_in_owner = true
+layout_mode = 2
+auto_translate_mode = 2
+theme_type_variation = &"HeaderLabel"
+theme_override_colors/font_color = Color(0.85, 0.6, 0.95, 1)
+horizontal_alignment = 1
+
+[node name="BossBar" type="ProgressBar" parent="Top/BossBox"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 8)
+layout_mode = 2
+mouse_filter = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_bar_bg")
+theme_override_styles/fill = SubResource("StyleBoxFlat_boss")
+value = 100.0
+show_percentage = false
+
+[node name="Banner" type="Label" parent="Top"]
+unique_name_in_owner = true
+layout_mode = 2
+auto_translate_mode = 2
+theme_type_variation = &"HeaderLabel"
+theme_override_colors/font_color = Color(1, 0.88, 0.55, 1)
+theme_override_colors/font_outline_color = Color(0.1, 0.05, 0.02, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 16
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="ChallengeLabel" type="Label" parent="Top"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+auto_translate_mode = 2
+theme_override_colors/font_color = Color(0.95, 0.35, 0.25, 1)
+theme_override_colors/font_outline_color = Color(0.1, 0.02, 0.02, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 12
+horizontal_alignment = 1
+
+[node name="PlayLeft" type="VBoxContainer" parent="."]
+offset_left = 86.0
+offset_top = 6.0
+offset_right = 240.0
+offset_bottom = 90.0
+mouse_filter = 2
+theme_override_constants/separation = 4
+
+[node name="RelicLabel" type="Label" parent="PlayLeft"]
+unique_name_in_owner = true
+layout_mode = 2
+auto_translate_mode = 2
+theme_override_colors/font_color = Color(0.95, 0.85, 0.55, 1)
+theme_override_font_sizes/font_size = 10
+
+[node name="LeftPanel" type="Panel" parent="."]
+unique_name_in_owner = true
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_right = 80.0
+grow_vertical = 2
+mouse_filter = 2
+theme_type_variation = &"LatticePanel"
+
+[node name="Vitals" type="Control" parent="LeftPanel"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("10_vitals")
+
+[node name="Belt" type="Control" parent="LeftPanel"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 7.0
+offset_top = -108.0
+offset_right = 75.0
+offset_bottom = -94.0
+grow_vertical = 0
+mouse_filter = 2
+script = ExtResource("6_belt")
+
+[node name="HealthOrb" type="Control" parent="LeftPanel"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 2.0
+offset_top = -90.0
+offset_right = 78.0
+offset_bottom = -6.0
+grow_vertical = 0
+mouse_filter = 2
+script = ExtResource("2_orb")
+show_value = false
+claws = true
+
+[node name="RightPanel" type="Panel" parent="."]
+unique_name_in_owner = true
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -80.0
+grow_horizontal = 0
+grow_vertical = 2
+mouse_filter = 2
+theme_type_variation = &"LatticePanel"
+
+[node name="OpenMenu" type="Button" parent="RightPanel"]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 72.0
+offset_bottom = 26.0
+focus_mode = 0
+theme_type_variation = &"GothicButton"
+theme_override_font_sizes/font_size = 11
+text = "HUD_MENU"
+
+[node name="Skills" type="Control" parent="RightPanel"]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 8.0
+offset_top = 30.0
+offset_right = 72.0
+offset_bottom = 128.0
+script = ExtResource("5_skills")
+
+[node name="Passives" type="Control" parent="RightPanel"]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 8.0
+offset_top = 134.0
+offset_right = 73.0
+offset_bottom = 182.0
+script = ExtResource("8_passives")
+
+[node name="Minimap" type="Control" parent="RightPanel"]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 8.0
+offset_top = 190.0
+offset_right = 72.0
+offset_bottom = 254.0
+mouse_filter = 2
+script = ExtResource("3_minimap")
+
+[node name="Counters" type="Control" parent="RightPanel"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = -80.0
+offset_right = 72.0
+offset_bottom = -10.0
+grow_vertical = 0
+mouse_filter = 2
+script = ExtResource("7_counters")
+
+[node name="Center" type="VBoxContainer" parent="."]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -150.0
+offset_top = -24.0
+offset_right = 150.0
+offset_bottom = -6.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+theme_override_constants/separation = 2
+alignment = 2
+
+[node name="BuffsLabel" type="Label" parent="Center"]
+unique_name_in_owner = true
+layout_mode = 2
+auto_translate_mode = 2
+theme_override_colors/font_color = Color(0.4, 0.85, 0.9, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 9
+horizontal_alignment = 1
+
+[node name="Markers" type="Control" parent="."]
+unique_name_in_owner = true
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("4_markers")
+
+[node name="EndPanel" type="CenterContainer" parent="."]
+unique_name_in_owner = true
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="PanelContainer" parent="EndPanel"]
+custom_minimum_size = Vector2(260, 0)
+layout_mode = 2
+
+[node name="Column" type="VBoxContainer" parent="EndPanel/Panel"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="EndTitle" type="Label" parent="EndPanel/Panel/Column"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"HeaderLabel"
+theme_override_colors/font_color = Color(0.85, 0.2, 0.15, 1)
+theme_override_font_sizes/font_size = 20
+text = "DEFEAT_TITLE"
+horizontal_alignment = 1
+
+[node name="EndDetails" type="Label" parent="EndPanel/Panel/Column"]
+unique_name_in_owner = true
+layout_mode = 2
+auto_translate_mode = 2
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="MenuButton" type="Button" parent="EndPanel/Panel/Column"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"GothicButton"
+text = "RETURN_TO_HUB"

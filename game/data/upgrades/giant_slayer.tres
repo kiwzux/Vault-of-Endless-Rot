@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="PassiveData" format=3]
+
+[ext_resource type="Script" path="res://data/upgrades/passive_data.gd" id="1_passive"]
+
+[resource]
+script = ExtResource("1_passive")
+stat = &"giant_slayer"
+per_level = 0.03
+id = &"giant_slayer"
+kind = 1
+name_key = "PASSIVE_GIANT_SLAYER"
+description_key = "PASSIVE_GIANT_SLAYER_DESC"
+max_level = 25
+icon_color = Color(0.75, 0.55, 0.3, 1)

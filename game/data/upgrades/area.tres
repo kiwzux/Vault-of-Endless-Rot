@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="PassiveData" format=3]
+
+[ext_resource type="Script" path="res://data/upgrades/passive_data.gd" id="1_passive"]
+
+[resource]
+script = ExtResource("1_passive")
+stat = &"area"
+per_level = 0.04
+id = &"area"
+kind = 1
+name_key = "PASSIVE_AREA"
+description_key = "PASSIVE_AREA_DESC"
+max_level = 25
+icon_color = Color(0.85, 0.5, 0.85, 1)

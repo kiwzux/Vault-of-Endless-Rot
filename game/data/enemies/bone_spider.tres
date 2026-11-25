@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="EnemyData" format=3]
+
+[ext_resource type="Script" path="res://data/enemies/enemy_data.gd" id="1_enemy"]
+
+[resource]
+script = ExtResource("1_enemy")
+id = &"bone_spider"
+name_key = "ENEMY_BONE_SPIDER"
+max_health = 18.0
+speed = 62.0
+contact_damage = 8.0
+xp = 1
+radius = 6.0
+placeholder_color = Color(0.84, 0.8, 0.71, 1)
+charge_interval = 5.0
+charge_windup = 0.5
+charge_speed = 260.0
+charge_time = 0.35
+charge_range = 180.0
+split_id = &"spiderling"
+split_count = 3

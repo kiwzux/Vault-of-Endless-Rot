@@ -1,0 +1,34 @@
+# Godot
+game/.godot/
+game/export/
+# Готовая сборка игры (game/export_presets.cfg → dist/)
+/dist/
+*.translation
+
+# GDExtension: портативные инструменты (gdext/bootstrap.ps1) и сборка.
+# Готовые DLL в game/addons/onnx_runtime/bin/ коммитятся — собирать мост нужно не всем.
+gdext/.deps/
+gdext/**/build/
+# Копии DLL, которые редактор Godot делает, чтобы мост можно было пересобирать при открытом редакторе
+game/addons/**/bin/~*
+gdext/**/.sconsign.dblite
+*.obj
+*.lib
+*.exp
+*.pdb
+
+# Python
+ml/.venv/
+ml/.tools/
+__pycache__/
+*.pyc
+# Датасет и прогоны воспроизводимы скриптами; список отбракованных при просмотре комнат — ручная работа, его храним.
+ml/data/*
+!ml/data/rejected.txt
+!ml/data/levels_meta.json
+ml/runs/
+
+# Купленные и скачанные пакеты ассетов в исходном виде (лицензии запрещают раздавать сами файлы):
+# в игру идут только выбранные и обработанные — game/assets/audio/, тайлы из tilesetver/ — после нарезки.
+/audio/
+/tilesetver/

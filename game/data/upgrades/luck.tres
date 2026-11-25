@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="PassiveData" format=3]
+
+[ext_resource type="Script" path="res://data/upgrades/passive_data.gd" id="1_passive"]
+
+[resource]
+script = ExtResource("1_passive")
+stat = &"crit"
+per_level = 0.015
+id = &"luck"
+kind = 1
+name_key = "PASSIVE_LUCK"
+description_key = "PASSIVE_LUCK_DESC"
+max_level = 25
+icon_color = Color(0.95, 0.85, 0.35, 1)

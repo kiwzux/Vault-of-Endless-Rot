@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="EnemyData" format=3]
+
+[ext_resource type="Script" path="res://data/enemies/enemy_data.gd" id="1_enemy"]
+
+[resource]
+script = ExtResource("1_enemy")
+id = &"burning_cleric"
+name_key = "ENEMY_BURNING_CLERIC"
+max_health = 24.0
+speed = 30.0
+contact_damage = 6.0
+xp = 4
+radius = 6.5
+placeholder_color = Color(1, 0.55, 0.15, 1)
+resistances = {&"fire": 0.5, &"holy": 0.25}
+keep_distance = 120.0
+heal_interval = 4.0
+heal_radius = 110.0
+heal_share = 0.2
+shot_interval = 2.4
+shot_range = 180.0
+shot_damage = 9.0
+shot_speed = 130.0

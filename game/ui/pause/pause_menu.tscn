@@ -1,0 +1,257 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://ui/pause/pause_menu.gd" id="1_pause"]
+
+[node name="PauseMenu" type="CanvasLayer"]
+process_mode = 3
+layer = 20
+script = ExtResource("1_pause")
+
+[node name="Dim" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 80.0
+offset_right = -80.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.02, 0.015, 0.01, 0.6)
+
+[node name="Resume" type="Button" parent="."]
+unique_name_in_owner = true
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -72.0
+offset_top = 8.0
+offset_right = -8.0
+offset_bottom = 26.0
+grow_horizontal = 0
+theme_type_variation = &"GothicButton"
+theme_override_font_sizes/font_size = 11
+text = "HUD_RESUME"
+clip_text = true
+
+[node name="Area" type="VBoxContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 84.0
+offset_top = 6.0
+offset_right = -84.0
+offset_bottom = -6.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 4
+
+[node name="Tabs" type="HBoxContainer" parent="Area"]
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="TabHero" type="Button" parent="Area/Tabs"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_type_variation = &"TabButton"
+theme_override_font_sizes/font_size = 11
+toggle_mode = true
+text = "PAUSE_TAB_HERO"
+
+[node name="TabSkills" type="Button" parent="Area/Tabs"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_type_variation = &"TabButton"
+theme_override_font_sizes/font_size = 11
+toggle_mode = true
+text = "PAUSE_TAB_SKILLS"
+
+[node name="TabSettings" type="Button" parent="Area/Tabs"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_type_variation = &"TabButton"
+theme_override_font_sizes/font_size = 11
+toggle_mode = true
+text = "MENU_SETTINGS"
+
+[node name="TabQuit" type="Button" parent="Area/Tabs"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_type_variation = &"TabButton"
+theme_override_font_sizes/font_size = 11
+toggle_mode = true
+text = "PAUSE_TAB_QUIT"
+
+[node name="NetNote" type="Label" parent="Area"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9, 0.5, 0.35, 1)
+theme_override_font_sizes/font_size = 9
+text = "PAUSE_NET_NOTE"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="Pages" type="PanelContainer" parent="Area"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="SettingsBox" type="VBoxContainer" parent="Area/Pages"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="SettingsTitle" type="Label" parent="Area/Pages/SettingsBox"]
+layout_mode = 2
+theme_type_variation = &"HeaderLabel"
+text = "MENU_SETTINGS"
+
+[node name="Grid" type="GridContainer" parent="Area/Pages/SettingsBox"]
+layout_mode = 2
+theme_override_constants/h_separation = 12
+theme_override_constants/v_separation = 5
+columns = 2
+
+[node name="LanguageLabel" type="Label" parent="Area/Pages/SettingsBox/Grid"]
+layout_mode = 2
+text = "SETTINGS_LANGUAGE"
+
+[node name="LanguageOption" type="OptionButton" parent="Area/Pages/SettingsBox/Grid"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="VolumeLabel" type="Label" parent="Area/Pages/SettingsBox/Grid"]
+layout_mode = 2
+text = "SETTINGS_VOLUME"
+
+[node name="VolumeSlider" type="HSlider" parent="Area/Pages/SettingsBox/Grid"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+max_value = 1.0
+step = 0.05
+
+[node name="DisplayModeLabel" type="Label" parent="Area/Pages/SettingsBox/Grid"]
+layout_mode = 2
+text = "SETTINGS_DISPLAY_MODE"
+
+[node name="DisplayModeOption" type="OptionButton" parent="Area/Pages/SettingsBox/Grid"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="WindowSizeLabel" type="Label" parent="Area/Pages/SettingsBox/Grid"]
+layout_mode = 2
+text = "SETTINGS_WINDOW_SIZE"
+
+[node name="WindowSizeOption" type="OptionButton" parent="Area/Pages/SettingsBox/Grid"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="LootFilterLabel" type="Label" parent="Area/Pages/SettingsBox/Grid"]
+layout_mode = 2
+text = "SETTINGS_LOOT_FILTER"
+
+[node name="LootFilterOption" type="OptionButton" parent="Area/Pages/SettingsBox/Grid"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="QualityLabel" type="Label" parent="Area/Pages/SettingsBox/Grid"]
+layout_mode = 2
+text = "SETTINGS_QUALITY"
+
+[node name="QualityOption" type="OptionButton" parent="Area/Pages/SettingsBox/Grid"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="FpsLabel" type="Label" parent="Area/Pages/SettingsBox/Grid"]
+layout_mode = 2
+text = "SETTINGS_FPS_LIMIT"
+
+[node name="FpsOption" type="OptionButton" parent="Area/Pages/SettingsBox/Grid"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Toggles" type="GridContainer" parent="Area/Pages/SettingsBox"]
+layout_mode = 2
+theme_override_constants/h_separation = 12
+theme_override_constants/v_separation = 6
+columns = 2
+
+[node name="DamageNumbersToggle" type="CheckButton" parent="Area/Pages/SettingsBox/Toggles"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "SETTINGS_DAMAGE_NUMBERS"
+
+[node name="ShakeToggle" type="CheckButton" parent="Area/Pages/SettingsBox/Toggles"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "SETTINGS_SCREEN_SHAKE"
+
+[node name="HitStopToggle" type="CheckButton" parent="Area/Pages/SettingsBox/Toggles"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+tooltip_text = "SETTINGS_HIT_STOP_HINT"
+text = "SETTINGS_HIT_STOP"
+
+[node name="PostEffectsToggle" type="CheckButton" parent="Area/Pages/SettingsBox/Toggles"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "SETTINGS_POST_EFFECTS"
+
+[node name="QuitBox" type="VBoxContainer" parent="Area/Pages"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="QuitTitle" type="Label" parent="Area/Pages/QuitBox"]
+layout_mode = 2
+theme_type_variation = &"HeaderLabel"
+text = "PAUSE_TITLE"
+horizontal_alignment = 1
+
+[node name="Stats" type="Label" parent="Area/Pages/QuitBox"]
+unique_name_in_owner = true
+layout_mode = 2
+auto_translate_mode = 2
+theme_override_colors/font_color = Color(0.86, 0.8, 0.68, 1)
+theme_override_font_sizes/font_size = 10
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="Controls" type="Label" parent="Area/Pages/QuitBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.6, 0.55, 0.45, 1)
+theme_override_font_sizes/font_size = 9
+text = "PAUSE_CONTROLS"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="ConfirmLabel" type="Label" parent="Area/Pages/QuitBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9, 0.6, 0.45, 1)
+text = "PAUSE_EXIT_CONFIRM"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="ConfirmYesButton" type="Button" parent="Area/Pages/QuitBox"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+theme_type_variation = &"GothicButton"
+text = "PAUSE_EXIT_YES"

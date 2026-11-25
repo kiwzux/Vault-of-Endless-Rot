@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="GoodsData" format=3]
+
+[ext_resource type="Script" path="res://data/merchants/goods_data.gd" id="1_goods"]
+
+[resource]
+script = ExtResource("1_goods")
+id = &"healing_potion"
+name_key = "GOODS_HEALING_POTION"
+description_key = "GOODS_HEALING_POTION_DESC"
+effect = 0
+price = 20
+stock = 3
+duration = 0.0
+stats = {}
+icon_color = Color(0.85, 0.15, 0.2, 1)
+icon = &"potion_18"

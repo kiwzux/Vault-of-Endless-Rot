@@ -1,0 +1,41 @@
+[gd_resource type="Resource" script_class="SkillData" format=3]
+
+[ext_resource type="Script" path="res://systems/skills/actions/projectile_action.gd" id="1_58maj"]
+[ext_resource type="Script" path="res://data/skills/skill_modifier.gd" id="2_vdjh3"]
+[ext_resource type="Resource" path="res://data/skills/modifiers/rune_ricochet.tres" id="3_npw6i"]
+[ext_resource type="Script" path="res://data/statuses/status_application.gd" id="4_v3a7o"]
+[ext_resource type="Script" path="res://data/skills/skill_data.gd" id="5_71jub"]
+
+[sub_resource type="Resource" id="Resource_eudau"]
+script = ExtResource("1_58maj")
+speed = 380.0
+default_look = &"bolt"
+
+[sub_resource type="Resource" id="Resource_dn81b"]
+script = ExtResource("4_v3a7o")
+status = &"hex"
+chance = 0.4
+
+[resource]
+script = ExtResource("5_71jub")
+action = SubResource("Resource_eudau")
+tags = Array[StringName]([&"holy", &"projectile"])
+on_hit = Array[ExtResource("4_v3a7o")]([SubResource("Resource_dn81b")])
+modifiers = Array[ExtResource("2_vdjh3")]([ExtResource("3_npw6i")])
+damage = 14.0
+damage_per_level = 2.0
+cooldown = 0.75
+cooldown_per_level = -0.01
+attack_range = 240.0
+amount = 3
+amount_levels = PackedInt32Array(15, 20, 25)
+pierce = 1
+pierce_levels = PackedInt32Array()
+fx_color = Color(0.92, 0.95, 1, 1)
+is_evolution = true
+id = &"silver_verdict"
+kind = 0
+name_key = "EVO_SILVER_VERDICT"
+description_key = "EVO_SILVER_VERDICT_DESC"
+max_level = 20
+icon_color = Color(0.828, 0.85499996, 0.9, 1)

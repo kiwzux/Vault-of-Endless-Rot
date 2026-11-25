@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="SynergyData" format=3]
+
+[ext_resource type="Script" path="res://data/synergies/synergy_data.gd" id="1_wjkvm"]
+
+[resource]
+script = ExtResource("1_wjkvm")
+id = &"resonance_area"
+order = 11
+tag = &"area"
+thresholds = PackedInt32Array(3, 5)
+tiers = Array[Dictionary]([{
+&"area": 0.05
+}, {
+&"area": 0.12
+}])

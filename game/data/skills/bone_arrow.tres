@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="SkillData" format=3]
+
+[ext_resource type="Script" path="res://systems/skills/actions/projectile_action.gd" id="1_iwwmi"]
+[ext_resource type="Resource" path="res://data/skills/bone_storm.tres" id="2_22vaw"]
+[ext_resource type="Script" path="res://data/skills/skill_modifier.gd" id="2_dmjn4"]
+[ext_resource type="Script" path="res://data/statuses/status_application.gd" id="3_22vaw"]
+[ext_resource type="Script" path="res://data/skills/skill_data.gd" id="4_3jn30"]
+
+[sub_resource type="Resource" id="Resource_p33lw"]
+script = ExtResource("1_iwwmi")
+speed = 260.0
+
+[resource]
+script = ExtResource("4_3jn30")
+action = SubResource("Resource_p33lw")
+tags = Array[StringName]([&"physical", &"projectile"])
+damage_per_level = 1.5
+cooldown = 0.9
+cooldown_per_level = -0.015
+attack_range = 220.0
+amount_levels = PackedInt32Array(3, 8, 14, 20)
+pierce_levels = PackedInt32Array(5, 12, 19)
+fx_color = Color(0.92, 0.9, 0.8, 1)
+evolution = ExtResource("2_22vaw")
+id = &"bone_arrow"
+kind = 0
+name_key = "WEAPON_BONE_ARROW"
+description_key = "WEAPON_BONE_ARROW_DESC"
+max_level = 20
+icon_color = Color(0.55, 0.5, 0.75, 1)

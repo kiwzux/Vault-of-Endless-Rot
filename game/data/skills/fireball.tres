@@ -1,0 +1,40 @@
+[gd_resource type="Resource" script_class="SkillData" format=3]
+
+[ext_resource type="Script" path="res://systems/skills/actions/projectile_action.gd" id="1_8sne8"]
+[ext_resource type="Script" path="res://data/skills/skill_modifier.gd" id="2_hm802"]
+[ext_resource type="Resource" path="res://data/skills/inferno.tres" id="2_rain6"]
+[ext_resource type="Script" path="res://data/statuses/status_application.gd" id="3_rain6"]
+[ext_resource type="Script" path="res://data/skills/skill_data.gd" id="4_g25c0"]
+
+[sub_resource type="Resource" id="Resource_34wqb"]
+script = ExtResource("1_8sne8")
+speed = 180.0
+explode = true
+
+[sub_resource type="Resource" id="Resource_my6h7"]
+script = ExtResource("3_rain6")
+status = &"burn"
+
+[resource]
+script = ExtResource("4_g25c0")
+action = SubResource("Resource_34wqb")
+tags = Array[StringName]([&"fire", &"projectile", &"area"])
+on_hit = Array[ExtResource("3_rain6")]([SubResource("Resource_my6h7")])
+damage = 16.0
+damage_per_level = 2.4
+cooldown = 1.8
+cooldown_per_level = -0.025
+attack_range = 200.0
+amount_levels = PackedInt32Array(6, 12, 18, 24)
+pierce_levels = PackedInt32Array()
+area = 22.0
+area_per_level = 0.5
+fx_kind = &"fireball"
+fx_color = Color(1, 0.5, 0.15, 1)
+evolution = ExtResource("2_rain6")
+id = &"fireball"
+kind = 0
+name_key = "WEAPON_FIREBALL"
+description_key = "WEAPON_FIREBALL_DESC"
+max_level = 20
+icon_color = Color(0.95, 0.4, 0.1, 1)

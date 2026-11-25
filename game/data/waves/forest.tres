@@ -1,0 +1,147 @@
+[gd_resource type="Resource" script_class="WaveTable" format=3]
+
+[ext_resource type="Script" path="res://data/waves/wave_table.gd" id="1_table"]
+[ext_resource type="Script" path="res://data/waves/wave_entry.gd" id="2_entry"]
+[ext_resource type="Script" path="res://data/enemies/enemy_data.gd" id="3_enemy"]
+[ext_resource type="Resource" path="res://data/enemies/garrison_commander.tres" id="4_boss"]
+[ext_resource type="Resource" path="res://data/enemies/skeleton.tres" id="e_skeleton"]
+[ext_resource type="Resource" path="res://data/enemies/ghost.tres" id="e_ghost"]
+[ext_resource type="Resource" path="res://data/enemies/skeleton_crossbowman.tres" id="e_skeleton_crossbowman"]
+[ext_resource type="Resource" path="res://data/enemies/bloated_corpse.tres" id="e_bloated_corpse"]
+[ext_resource type="Resource" path="res://data/enemies/zombie.tres" id="e_zombie"]
+[ext_resource type="Resource" path="res://data/enemies/death_rider.tres" id="e_death_rider"]
+[ext_resource type="Resource" path="res://data/enemies/ghoul_wolf.tres" id="e_ghoul_wolf"]
+[ext_resource type="Resource" path="res://data/enemies/rot_treant.tres" id="e_rot_treant"]
+[ext_resource type="Resource" path="res://data/enemies/bandit.tres" id="e_bandit"]
+[ext_resource type="Resource" path="res://data/enemies/rogue_archer.tres" id="e_rogue_archer"]
+[ext_resource type="Resource" path="res://data/enemies/renegade_guard.tres" id="e_renegade_guard"]
+[ext_resource type="Resource" path="res://data/enemies/rabid_wolf.tres" id="e_rabid_wolf"]
+[ext_resource type="Resource" path="res://data/enemies/plague_rat.tres" id="e_plague_rat"]
+[ext_resource type="Resource" path="res://data/enemies/cultist.tres" id="e_cultist"]
+[ext_resource type="Resource" path="res://data/enemies/swamp_slime.tres" id="e_swamp_slime"]
+[ext_resource type="Resource" path="res://data/enemies/wild_boar.tres" id="e_wild_boar"]
+[ext_resource type="Resource" path="res://data/enemies/scarecrow.tres" id="e_scarecrow"]
+[ext_resource type="Resource" path="res://data/enemies/village_witch.tres" id="e_village_witch"]
+
+[sub_resource type="Resource" id="Resource_w0"]
+script = ExtResource("2_entry")
+start_time = 0.0
+end_time = 90.0
+interval = 1.0
+batch = 4
+enemies = Array[ExtResource("3_enemy")]([ExtResource("e_skeleton")])
+weights = PackedFloat32Array(1)
+
+[sub_resource type="Resource" id="Resource_w1"]
+script = ExtResource("2_entry")
+start_time = 20.0
+end_time = 120.0
+interval = 1.5
+batch = 8
+enemies = Array[ExtResource("3_enemy")]([ExtResource("e_ghost")])
+weights = PackedFloat32Array(1)
+
+[sub_resource type="Resource" id="Resource_w2"]
+script = ExtResource("2_entry")
+start_time = 45.0
+end_time = 180.0
+interval = 3.0
+batch = 4
+enemies = Array[ExtResource("3_enemy")]([ExtResource("e_skeleton_crossbowman"), ExtResource("e_bloated_corpse")])
+weights = PackedFloat32Array(2, 1)
+
+[sub_resource type="Resource" id="Resource_w3"]
+script = ExtResource("2_entry")
+start_time = 60.0
+end_time = 200.0
+interval = 0.8
+batch = 6
+enemies = Array[ExtResource("3_enemy")]([ExtResource("e_skeleton"), ExtResource("e_zombie"), ExtResource("e_bloated_corpse")])
+weights = PackedFloat32Array(3, 1, 1)
+
+[sub_resource type="Resource" id="Resource_w4"]
+script = ExtResource("2_entry")
+start_time = 100.0
+end_time = 240.0
+interval = 4.0
+batch = 2
+enemies = Array[ExtResource("3_enemy")]([ExtResource("e_death_rider")])
+weights = PackedFloat32Array(1)
+
+[sub_resource type="Resource" id="Resource_w5"]
+script = ExtResource("2_entry")
+start_time = 120.0
+end_time = 240.0
+interval = 0.7
+batch = 7
+enemies = Array[ExtResource("3_enemy")]([ExtResource("e_skeleton"), ExtResource("e_ghost"), ExtResource("e_zombie"), ExtResource("e_skeleton_crossbowman")])
+weights = PackedFloat32Array(2, 2, 2, 1)
+
+[sub_resource type="Resource" id="Resource_w6"]
+script = ExtResource("2_entry")
+start_time = 200.0
+end_time = 300.0
+interval = 0.5
+batch = 9
+enemies = Array[ExtResource("3_enemy")]([ExtResource("e_skeleton"), ExtResource("e_ghost"), ExtResource("e_zombie"), ExtResource("e_death_rider"), ExtResource("e_skeleton_crossbowman")])
+weights = PackedFloat32Array(2, 2, 3, 1, 1)
+
+[sub_resource type="Resource" id="Resource_s9_0"]
+script = ExtResource("2_entry")
+start_time = 30
+end_time = 260
+interval = 5
+batch = 6
+enemies = Array[ExtResource("3_enemy")]([ExtResource("e_ghoul_wolf")])
+weights = PackedFloat32Array(1)
+
+[sub_resource type="Resource" id="Resource_s9_1"]
+script = ExtResource("2_entry")
+start_time = 90
+end_time = 290
+interval = 14
+batch = 1
+enemies = Array[ExtResource("3_enemy")]([ExtResource("e_rot_treant")])
+weights = PackedFloat32Array(1)
+
+[sub_resource type="Resource" id="Resource_sk_0"]
+script = ExtResource("2_entry")
+start_time = 10
+end_time = 150
+interval = 2.0
+batch = 6
+enemies = Array[ExtResource("3_enemy")]([ExtResource("e_bandit"), ExtResource("e_rabid_wolf"), ExtResource("e_plague_rat")])
+weights = PackedFloat32Array(2, 2, 3)
+
+[sub_resource type="Resource" id="Resource_sk_1"]
+script = ExtResource("2_entry")
+start_time = 40
+end_time = 220
+interval = 3.5
+batch = 4
+enemies = Array[ExtResource("3_enemy")]([ExtResource("e_rogue_archer"), ExtResource("e_cultist"), ExtResource("e_village_witch")])
+weights = PackedFloat32Array(2, 1, 1)
+
+[sub_resource type="Resource" id="Resource_sk_2"]
+script = ExtResource("2_entry")
+start_time = 70
+end_time = 260
+interval = 2.5
+batch = 5
+enemies = Array[ExtResource("3_enemy")]([ExtResource("e_renegade_guard"), ExtResource("e_wild_boar"), ExtResource("e_swamp_slime"), ExtResource("e_scarecrow")])
+weights = PackedFloat32Array(2, 2, 2, 1)
+
+[sub_resource type="Resource" id="Resource_sk_3"]
+script = ExtResource("2_entry")
+start_time = 180
+end_time = 300
+interval = 1.2
+batch = 8
+enemies = Array[ExtResource("3_enemy")]([ExtResource("e_bandit"), ExtResource("e_rabid_wolf"), ExtResource("e_plague_rat"), ExtResource("e_renegade_guard"), ExtResource("e_swamp_slime")])
+weights = PackedFloat32Array(2, 2, 3, 1, 1)
+
+[resource]
+script = ExtResource("1_table")
+max_alive = 300
+boss = ExtResource("4_boss")
+waves = Array[ExtResource("2_entry")]([SubResource("Resource_w0"), SubResource("Resource_w1"), SubResource("Resource_w2"), SubResource("Resource_w3"), SubResource("Resource_w4"), SubResource("Resource_w5"), SubResource("Resource_w6"), SubResource("Resource_s9_0"), SubResource("Resource_s9_1"), SubResource("Resource_sk_0"), SubResource("Resource_sk_1"), SubResource("Resource_sk_2"), SubResource("Resource_sk_3")])

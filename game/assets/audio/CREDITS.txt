@@ -1,0 +1,9 @@
+Звук Vault of Endless Rot
+
+В публичной сборке фоновая и боевая музыка и звуки интерфейса
+синтезированы скриптом art/gen_public_audio.py.
+Звуки боя синтезированы скриптом art/gen_sfx.py.
+
+В локальной версии проекта использовались «Demonics Vol. 4» Alesia Davina
+и «Dark Fantasy UI – Vol. 01 · Free Sampler» Vinyl Hermit.
+Записи из этих наборов в публичную сборку не входят.

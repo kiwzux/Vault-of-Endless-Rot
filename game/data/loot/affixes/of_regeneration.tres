@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="AffixData" format=3]
+
+[ext_resource type="Script" path="res://data/loot/affix_data.gd" id="1_affix"]
+
+[resource]
+script = ExtResource("1_affix")
+id = &"of_regeneration"
+name_key = "AFFIX_OF_REGENERATION"
+stat = &"regen"
+min_value = 0.3
+max_value = 1.0

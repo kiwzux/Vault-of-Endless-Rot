@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="SfxData" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://data/audio/sfx_data.gd" id="1_sfx"]
+[ext_resource type="AudioStream" path="res://assets/audio/sfx/hit_1.wav" id="2_hit"]
+[ext_resource type="AudioStream" path="res://assets/audio/sfx/hit_2.wav" id="3_hit"]
+[ext_resource type="AudioStream" path="res://assets/audio/sfx/hit_3.wav" id="4_hit"]
+
+[resource]
+script = ExtResource("1_sfx")
+id = &"hit"
+streams = Array[AudioStream]([ExtResource("2_hit"), ExtResource("3_hit"), ExtResource("4_hit")])
+volume_db = -12.0
+pitch_jitter = 0.1
+cooldown = 0.05
+max_voices = 3
+positional = true
+max_distance = 480.0

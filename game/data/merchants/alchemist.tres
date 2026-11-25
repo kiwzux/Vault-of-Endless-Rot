@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="MerchantData" format=3]
+
+[ext_resource type="Script" path="res://data/merchants/merchant_data.gd" id="1_merchant"]
+[ext_resource type="Script" path="res://data/merchants/goods_data.gd" id="2_goods"]
+[ext_resource type="Resource" path="res://data/merchants/goods/healing_potion.tres" id="g_potion"]
+[ext_resource type="Resource" path="res://data/merchants/goods/elixir_might.tres" id="g_might"]
+[ext_resource type="Resource" path="res://data/merchants/goods/elixir_swiftness.tres" id="g_swiftness"]
+[ext_resource type="Resource" path="res://data/merchants/goods/elixir_luck.tres" id="g_luck"]
+[ext_resource type="Resource" path="res://data/merchants/goods/fruit_of_knowledge.tres" id="g_fruit"]
+
+[resource]
+script = ExtResource("1_merchant")
+id = &"alchemist"
+name_key = "MERCHANT_ALCHEMIST"
+greeting_key = "MERCHANT_ALCHEMIST_GREETING"
+robe_color = Color(0.3, 0.6, 0.45, 1)
+item_count = 0
+buys_items = false
+goods = Array[ExtResource("2_goods")]([ExtResource("g_potion"), ExtResource("g_might"), ExtResource("g_swiftness"), ExtResource("g_luck"), ExtResource("g_fruit")])

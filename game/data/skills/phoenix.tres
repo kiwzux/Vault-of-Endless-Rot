@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="SkillData" format=3]
+
+[ext_resource type="Script" path="res://systems/skills/actions/projectile_action.gd" id="1_qvwhw"]
+[ext_resource type="Script" path="res://data/skills/skill_modifier.gd" id="2_icbog"]
+[ext_resource type="Script" path="res://data/statuses/status_application.gd" id="3_qxkiu"]
+[ext_resource type="Script" path="res://data/skills/skill_data.gd" id="4_r66r0"]
+
+[sub_resource type="Resource" id="Resource_q77wy"]
+script = ExtResource("1_qvwhw")
+aim = 1
+speed = 170.0
+range_mult = 1.3
+per_extra = 2
+default_look = &"frost"
+
+[sub_resource type="Resource" id="Resource_kjkvb"]
+script = ExtResource("3_qxkiu")
+status = &"burn"
+chance = 0.6
+
+[resource]
+script = ExtResource("4_r66r0")
+action = SubResource("Resource_q77wy")
+tags = Array[StringName]([&"fire", &"projectile"])
+on_hit = Array[ExtResource("3_qxkiu")]([SubResource("Resource_kjkvb")])
+damage = 10.6
+damage_per_level = 2.6
+cooldown = 1.98
+cooldown_per_level = -0.02
+attack_range = 130.0
+amount = 20
+amount_levels = PackedInt32Array(15, 20, 25)
+pierce = 4
+pierce_levels = PackedInt32Array()
+fx_kind = &"ember"
+fx_color = Color(1, 0.75, 0.3, 1)
+is_evolution = true
+id = &"phoenix"
+kind = 0
+name_key = "EVO_PHOENIX"
+description_key = "EVO_PHOENIX_DESC"
+max_level = 20
+icon_color = Color(1, 0.7, 0.25, 1)

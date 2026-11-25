@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="TalentData" format=3]
+
+[ext_resource type="Script" path="res://data/talents/talent_data.gd" id="1_talent"]
+
+[resource]
+script = ExtResource("1_talent")
+id = &"sorc_mastery"
+order = 15
+hero = &"sorceress"
+name_key = "TALENT_SORC_MASTERY"
+description_key = "TALENT_SORC_MASTERY_DESC"
+stat = &"weapon_mastery"
+per_rank = 1.0
+max_rank = 4
+cost_base = 60
+cost_growth = 1.8
+icon_color = Color(0.4, 0.62, 0.9, 1)

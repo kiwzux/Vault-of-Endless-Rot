@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="StatDef" format=3]
+
+[ext_resource type="Script" path="res://data/stats/stat_def.gd" id="1_8i8bk"]
+
+[resource]
+script = ExtResource("1_8i8bk")
+id = &"curse"
+line_key = "STAT_LINE_CURSE"

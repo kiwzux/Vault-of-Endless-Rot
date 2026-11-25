@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="SfxData" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://data/audio/sfx_data.gd" id="1_sfx"]
+[ext_resource type="AudioStream" path="res://assets/audio/sfx/cast_poison_1.wav" id="2_cast_poison"]
+[ext_resource type="AudioStream" path="res://assets/audio/sfx/cast_poison_2.wav" id="3_cast_poison"]
+
+[resource]
+script = ExtResource("1_sfx")
+id = &"cast_poison"
+streams = Array[AudioStream]([ExtResource("2_cast_poison"), ExtResource("3_cast_poison")])
+volume_db = -11.0
+pitch_jitter = 0.08
+cooldown = 0.1
+max_voices = 2
+positional = true
+max_distance = 520.0

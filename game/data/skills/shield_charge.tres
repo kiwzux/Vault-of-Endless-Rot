@@ -1,0 +1,38 @@
+[gd_resource type="Resource" script_class="SkillData" format=3]
+
+[ext_resource type="Script" path="res://systems/skills/actions/dash_action.gd" id="1_wqhej"]
+[ext_resource type="Resource" path="res://data/skills/unstoppable_charge.tres" id="2_2c5t7"]
+[ext_resource type="Script" path="res://data/skills/skill_modifier.gd" id="2_76a5r"]
+[ext_resource type="Script" path="res://data/statuses/status_application.gd" id="3_2c5t7"]
+[ext_resource type="Script" path="res://data/skills/skill_data.gd" id="4_2bwgg"]
+
+[sub_resource type="Resource" id="Resource_3eqa7"]
+script = ExtResource("1_wqhej")
+width = 22.0
+
+[sub_resource type="Resource" id="Resource_2l68c"]
+script = ExtResource("3_2c5t7")
+status = &"stun"
+chance = 0.5
+
+[resource]
+script = ExtResource("4_2bwgg")
+action = SubResource("Resource_3eqa7")
+tags = Array[StringName]([&"physical", &"movement", &"melee"])
+on_hit = Array[ExtResource("3_2c5t7")]([SubResource("Resource_2l68c")])
+damage = 16.0
+damage_per_level = 2.4
+cooldown = 2.6
+cooldown_per_level = -0.035
+attack_range = 110.0
+range_per_level = 1.5
+amount_levels = PackedInt32Array()
+pierce_levels = PackedInt32Array()
+fx_color = Color(0.78, 0.82, 0.92, 1)
+evolution = ExtResource("2_2c5t7")
+id = &"shield_charge"
+kind = 0
+name_key = "SKILL_SHIELD_CHARGE"
+description_key = "SKILL_SHIELD_CHARGE_DESC"
+max_level = 20
+icon_color = Color(0.70199996, 0.738, 0.828, 1)

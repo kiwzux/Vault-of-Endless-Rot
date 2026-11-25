@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="LoreData" format=3]
+
+[ext_resource type="Script" path="res://data/lore/lore_data.gd" id="1_lore"]
+
+[resource]
+script = ExtResource("1_lore")
+id = &"seeker_map"
+order = 10
+title_key = "LORE_SEEKER_MAP"
+text_key = "LORE_SEEKER_MAP_TEXT"
+look = &"corpse"

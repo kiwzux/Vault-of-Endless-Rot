@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="EnemyData" format=3]
+
+[ext_resource type="Script" path="res://data/enemies/enemy_data.gd" id="1_enemy"]
+
+[resource]
+script = ExtResource("1_enemy")
+id = &"ghoul"
+name_key = "ENEMY_GHOUL"
+max_health = 30.0
+speed = 72.0
+contact_damage = 10.0
+xp = 0
+radius = 6
+placeholder_color = Color(0.62, 0.22, 0.26, 1)

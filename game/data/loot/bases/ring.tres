@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemBaseData" format=3]
+
+[ext_resource type="Script" path="res://data/loot/item_base_data.gd" id="1_base"]
+
+[resource]
+script = ExtResource("1_base")
+id = &"ring"
+name_key = "ITEM_RING"
+slot = 6
+implicit_stat = &"crit"
+implicit_min = 0.015
+implicit_max = 0.03
+icon_color = Color(0.8, 0.72, 0.45, 1)
+icons = PackedStringArray("ring_02", "ring_05", "ring_08", "ring_11", "ring_14", "ring_17", "ring_20", "ring_23", "ring_26", "ring_29", "ring_32", "ring_35", "ring_38", "ring_41", "ring_44")
+gender = &"n"

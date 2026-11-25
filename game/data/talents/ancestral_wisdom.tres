@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="TalentData" format=3]
+
+[ext_resource type="Script" path="res://data/talents/talent_data.gd" id="1_talent"]
+
+[resource]
+script = ExtResource("1_talent")
+id = &"ancestral_wisdom"
+order = 1
+name_key = "TALENT_ANCESTRAL_WISDOM"
+description_key = "TALENT_ANCESTRAL_WISDOM_DESC"
+stat = &"xp_gain"
+per_rank = 0.03
+icon_color = Color(0.55, 0.8, 1, 1)

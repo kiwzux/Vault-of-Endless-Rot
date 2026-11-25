@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="InteractableData" format=3]
+
+[ext_resource type="Script" path="res://data/interactables/interactable_data.gd" id="1_data"]
+
+[resource]
+script = ExtResource("1_data")
+id = &"prisoner"
+name_key = "POINT_PRISONER"
+kind = 4
+placement = &"enemy_spawn"
+color = Color(0.9, 0.75, 0.5, 1)
+light_radius = 36.0
+guard_count = 3
+guard_affixes = 1
+reward_gold = Vector2i(80, 140)
+reward_rarity = 2

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="StatDef" format=3]
+
+[ext_resource type="Script" path="res://data/stats/stat_def.gd" id="1_61l0n"]
+
+[resource]
+script = ExtResource("1_61l0n")
+id = &"haste"
+line_key = "STAT_LINE_HASTE"
+on_items = true

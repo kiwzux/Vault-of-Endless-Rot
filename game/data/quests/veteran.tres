@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="QuestData" format=3]
+
+[ext_resource type="Script" path="res://data/quests/quest_data.gd" id="1_quest"]
+
+[resource]
+script = ExtResource("1_quest")
+id = &"veteran"
+order = 10
+name_key = "QUEST_VETERAN"
+description_key = "QUEST_VETERAN_DESC"
+counter = &"runs"
+target = 10
+unlock = &"ice_beam"
+reward_souls = 100

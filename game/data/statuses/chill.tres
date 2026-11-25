@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="StatusEffectData" format=3]
+
+[ext_resource type="Script" path="res://data/statuses/status_effect_data.gd" id="1_ibydq"]
+
+[resource]
+script = ExtResource("1_ibydq")
+id = &"chill"
+name_key = "STATUS_CHILL"
+tags = Array[StringName]([&"cold"])
+max_stacks = 5
+duration = 1.5
+slow = 0.35
+boss_resist = 0.5
+color = Color(0.6, 0.8, 1, 1)
+visual_bit = 4
+tint_priority = 2

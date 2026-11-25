@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="EnemyData" format=3]
+
+[ext_resource type="Script" path="res://data/enemies/enemy_data.gd" id="1_enemy"]
+
+[resource]
+script = ExtResource("1_enemy")
+id = &"magma_droplet"
+name_key = "ENEMY_MAGMA_DROPLET"
+max_health = 9.0
+speed = 44.0
+contact_damage = 5.0
+xp = 1
+radius = 4.5
+placeholder_color = Color(1.0, 0.48, 0.1, 1)
+resistances = {&"fire": 0.75, &"cold": -0.5}

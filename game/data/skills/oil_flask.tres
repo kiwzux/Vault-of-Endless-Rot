@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="SkillData" format=3]
+
+[ext_resource type="Script" path="res://systems/skills/actions/zone_action.gd" id="1_niuyr"]
+[ext_resource type="Resource" path="res://data/skills/greek_fire.tres" id="2_4ksc7"]
+[ext_resource type="Script" path="res://data/skills/skill_modifier.gd" id="2_b5wvi"]
+[ext_resource type="Script" path="res://data/statuses/status_application.gd" id="3_4ksc7"]
+[ext_resource type="Script" path="res://data/skills/skill_data.gd" id="4_5j01q"]
+
+[sub_resource type="Resource" id="Resource_gt70e"]
+script = ExtResource("1_niuyr")
+
+[sub_resource type="Resource" id="Resource_d22nm"]
+script = ExtResource("3_4ksc7")
+status = &"oil"
+
+[sub_resource type="Resource" id="Resource_1ya5l"]
+script = ExtResource("3_4ksc7")
+status = &"slow"
+potency = 0.6
+
+[resource]
+script = ExtResource("4_5j01q")
+action = SubResource("Resource_gt70e")
+tags = Array[StringName]([&"physical", &"area"])
+on_hit = Array[ExtResource("3_4ksc7")]([SubResource("Resource_d22nm"), SubResource("Resource_1ya5l")])
+damage = 2.0
+damage_per_level = 0.4
+cooldown = 4.0
+attack_range = 170.0
+amount_levels = PackedInt32Array(6, 13, 20)
+pierce_levels = PackedInt32Array()
+area = 34.0
+area_per_level = 0.8
+duration = 2.0
+fx_color = Color(0.5, 0.4, 0.22, 1)
+evolution = ExtResource("2_4ksc7")
+id = &"oil_flask"
+kind = 0
+name_key = "SKILL_OIL_FLASK"
+description_key = "SKILL_OIL_FLASK_DESC"
+max_level = 20
+icon_color = Color(0.45, 0.35999998, 0.198, 1)

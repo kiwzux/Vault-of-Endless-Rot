@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="SkillData" format=3]
+
+[ext_resource type="Script" path="res://systems/skills/actions/cone_action.gd" id="1_0rp77"]
+[ext_resource type="Script" path="res://data/skills/skill_modifier.gd" id="2_dwan7"]
+[ext_resource type="Resource" path="res://data/skills/modifiers/rune_vampiric.tres" id="3_decpu"]
+[ext_resource type="Script" path="res://data/statuses/status_application.gd" id="4_p5qj4"]
+[ext_resource type="Script" path="res://data/skills/skill_data.gd" id="5_8l0ea"]
+
+[sub_resource type="Resource" id="Resource_sbitq"]
+script = ExtResource("1_0rp77")
+arc_degrees = 160.0
+
+[sub_resource type="Resource" id="Resource_ibkf7"]
+script = ExtResource("4_p5qj4")
+status = &"bleed"
+chance = 0.6
+
+[resource]
+script = ExtResource("5_8l0ea")
+action = SubResource("Resource_sbitq")
+tags = Array[StringName]([&"blood", &"melee", &"area"])
+on_hit = Array[ExtResource("4_p5qj4")]([SubResource("Resource_ibkf7")])
+modifiers = Array[ExtResource("2_dwan7")]([ExtResource("3_decpu")])
+damage = 20.0
+cooldown = 0.9
+cooldown_per_level = -0.012
+attack_range = 70.0
+range_per_level = 1.0
+amount = 2
+amount_levels = PackedInt32Array()
+pierce_levels = PackedInt32Array()
+fx_color = Color(0.95, 0.15, 0.25, 1)
+is_evolution = true
+id = &"blood_moon_scythe"
+kind = 0
+name_key = "EVO_BLOOD_MOON_SCYTHE"
+description_key = "EVO_BLOOD_MOON_SCYTHE_DESC"
+max_level = 20
+icon_color = Color(0.85499996, 0.135, 0.225, 1)

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="InteractableData" format=3]
+
+[ext_resource type="Script" path="res://data/interactables/interactable_data.gd" id="1_data"]
+
+[resource]
+script = ExtResource("1_data")
+id = &"shrine_haste"
+name_key = "POINT_SHRINE_HASTE"
+kind = 0
+placement = &"fountain"
+color = Color(0.4, 0.8, 1, 1)
+light_radius = 56.0
+buff_stats = {&"haste": 0.2, &"swiftness": 0.15}
+buff_time = 60.0

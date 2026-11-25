@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="TalentData" format=3]
+
+[ext_resource type="Script" path="res://data/talents/talent_data.gd" id="1_golqf"]
+
+[resource]
+script = ExtResource("1_golqf")
+id = &"blood_frenzy"
+order = 31
+hero = &"blood_priest"
+name_key = "TALENT_BLOOD_FRENZY"
+description_key = "TALENT_BLOOD_FRENZY_DESC"
+stat = &"berserk"
+per_rank = 0.05
+cost_base = 70
+cost_growth = 1.7
+icon_color = Color(0.6, 0.05, 0.1, 1)

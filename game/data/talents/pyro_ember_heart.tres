@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="TalentData" format=3]
+
+[ext_resource type="Script" path="res://data/talents/talent_data.gd" id="1_i2mc7"]
+
+[resource]
+script = ExtResource("1_i2mc7")
+id = &"pyro_ember_heart"
+order = 21
+hero = &"pyromancer"
+name_key = "TALENT_PYRO_EMBER_HEART"
+description_key = "TALENT_PYRO_EMBER_HEART_DESC"
+stat = &"crit:fire"
+per_rank = 0.02
+cost_base = 70
+cost_growth = 1.7
+icon_color = Color(1, 0.8, 0.35, 1)

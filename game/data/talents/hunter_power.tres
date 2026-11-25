@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="TalentData" format=3]
+
+[ext_resource type="Script" path="res://data/talents/talent_data.gd" id="1_h633l"]
+
+[resource]
+script = ExtResource("1_h633l")
+id = &"hunter_power"
+order = 23
+hero = &"witch_hunter"
+name_key = "TALENT_HUNTER_POWER"
+description_key = "TALENT_HUNTER_POWER_DESC"
+stat = &"might"
+per_rank = 0.04
+cost_base = 40
+icon_color = Color(0.82, 0.85, 0.95, 1)

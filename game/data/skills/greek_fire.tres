@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="SkillData" format=3]
+
+[ext_resource type="Script" path="res://systems/skills/actions/zone_action.gd" id="1_t27yl"]
+[ext_resource type="Script" path="res://data/skills/skill_modifier.gd" id="2_xsrha"]
+[ext_resource type="Script" path="res://data/statuses/status_application.gd" id="3_qat4b"]
+[ext_resource type="Script" path="res://data/skills/skill_data.gd" id="4_w65hk"]
+
+[sub_resource type="Resource" id="Resource_le78p"]
+script = ExtResource("1_t27yl")
+
+[sub_resource type="Resource" id="Resource_cjw7j"]
+script = ExtResource("3_qat4b")
+status = &"oil"
+
+[sub_resource type="Resource" id="Resource_tai6f"]
+script = ExtResource("3_qat4b")
+status = &"burn"
+chance = 0.3
+
+[sub_resource type="Resource" id="Resource_o171i"]
+script = ExtResource("3_qat4b")
+status = &"slow"
+potency = 0.6
+
+[resource]
+script = ExtResource("4_w65hk")
+action = SubResource("Resource_le78p")
+tags = Array[StringName]([&"fire", &"area"])
+on_hit = Array[ExtResource("3_qat4b")]([SubResource("Resource_cjw7j"), SubResource("Resource_tai6f"), SubResource("Resource_o171i")])
+damage = 6.0
+damage_per_level = 1.0
+cooldown = 2.8
+cooldown_per_level = -0.035
+attack_range = 180.0
+amount = 2
+amount_levels = PackedInt32Array(13, 19)
+pierce_levels = PackedInt32Array()
+area = 44.0
+area_per_level = 0.8
+duration = 3.0
+fx_color = Color(1, 0.55, 0.15, 1)
+is_evolution = true
+id = &"greek_fire"
+kind = 0
+name_key = "EVO_GREEK_FIRE"
+description_key = "EVO_GREEK_FIRE_DESC"
+max_level = 20
+icon_color = Color(0.9, 0.495, 0.135, 1)

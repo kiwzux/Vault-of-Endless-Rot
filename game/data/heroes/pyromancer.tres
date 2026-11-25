@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="HeroData" format=3]
+
+[ext_resource type="Script" path="res://data/skills/skill_modifier.gd" id="1_y3xoa"]
+[ext_resource type="Resource" path="res://data/heroes/traits/pyromania.tres" id="2_m21g7"]
+[ext_resource type="Script" path="res://data/heroes/hero_data.gd" id="3_0k2il"]
+[ext_resource type="Texture2D" path="res://assets/heroes/pyromancer.png" id="4_fa72q"]
+
+[resource]
+script = ExtResource("3_0k2il")
+id = &"pyromancer"
+order = 3
+name_key = "HERO_PYROMANCER"
+description_key = "HERO_PYROMANCER_DESC"
+max_health = 95.0
+move_speed = 92.0
+starting_weapon = &"fire_beam"
+sprite_sheet = ExtResource("4_fa72q")
+base_stats = {
+&"area": 0.1
+}
+class_modifiers = Array[ExtResource("1_y3xoa")]([ExtResource("2_m21g7")])
+affinity_tags = Array[StringName]([&"fire"])

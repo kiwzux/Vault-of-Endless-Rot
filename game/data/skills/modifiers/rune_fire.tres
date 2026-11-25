@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="SkillModifier" format=3]
+
+[ext_resource type="Script" path="res://data/skills/skill_modifier.gd" id="1_d5do6"]
+[ext_resource type="Script" path="res://data/statuses/status_application.gd" id="2_1g4t6"]
+
+[resource]
+script = ExtResource("1_d5do6")
+id = &"rune_fire"
+name_key = "MOD_RUNE_FIRE"
+description_key = "MOD_RUNE_FIRE_DESC"
+rarity = 1
+icon_color = Color(0.4, 0.6, 1, 1)
+damage = 0.1
+add_tags = Array[StringName]([&"fire"])

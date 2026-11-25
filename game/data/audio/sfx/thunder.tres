@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="SfxData" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://data/audio/sfx_data.gd" id="1_sfx"]
+[ext_resource type="AudioStream" path="res://assets/audio/sfx/thunder_1.wav" id="2_thunder"]
+[ext_resource type="AudioStream" path="res://assets/audio/sfx/thunder_2.wav" id="3_thunder"]
+
+[resource]
+script = ExtResource("1_sfx")
+id = &"thunder"
+streams = Array[AudioStream]([ExtResource("2_thunder"), ExtResource("3_thunder")])
+volume_db = -9.0
+pitch_jitter = 0.06
+cooldown = 0.15
+max_voices = 2
+positional = true
+max_distance = 640.0

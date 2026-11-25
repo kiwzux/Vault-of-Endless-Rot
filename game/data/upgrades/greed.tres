@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="PassiveData" format=3]
+
+[ext_resource type="Script" path="res://data/upgrades/passive_data.gd" id="1_passive"]
+
+[resource]
+script = ExtResource("1_passive")
+stat = &"gold_gain"
+per_level = 0.05
+id = &"greed"
+kind = 1
+name_key = "PASSIVE_GREED"
+description_key = "PASSIVE_GREED_DESC"
+max_level = 25
+icon_color = Color(1, 0.78, 0.2, 1)

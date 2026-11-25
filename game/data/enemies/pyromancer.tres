@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="EnemyData" format=3]
+
+[ext_resource type="Script" path="res://data/enemies/enemy_data.gd" id="1_enemy"]
+
+[resource]
+script = ExtResource("1_enemy")
+id = &"pyromancer"
+name_key = "ENEMY_PYROMANCER"
+max_health = 22.0
+speed = 30.0
+contact_damage = 6.0
+xp = 4
+radius = 6.0
+placeholder_color = Color(0.95, 0.35, 0.1, 1)
+shot_interval = 3.0
+shot_range = 230.0
+shot_damage = 18.0
+shot_lob = true
+shot_blast = 38.0
+shot_fuse = 1.1
+keep_distance = 150.0

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="StatusEffectData" format=3]
+
+[ext_resource type="Script" path="res://data/statuses/status_effect_data.gd" id="1_a35bk"]
+
+[resource]
+script = ExtResource("1_a35bk")
+id = &"poison"
+name_key = "STATUS_POISON"
+tags = Array[StringName]([&"poison"])
+max_stacks = 10
+duration = 4.0
+dot_share = 0.08
+color = Color(0.45, 0.9, 0.3, 1)
+visual_bit = 2
+tint_priority = 4

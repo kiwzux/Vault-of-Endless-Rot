@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="UniqueItemData" format=3]
+
+[ext_resource type="Script" path="res://data/loot/unique_item_data.gd" id="1_unique"]
+[ext_resource type="Resource" path="res://data/loot/bases/amulet.tres" id="2_base"]
+[ext_resource type="Script" path="res://data/skills/skill_modifier.gd" id="3_mod"]
+
+[sub_resource type="Resource" id="Resource_rune"]
+script = ExtResource("3_mod")
+id = &"legend_pendant_of_life"
+name_key = "UNIQUE_PENDANT_OF_LIFE"
+description_key = "LEGEND_PENDANT_OF_LIFE_DESC"
+rarity = 3
+icon_color = Color(1, 0.55, 0.15, 1)
+lifesteal = 0.02
+
+[resource]
+script = ExtResource("1_unique")
+id = &"pendant_of_life"
+name_key = "UNIQUE_PENDANT_OF_LIFE"
+base = ExtResource("2_base")
+stats = {&"regen": 1.5, &"max_mana": 30.0, &"magnet": 0.5}
+modifier = SubResource("Resource_rune")
+icon = &"amulet_16"

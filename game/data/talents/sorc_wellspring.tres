@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="TalentData" format=3]
+
+[ext_resource type="Script" path="res://data/talents/talent_data.gd" id="1_talent"]
+
+[resource]
+script = ExtResource("1_talent")
+id = &"sorc_wellspring"
+order = 14
+hero = &"sorceress"
+name_key = "TALENT_SORC_WELLSPRING"
+description_key = "TALENT_SORC_WELLSPRING_DESC"
+stat = &"max_mana"
+per_rank = 15.0
+icon_color = Color(0.25, 0.4, 0.95, 1)

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="TagDef" format=3]
+
+[ext_resource type="Script" path="res://data/tags/tag_def.gd" id="1_tiluf"]
+
+[resource]
+script = ExtResource("1_tiluf")
+id = &"physical"
+name_key = "TAG_PHYSICAL"
+kind = 0
+color = Color(0.82, 0.78, 0.7, 1)

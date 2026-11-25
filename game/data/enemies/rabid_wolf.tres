@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="EnemyData" format=3]
+
+[ext_resource type="Script" path="res://data/enemies/enemy_data.gd" id="1_enemy"]
+
+[resource]
+script = ExtResource("1_enemy")
+id = &"rabid_wolf"
+name_key = "ENEMY_RABID_WOLF"
+max_health = 14.0
+speed = 76.0
+contact_damage = 8.0
+xp = 2
+radius = 6.0
+placeholder_color = Color(0.5, 0.5, 0.54, 1)
+charge_interval = 4.0
+charge_windup = 0.4
+charge_speed = 300.0
+charge_time = 0.3
+charge_range = 160.0

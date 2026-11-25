@@ -1,0 +1,2184 @@
+{
+ "atlas": "vfx.png",
+ "scale": 0.25,
+ "fx": {
+  "smite_holy": {
+   "origin": [
+    0,
+    0
+   ],
+   "frame": [
+    128,
+    384
+   ],
+   "count": 6,
+   "fps": 18.0,
+   "anchor": [
+    64,
+    368
+   ],
+   "loop": false,
+   "radius": 0.0
+  },
+  "smite_lightning": {
+   "origin": [
+    768,
+    0
+   ],
+   "frame": [
+    128,
+    384
+   ],
+   "count": 6,
+   "fps": 18.0,
+   "anchor": [
+    64,
+    368
+   ],
+   "loop": false,
+   "radius": 0.0
+  },
+  "burst_blood": {
+   "origin": [
+    1536,
+    0
+   ],
+   "frame": [
+    256,
+    256
+   ],
+   "count": 8,
+   "fps": 18.0,
+   "anchor": [
+    128,
+    128
+   ],
+   "loop": false,
+   "radius": 116.0
+  },
+  "burst_cold": {
+   "origin": [
+    0,
+    384
+   ],
+   "frame": [
+    256,
+    256
+   ],
+   "count": 8,
+   "fps": 18.0,
+   "anchor": [
+    128,
+    128
+   ],
+   "loop": false,
+   "radius": 116.0
+  },
+  "burst_dark": {
+   "origin": [
+    2048,
+    384
+   ],
+   "frame": [
+    256,
+    256
+   ],
+   "count": 8,
+   "fps": 18.0,
+   "anchor": [
+    128,
+    128
+   ],
+   "loop": false,
+   "radius": 116.0
+  },
+  "burst_fire": {
+   "origin": [
+    0,
+    640
+   ],
+   "frame": [
+    256,
+    256
+   ],
+   "count": 8,
+   "fps": 18.0,
+   "anchor": [
+    128,
+    128
+   ],
+   "loop": false,
+   "radius": 116.0
+  },
+  "burst_holy": {
+   "origin": [
+    2048,
+    640
+   ],
+   "frame": [
+    256,
+    256
+   ],
+   "count": 8,
+   "fps": 18.0,
+   "anchor": [
+    128,
+    128
+   ],
+   "loop": false,
+   "radius": 116.0
+  },
+  "burst_lightning": {
+   "origin": [
+    0,
+    896
+   ],
+   "frame": [
+    256,
+    256
+   ],
+   "count": 8,
+   "fps": 18.0,
+   "anchor": [
+    128,
+    128
+   ],
+   "loop": false,
+   "radius": 116.0
+  },
+  "burst_physical": {
+   "origin": [
+    2048,
+    896
+   ],
+   "frame": [
+    256,
+    256
+   ],
+   "count": 8,
+   "fps": 18.0,
+   "anchor": [
+    128,
+    128
+   ],
+   "loop": false,
+   "radius": 116.0
+  },
+  "burst_poison": {
+   "origin": [
+    0,
+    1152
+   ],
+   "frame": [
+    256,
+    256
+   ],
+   "count": 8,
+   "fps": 18.0,
+   "anchor": [
+    128,
+    128
+   ],
+   "loop": false,
+   "radius": 116.0
+  },
+  "nova_blood": {
+   "origin": [
+    2048,
+    1152
+   ],
+   "frame": [
+    256,
+    256
+   ],
+   "count": 6,
+   "fps": 15.0,
+   "anchor": [
+    128,
+    128
+   ],
+   "loop": false,
+   "radius": 120.0
+  },
+  "nova_cold": {
+   "origin": [
+    0,
+    1408
+   ],
+   "frame": [
+    256,
+    256
+   ],
+   "count": 6,
+   "fps": 15.0,
+   "anchor": [
+    128,
+    128
+   ],
+   "loop": false,
+   "radius": 120.0
+  },
+  "nova_dark": {
+   "origin": [
+    1536,
+    1408
+   ],
+   "frame": [
+    256,
+    256
+   ],
+   "count": 6,
+   "fps": 15.0,
+   "anchor": [
+    128,
+    128
+   ],
+   "loop": false,
+   "radius": 120.0
+  },
+  "nova_fire": {
+   "origin": [
+    0,
+    1664
+   ],
+   "frame": [
+    256,
+    256
+   ],
+   "count": 6,
+   "fps": 15.0,
+   "anchor": [
+    128,
+    128
+   ],
+   "loop": false,
+   "radius": 120.0
+  },
+  "nova_holy": {
+   "origin": [
+    1536,
+    1664
+   ],
+   "frame": [
+    256,
+    256
+   ],
+   "count": 6,
+   "fps": 15.0,
+   "anchor": [
+    128,
+    128
+   ],
+   "loop": false,
+   "radius": 120.0
+  },
+  "nova_lightning": {
+   "origin": [
+    0,
+    1920
+   ],
+   "frame": [
+    256,
+    256
+   ],
+   "count": 6,
+   "fps": 15.0,
+   "anchor": [
+    128,
+    128
+   ],
+   "loop": false,
+   "radius": 120.0
+  },
+  "nova_physical": {
+   "origin": [
+    1536,
+    1920
+   ],
+   "frame": [
+    256,
+    256
+   ],
+   "count": 6,
+   "fps": 15.0,
+   "anchor": [
+    128,
+    128
+   ],
+   "loop": false,
+   "radius": 120.0
+  },
+  "nova_poison": {
+   "origin": [
+    0,
+    2176
+   ],
+   "frame": [
+    256,
+    256
+   ],
+   "count": 6,
+   "fps": 15.0,
+   "anchor": [
+    128,
+    128
+   ],
+   "loop": false,
+   "radius": 120.0
+  },
+  "sigil_blood": {
+   "origin": [
+    1536,
+    2176
+   ],
+   "frame": [
+    256,
+    256
+   ],
+   "count": 1,
+   "fps": 1.0,
+   "anchor": [
+    128,
+    128
+   ],
+   "loop": true,
+   "radius": 114.0
+  },
+  "sigil_cold": {
+   "origin": [
+    1792,
+    2176
+   ],
+   "frame": [
+    256,
+    256
+   ],
+   "count": 1,
+   "fps": 1.0,
+   "anchor": [
+    128,
+    128
+   ],
+   "loop": true,
+   "radius": 114.0
+  },
+  "sigil_dark": {
+   "origin": [
+    2048,
+    2176
+   ],
+   "frame": [
+    256,
+    256
+   ],
+   "count": 1,
+   "fps": 1.0,
+   "anchor": [
+    128,
+    128
+   ],
+   "loop": true,
+   "radius": 114.0
+  },
+  "sigil_fire": {
+   "origin": [
+    2304,
+    2176
+   ],
+   "frame": [
+    256,
+    256
+   ],
+   "count": 1,
+   "fps": 1.0,
+   "anchor": [
+    128,
+    128
+   ],
+   "loop": true,
+   "radius": 114.0
+  },
+  "sigil_holy": {
+   "origin": [
+    2560,
+    2176
+   ],
+   "frame": [
+    256,
+    256
+   ],
+   "count": 1,
+   "fps": 1.0,
+   "anchor": [
+    128,
+    128
+   ],
+   "loop": true,
+   "radius": 114.0
+  },
+  "sigil_lightning": {
+   "origin": [
+    2816,
+    2176
+   ],
+   "frame": [
+    256,
+    256
+   ],
+   "count": 1,
+   "fps": 1.0,
+   "anchor": [
+    128,
+    128
+   ],
+   "loop": true,
+   "radius": 114.0
+  },
+  "sigil_physical": {
+   "origin": [
+    3072,
+    2176
+   ],
+   "frame": [
+    256,
+    256
+   ],
+   "count": 1,
+   "fps": 1.0,
+   "anchor": [
+    128,
+    128
+   ],
+   "loop": true,
+   "radius": 114.0
+  },
+  "sigil_poison": {
+   "origin": [
+    3328,
+    2176
+   ],
+   "frame": [
+    256,
+    256
+   ],
+   "count": 1,
+   "fps": 1.0,
+   "anchor": [
+    128,
+    128
+   ],
+   "loop": true,
+   "radius": 114.0
+  },
+  "zone_blood": {
+   "origin": [
+    0,
+    2432
+   ],
+   "frame": [
+    256,
+    256
+   ],
+   "count": 4,
+   "fps": 6.0,
+   "anchor": [
+    128,
+    128
+   ],
+   "loop": true,
+   "radius": 116.0
+  },
+  "zone_cold": {
+   "origin": [
+    1024,
+    2432
+   ],
+   "frame": [
+    256,
+    256
+   ],
+   "count": 4,
+   "fps": 6.0,
+   "anchor": [
+    128,
+    128
+   ],
+   "loop": true,
+   "radius": 116.0
+  },
+  "zone_dark": {
+   "origin": [
+    2048,
+    2432
+   ],
+   "frame": [
+    256,
+    256
+   ],
+   "count": 4,
+   "fps": 6.0,
+   "anchor": [
+    128,
+    128
+   ],
+   "loop": true,
+   "radius": 116.0
+  },
+  "zone_fire": {
+   "origin": [
+    3072,
+    2432
+   ],
+   "frame": [
+    256,
+    256
+   ],
+   "count": 4,
+   "fps": 6.0,
+   "anchor": [
+    128,
+    128
+   ],
+   "loop": true,
+   "radius": 116.0
+  },
+  "zone_holy": {
+   "origin": [
+    0,
+    2688
+   ],
+   "frame": [
+    256,
+    256
+   ],
+   "count": 4,
+   "fps": 6.0,
+   "anchor": [
+    128,
+    128
+   ],
+   "loop": true,
+   "radius": 116.0
+  },
+  "zone_lightning": {
+   "origin": [
+    1024,
+    2688
+   ],
+   "frame": [
+    256,
+    256
+   ],
+   "count": 4,
+   "fps": 6.0,
+   "anchor": [
+    128,
+    128
+   ],
+   "loop": true,
+   "radius": 116.0
+  },
+  "zone_physical": {
+   "origin": [
+    2048,
+    2688
+   ],
+   "frame": [
+    256,
+    256
+   ],
+   "count": 4,
+   "fps": 6.0,
+   "anchor": [
+    128,
+    128
+   ],
+   "loop": true,
+   "radius": 116.0
+  },
+  "zone_poison": {
+   "origin": [
+    3072,
+    2688
+   ],
+   "frame": [
+    256,
+    256
+   ],
+   "count": 4,
+   "fps": 6.0,
+   "anchor": [
+    128,
+    128
+   ],
+   "loop": true,
+   "radius": 116.0
+  },
+  "fall_blood": {
+   "origin": [
+    0,
+    2944
+   ],
+   "frame": [
+    96,
+    144
+   ],
+   "count": 4,
+   "fps": 12.0,
+   "anchor": [
+    48,
+    116
+   ],
+   "loop": true,
+   "radius": 0.0
+  },
+  "fall_cold": {
+   "origin": [
+    384,
+    2944
+   ],
+   "frame": [
+    96,
+    144
+   ],
+   "count": 4,
+   "fps": 12.0,
+   "anchor": [
+    48,
+    116
+   ],
+   "loop": true,
+   "radius": 0.0
+  },
+  "fall_dark": {
+   "origin": [
+    768,
+    2944
+   ],
+   "frame": [
+    96,
+    144
+   ],
+   "count": 4,
+   "fps": 12.0,
+   "anchor": [
+    48,
+    116
+   ],
+   "loop": true,
+   "radius": 0.0
+  },
+  "fall_fire": {
+   "origin": [
+    1152,
+    2944
+   ],
+   "frame": [
+    96,
+    144
+   ],
+   "count": 4,
+   "fps": 12.0,
+   "anchor": [
+    48,
+    116
+   ],
+   "loop": true,
+   "radius": 0.0
+  },
+  "fall_holy": {
+   "origin": [
+    1536,
+    2944
+   ],
+   "frame": [
+    96,
+    144
+   ],
+   "count": 4,
+   "fps": 12.0,
+   "anchor": [
+    48,
+    116
+   ],
+   "loop": true,
+   "radius": 0.0
+  },
+  "fall_lightning": {
+   "origin": [
+    1920,
+    2944
+   ],
+   "frame": [
+    96,
+    144
+   ],
+   "count": 4,
+   "fps": 12.0,
+   "anchor": [
+    48,
+    116
+   ],
+   "loop": true,
+   "radius": 0.0
+  },
+  "fall_physical": {
+   "origin": [
+    2304,
+    2944
+   ],
+   "frame": [
+    96,
+    144
+   ],
+   "count": 4,
+   "fps": 12.0,
+   "anchor": [
+    48,
+    116
+   ],
+   "loop": true,
+   "radius": 0.0
+  },
+  "fall_poison": {
+   "origin": [
+    2688,
+    2944
+   ],
+   "frame": [
+    96,
+    144
+   ],
+   "count": 4,
+   "fps": 12.0,
+   "anchor": [
+    48,
+    116
+   ],
+   "loop": true,
+   "radius": 0.0
+  },
+  "beam_end_blood": {
+   "origin": [
+    3072,
+    2944
+   ],
+   "frame": [
+    96,
+    96
+   ],
+   "count": 4,
+   "fps": 12.0,
+   "anchor": [
+    48,
+    48
+   ],
+   "loop": true,
+   "radius": 0.0
+  },
+  "beam_end_cold": {
+   "origin": [
+    3456,
+    2944
+   ],
+   "frame": [
+    96,
+    96
+   ],
+   "count": 4,
+   "fps": 12.0,
+   "anchor": [
+    48,
+    48
+   ],
+   "loop": true,
+   "radius": 0.0
+  },
+  "beam_end_dark": {
+   "origin": [
+    0,
+    3088
+   ],
+   "frame": [
+    96,
+    96
+   ],
+   "count": 4,
+   "fps": 12.0,
+   "anchor": [
+    48,
+    48
+   ],
+   "loop": true,
+   "radius": 0.0
+  },
+  "beam_end_fire": {
+   "origin": [
+    384,
+    3088
+   ],
+   "frame": [
+    96,
+    96
+   ],
+   "count": 4,
+   "fps": 12.0,
+   "anchor": [
+    48,
+    48
+   ],
+   "loop": true,
+   "radius": 0.0
+  },
+  "beam_end_holy": {
+   "origin": [
+    768,
+    3088
+   ],
+   "frame": [
+    96,
+    96
+   ],
+   "count": 4,
+   "fps": 12.0,
+   "anchor": [
+    48,
+    48
+   ],
+   "loop": true,
+   "radius": 0.0
+  },
+  "beam_end_lightning": {
+   "origin": [
+    1152,
+    3088
+   ],
+   "frame": [
+    96,
+    96
+   ],
+   "count": 4,
+   "fps": 12.0,
+   "anchor": [
+    48,
+    48
+   ],
+   "loop": true,
+   "radius": 0.0
+  },
+  "beam_end_physical": {
+   "origin": [
+    1536,
+    3088
+   ],
+   "frame": [
+    96,
+    96
+   ],
+   "count": 4,
+   "fps": 12.0,
+   "anchor": [
+    48,
+    48
+   ],
+   "loop": true,
+   "radius": 0.0
+  },
+  "beam_end_poison": {
+   "origin": [
+    1920,
+    3088
+   ],
+   "frame": [
+    96,
+    96
+   ],
+   "count": 4,
+   "fps": 12.0,
+   "anchor": [
+    48,
+    48
+   ],
+   "loop": true,
+   "radius": 0.0
+  },
+  "cast_blood": {
+   "origin": [
+    2304,
+    3088
+   ],
+   "frame": [
+    96,
+    96
+   ],
+   "count": 6,
+   "fps": 30.0,
+   "anchor": [
+    24,
+    48
+   ],
+   "loop": false,
+   "radius": 0.0
+  },
+  "cast_cold": {
+   "origin": [
+    2880,
+    3088
+   ],
+   "frame": [
+    96,
+    96
+   ],
+   "count": 6,
+   "fps": 30.0,
+   "anchor": [
+    24,
+    48
+   ],
+   "loop": false,
+   "radius": 0.0
+  },
+  "cast_dark": {
+   "origin": [
+    3456,
+    3088
+   ],
+   "frame": [
+    96,
+    96
+   ],
+   "count": 6,
+   "fps": 30.0,
+   "anchor": [
+    24,
+    48
+   ],
+   "loop": false,
+   "radius": 0.0
+  },
+  "cast_fire": {
+   "origin": [
+    0,
+    3184
+   ],
+   "frame": [
+    96,
+    96
+   ],
+   "count": 6,
+   "fps": 30.0,
+   "anchor": [
+    24,
+    48
+   ],
+   "loop": false,
+   "radius": 0.0
+  },
+  "cast_holy": {
+   "origin": [
+    576,
+    3184
+   ],
+   "frame": [
+    96,
+    96
+   ],
+   "count": 6,
+   "fps": 30.0,
+   "anchor": [
+    24,
+    48
+   ],
+   "loop": false,
+   "radius": 0.0
+  },
+  "cast_lightning": {
+   "origin": [
+    1152,
+    3184
+   ],
+   "frame": [
+    96,
+    96
+   ],
+   "count": 6,
+   "fps": 30.0,
+   "anchor": [
+    24,
+    48
+   ],
+   "loop": false,
+   "radius": 0.0
+  },
+  "cast_physical": {
+   "origin": [
+    1728,
+    3184
+   ],
+   "frame": [
+    96,
+    96
+   ],
+   "count": 6,
+   "fps": 30.0,
+   "anchor": [
+    24,
+    48
+   ],
+   "loop": false,
+   "radius": 0.0
+  },
+  "cast_poison": {
+   "origin": [
+    2304,
+    3184
+   ],
+   "frame": [
+    96,
+    96
+   ],
+   "count": 6,
+   "fps": 30.0,
+   "anchor": [
+    24,
+    48
+   ],
+   "loop": false,
+   "radius": 0.0
+  },
+  "hit_blood": {
+   "origin": [
+    2880,
+    3184
+   ],
+   "frame": [
+    96,
+    96
+   ],
+   "count": 6,
+   "fps": 24.0,
+   "anchor": [
+    48,
+    48
+   ],
+   "loop": false,
+   "radius": 36.0
+  },
+  "hit_cold": {
+   "origin": [
+    3456,
+    3184
+   ],
+   "frame": [
+    96,
+    96
+   ],
+   "count": 6,
+   "fps": 24.0,
+   "anchor": [
+    48,
+    48
+   ],
+   "loop": false,
+   "radius": 36.0
+  },
+  "hit_dark": {
+   "origin": [
+    0,
+    3280
+   ],
+   "frame": [
+    96,
+    96
+   ],
+   "count": 6,
+   "fps": 24.0,
+   "anchor": [
+    48,
+    48
+   ],
+   "loop": false,
+   "radius": 36.0
+  },
+  "hit_fire": {
+   "origin": [
+    576,
+    3280
+   ],
+   "frame": [
+    96,
+    96
+   ],
+   "count": 6,
+   "fps": 24.0,
+   "anchor": [
+    48,
+    48
+   ],
+   "loop": false,
+   "radius": 36.0
+  },
+  "hit_holy": {
+   "origin": [
+    1152,
+    3280
+   ],
+   "frame": [
+    96,
+    96
+   ],
+   "count": 6,
+   "fps": 24.0,
+   "anchor": [
+    48,
+    48
+   ],
+   "loop": false,
+   "radius": 36.0
+  },
+  "hit_lightning": {
+   "origin": [
+    1728,
+    3280
+   ],
+   "frame": [
+    96,
+    96
+   ],
+   "count": 6,
+   "fps": 24.0,
+   "anchor": [
+    48,
+    48
+   ],
+   "loop": false,
+   "radius": 36.0
+  },
+  "hit_physical": {
+   "origin": [
+    2304,
+    3280
+   ],
+   "frame": [
+    96,
+    96
+   ],
+   "count": 6,
+   "fps": 24.0,
+   "anchor": [
+    48,
+    48
+   ],
+   "loop": false,
+   "radius": 36.0
+  },
+  "hit_poison": {
+   "origin": [
+    2880,
+    3280
+   ],
+   "frame": [
+    96,
+    96
+   ],
+   "count": 6,
+   "fps": 24.0,
+   "anchor": [
+    48,
+    48
+   ],
+   "loop": false,
+   "radius": 36.0
+  },
+  "trap_holy": {
+   "origin": [
+    3456,
+    3280
+   ],
+   "frame": [
+    96,
+    96
+   ],
+   "count": 2,
+   "fps": 1.0,
+   "anchor": [
+    48,
+    48
+   ],
+   "loop": false,
+   "radius": 0.0
+  },
+  "proj_fireball": {
+   "origin": [
+    0,
+    3376
+   ],
+   "frame": [
+    128,
+    80
+   ],
+   "count": 6,
+   "fps": 14.0,
+   "anchor": [
+    88,
+    40
+   ],
+   "loop": true,
+   "radius": 0.0
+  },
+  "proj_sickle": {
+   "origin": [
+    768,
+    3376
+   ],
+   "frame": [
+    80,
+    80
+   ],
+   "count": 1,
+   "fps": 1.0,
+   "anchor": [
+    40,
+    40
+   ],
+   "loop": true,
+   "radius": 0.0
+  },
+  "slash_blood": {
+   "origin": [
+    848,
+    3376
+   ],
+   "frame": [
+    256,
+    80
+   ],
+   "count": 4,
+   "fps": 20.0,
+   "anchor": [
+    0,
+    0
+   ],
+   "loop": true,
+   "radius": 0.0
+  },
+  "slash_cold": {
+   "origin": [
+    1872,
+    3376
+   ],
+   "frame": [
+    256,
+    80
+   ],
+   "count": 4,
+   "fps": 20.0,
+   "anchor": [
+    0,
+    0
+   ],
+   "loop": true,
+   "radius": 0.0
+  },
+  "slash_dark": {
+   "origin": [
+    2896,
+    3376
+   ],
+   "frame": [
+    256,
+    80
+   ],
+   "count": 4,
+   "fps": 20.0,
+   "anchor": [
+    0,
+    0
+   ],
+   "loop": true,
+   "radius": 0.0
+  },
+  "slash_fire": {
+   "origin": [
+    0,
+    3456
+   ],
+   "frame": [
+    256,
+    80
+   ],
+   "count": 4,
+   "fps": 20.0,
+   "anchor": [
+    0,
+    0
+   ],
+   "loop": true,
+   "radius": 0.0
+  },
+  "slash_holy": {
+   "origin": [
+    1024,
+    3456
+   ],
+   "frame": [
+    256,
+    80
+   ],
+   "count": 4,
+   "fps": 20.0,
+   "anchor": [
+    0,
+    0
+   ],
+   "loop": true,
+   "radius": 0.0
+  },
+  "slash_lightning": {
+   "origin": [
+    2048,
+    3456
+   ],
+   "frame": [
+    256,
+    80
+   ],
+   "count": 4,
+   "fps": 20.0,
+   "anchor": [
+    0,
+    0
+   ],
+   "loop": true,
+   "radius": 0.0
+  },
+  "slash_physical": {
+   "origin": [
+    3072,
+    3456
+   ],
+   "frame": [
+    256,
+    80
+   ],
+   "count": 4,
+   "fps": 20.0,
+   "anchor": [
+    0,
+    0
+   ],
+   "loop": true,
+   "radius": 0.0
+  },
+  "slash_poison": {
+   "origin": [
+    0,
+    3536
+   ],
+   "frame": [
+    256,
+    80
+   ],
+   "count": 4,
+   "fps": 20.0,
+   "anchor": [
+    0,
+    0
+   ],
+   "loop": true,
+   "radius": 0.0
+  },
+  "trap_physical": {
+   "origin": [
+    1024,
+    3536
+   ],
+   "frame": [
+    96,
+    80
+   ],
+   "count": 2,
+   "fps": 1.0,
+   "anchor": [
+    48,
+    48
+   ],
+   "loop": false,
+   "radius": 0.0
+  },
+  "beam_blood": {
+   "origin": [
+    1216,
+    3536
+   ],
+   "frame": [
+    128,
+    64
+   ],
+   "count": 4,
+   "fps": 16.0,
+   "anchor": [
+    0,
+    32
+   ],
+   "loop": true,
+   "radius": 0.0
+  },
+  "beam_cold": {
+   "origin": [
+    1728,
+    3536
+   ],
+   "frame": [
+    128,
+    64
+   ],
+   "count": 4,
+   "fps": 16.0,
+   "anchor": [
+    0,
+    32
+   ],
+   "loop": true,
+   "radius": 0.0
+  },
+  "beam_dark": {
+   "origin": [
+    2240,
+    3536
+   ],
+   "frame": [
+    128,
+    64
+   ],
+   "count": 4,
+   "fps": 16.0,
+   "anchor": [
+    0,
+    32
+   ],
+   "loop": true,
+   "radius": 0.0
+  },
+  "beam_fire": {
+   "origin": [
+    2752,
+    3536
+   ],
+   "frame": [
+    128,
+    64
+   ],
+   "count": 4,
+   "fps": 16.0,
+   "anchor": [
+    0,
+    32
+   ],
+   "loop": true,
+   "radius": 0.0
+  },
+  "beam_holy": {
+   "origin": [
+    3264,
+    3536
+   ],
+   "frame": [
+    128,
+    64
+   ],
+   "count": 4,
+   "fps": 16.0,
+   "anchor": [
+    0,
+    32
+   ],
+   "loop": true,
+   "radius": 0.0
+  },
+  "beam_lightning": {
+   "origin": [
+    0,
+    3616
+   ],
+   "frame": [
+    128,
+    64
+   ],
+   "count": 4,
+   "fps": 16.0,
+   "anchor": [
+    0,
+    32
+   ],
+   "loop": true,
+   "radius": 0.0
+  },
+  "beam_physical": {
+   "origin": [
+    512,
+    3616
+   ],
+   "frame": [
+    128,
+    64
+   ],
+   "count": 4,
+   "fps": 16.0,
+   "anchor": [
+    0,
+    32
+   ],
+   "loop": true,
+   "radius": 0.0
+  },
+  "beam_poison": {
+   "origin": [
+    1024,
+    3616
+   ],
+   "frame": [
+    128,
+    64
+   ],
+   "count": 4,
+   "fps": 16.0,
+   "anchor": [
+    0,
+    32
+   ],
+   "loop": true,
+   "radius": 0.0
+  },
+  "chain_blood": {
+   "origin": [
+    1536,
+    3616
+   ],
+   "frame": [
+    128,
+    64
+   ],
+   "count": 4,
+   "fps": 30.0,
+   "anchor": [
+    0,
+    32
+   ],
+   "loop": true,
+   "radius": 0.0
+  },
+  "chain_cold": {
+   "origin": [
+    2048,
+    3616
+   ],
+   "frame": [
+    128,
+    64
+   ],
+   "count": 4,
+   "fps": 30.0,
+   "anchor": [
+    0,
+    32
+   ],
+   "loop": true,
+   "radius": 0.0
+  },
+  "chain_dark": {
+   "origin": [
+    2560,
+    3616
+   ],
+   "frame": [
+    128,
+    64
+   ],
+   "count": 4,
+   "fps": 30.0,
+   "anchor": [
+    0,
+    32
+   ],
+   "loop": true,
+   "radius": 0.0
+  },
+  "chain_fire": {
+   "origin": [
+    3072,
+    3616
+   ],
+   "frame": [
+    128,
+    64
+   ],
+   "count": 4,
+   "fps": 30.0,
+   "anchor": [
+    0,
+    32
+   ],
+   "loop": true,
+   "radius": 0.0
+  },
+  "chain_holy": {
+   "origin": [
+    3584,
+    3616
+   ],
+   "frame": [
+    128,
+    64
+   ],
+   "count": 4,
+   "fps": 30.0,
+   "anchor": [
+    0,
+    32
+   ],
+   "loop": true,
+   "radius": 0.0
+  },
+  "chain_lightning": {
+   "origin": [
+    0,
+    3680
+   ],
+   "frame": [
+    128,
+    64
+   ],
+   "count": 4,
+   "fps": 30.0,
+   "anchor": [
+    0,
+    32
+   ],
+   "loop": true,
+   "radius": 0.0
+  },
+  "chain_physical": {
+   "origin": [
+    512,
+    3680
+   ],
+   "frame": [
+    128,
+    64
+   ],
+   "count": 4,
+   "fps": 30.0,
+   "anchor": [
+    0,
+    32
+   ],
+   "loop": true,
+   "radius": 0.0
+  },
+  "chain_poison": {
+   "origin": [
+    1024,
+    3680
+   ],
+   "frame": [
+    128,
+    64
+   ],
+   "count": 4,
+   "fps": 30.0,
+   "anchor": [
+    0,
+    32
+   ],
+   "loop": true,
+   "radius": 0.0
+  },
+  "dash_blood": {
+   "origin": [
+    1536,
+    3680
+   ],
+   "frame": [
+    256,
+    64
+   ],
+   "count": 6,
+   "fps": 18.0,
+   "anchor": [
+    0,
+    32
+   ],
+   "loop": false,
+   "radius": 0.0
+  },
+  "dash_cold": {
+   "origin": [
+    0,
+    3744
+   ],
+   "frame": [
+    256,
+    64
+   ],
+   "count": 6,
+   "fps": 18.0,
+   "anchor": [
+    0,
+    32
+   ],
+   "loop": false,
+   "radius": 0.0
+  },
+  "dash_dark": {
+   "origin": [
+    1536,
+    3744
+   ],
+   "frame": [
+    256,
+    64
+   ],
+   "count": 6,
+   "fps": 18.0,
+   "anchor": [
+    0,
+    32
+   ],
+   "loop": false,
+   "radius": 0.0
+  },
+  "dash_fire": {
+   "origin": [
+    0,
+    3808
+   ],
+   "frame": [
+    256,
+    64
+   ],
+   "count": 6,
+   "fps": 18.0,
+   "anchor": [
+    0,
+    32
+   ],
+   "loop": false,
+   "radius": 0.0
+  },
+  "dash_holy": {
+   "origin": [
+    1536,
+    3808
+   ],
+   "frame": [
+    256,
+    64
+   ],
+   "count": 6,
+   "fps": 18.0,
+   "anchor": [
+    0,
+    32
+   ],
+   "loop": false,
+   "radius": 0.0
+  },
+  "dash_lightning": {
+   "origin": [
+    0,
+    3872
+   ],
+   "frame": [
+    256,
+    64
+   ],
+   "count": 6,
+   "fps": 18.0,
+   "anchor": [
+    0,
+    32
+   ],
+   "loop": false,
+   "radius": 0.0
+  },
+  "dash_physical": {
+   "origin": [
+    1536,
+    3872
+   ],
+   "frame": [
+    256,
+    64
+   ],
+   "count": 6,
+   "fps": 18.0,
+   "anchor": [
+    0,
+    32
+   ],
+   "loop": false,
+   "radius": 0.0
+  },
+  "dash_poison": {
+   "origin": [
+    0,
+    3936
+   ],
+   "frame": [
+    256,
+    64
+   ],
+   "count": 6,
+   "fps": 18.0,
+   "anchor": [
+    0,
+    32
+   ],
+   "loop": false,
+   "radius": 0.0
+  },
+  "glint": {
+   "origin": [
+    1536,
+    3936
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "count": 6,
+   "fps": 10.0,
+   "anchor": [
+    32,
+    32
+   ],
+   "loop": true,
+   "radius": 0.0
+  },
+  "orb_flames": {
+   "origin": [
+    1920,
+    3936
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "count": 6,
+   "fps": 12.0,
+   "anchor": [
+    32,
+    36
+   ],
+   "loop": true,
+   "radius": 0.0
+  },
+  "orb_skull": {
+   "origin": [
+    2304,
+    3936
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "count": 4,
+   "fps": 8.0,
+   "anchor": [
+    32,
+    34
+   ],
+   "loop": true,
+   "radius": 0.0
+  },
+  "rise_blood": {
+   "origin": [
+    2560,
+    3936
+   ],
+   "frame": [
+    48,
+    64
+   ],
+   "count": 6,
+   "fps": 10.0,
+   "anchor": [
+    24,
+    56
+   ],
+   "loop": true,
+   "radius": 0.0
+  },
+  "rise_cold": {
+   "origin": [
+    2848,
+    3936
+   ],
+   "frame": [
+    48,
+    64
+   ],
+   "count": 6,
+   "fps": 10.0,
+   "anchor": [
+    24,
+    56
+   ],
+   "loop": true,
+   "radius": 0.0
+  },
+  "rise_dark": {
+   "origin": [
+    3136,
+    3936
+   ],
+   "frame": [
+    48,
+    64
+   ],
+   "count": 6,
+   "fps": 10.0,
+   "anchor": [
+    24,
+    56
+   ],
+   "loop": true,
+   "radius": 0.0
+  },
+  "rise_fire": {
+   "origin": [
+    3424,
+    3936
+   ],
+   "frame": [
+    48,
+    64
+   ],
+   "count": 6,
+   "fps": 10.0,
+   "anchor": [
+    24,
+    56
+   ],
+   "loop": true,
+   "radius": 0.0
+  },
+  "rise_holy": {
+   "origin": [
+    3712,
+    3936
+   ],
+   "frame": [
+    48,
+    64
+   ],
+   "count": 6,
+   "fps": 10.0,
+   "anchor": [
+    24,
+    56
+   ],
+   "loop": true,
+   "radius": 0.0
+  },
+  "rise_lightning": {
+   "origin": [
+    0,
+    4000
+   ],
+   "frame": [
+    48,
+    64
+   ],
+   "count": 6,
+   "fps": 10.0,
+   "anchor": [
+    24,
+    56
+   ],
+   "loop": true,
+   "radius": 0.0
+  },
+  "rise_physical": {
+   "origin": [
+    288,
+    4000
+   ],
+   "frame": [
+    48,
+    64
+   ],
+   "count": 6,
+   "fps": 10.0,
+   "anchor": [
+    24,
+    56
+   ],
+   "loop": true,
+   "radius": 0.0
+  },
+  "rise_poison": {
+   "origin": [
+    576,
+    4000
+   ],
+   "frame": [
+    48,
+    64
+   ],
+   "count": 6,
+   "fps": 10.0,
+   "anchor": [
+    24,
+    56
+   ],
+   "loop": true,
+   "radius": 0.0
+  },
+  "orb_bats": {
+   "origin": [
+    864,
+    4000
+   ],
+   "frame": [
+    80,
+    56
+   ],
+   "count": 4,
+   "fps": 14.0,
+   "anchor": [
+    40,
+    30
+   ],
+   "loop": true,
+   "radius": 0.0
+  },
+  "proj_frost": {
+   "origin": [
+    1184,
+    4000
+   ],
+   "frame": [
+    96,
+    48
+   ],
+   "count": 4,
+   "fps": 10.0,
+   "anchor": [
+    60,
+    24
+   ],
+   "loop": true,
+   "radius": 0.0
+  },
+  "proj_spear_blood": {
+   "origin": [
+    1568,
+    4000
+   ],
+   "frame": [
+    144,
+    48
+   ],
+   "count": 4,
+   "fps": 12.0,
+   "anchor": [
+    88,
+    24
+   ],
+   "loop": true,
+   "radius": 0.0
+  },
+  "proj_ember": {
+   "origin": [
+    2144,
+    4000
+   ],
+   "frame": [
+    64,
+    40
+   ],
+   "count": 4,
+   "fps": 14.0,
+   "anchor": [
+    44,
+    20
+   ],
+   "loop": true,
+   "radius": 0.0
+  },
+  "proj_arrow": {
+   "origin": [
+    2400,
+    4000
+   ],
+   "frame": [
+    96,
+    32
+   ],
+   "count": 1,
+   "fps": 1.0,
+   "anchor": [
+    56,
+    16
+   ],
+   "loop": true,
+   "radius": 0.0
+  },
+  "proj_bolt": {
+   "origin": [
+    2496,
+    4000
+   ],
+   "frame": [
+    96,
+    32
+   ],
+   "count": 2,
+   "fps": 8.0,
+   "anchor": [
+    56,
+    16
+   ],
+   "loop": true,
+   "radius": 0.0
+  },
+  "proj_dagger": {
+   "origin": [
+    2688,
+    4000
+   ],
+   "frame": [
+    64,
+    32
+   ],
+   "count": 1,
+   "fps": 1.0,
+   "anchor": [
+    36,
+    16
+   ],
+   "loop": true,
+   "radius": 0.0
+  },
+  "proj_spear": {
+   "origin": [
+    2752,
+    4000
+   ],
+   "frame": [
+    128,
+    32
+   ],
+   "count": 1,
+   "fps": 1.0,
+   "anchor": [
+    72,
+    16
+   ],
+   "loop": true,
+   "radius": 0.0
+  }
+ }
+}

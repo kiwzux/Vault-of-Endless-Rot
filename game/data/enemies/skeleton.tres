@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="EnemyData" format=3]
+
+[ext_resource type="Script" path="res://data/enemies/enemy_data.gd" id="1_enemy"]
+[ext_resource type="Resource" path="res://data/enemies/skeleton_warrior.tres" id="2_upgrade"]
+
+[resource]
+script = ExtResource("1_enemy")
+id = &"skeleton"
+name_key = "ENEMY_SKELETON"
+max_health = 12.0
+speed = 42.0
+contact_damage = 8.0
+xp = 1
+radius = 6
+placeholder_color = Color(0.86, 0.82, 0.7, 1)
+upgrade = ExtResource("2_upgrade")

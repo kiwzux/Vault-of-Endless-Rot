@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="StatusEffectData" format=3]
+
+[ext_resource type="Script" path="res://data/statuses/status_effect_data.gd" id="1_1nsbi"]
+
+[resource]
+script = ExtResource("1_1nsbi")
+id = &"burn"
+name_key = "STATUS_BURN"
+tags = Array[StringName]([&"fire"])
+max_stacks = 3
+dot_share = 0.2
+color = Color(1, 0.55, 0.2, 1)
+visual_bit = 1
+tint_priority = 5

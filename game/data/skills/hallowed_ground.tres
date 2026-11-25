@@ -1,0 +1,40 @@
+[gd_resource type="Resource" script_class="SkillData" format=3]
+
+[ext_resource type="Script" path="res://systems/skills/actions/zone_action.gd" id="1_eelr2"]
+[ext_resource type="Script" path="res://data/skills/skill_modifier.gd" id="2_onanu"]
+[ext_resource type="Script" path="res://data/statuses/status_application.gd" id="3_2w1tw"]
+[ext_resource type="Script" path="res://data/skills/skill_data.gd" id="4_trjwk"]
+
+[sub_resource type="Resource" id="Resource_l5hco"]
+script = ExtResource("1_eelr2")
+tick_interval = 0.4
+
+[sub_resource type="Resource" id="Resource_3gfwi"]
+script = ExtResource("3_2w1tw")
+status = &"hex"
+chance = 0.25
+
+[resource]
+script = ExtResource("4_trjwk")
+action = SubResource("Resource_l5hco")
+tags = Array[StringName]([&"holy", &"area"])
+on_hit = Array[ExtResource("3_2w1tw")]([SubResource("Resource_3gfwi")])
+damage_per_level = 1.6
+cooldown = 2.2
+cooldown_per_level = -0.03
+attack_range = 200.0
+amount = 3
+amount_levels = PackedInt32Array(14, 20)
+pierce_levels = PackedInt32Array()
+area = 36.0
+area_per_level = 0.6
+duration = 4.0
+duration_per_level = 0.05
+fx_color = Color(0.85, 0.92, 1, 1)
+is_evolution = true
+id = &"hallowed_ground"
+kind = 0
+name_key = "EVO_HALLOWED_GROUND"
+description_key = "EVO_HALLOWED_GROUND_DESC"
+max_level = 20
+icon_color = Color(0.765, 0.828, 0.9, 1)

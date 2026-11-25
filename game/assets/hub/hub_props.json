@@ -1,0 +1,284 @@
+{
+ "atlas": "hub_props.png",
+ "props": {
+  "fire": {
+   "origin": [
+    0,
+    0
+   ],
+   "frame": [
+    464,
+    560
+   ],
+   "columns": 8,
+   "rows": 1,
+   "scale": 0.25,
+   "anchor": [
+    230,
+    474
+   ],
+   "height": 384.0,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "count": 8,
+     "fps": 10.0
+    }
+   },
+   "body_half": [
+    27.2,
+    19.2
+   ],
+   "prompt_height": 96,
+   "reach": 0
+  },
+  "pillar": {
+   "origin": [
+    3712,
+    0
+   ],
+   "frame": [
+    128,
+    472
+   ],
+   "columns": 1,
+   "rows": 1,
+   "scale": 0.25,
+   "anchor": [
+    65,
+    432
+   ],
+   "height": 0.0,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "count": 1,
+     "fps": 1.0
+    }
+   },
+   "body_half": [
+    10.8,
+    8.1
+   ],
+   "prompt_height": 0,
+   "reach": 0
+  },
+  "armor": {
+   "origin": [
+    3840,
+    0
+   ],
+   "frame": [
+    128,
+    256
+   ],
+   "columns": 1,
+   "rows": 1,
+   "scale": 0.25,
+   "anchor": [
+    65,
+    227
+   ],
+   "height": 0.0,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "count": 1,
+     "fps": 1.0
+    }
+   },
+   "body_half": [
+    8.1,
+    5.4
+   ],
+   "prompt_height": 0,
+   "reach": 0
+  },
+  "gate": {
+   "origin": [
+    3968,
+    0
+   ],
+   "frame": [
+    392,
+    520
+   ],
+   "columns": 8,
+   "rows": 1,
+   "scale": 0.25,
+   "anchor": [
+    194,
+    475
+   ],
+   "height": 476.0,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "count": 8,
+     "fps": 8.0
+    }
+   },
+   "body_half": [
+    40.5,
+    8.1
+   ],
+   "prompt_height": 119,
+   "reach": 62
+  },
+  "war_table": {
+   "origin": [
+    0,
+    560
+   ],
+   "frame": [
+    472,
+    392
+   ],
+   "columns": 4,
+   "rows": 1,
+   "scale": 0.25,
+   "anchor": [
+    238,
+    313
+   ],
+   "height": 272.0,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "count": 4,
+     "fps": 6.0
+    }
+   },
+   "body_half": [
+    41.9,
+    13.5
+   ],
+   "prompt_height": 68,
+   "reach": 65
+  },
+  "chronicle": {
+   "origin": [
+    1888,
+    560
+   ],
+   "frame": [
+    304,
+    304
+   ],
+   "columns": 4,
+   "rows": 1,
+   "scale": 0.25,
+   "anchor": [
+    162,
+    259
+   ],
+   "height": 228.0,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "count": 4,
+     "fps": 6.0
+    }
+   },
+   "body_half": [
+    18.9,
+    9.5
+   ],
+   "prompt_height": 57,
+   "reach": 51
+  },
+  "board": {
+   "origin": [
+    3104,
+    560
+   ],
+   "frame": [
+    376,
+    376
+   ],
+   "columns": 4,
+   "rows": 1,
+   "scale": 0.25,
+   "anchor": [
+    187,
+    343
+   ],
+   "height": 312.0,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "count": 4,
+     "fps": 6.0
+    }
+   },
+   "body_half": [
+    35.1,
+    5.2
+   ],
+   "prompt_height": 78,
+   "reach": 55
+  },
+  "altar": {
+   "origin": [
+    4608,
+    560
+   ],
+   "frame": [
+    248,
+    288
+   ],
+   "columns": 8,
+   "rows": 1,
+   "scale": 0.25,
+   "anchor": [
+    125,
+    250
+   ],
+   "height": 228.0,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "count": 8,
+     "fps": 8.0
+    }
+   },
+   "body_half": [
+    22.1,
+    10.4
+   ],
+   "prompt_height": 57,
+   "reach": 47
+  },
+  "exit": {
+   "origin": [
+    0,
+    952
+   ],
+   "frame": [
+    288,
+    288
+   ],
+   "columns": 8,
+   "rows": 1,
+   "scale": 0.25,
+   "anchor": [
+    146,
+    260
+   ],
+   "height": 240.0,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "count": 8,
+     "fps": 8.0
+    }
+   },
+   "body_half": [
+    20.8,
+    5.2
+   ],
+   "prompt_height": 60,
+   "reach": 44
+  }
+ }
+}

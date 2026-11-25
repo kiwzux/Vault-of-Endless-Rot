@@ -1,0 +1,3308 @@
+{
+ "atlas": "enemies.png",
+ "sheets": {
+  "archdemon": {
+   "origin": [
+    0,
+    0
+   ],
+   "frame": [
+    256,
+    256
+   ],
+   "columns": 8,
+   "rows": 3,
+   "scale": 0.25,
+   "anchor": [
+    128.0,
+    216
+   ],
+   "height": 180,
+   "stride": 12.621,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "col": 0,
+     "count": 4,
+     "fps": 4
+    },
+    "death": {
+     "row": 0,
+     "col": 4,
+     "count": 4,
+     "fps": 10
+    },
+    "walk": {
+     "row": 1,
+     "col": 0,
+     "count": 8,
+     "fps": 10
+    },
+    "attack": {
+     "row": 2,
+     "col": 0,
+     "count": 8,
+     "fps": 18
+    }
+   }
+  },
+  "bone_dragon": {
+   "origin": [
+    2048,
+    0
+   ],
+   "frame": [
+    256,
+    256
+   ],
+   "columns": 8,
+   "rows": 3,
+   "scale": 0.25,
+   "anchor": [
+    128.0,
+    216
+   ],
+   "height": 109,
+   "stride": 7.767,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "col": 0,
+     "count": 4,
+     "fps": 4
+    },
+    "death": {
+     "row": 0,
+     "col": 4,
+     "count": 4,
+     "fps": 10
+    },
+    "walk": {
+     "row": 1,
+     "col": 0,
+     "count": 8,
+     "fps": 10
+    },
+    "attack": {
+     "row": 2,
+     "col": 0,
+     "count": 8,
+     "fps": 18
+    }
+   }
+  },
+  "dread_knight": {
+   "origin": [
+    4096,
+    0
+   ],
+   "frame": [
+    256,
+    256
+   ],
+   "columns": 8,
+   "rows": 3,
+   "scale": 0.25,
+   "anchor": [
+    128.0,
+    216
+   ],
+   "height": 145,
+   "stride": 11.326,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "col": 0,
+     "count": 4,
+     "fps": 4
+    },
+    "death": {
+     "row": 0,
+     "col": 4,
+     "count": 4,
+     "fps": 10
+    },
+    "walk": {
+     "row": 1,
+     "col": 0,
+     "count": 8,
+     "fps": 10
+    },
+    "attack": {
+     "row": 2,
+     "col": 0,
+     "count": 8,
+     "fps": 18
+    }
+   }
+  },
+  "garrison_commander": {
+   "origin": [
+    6144,
+    0
+   ],
+   "frame": [
+    256,
+    256
+   ],
+   "columns": 8,
+   "rows": 3,
+   "scale": 0.25,
+   "anchor": [
+    128.0,
+    216
+   ],
+   "height": 139,
+   "stride": 11.326,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "col": 0,
+     "count": 4,
+     "fps": 4
+    },
+    "death": {
+     "row": 0,
+     "col": 4,
+     "count": 4,
+     "fps": 10
+    },
+    "walk": {
+     "row": 1,
+     "col": 0,
+     "count": 8,
+     "fps": 10
+    },
+    "attack": {
+     "row": 2,
+     "col": 0,
+     "count": 8,
+     "fps": 18
+    }
+   }
+  },
+  "lich_king": {
+   "origin": [
+    0,
+    768
+   ],
+   "frame": [
+    256,
+    256
+   ],
+   "columns": 16,
+   "rows": 3,
+   "scale": 0.25,
+   "anchor": [
+    128.0,
+    216
+   ],
+   "height": 188,
+   "stride": 6.337,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "col": 0,
+     "count": 8,
+     "fps": 8
+    },
+    "death": {
+     "row": 0,
+     "col": 8,
+     "count": 8,
+     "fps": 14
+    },
+    "walk": {
+     "row": 1,
+     "col": 0,
+     "count": 16,
+     "fps": 20
+    },
+    "attack": {
+     "row": 2,
+     "col": 0,
+     "count": 16,
+     "fps": 30
+    }
+   }
+  },
+  "pit_lord": {
+   "origin": [
+    4096,
+    768
+   ],
+   "frame": [
+    256,
+    256
+   ],
+   "columns": 8,
+   "rows": 3,
+   "scale": 0.25,
+   "anchor": [
+    128.0,
+    216
+   ],
+   "height": 190,
+   "stride": 13.268,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "col": 0,
+     "count": 4,
+     "fps": 4
+    },
+    "death": {
+     "row": 0,
+     "col": 4,
+     "count": 4,
+     "fps": 10
+    },
+    "walk": {
+     "row": 1,
+     "col": 0,
+     "count": 8,
+     "fps": 10
+    },
+    "attack": {
+     "row": 2,
+     "col": 0,
+     "count": 8,
+     "fps": 18
+    }
+   }
+  },
+  "cerberus": {
+   "origin": [
+    6144,
+    768
+   ],
+   "frame": [
+    192,
+    192
+   ],
+   "columns": 8,
+   "rows": 3,
+   "scale": 0.25,
+   "anchor": [
+    96.0,
+    160
+   ],
+   "height": 39,
+   "stride": 5.097,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "col": 0,
+     "count": 4,
+     "fps": 4
+    },
+    "death": {
+     "row": 0,
+     "col": 4,
+     "count": 4,
+     "fps": 10
+    },
+    "walk": {
+     "row": 1,
+     "col": 0,
+     "count": 8,
+     "fps": 10
+    },
+    "attack": {
+     "row": 2,
+     "col": 0,
+     "count": 8,
+     "fps": 18
+    }
+   }
+  },
+  "crypt_golem": {
+   "origin": [
+    0,
+    1536
+   ],
+   "frame": [
+    192,
+    192
+   ],
+   "columns": 8,
+   "rows": 3,
+   "scale": 0.25,
+   "anchor": [
+    96.0,
+    160
+   ],
+   "height": 74,
+   "stride": 6.068,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "col": 0,
+     "count": 4,
+     "fps": 4
+    },
+    "death": {
+     "row": 0,
+     "col": 4,
+     "count": 4,
+     "fps": 10
+    },
+    "walk": {
+     "row": 1,
+     "col": 0,
+     "count": 8,
+     "fps": 10
+    },
+    "attack": {
+     "row": 2,
+     "col": 0,
+     "count": 8,
+     "fps": 18
+    }
+   }
+  },
+  "death_rider": {
+   "origin": [
+    1536,
+    1536
+   ],
+   "frame": [
+    192,
+    192
+   ],
+   "columns": 8,
+   "rows": 3,
+   "scale": 0.25,
+   "anchor": [
+    96.0,
+    160
+   ],
+   "height": 75,
+   "stride": 4.342,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "col": 0,
+     "count": 4,
+     "fps": 4
+    },
+    "death": {
+     "row": 0,
+     "col": 4,
+     "count": 4,
+     "fps": 10
+    },
+    "walk": {
+     "row": 1,
+     "col": 0,
+     "count": 8,
+     "fps": 10
+    },
+    "attack": {
+     "row": 2,
+     "col": 0,
+     "count": 8,
+     "fps": 18
+    }
+   }
+  },
+  "demon": {
+   "origin": [
+    3072,
+    1536
+   ],
+   "frame": [
+    192,
+    192
+   ],
+   "columns": 8,
+   "rows": 3,
+   "scale": 0.25,
+   "anchor": [
+    96.0,
+    160
+   ],
+   "height": 113,
+   "stride": 9.385,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "col": 0,
+     "count": 4,
+     "fps": 4
+    },
+    "death": {
+     "row": 0,
+     "col": 4,
+     "count": 4,
+     "fps": 10
+    },
+    "walk": {
+     "row": 1,
+     "col": 0,
+     "count": 8,
+     "fps": 10
+    },
+    "attack": {
+     "row": 2,
+     "col": 0,
+     "count": 8,
+     "fps": 18
+    }
+   }
+  },
+  "demon_brute": {
+   "origin": [
+    4608,
+    1536
+   ],
+   "frame": [
+    192,
+    192
+   ],
+   "columns": 8,
+   "rows": 3,
+   "scale": 0.25,
+   "anchor": [
+    96.0,
+    160
+   ],
+   "height": 114,
+   "stride": 9.061,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "col": 0,
+     "count": 4,
+     "fps": 4
+    },
+    "death": {
+     "row": 0,
+     "col": 4,
+     "count": 4,
+     "fps": 10
+    },
+    "walk": {
+     "row": 1,
+     "col": 0,
+     "count": 8,
+     "fps": 10
+    },
+    "attack": {
+     "row": 2,
+     "col": 0,
+     "count": 8,
+     "fps": 18
+    }
+   }
+  },
+  "devourer": {
+   "origin": [
+    6144,
+    1536
+   ],
+   "frame": [
+    192,
+    192
+   ],
+   "columns": 8,
+   "rows": 3,
+   "scale": 0.25,
+   "anchor": [
+    96.0,
+    160
+   ],
+   "height": 28,
+   "stride": 9.439,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "col": 0,
+     "count": 4,
+     "fps": 4
+    },
+    "death": {
+     "row": 0,
+     "col": 4,
+     "count": 4,
+     "fps": 10
+    },
+    "walk": {
+     "row": 1,
+     "col": 0,
+     "count": 8,
+     "fps": 10
+    },
+    "attack": {
+     "row": 2,
+     "col": 0,
+     "count": 8,
+     "fps": 18
+    }
+   }
+  },
+  "horned_demon": {
+   "origin": [
+    0,
+    2112
+   ],
+   "frame": [
+    192,
+    192
+   ],
+   "columns": 8,
+   "rows": 3,
+   "scale": 0.25,
+   "anchor": [
+    96.0,
+    160
+   ],
+   "height": 127,
+   "stride": 10.032,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "col": 0,
+     "count": 4,
+     "fps": 4
+    },
+    "death": {
+     "row": 0,
+     "col": 4,
+     "count": 4,
+     "fps": 10
+    },
+    "walk": {
+     "row": 1,
+     "col": 0,
+     "count": 8,
+     "fps": 10
+    },
+    "attack": {
+     "row": 2,
+     "col": 0,
+     "count": 8,
+     "fps": 18
+    }
+   }
+  },
+  "infernal_guard": {
+   "origin": [
+    1536,
+    2112
+   ],
+   "frame": [
+    192,
+    192
+   ],
+   "columns": 8,
+   "rows": 3,
+   "scale": 0.25,
+   "anchor": [
+    96.0,
+    160
+   ],
+   "height": 88,
+   "stride": 7.119,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "col": 0,
+     "count": 4,
+     "fps": 4
+    },
+    "death": {
+     "row": 0,
+     "col": 4,
+     "count": 4,
+     "fps": 10
+    },
+    "walk": {
+     "row": 1,
+     "col": 0,
+     "count": 8,
+     "fps": 10
+    },
+    "attack": {
+     "row": 2,
+     "col": 0,
+     "count": 8,
+     "fps": 18
+    }
+   }
+  },
+  "rot_blob": {
+   "origin": [
+    3072,
+    2112
+   ],
+   "frame": [
+    192,
+    192
+   ],
+   "columns": 8,
+   "rows": 3,
+   "scale": 0.25,
+   "anchor": [
+    96.0,
+    160
+   ],
+   "height": 30,
+   "stride": 9.816,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "col": 0,
+     "count": 4,
+     "fps": 4
+    },
+    "death": {
+     "row": 0,
+     "col": 4,
+     "count": 4,
+     "fps": 10
+    },
+    "walk": {
+     "row": 1,
+     "col": 0,
+     "count": 8,
+     "fps": 10
+    },
+    "attack": {
+     "row": 2,
+     "col": 0,
+     "count": 8,
+     "fps": 18
+    }
+   }
+  },
+  "rot_treant": {
+   "origin": [
+    4608,
+    2112
+   ],
+   "frame": [
+    192,
+    192
+   ],
+   "columns": 8,
+   "rows": 3,
+   "scale": 0.25,
+   "anchor": [
+    96.0,
+    160
+   ],
+   "height": 103,
+   "stride": 7.281,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "col": 0,
+     "count": 4,
+     "fps": 4
+    },
+    "death": {
+     "row": 0,
+     "col": 4,
+     "count": 4,
+     "fps": 10
+    },
+    "walk": {
+     "row": 1,
+     "col": 0,
+     "count": 8,
+     "fps": 10
+    },
+    "attack": {
+     "row": 2,
+     "col": 0,
+     "count": 8,
+     "fps": 18
+    }
+   }
+  },
+  "stone_golem": {
+   "origin": [
+    6144,
+    2112
+   ],
+   "frame": [
+    192,
+    192
+   ],
+   "columns": 8,
+   "rows": 3,
+   "scale": 0.25,
+   "anchor": [
+    96.0,
+    160
+   ],
+   "height": 84,
+   "stride": 6.796,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "col": 0,
+     "count": 4,
+     "fps": 4
+    },
+    "death": {
+     "row": 0,
+     "col": 4,
+     "count": 4,
+     "fps": 10
+    },
+    "walk": {
+     "row": 1,
+     "col": 0,
+     "count": 8,
+     "fps": 10
+    },
+    "attack": {
+     "row": 2,
+     "col": 0,
+     "count": 8,
+     "fps": 18
+    }
+   }
+  },
+  "_placeholder": {
+   "origin": [
+    0,
+    2688
+   ],
+   "frame": [
+    128,
+    128
+   ],
+   "columns": 8,
+   "rows": 3,
+   "scale": 0.25,
+   "anchor": [
+    64.0,
+    104
+   ],
+   "height": 75,
+   "stride": 5.393,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "col": 0,
+     "count": 4,
+     "fps": 4
+    },
+    "death": {
+     "row": 0,
+     "col": 4,
+     "count": 4,
+     "fps": 10
+    },
+    "walk": {
+     "row": 1,
+     "col": 0,
+     "count": 8,
+     "fps": 10
+    },
+    "attack": {
+     "row": 2,
+     "col": 0,
+     "count": 8,
+     "fps": 18
+    }
+   }
+  },
+  "abyss_eye": {
+   "origin": [
+    1024,
+    2688
+   ],
+   "frame": [
+    128,
+    128
+   ],
+   "columns": 8,
+   "rows": 3,
+   "scale": 0.25,
+   "anchor": [
+    64.0,
+    104
+   ],
+   "height": 20,
+   "stride": 7.173,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "col": 0,
+     "count": 4,
+     "fps": 4
+    },
+    "death": {
+     "row": 0,
+     "col": 4,
+     "count": 4,
+     "fps": 10
+    },
+    "walk": {
+     "row": 1,
+     "col": 0,
+     "count": 8,
+     "fps": 10
+    },
+    "attack": {
+     "row": 2,
+     "col": 0,
+     "count": 8,
+     "fps": 18
+    }
+   }
+  },
+  "abyss_spawn": {
+   "origin": [
+    2048,
+    2688
+   ],
+   "frame": [
+    128,
+    128
+   ],
+   "columns": 8,
+   "rows": 3,
+   "scale": 0.25,
+   "anchor": [
+    64.0,
+    104
+   ],
+   "height": 37,
+   "stride": 3.883,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "col": 0,
+     "count": 4,
+     "fps": 4
+    },
+    "death": {
+     "row": 0,
+     "col": 4,
+     "count": 4,
+     "fps": 10
+    },
+    "walk": {
+     "row": 1,
+     "col": 0,
+     "count": 8,
+     "fps": 10
+    },
+    "attack": {
+     "row": 2,
+     "col": 0,
+     "count": 8,
+     "fps": 18
+    }
+   }
+  },
+  "bandit": {
+   "origin": [
+    3072,
+    2688
+   ],
+   "frame": [
+    128,
+    128
+   ],
+   "columns": 8,
+   "rows": 3,
+   "scale": 0.25,
+   "anchor": [
+    64.0,
+    104
+   ],
+   "height": 69,
+   "stride": 6.472,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "col": 0,
+     "count": 4,
+     "fps": 4
+    },
+    "death": {
+     "row": 0,
+     "col": 4,
+     "count": 4,
+     "fps": 10
+    },
+    "walk": {
+     "row": 1,
+     "col": 0,
+     "count": 8,
+     "fps": 10
+    },
+    "attack": {
+     "row": 2,
+     "col": 0,
+     "count": 8,
+     "fps": 18
+    }
+   }
+  },
+  "banshee": {
+   "origin": [
+    4096,
+    2688
+   ],
+   "frame": [
+    128,
+    128
+   ],
+   "columns": 8,
+   "rows": 3,
+   "scale": 0.25,
+   "anchor": [
+    64.0,
+    104
+   ],
+   "height": 82,
+   "stride": 8.63,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "col": 0,
+     "count": 4,
+     "fps": 4
+    },
+    "death": {
+     "row": 0,
+     "col": 4,
+     "count": 4,
+     "fps": 10
+    },
+    "walk": {
+     "row": 1,
+     "col": 0,
+     "count": 8,
+     "fps": 10
+    },
+    "attack": {
+     "row": 2,
+     "col": 0,
+     "count": 8,
+     "fps": 18
+    }
+   }
+  },
+  "bloated_corpse": {
+   "origin": [
+    5120,
+    2688
+   ],
+   "frame": [
+    128,
+    128
+   ],
+   "columns": 8,
+   "rows": 3,
+   "scale": 0.25,
+   "anchor": [
+    64.0,
+    104
+   ],
+   "height": 70,
+   "stride": 5.097,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "col": 0,
+     "count": 4,
+     "fps": 4
+    },
+    "death": {
+     "row": 0,
+     "col": 4,
+     "count": 4,
+     "fps": 10
+    },
+    "walk": {
+     "row": 1,
+     "col": 0,
+     "count": 8,
+     "fps": 10
+    },
+    "attack": {
+     "row": 2,
+     "col": 0,
+     "count": 8,
+     "fps": 18
+    }
+   }
+  },
+  "bone_soldier": {
+   "origin": [
+    6144,
+    2688
+   ],
+   "frame": [
+    128,
+    128
+   ],
+   "columns": 8,
+   "rows": 3,
+   "scale": 0.25,
+   "anchor": [
+    64.0,
+    104
+   ],
+   "height": 65,
+   "stride": 6.472,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "col": 0,
+     "count": 4,
+     "fps": 4
+    },
+    "death": {
+     "row": 0,
+     "col": 4,
+     "count": 4,
+     "fps": 10
+    },
+    "walk": {
+     "row": 1,
+     "col": 0,
+     "count": 8,
+     "fps": 10
+    },
+    "attack": {
+     "row": 2,
+     "col": 0,
+     "count": 8,
+     "fps": 18
+    }
+   }
+  },
+  "bone_spider": {
+   "origin": [
+    7168,
+    2688
+   ],
+   "frame": [
+    128,
+    128
+   ],
+   "columns": 8,
+   "rows": 3,
+   "scale": 0.25,
+   "anchor": [
+    64.0,
+    104
+   ],
+   "height": 20,
+   "stride": 3.371,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "col": 0,
+     "count": 4,
+     "fps": 4
+    },
+    "death": {
+     "row": 0,
+     "col": 4,
+     "count": 4,
+     "fps": 10
+    },
+    "walk": {
+     "row": 1,
+     "col": 0,
+     "count": 8,
+     "fps": 10
+    },
+    "attack": {
+     "row": 2,
+     "col": 0,
+     "count": 8,
+     "fps": 18
+    }
+   }
+  },
+  "burning_cleric": {
+   "origin": [
+    0,
+    3072
+   ],
+   "frame": [
+    128,
+    128
+   ],
+   "columns": 8,
+   "rows": 3,
+   "scale": 0.25,
+   "anchor": [
+    64.0,
+    104
+   ],
+   "height": 75,
+   "stride": 5.393,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "col": 0,
+     "count": 4,
+     "fps": 4
+    },
+    "death": {
+     "row": 0,
+     "col": 4,
+     "count": 4,
+     "fps": 10
+    },
+    "walk": {
+     "row": 1,
+     "col": 0,
+     "count": 8,
+     "fps": 10
+    },
+    "attack": {
+     "row": 2,
+     "col": 0,
+     "count": 8,
+     "fps": 18
+    }
+   }
+  },
+  "cultist": {
+   "origin": [
+    1024,
+    3072
+   ],
+   "frame": [
+    128,
+    128
+   ],
+   "columns": 8,
+   "rows": 3,
+   "scale": 0.25,
+   "anchor": [
+    64.0,
+    104
+   ],
+   "height": 75,
+   "stride": 5.393,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "col": 0,
+     "count": 4,
+     "fps": 4
+    },
+    "death": {
+     "row": 0,
+     "col": 4,
+     "count": 4,
+     "fps": 10
+    },
+    "walk": {
+     "row": 1,
+     "col": 0,
+     "count": 8,
+     "fps": 10
+    },
+    "attack": {
+     "row": 2,
+     "col": 0,
+     "count": 8,
+     "fps": 18
+    }
+   }
+  },
+  "cursed_soul": {
+   "origin": [
+    2048,
+    3072
+   ],
+   "frame": [
+    128,
+    128
+   ],
+   "columns": 8,
+   "rows": 3,
+   "scale": 0.25,
+   "anchor": [
+    64.0,
+    104
+   ],
+   "height": 79,
+   "stride": 8.63,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "col": 0,
+     "count": 4,
+     "fps": 4
+    },
+    "death": {
+     "row": 0,
+     "col": 4,
+     "count": 4,
+     "fps": 10
+    },
+    "walk": {
+     "row": 1,
+     "col": 0,
+     "count": 8,
+     "fps": 10
+    },
+    "attack": {
+     "row": 2,
+     "col": 0,
+     "count": 8,
+     "fps": 18
+    }
+   }
+  },
+  "dark_priest": {
+   "origin": [
+    3072,
+    3072
+   ],
+   "frame": [
+    128,
+    128
+   ],
+   "columns": 8,
+   "rows": 3,
+   "scale": 0.25,
+   "anchor": [
+    64.0,
+    104
+   ],
+   "height": 75,
+   "stride": 5.393,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "col": 0,
+     "count": 4,
+     "fps": 4
+    },
+    "death": {
+     "row": 0,
+     "col": 4,
+     "count": 4,
+     "fps": 10
+    },
+    "walk": {
+     "row": 1,
+     "col": 0,
+     "count": 8,
+     "fps": 10
+    },
+    "attack": {
+     "row": 2,
+     "col": 0,
+     "count": 8,
+     "fps": 18
+    }
+   }
+  },
+  "demon_caster": {
+   "origin": [
+    4096,
+    3072
+   ],
+   "frame": [
+    128,
+    128
+   ],
+   "columns": 8,
+   "rows": 3,
+   "scale": 0.25,
+   "anchor": [
+    64.0,
+    104
+   ],
+   "height": 82,
+   "stride": 5.393,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "col": 0,
+     "count": 4,
+     "fps": 4
+    },
+    "death": {
+     "row": 0,
+     "col": 4,
+     "count": 4,
+     "fps": 10
+    },
+    "walk": {
+     "row": 1,
+     "col": 0,
+     "count": 8,
+     "fps": 10
+    },
+    "attack": {
+     "row": 2,
+     "col": 0,
+     "count": 8,
+     "fps": 18
+    }
+   }
+  },
+  "drowned": {
+   "origin": [
+    5120,
+    3072
+   ],
+   "frame": [
+    128,
+    128
+   ],
+   "columns": 8,
+   "rows": 3,
+   "scale": 0.25,
+   "anchor": [
+    64.0,
+    104
+   ],
+   "height": 68,
+   "stride": 5.097,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "col": 0,
+     "count": 4,
+     "fps": 4
+    },
+    "death": {
+     "row": 0,
+     "col": 4,
+     "count": 4,
+     "fps": 10
+    },
+    "walk": {
+     "row": 1,
+     "col": 0,
+     "count": 8,
+     "fps": 10
+    },
+    "attack": {
+     "row": 2,
+     "col": 0,
+     "count": 8,
+     "fps": 18
+    }
+   }
+  },
+  "efreet": {
+   "origin": [
+    6144,
+    3072
+   ],
+   "frame": [
+    128,
+    128
+   ],
+   "columns": 8,
+   "rows": 3,
+   "scale": 0.25,
+   "anchor": [
+    64.0,
+    104
+   ],
+   "height": 95,
+   "stride": 9.32,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "col": 0,
+     "count": 4,
+     "fps": 4
+    },
+    "death": {
+     "row": 0,
+     "col": 4,
+     "count": 4,
+     "fps": 10
+    },
+    "walk": {
+     "row": 1,
+     "col": 0,
+     "count": 8,
+     "fps": 10
+    },
+    "attack": {
+     "row": 2,
+     "col": 0,
+     "count": 8,
+     "fps": 18
+    }
+   }
+  },
+  "fallen_templar": {
+   "origin": [
+    7168,
+    3072
+   ],
+   "frame": [
+    128,
+    128
+   ],
+   "columns": 8,
+   "rows": 3,
+   "scale": 0.25,
+   "anchor": [
+    64.0,
+    104
+   ],
+   "height": 73,
+   "stride": 6.99,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "col": 0,
+     "count": 4,
+     "fps": 4
+    },
+    "death": {
+     "row": 0,
+     "col": 4,
+     "count": 4,
+     "fps": 10
+    },
+    "walk": {
+     "row": 1,
+     "col": 0,
+     "count": 8,
+     "fps": 10
+    },
+    "attack": {
+     "row": 2,
+     "col": 0,
+     "count": 8,
+     "fps": 18
+    }
+   }
+  },
+  "familiar": {
+   "origin": [
+    0,
+    3456
+   ],
+   "frame": [
+    128,
+    128
+   ],
+   "columns": 8,
+   "rows": 3,
+   "scale": 0.25,
+   "anchor": [
+    64.0,
+    104
+   ],
+   "height": 43,
+   "stride": 3.366,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "col": 0,
+     "count": 4,
+     "fps": 4
+    },
+    "death": {
+     "row": 0,
+     "col": 4,
+     "count": 4,
+     "fps": 10
+    },
+    "walk": {
+     "row": 1,
+     "col": 0,
+     "count": 8,
+     "fps": 10
+    },
+    "attack": {
+     "row": 2,
+     "col": 0,
+     "count": 8,
+     "fps": 18
+    }
+   }
+  },
+  "fire_spirit": {
+   "origin": [
+    1024,
+    3456
+   ],
+   "frame": [
+    128,
+    128
+   ],
+   "columns": 8,
+   "rows": 3,
+   "scale": 0.25,
+   "anchor": [
+    64.0,
+    104
+   ],
+   "height": 28,
+   "stride": 5.663,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "col": 0,
+     "count": 4,
+     "fps": 4
+    },
+    "death": {
+     "row": 0,
+     "col": 4,
+     "count": 4,
+     "fps": 10
+    },
+    "walk": {
+     "row": 1,
+     "col": 0,
+     "count": 8,
+     "fps": 10
+    },
+    "attack": {
+     "row": 2,
+     "col": 0,
+     "count": 8,
+     "fps": 18
+    }
+   }
+  },
+  "ghost": {
+   "origin": [
+    2048,
+    3456
+   ],
+   "frame": [
+    128,
+    128
+   ],
+   "columns": 8,
+   "rows": 3,
+   "scale": 0.25,
+   "anchor": [
+    64.0,
+    104
+   ],
+   "height": 79,
+   "stride": 8.63,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "col": 0,
+     "count": 4,
+     "fps": 4
+    },
+    "death": {
+     "row": 0,
+     "col": 4,
+     "count": 4,
+     "fps": 10
+    },
+    "walk": {
+     "row": 1,
+     "col": 0,
+     "count": 8,
+     "fps": 10
+    },
+    "attack": {
+     "row": 2,
+     "col": 0,
+     "count": 8,
+     "fps": 18
+    }
+   }
+  },
+  "ghoul": {
+   "origin": [
+    3072,
+    3456
+   ],
+   "frame": [
+    128,
+    128
+   ],
+   "columns": 8,
+   "rows": 3,
+   "scale": 0.25,
+   "anchor": [
+    64.0,
+    104
+   ],
+   "height": 58,
+   "stride": 4.611,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "col": 0,
+     "count": 4,
+     "fps": 4
+    },
+    "death": {
+     "row": 0,
+     "col": 4,
+     "count": 4,
+     "fps": 10
+    },
+    "walk": {
+     "row": 1,
+     "col": 0,
+     "count": 8,
+     "fps": 10
+    },
+    "attack": {
+     "row": 2,
+     "col": 0,
+     "count": 8,
+     "fps": 18
+    }
+   }
+  },
+  "ghoul_wolf": {
+   "origin": [
+    4096,
+    3456
+   ],
+   "frame": [
+    128,
+    128
+   ],
+   "columns": 8,
+   "rows": 3,
+   "scale": 0.25,
+   "anchor": [
+    64.0,
+    104
+   ],
+   "height": 23,
+   "stride": 3.587,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "col": 0,
+     "count": 4,
+     "fps": 4
+    },
+    "death": {
+     "row": 0,
+     "col": 4,
+     "count": 4,
+     "fps": 10
+    },
+    "walk": {
+     "row": 1,
+     "col": 0,
+     "count": 8,
+     "fps": 10
+    },
+    "attack": {
+     "row": 2,
+     "col": 0,
+     "count": 8,
+     "fps": 18
+    }
+   }
+  },
+  "gog": {
+   "origin": [
+    5120,
+    3456
+   ],
+   "frame": [
+    128,
+    128
+   ],
+   "columns": 8,
+   "rows": 3,
+   "scale": 0.25,
+   "anchor": [
+    64.0,
+    104
+   ],
+   "height": 79,
+   "stride": 5.393,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "col": 0,
+     "count": 4,
+     "fps": 4
+    },
+    "death": {
+     "row": 0,
+     "col": 4,
+     "count": 4,
+     "fps": 10
+    },
+    "walk": {
+     "row": 1,
+     "col": 0,
+     "count": 8,
+     "fps": 10
+    },
+    "attack": {
+     "row": 2,
+     "col": 0,
+     "count": 8,
+     "fps": 18
+    }
+   }
+  },
+  "hell_hound": {
+   "origin": [
+    6144,
+    3456
+   ],
+   "frame": [
+    128,
+    128
+   ],
+   "columns": 8,
+   "rows": 3,
+   "scale": 0.25,
+   "anchor": [
+    64.0,
+    104
+   ],
+   "height": 25,
+   "stride": 3.775,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "col": 0,
+     "count": 4,
+     "fps": 4
+    },
+    "death": {
+     "row": 0,
+     "col": 4,
+     "count": 4,
+     "fps": 10
+    },
+    "walk": {
+     "row": 1,
+     "col": 0,
+     "count": 8,
+     "fps": 10
+    },
+    "attack": {
+     "row": 2,
+     "col": 0,
+     "count": 8,
+     "fps": 18
+    }
+   }
+  },
+  "imp": {
+   "origin": [
+    7168,
+    3456
+   ],
+   "frame": [
+    128,
+    128
+   ],
+   "columns": 8,
+   "rows": 3,
+   "scale": 0.25,
+   "anchor": [
+    64.0,
+    104
+   ],
+   "height": 46,
+   "stride": 4.272,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "col": 0,
+     "count": 4,
+     "fps": 4
+    },
+    "death": {
+     "row": 0,
+     "col": 4,
+     "count": 4,
+     "fps": 10
+    },
+    "walk": {
+     "row": 1,
+     "col": 0,
+     "count": 8,
+     "fps": 10
+    },
+    "attack": {
+     "row": 2,
+     "col": 0,
+     "count": 8,
+     "fps": 18
+    }
+   }
+  },
+  "lava_slime": {
+   "origin": [
+    0,
+    3840
+   ],
+   "frame": [
+    128,
+    128
+   ],
+   "columns": 8,
+   "rows": 3,
+   "scale": 0.25,
+   "anchor": [
+    64.0,
+    104
+   ],
+   "height": 28,
+   "stride": 7.173,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "col": 0,
+     "count": 4,
+     "fps": 4
+    },
+    "death": {
+     "row": 0,
+     "col": 4,
+     "count": 4,
+     "fps": 10
+    },
+    "walk": {
+     "row": 1,
+     "col": 0,
+     "count": 8,
+     "fps": 10
+    },
+    "attack": {
+     "row": 2,
+     "col": 0,
+     "count": 8,
+     "fps": 18
+    }
+   }
+  },
+  "lich": {
+   "origin": [
+    1024,
+    3840
+   ],
+   "frame": [
+    128,
+    128
+   ],
+   "columns": 8,
+   "rows": 3,
+   "scale": 0.25,
+   "anchor": [
+    64.0,
+    104
+   ],
+   "height": 74,
+   "stride": 5.393,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "col": 0,
+     "count": 4,
+     "fps": 4
+    },
+    "death": {
+     "row": 0,
+     "col": 4,
+     "count": 4,
+     "fps": 10
+    },
+    "walk": {
+     "row": 1,
+     "col": 0,
+     "count": 8,
+     "fps": 10
+    },
+    "attack": {
+     "row": 2,
+     "col": 0,
+     "count": 8,
+     "fps": 18
+    }
+   }
+  },
+  "magma_droplet": {
+   "origin": [
+    2048,
+    3840
+   ],
+   "frame": [
+    128,
+    128
+   ],
+   "columns": 8,
+   "rows": 3,
+   "scale": 0.25,
+   "anchor": [
+    64.0,
+    104
+   ],
+   "height": 9,
+   "stride": 3.775,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "col": 0,
+     "count": 4,
+     "fps": 4
+    },
+    "death": {
+     "row": 0,
+     "col": 4,
+     "count": 4,
+     "fps": 10
+    },
+    "walk": {
+     "row": 1,
+     "col": 0,
+     "count": 8,
+     "fps": 10
+    },
+    "attack": {
+     "row": 2,
+     "col": 0,
+     "count": 8,
+     "fps": 18
+    }
+   }
+  },
+  "magog": {
+   "origin": [
+    3072,
+    3840
+   ],
+   "frame": [
+    128,
+    128
+   ],
+   "columns": 8,
+   "rows": 3,
+   "scale": 0.25,
+   "anchor": [
+    64.0,
+    104
+   ],
+   "height": 86,
+   "stride": 5.663,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "col": 0,
+     "count": 4,
+     "fps": 4
+    },
+    "death": {
+     "row": 0,
+     "col": 4,
+     "count": 4,
+     "fps": 10
+    },
+    "walk": {
+     "row": 1,
+     "col": 0,
+     "count": 8,
+     "fps": 10
+    },
+    "attack": {
+     "row": 2,
+     "col": 0,
+     "count": 8,
+     "fps": 18
+    }
+   }
+  },
+  "mimic": {
+   "origin": [
+    4096,
+    3840
+   ],
+   "frame": [
+    128,
+    128
+   ],
+   "columns": 8,
+   "rows": 3,
+   "scale": 0.25,
+   "anchor": [
+    64.0,
+    104
+   ],
+   "height": 20,
+   "stride": 7.551,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "col": 0,
+     "count": 4,
+     "fps": 4
+    },
+    "death": {
+     "row": 0,
+     "col": 4,
+     "count": 4,
+     "fps": 10
+    },
+    "walk": {
+     "row": 1,
+     "col": 0,
+     "count": 8,
+     "fps": 10
+    },
+    "attack": {
+     "row": 2,
+     "col": 0,
+     "count": 8,
+     "fps": 18
+    }
+   }
+  },
+  "necro_acolyte": {
+   "origin": [
+    5120,
+    3840
+   ],
+   "frame": [
+    128,
+    128
+   ],
+   "columns": 8,
+   "rows": 3,
+   "scale": 0.25,
+   "anchor": [
+    64.0,
+    104
+   ],
+   "height": 75,
+   "stride": 5.393,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "col": 0,
+     "count": 4,
+     "fps": 4
+    },
+    "death": {
+     "row": 0,
+     "col": 4,
+     "count": 4,
+     "fps": 10
+    },
+    "walk": {
+     "row": 1,
+     "col": 0,
+     "count": 8,
+     "fps": 10
+    },
+    "attack": {
+     "row": 2,
+     "col": 0,
+     "count": 8,
+     "fps": 18
+    }
+   }
+  },
+  "phantom_mage": {
+   "origin": [
+    6144,
+    3840
+   ],
+   "frame": [
+    128,
+    128
+   ],
+   "columns": 8,
+   "rows": 3,
+   "scale": 0.25,
+   "anchor": [
+    64.0,
+    104
+   ],
+   "height": 90,
+   "stride": 8.63,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "col": 0,
+     "count": 4,
+     "fps": 4
+    },
+    "death": {
+     "row": 0,
+     "col": 4,
+     "count": 4,
+     "fps": 10
+    },
+    "walk": {
+     "row": 1,
+     "col": 0,
+     "count": 8,
+     "fps": 10
+    },
+    "attack": {
+     "row": 2,
+     "col": 0,
+     "count": 8,
+     "fps": 18
+    }
+   }
+  },
+  "plague_rat": {
+   "origin": [
+    7168,
+    3840
+   ],
+   "frame": [
+    128,
+    128
+   ],
+   "columns": 8,
+   "rows": 3,
+   "scale": 0.25,
+   "anchor": [
+    64.0,
+    104
+   ],
+   "height": 22,
+   "stride": 5.286,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "col": 0,
+     "count": 4,
+     "fps": 4
+    },
+    "death": {
+     "row": 0,
+     "col": 4,
+     "count": 4,
+     "fps": 10
+    },
+    "walk": {
+     "row": 1,
+     "col": 0,
+     "count": 8,
+     "fps": 10
+    },
+    "attack": {
+     "row": 2,
+     "col": 0,
+     "count": 8,
+     "fps": 18
+    }
+   }
+  },
+  "plague_thrower": {
+   "origin": [
+    0,
+    4224
+   ],
+   "frame": [
+    128,
+    128
+   ],
+   "columns": 8,
+   "rows": 3,
+   "scale": 0.25,
+   "anchor": [
+    64.0,
+    104
+   ],
+   "height": 74,
+   "stride": 5.393,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "col": 0,
+     "count": 4,
+     "fps": 4
+    },
+    "death": {
+     "row": 0,
+     "col": 4,
+     "count": 4,
+     "fps": 10
+    },
+    "walk": {
+     "row": 1,
+     "col": 0,
+     "count": 8,
+     "fps": 10
+    },
+    "attack": {
+     "row": 2,
+     "col": 0,
+     "count": 8,
+     "fps": 18
+    }
+   }
+  },
+  "plague_zombie": {
+   "origin": [
+    1024,
+    4224
+   ],
+   "frame": [
+    128,
+    128
+   ],
+   "columns": 8,
+   "rows": 3,
+   "scale": 0.25,
+   "anchor": [
+    64.0,
+    104
+   ],
+   "height": 68,
+   "stride": 5.097,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "col": 0,
+     "count": 4,
+     "fps": 4
+    },
+    "death": {
+     "row": 0,
+     "col": 4,
+     "count": 4,
+     "fps": 10
+    },
+    "walk": {
+     "row": 1,
+     "col": 0,
+     "count": 8,
+     "fps": 10
+    },
+    "attack": {
+     "row": 2,
+     "col": 0,
+     "count": 8,
+     "fps": 18
+    }
+   }
+  },
+  "power_lich": {
+   "origin": [
+    2048,
+    4224
+   ],
+   "frame": [
+    128,
+    128
+   ],
+   "columns": 8,
+   "rows": 3,
+   "scale": 0.25,
+   "anchor": [
+    64.0,
+    104
+   ],
+   "height": 79,
+   "stride": 5.717,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "col": 0,
+     "count": 4,
+     "fps": 4
+    },
+    "death": {
+     "row": 0,
+     "col": 4,
+     "count": 4,
+     "fps": 10
+    },
+    "walk": {
+     "row": 1,
+     "col": 0,
+     "count": 8,
+     "fps": 10
+    },
+    "attack": {
+     "row": 2,
+     "col": 0,
+     "count": 8,
+     "fps": 18
+    }
+   }
+  },
+  "pyromancer": {
+   "origin": [
+    3072,
+    4224
+   ],
+   "frame": [
+    128,
+    128
+   ],
+   "columns": 8,
+   "rows": 3,
+   "scale": 0.25,
+   "anchor": [
+    64.0,
+    104
+   ],
+   "height": 75,
+   "stride": 5.393,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "col": 0,
+     "count": 4,
+     "fps": 4
+    },
+    "death": {
+     "row": 0,
+     "col": 4,
+     "count": 4,
+     "fps": 10
+    },
+    "walk": {
+     "row": 1,
+     "col": 0,
+     "count": 8,
+     "fps": 10
+    },
+    "attack": {
+     "row": 2,
+     "col": 0,
+     "count": 8,
+     "fps": 18
+    }
+   }
+  },
+  "rabid_wolf": {
+   "origin": [
+    4096,
+    4224
+   ],
+   "frame": [
+    128,
+    128
+   ],
+   "columns": 8,
+   "rows": 3,
+   "scale": 0.25,
+   "anchor": [
+    64.0,
+    104
+   ],
+   "height": 25,
+   "stride": 3.775,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "col": 0,
+     "count": 4,
+     "fps": 4
+    },
+    "death": {
+     "row": 0,
+     "col": 4,
+     "count": 4,
+     "fps": 10
+    },
+    "walk": {
+     "row": 1,
+     "col": 0,
+     "count": 8,
+     "fps": 10
+    },
+    "attack": {
+     "row": 2,
+     "col": 0,
+     "count": 8,
+     "fps": 18
+    }
+   }
+  },
+  "renegade_guard": {
+   "origin": [
+    5120,
+    4224
+   ],
+   "frame": [
+    128,
+    128
+   ],
+   "columns": 8,
+   "rows": 3,
+   "scale": 0.25,
+   "anchor": [
+    64.0,
+    104
+   ],
+   "height": 74,
+   "stride": 6.796,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "col": 0,
+     "count": 4,
+     "fps": 4
+    },
+    "death": {
+     "row": 0,
+     "col": 4,
+     "count": 4,
+     "fps": 10
+    },
+    "walk": {
+     "row": 1,
+     "col": 0,
+     "count": 8,
+     "fps": 10
+    },
+    "attack": {
+     "row": 2,
+     "col": 0,
+     "count": 8,
+     "fps": 18
+    }
+   }
+  },
+  "rogue_archer": {
+   "origin": [
+    6144,
+    4224
+   ],
+   "frame": [
+    128,
+    128
+   ],
+   "columns": 8,
+   "rows": 3,
+   "scale": 0.25,
+   "anchor": [
+    64.0,
+    104
+   ],
+   "height": 70,
+   "stride": 6.472,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "col": 0,
+     "count": 4,
+     "fps": 4
+    },
+    "death": {
+     "row": 0,
+     "col": 4,
+     "count": 4,
+     "fps": 10
+    },
+    "walk": {
+     "row": 1,
+     "col": 0,
+     "count": 8,
+     "fps": 10
+    },
+    "attack": {
+     "row": 2,
+     "col": 0,
+     "count": 8,
+     "fps": 18
+    }
+   }
+  },
+  "rot_droplet": {
+   "origin": [
+    7168,
+    4224
+   ],
+   "frame": [
+    128,
+    128
+   ],
+   "columns": 8,
+   "rows": 3,
+   "scale": 0.25,
+   "anchor": [
+    64.0,
+    104
+   ],
+   "height": 8,
+   "stride": 4.153,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "col": 0,
+     "count": 4,
+     "fps": 4
+    },
+    "death": {
+     "row": 0,
+     "col": 4,
+     "count": 4,
+     "fps": 10
+    },
+    "walk": {
+     "row": 1,
+     "col": 0,
+     "count": 8,
+     "fps": 10
+    },
+    "attack": {
+     "row": 2,
+     "col": 0,
+     "count": 8,
+     "fps": 18
+    }
+   }
+  },
+  "scarecrow": {
+   "origin": [
+    0,
+    4608
+   ],
+   "frame": [
+    128,
+    128
+   ],
+   "columns": 8,
+   "rows": 3,
+   "scale": 0.25,
+   "anchor": [
+    64.0,
+    104
+   ],
+   "height": 75,
+   "stride": 6.796,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "col": 0,
+     "count": 4,
+     "fps": 4
+    },
+    "death": {
+     "row": 0,
+     "col": 4,
+     "count": 4,
+     "fps": 10
+    },
+    "walk": {
+     "row": 1,
+     "col": 0,
+     "count": 8,
+     "fps": 10
+    },
+    "attack": {
+     "row": 2,
+     "col": 0,
+     "count": 8,
+     "fps": 18
+    }
+   }
+  },
+  "skeleton": {
+   "origin": [
+    1024,
+    4608
+   ],
+   "frame": [
+    128,
+    128
+   ],
+   "columns": 8,
+   "rows": 3,
+   "scale": 0.25,
+   "anchor": [
+    64.0,
+    104
+   ],
+   "height": 65,
+   "stride": 6.472,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "col": 0,
+     "count": 4,
+     "fps": 4
+    },
+    "death": {
+     "row": 0,
+     "col": 4,
+     "count": 4,
+     "fps": 10
+    },
+    "walk": {
+     "row": 1,
+     "col": 0,
+     "count": 8,
+     "fps": 10
+    },
+    "attack": {
+     "row": 2,
+     "col": 0,
+     "count": 8,
+     "fps": 18
+    }
+   }
+  },
+  "skeleton_archer": {
+   "origin": [
+    2048,
+    4608
+   ],
+   "frame": [
+    128,
+    128
+   ],
+   "columns": 8,
+   "rows": 3,
+   "scale": 0.25,
+   "anchor": [
+    64.0,
+    104
+   ],
+   "height": 68,
+   "stride": 6.472,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "col": 0,
+     "count": 4,
+     "fps": 4
+    },
+    "death": {
+     "row": 0,
+     "col": 4,
+     "count": 4,
+     "fps": 10
+    },
+    "walk": {
+     "row": 1,
+     "col": 0,
+     "count": 8,
+     "fps": 10
+    },
+    "attack": {
+     "row": 2,
+     "col": 0,
+     "count": 8,
+     "fps": 18
+    }
+   }
+  },
+  "skeleton_crossbowman": {
+   "origin": [
+    3072,
+    4608
+   ],
+   "frame": [
+    128,
+    128
+   ],
+   "columns": 8,
+   "rows": 3,
+   "scale": 0.25,
+   "anchor": [
+    64.0,
+    104
+   ],
+   "height": 65,
+   "stride": 6.472,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "col": 0,
+     "count": 4,
+     "fps": 4
+    },
+    "death": {
+     "row": 0,
+     "col": 4,
+     "count": 4,
+     "fps": 10
+    },
+    "walk": {
+     "row": 1,
+     "col": 0,
+     "count": 8,
+     "fps": 10
+    },
+    "attack": {
+     "row": 2,
+     "col": 0,
+     "count": 8,
+     "fps": 18
+    }
+   }
+  },
+  "skeleton_warrior": {
+   "origin": [
+    4096,
+    4608
+   ],
+   "frame": [
+    128,
+    128
+   ],
+   "columns": 8,
+   "rows": 3,
+   "scale": 0.25,
+   "anchor": [
+    64.0,
+    104
+   ],
+   "height": 70,
+   "stride": 6.731,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "col": 0,
+     "count": 4,
+     "fps": 4
+    },
+    "death": {
+     "row": 0,
+     "col": 4,
+     "count": 4,
+     "fps": 10
+    },
+    "walk": {
+     "row": 1,
+     "col": 0,
+     "count": 8,
+     "fps": 10
+    },
+    "attack": {
+     "row": 2,
+     "col": 0,
+     "count": 8,
+     "fps": 18
+    }
+   }
+  },
+  "slimeling": {
+   "origin": [
+    5120,
+    4608
+   ],
+   "frame": [
+    128,
+    128
+   ],
+   "columns": 8,
+   "rows": 3,
+   "scale": 0.25,
+   "anchor": [
+    64.0,
+    104
+   ],
+   "height": 7,
+   "stride": 3.775,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "col": 0,
+     "count": 4,
+     "fps": 4
+    },
+    "death": {
+     "row": 0,
+     "col": 4,
+     "count": 4,
+     "fps": 10
+    },
+    "walk": {
+     "row": 1,
+     "col": 0,
+     "count": 8,
+     "fps": 10
+    },
+    "attack": {
+     "row": 2,
+     "col": 0,
+     "count": 8,
+     "fps": 18
+    }
+   }
+  },
+  "spiderling": {
+   "origin": [
+    6144,
+    4608
+   ],
+   "frame": [
+    128,
+    128
+   ],
+   "columns": 8,
+   "rows": 3,
+   "scale": 0.25,
+   "anchor": [
+    64.0,
+    104
+   ],
+   "height": 7,
+   "stride": 1.753,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "col": 0,
+     "count": 4,
+     "fps": 4
+    },
+    "death": {
+     "row": 0,
+     "col": 4,
+     "count": 4,
+     "fps": 10
+    },
+    "walk": {
+     "row": 1,
+     "col": 0,
+     "count": 8,
+     "fps": 10
+    },
+    "attack": {
+     "row": 2,
+     "col": 0,
+     "count": 8,
+     "fps": 18
+    }
+   }
+  },
+  "succubus": {
+   "origin": [
+    7168,
+    4608
+   ],
+   "frame": [
+    128,
+    128
+   ],
+   "columns": 8,
+   "rows": 3,
+   "scale": 0.25,
+   "anchor": [
+    64.0,
+    104
+   ],
+   "height": 82,
+   "stride": 6.472,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "col": 0,
+     "count": 4,
+     "fps": 4
+    },
+    "death": {
+     "row": 0,
+     "col": 4,
+     "count": 4,
+     "fps": 10
+    },
+    "walk": {
+     "row": 1,
+     "col": 0,
+     "count": 8,
+     "fps": 10
+    },
+    "attack": {
+     "row": 2,
+     "col": 0,
+     "count": 8,
+     "fps": 18
+    }
+   }
+  },
+  "swamp_slime": {
+   "origin": [
+    0,
+    4992
+   ],
+   "frame": [
+    128,
+    128
+   ],
+   "columns": 8,
+   "rows": 3,
+   "scale": 0.25,
+   "anchor": [
+    64.0,
+    104
+   ],
+   "height": 18,
+   "stride": 6.796,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "col": 0,
+     "count": 4,
+     "fps": 4
+    },
+    "death": {
+     "row": 0,
+     "col": 4,
+     "count": 4,
+     "fps": 10
+    },
+    "walk": {
+     "row": 1,
+     "col": 0,
+     "count": 8,
+     "fps": 10
+    },
+    "attack": {
+     "row": 2,
+     "col": 0,
+     "count": 8,
+     "fps": 18
+    }
+   }
+  },
+  "vampire_bat": {
+   "origin": [
+    1024,
+    4992
+   ],
+   "frame": [
+    128,
+    128
+   ],
+   "columns": 8,
+   "rows": 3,
+   "scale": 0.25,
+   "anchor": [
+    64.0,
+    104
+   ],
+   "height": 52,
+   "stride": 11.326,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "col": 0,
+     "count": 4,
+     "fps": 4
+    },
+    "death": {
+     "row": 0,
+     "col": 4,
+     "count": 4,
+     "fps": 10
+    },
+    "walk": {
+     "row": 1,
+     "col": 0,
+     "count": 8,
+     "fps": 10
+    },
+    "attack": {
+     "row": 2,
+     "col": 0,
+     "count": 8,
+     "fps": 18
+    }
+   }
+  },
+  "village_witch": {
+   "origin": [
+    2048,
+    4992
+   ],
+   "frame": [
+    128,
+    128
+   ],
+   "columns": 8,
+   "rows": 3,
+   "scale": 0.25,
+   "anchor": [
+    64.0,
+    104
+   ],
+   "height": 84,
+   "stride": 5.393,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "col": 0,
+     "count": 4,
+     "fps": 4
+    },
+    "death": {
+     "row": 0,
+     "col": 4,
+     "count": 4,
+     "fps": 10
+    },
+    "walk": {
+     "row": 1,
+     "col": 0,
+     "count": 8,
+     "fps": 10
+    },
+    "attack": {
+     "row": 2,
+     "col": 0,
+     "count": 8,
+     "fps": 18
+    }
+   }
+  },
+  "void_eye": {
+   "origin": [
+    3072,
+    4992
+   ],
+   "frame": [
+    128,
+    128
+   ],
+   "columns": 8,
+   "rows": 3,
+   "scale": 0.25,
+   "anchor": [
+    64.0,
+    104
+   ],
+   "height": 18,
+   "stride": 6.796,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "col": 0,
+     "count": 4,
+     "fps": 4
+    },
+    "death": {
+     "row": 0,
+     "col": 4,
+     "count": 4,
+     "fps": 10
+    },
+    "walk": {
+     "row": 1,
+     "col": 0,
+     "count": 8,
+     "fps": 10
+    },
+    "attack": {
+     "row": 2,
+     "col": 0,
+     "count": 8,
+     "fps": 18
+    }
+   }
+  },
+  "water_wraith": {
+   "origin": [
+    4096,
+    4992
+   ],
+   "frame": [
+    128,
+    128
+   ],
+   "columns": 8,
+   "rows": 3,
+   "scale": 0.25,
+   "anchor": [
+    64.0,
+    104
+   ],
+   "height": 84,
+   "stride": 8.63,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "col": 0,
+     "count": 4,
+     "fps": 4
+    },
+    "death": {
+     "row": 0,
+     "col": 4,
+     "count": 4,
+     "fps": 10
+    },
+    "walk": {
+     "row": 1,
+     "col": 0,
+     "count": 8,
+     "fps": 10
+    },
+    "attack": {
+     "row": 2,
+     "col": 0,
+     "count": 8,
+     "fps": 18
+    }
+   }
+  },
+  "wild_boar": {
+   "origin": [
+    5120,
+    4992
+   ],
+   "frame": [
+    128,
+    128
+   ],
+   "columns": 8,
+   "rows": 3,
+   "scale": 0.25,
+   "anchor": [
+    64.0,
+    104
+   ],
+   "height": 24,
+   "stride": 4.342,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "col": 0,
+     "count": 4,
+     "fps": 4
+    },
+    "death": {
+     "row": 0,
+     "col": 4,
+     "count": 4,
+     "fps": 10
+    },
+    "walk": {
+     "row": 1,
+     "col": 0,
+     "count": 8,
+     "fps": 10
+    },
+    "attack": {
+     "row": 2,
+     "col": 0,
+     "count": 8,
+     "fps": 18
+    }
+   }
+  },
+  "wraith": {
+   "origin": [
+    6144,
+    4992
+   ],
+   "frame": [
+    128,
+    128
+   ],
+   "columns": 8,
+   "rows": 3,
+   "scale": 0.25,
+   "anchor": [
+    64.0,
+    104
+   ],
+   "height": 84,
+   "stride": 8.63,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "col": 0,
+     "count": 4,
+     "fps": 4
+    },
+    "death": {
+     "row": 0,
+     "col": 4,
+     "count": 4,
+     "fps": 10
+    },
+    "walk": {
+     "row": 1,
+     "col": 0,
+     "count": 8,
+     "fps": 10
+    },
+    "attack": {
+     "row": 2,
+     "col": 0,
+     "count": 8,
+     "fps": 18
+    }
+   }
+  },
+  "zombie": {
+   "origin": [
+    7168,
+    4992
+   ],
+   "frame": [
+    128,
+    128
+   ],
+   "columns": 8,
+   "rows": 3,
+   "scale": 0.25,
+   "anchor": [
+    64.0,
+    104
+   ],
+   "height": 64,
+   "stride": 4.854,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "col": 0,
+     "count": 4,
+     "fps": 4
+    },
+    "death": {
+     "row": 0,
+     "col": 4,
+     "count": 4,
+     "fps": 10
+    },
+    "walk": {
+     "row": 1,
+     "col": 0,
+     "count": 8,
+     "fps": 10
+    },
+    "attack": {
+     "row": 2,
+     "col": 0,
+     "count": 8,
+     "fps": 18
+    }
+   }
+  }
+ },
+ "white": [
+  1,
+  5377,
+  2,
+  2
+ ],
+ "shadow": [
+  8,
+  5376,
+  72,
+  24
+ ],
+ "aura": [
+  88,
+  5376,
+  120,
+  48
+ ]
+}

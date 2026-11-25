@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="BossPools" format=3]
+
+[ext_resource type="Script" path="res://systems/enemies/boss_attacks/boss_pools.gd" id="1_script"]
+
+[resource]
+script = ExtResource("1_script")
+id = &"lk_frozen_ground"
+min_phase = 1
+windup = 0.9
+recovery = 1.6
+damage = 9
+color = Color(0.55, 0.85, 1, 1)
+count = 2
+zone_radius = 26
+zone_time = 6

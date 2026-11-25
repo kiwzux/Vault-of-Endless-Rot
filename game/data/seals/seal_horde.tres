@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="SealData" format=3]
+
+[ext_resource type="Script" path="res://data/seals/seal_data.gd" id="1_seal"]
+
+[resource]
+script = ExtResource("1_seal")
+id = &"seal_horde"
+name_key = "SEAL_HORDE"
+description_key = "SEAL_HORDE_DESC"
+stat = 3
+per_rank = 0.2
+max_rank = 2
+points = 2
+order = 3
+icon_color = Color(0.75, 0.55, 0.3, 1)

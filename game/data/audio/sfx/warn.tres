@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="SfxData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://data/audio/sfx_data.gd" id="1_sfx"]
+[ext_resource type="AudioStream" path="res://assets/audio/sfx/warn_1.wav" id="2_warn"]
+
+[resource]
+script = ExtResource("1_sfx")
+id = &"warn"
+streams = Array[AudioStream]([ExtResource("2_warn")])
+volume_db = -10.0
+pitch_jitter = 0.05
+cooldown = 0.3
+max_voices = 2
+positional = true
+max_distance = 600.0

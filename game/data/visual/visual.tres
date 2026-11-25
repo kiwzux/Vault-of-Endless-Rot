@@ -1,0 +1,101 @@
+[gd_resource type="Resource" script_class="VisualConfig" format=3]
+
+[ext_resource type="Script" path="res://data/visual/visual_config.gd" id="1_visual"]
+
+[resource]
+script = ExtResource("1_visual")
+light_texel_by_quality = PackedInt32Array(0, 8, 4)
+max_lights_by_quality = PackedInt32Array(0, 64, 160)
+light_margin = 48.0
+hero_light = Color(1, 0.86, 0.66, 0.9)
+hero_light_radius = 170.0
+ghost_light_share = 0.4
+attack_light_radius = {
+&"acid": -1.0,
+&"beam": 64.0,
+&"blast": -1.0,
+&"ember": 30.0,
+&"fireball": 56.0,
+&"frost": 30.0,
+&"lightning": 72.0,
+&"nova": -1.0,
+&"orbit": -1.0,
+&"pulse": -1.0,
+&"shard": 28.0,
+&"smite": -1.0,
+&"trap": 26.0,
+&"warn": -1.0,
+&"zone": -1.0
+}
+attack_light_energy = 0.6
+area_light_share = 1.25
+telegraph_light_energy = 0.75
+loot_light_min_rarity = 2
+loot_light_radius = 40.0
+loot_light_energy = 0.55
+prop_light_colors = {
+&"chest": Color(1, 0.8, 0.45, 0.35),
+&"cursed_totem": Color(0.8, 0.2, 0.4, 0.6),
+&"fountain": Color(0.45, 0.75, 1, 0.55),
+&"grail_site": Color(1, 0.85, 0.4, 0.5),
+&"merchant": Color(1, 0.75, 0.4, 0.7),
+&"obelisk": Color(0.6, 0.8, 1, 0.45),
+&"portal": Color(0.7, 0.45, 1, 0.8),
+&"statue": Color(0.75, 0.75, 0.85, 0.3),
+&"trial_altar": Color(1, 0.6, 0.3, 0.6)
+}
+prop_light_radius = {
+&"chest": 40.0,
+&"cursed_totem": 70.0,
+&"fountain": 70.0,
+&"grail_site": 60.0,
+&"merchant": 80.0,
+&"obelisk": 60.0,
+&"portal": 110.0,
+&"statue": 50.0,
+&"trial_altar": 70.0
+}
+interactable_light_energy = 0.55
+used_light_share = 0.0
+flicker = 0.12
+flicker_speed = 9.0
+shake_max_offset = 7.0
+shake_decay = 2.4
+shake_frequency = 26.0
+shake_hero_hurt = 0.35
+shake_hostile_blast = 0.45
+shake_blast_reach = 220.0
+shake_boss_spawn = 0.6
+shake_elite_death = 0.25
+shake_boss_death = 0.8
+shake_secret = 0.35
+hit_stop_scale = 0.05
+stop_hero_hurt = 0.035
+stop_elite_death = 0.05
+stop_boss_death = 0.14
+particle_limit_by_quality = PackedInt32Array(80, 260, 520)
+hit_sparks = 2
+crit_sparks = 5
+spark_color = Color(1, 0.86, 0.55, 1)
+hit_blood_share = 0.5
+blood_color = Color(0.55, 0.05, 0.05, 1)
+death_particles = 9
+elite_death_particles = 22
+particle_speed = 75.0
+particle_life = 0.45
+particle_gravity = 160.0
+vfx_limit_by_quality = PackedInt32Array(40, 140, 280)
+cast_flash_offset = Vector2(0, -12)
+stain_limit_by_quality =PackedInt32Array(0, 48, 120)
+stain_time = 8.0
+stain_alpha = 0.6
+recoil = 2.5
+recoil_time = 0.09
+vignette = Color(0, 0, 0, 0.45)
+hurt_vignette = Color(0.55, 0, 0, 0.4)
+hurt_pulse_time = 0.35
+low_health = 0.3
+low_health_vignette = Color(0.45, 0, 0, 0.5)
+aberration = 0.012
+aberration_time = 0.3
+aberration_cooldown = 1.2

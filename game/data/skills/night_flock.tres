@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="SkillData" format=3]
+
+[ext_resource type="Script" path="res://systems/skills/actions/orbit_action.gd" id="1_4pn02"]
+[ext_resource type="Script" path="res://data/skills/skill_modifier.gd" id="2_wjxd4"]
+[ext_resource type="Script" path="res://data/statuses/status_application.gd" id="3_ptsh3"]
+[ext_resource type="Script" path="res://data/skills/skill_data.gd" id="4_qjpm2"]
+
+[sub_resource type="Resource" id="Resource_ba66u"]
+script = ExtResource("1_4pn02")
+angular_speed = 5.5
+
+[sub_resource type="Resource" id="Resource_aaxo7"]
+script = ExtResource("3_ptsh3")
+status = &"bleed"
+chance = 0.35
+
+[resource]
+script = ExtResource("4_qjpm2")
+action = SubResource("Resource_ba66u")
+tags = Array[StringName]([&"blood", &"orbit", &"summon"])
+on_hit = Array[ExtResource("3_ptsh3")]([SubResource("Resource_aaxo7")])
+damage_per_level = 2.0
+cooldown = 2.2
+cooldown_per_level = 0.0
+attack_range = 76.0
+range_per_level = 1.0
+amount = 8
+amount_levels = PackedInt32Array(16, 22)
+pierce_levels = PackedInt32Array()
+duration = 2.2
+fx_kind = &"bats"
+fx_color = Color(0.6, 0.35, 0.75, 1)
+is_evolution = true
+id = &"night_flock"
+kind = 0
+name_key = "EVO_NIGHT_FLOCK"
+description_key = "EVO_NIGHT_FLOCK_DESC"
+max_level = 20
+icon_color = Color(0.6, 0.32, 0.75, 1)

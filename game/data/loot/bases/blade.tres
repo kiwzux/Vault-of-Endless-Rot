@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemBaseData" format=3]
+
+[ext_resource type="Script" path="res://data/loot/item_base_data.gd" id="1_base"]
+
+[resource]
+script = ExtResource("1_base")
+id = &"blade"
+name_key = "ITEM_BLADE"
+slot = 0
+implicit_stat = &"might"
+implicit_min = 0.05
+implicit_max = 0.1
+icon_color = Color(0.75, 0.75, 0.8, 1)
+icons = PackedStringArray("blade_1", "blade_2", "blade_3", "blade_4")
+gender = &"m"

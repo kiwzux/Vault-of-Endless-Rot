@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="SynergyData" format=3]
+
+[ext_resource type="Script" path="res://data/synergies/synergy_data.gd" id="1_n3wsj"]
+
+[resource]
+script = ExtResource("1_n3wsj")
+id = &"resonance_dark"
+order = 5
+tag = &"dark"
+thresholds = PackedInt32Array(2, 3, 4)
+tiers = Array[Dictionary]([{
+&"might:dark": 0.1
+}, {
+&"crit_damage:dark": 0.15,
+&"might:dark": 0.18
+}, {
+&"crit_damage:dark": 0.3,
+&"might:dark": 0.28
+}])

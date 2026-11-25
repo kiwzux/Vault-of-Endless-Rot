@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="TalentData" format=3]
+
+[ext_resource type="Script" path="res://data/talents/talent_data.gd" id="1_talent"]
+
+[resource]
+script = ExtResource("1_talent")
+id = &"knight_banner"
+order = 6
+hero = &"knight"
+name_key = "TALENT_KNIGHT_BANNER"
+description_key = "TALENT_KNIGHT_BANNER_DESC"
+stat = &"leadership"
+per_rank = 0.04
+cost_base = 70
+cost_growth = 1.7
+icon_color = Color(0.3, 0.45, 0.85, 1)

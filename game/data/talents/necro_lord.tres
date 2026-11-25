@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="TalentData" format=3]
+
+[ext_resource type="Script" path="res://data/talents/talent_data.gd" id="1_talent"]
+
+[resource]
+script = ExtResource("1_talent")
+id = &"necro_lord"
+order = 11
+hero = &"necromancer"
+name_key = "TALENT_NECRO_LORD"
+description_key = "TALENT_NECRO_LORD_DESC"
+stat = &"necromancy"
+per_rank = 0.02
+cost_base = 70
+cost_growth = 1.7
+icon_color = Color(0.4, 0.9, 0.5, 1)

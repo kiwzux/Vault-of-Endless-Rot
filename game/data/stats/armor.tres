@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="StatDef" format=3]
+
+[ext_resource type="Script" path="res://data/stats/stat_def.gd" id="1_51d38"]
+
+[resource]
+script = ExtResource("1_51d38")
+id = &"armor"
+line_key = "STAT_LINE_ARMOR"
+format = 0
+on_items = true

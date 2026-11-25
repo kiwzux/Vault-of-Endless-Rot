@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="InteractableData" format=3]
+
+[ext_resource type="Script" path="res://data/interactables/interactable_data.gd" id="1_data"]
+
+[resource]
+script = ExtResource("1_data")
+id = &"coffin"
+name_key = "POINT_COFFIN"
+kind = 2
+placement = &"rubble"
+weight = 1.0
+color = Color(0.32, 0.22, 0.16, 1)
+gold = Vector2i(10, 25)
+item_chance = 0.12
+xp_gems = 2
+ambush_id = &"skeleton"
+ambush_chance = 0.35
+look = &"coffin"

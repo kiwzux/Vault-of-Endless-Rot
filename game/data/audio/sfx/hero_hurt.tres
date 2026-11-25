@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="SfxData" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://data/audio/sfx_data.gd" id="1_sfx"]
+[ext_resource type="AudioStream" path="res://assets/audio/sfx/hero_hurt_1.wav" id="2_hero_hurt"]
+[ext_resource type="AudioStream" path="res://assets/audio/sfx/hero_hurt_2.wav" id="3_hero_hurt"]
+
+[resource]
+script = ExtResource("1_sfx")
+id = &"hero_hurt"
+streams = Array[AudioStream]([ExtResource("2_hero_hurt"), ExtResource("3_hero_hurt")])
+volume_db = -6.0
+pitch_jitter = 0.06
+cooldown = 0.25
+max_voices = 1
+positional = false

@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="EnemyData" format=3]
+
+[ext_resource type="Script" path="res://data/enemies/enemy_data.gd" id="1_enemy"]
+[ext_resource type="Script" path="res://systems/enemies/boss_attacks/boss_attack.gd" id="2_attack"]
+[ext_resource type="Resource" path="res://data/enemies/boss_attacks/pl_spit.tres" id="3_pl_spit"]
+[ext_resource type="Resource" path="res://data/enemies/boss_attacks/pl_pools.tres" id="4_pl_pools"]
+[ext_resource type="Resource" path="res://data/enemies/boss_attacks/pl_ring.tres" id="5_pl_ring"]
+[ext_resource type="Resource" path="res://data/enemies/boss_attacks/pl_summon.tres" id="6_pl_summon"]
+[ext_resource type="Resource" path="res://data/enemies/boss_attacks/pl_rain.tres" id="7_pl_rain"]
+[ext_resource type="Resource" path="res://data/enemies/boss_attacks/pl_spiral.tres" id="8_pl_spiral"]
+[ext_resource type="Resource" path="res://data/enemies/boss_attacks/pl_cross.tres" id="9_pl_cross"]
+[ext_resource type="Resource" path="res://data/enemies/boss_attacks/pl_charge.tres" id="10_pl_charge"]
+[ext_resource type="Resource" path="res://data/enemies/boss_attacks/pl_nova.tres" id="11_pl_nova"]
+
+[resource]
+script = ExtResource("1_enemy")
+id = &"pit_lord"
+name_key = "ENEMY_PIT_LORD"
+max_health = 72000
+speed = 32
+contact_damage = 34
+xp = 0
+radius = 16
+placeholder_color = Color(0.55, 0.25, 0.85, 1)
+is_boss = true
+loot_rarity = 3
+gold = Vector2i(200, 260)
+attacks = Array[ExtResource("2_attack")]([ExtResource("3_pl_spit"), ExtResource("4_pl_pools"), ExtResource("5_pl_ring"), ExtResource("6_pl_summon"), ExtResource("7_pl_rain"), ExtResource("8_pl_spiral"), ExtResource("9_pl_cross"), ExtResource("10_pl_charge"), ExtResource("11_pl_nova")])
+phase_thresholds = PackedFloat32Array(0.75, 0.5, 0.25)

@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="HeroData" format=3]
+
+[ext_resource type="Script" path="res://data/skills/skill_modifier.gd" id="1_fivvj"]
+[ext_resource type="Resource" path="res://data/heroes/traits/blood_rite.tres" id="2_w2h5k"]
+[ext_resource type="Script" path="res://data/heroes/hero_data.gd" id="3_ynofw"]
+[ext_resource type="Texture2D" path="res://assets/heroes/blood_priest.png" id="4_llqfg"]
+
+[resource]
+script = ExtResource("3_ynofw")
+id = &"blood_priest"
+order = 5
+name_key = "HERO_BLOOD_PRIEST"
+description_key = "HERO_BLOOD_PRIEST_DESC"
+max_health = 140.0
+move_speed = 86.0
+starting_weapon = &"blood_harvest"
+sprite_sheet = ExtResource("4_llqfg")
+base_stats = {
+&"berserk": 0.2
+}
+class_modifiers = Array[ExtResource("1_fivvj")]([ExtResource("2_w2h5k")])
+affinity_tags = Array[StringName]([&"blood"])

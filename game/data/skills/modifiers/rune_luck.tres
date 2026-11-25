@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="SkillModifier" format=3]
+
+[ext_resource type="Script" path="res://data/skills/skill_modifier.gd" id="1_x4y4q"]
+[ext_resource type="Script" path="res://data/statuses/status_application.gd" id="2_5obkk"]
+
+[resource]
+script = ExtResource("1_x4y4q")
+id = &"rune_luck"
+name_key = "MOD_RUNE_LUCK"
+description_key = "MOD_RUNE_LUCK_DESC"
+icon_color = Color(0.85, 0.82, 0.75, 1)
+crit = 0.1

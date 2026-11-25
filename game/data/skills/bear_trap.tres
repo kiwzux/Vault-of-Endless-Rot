@@ -1,0 +1,41 @@
+[gd_resource type="Resource" script_class="SkillData" format=3]
+
+[ext_resource type="Script" path="res://systems/skills/actions/trap_action.gd" id="1_xkw48"]
+[ext_resource type="Script" path="res://data/skills/skill_modifier.gd" id="2_bvlqh"]
+[ext_resource type="Resource" path="res://data/skills/iron_maw.tres" id="2_eub0o"]
+[ext_resource type="Script" path="res://data/statuses/status_application.gd" id="3_eub0o"]
+[ext_resource type="Script" path="res://data/skills/skill_data.gd" id="4_okwpl"]
+
+[sub_resource type="Resource" id="Resource_wgxjw"]
+script = ExtResource("1_xkw48")
+
+[sub_resource type="Resource" id="Resource_sc7d8"]
+script = ExtResource("3_eub0o")
+status = &"stun"
+
+[sub_resource type="Resource" id="Resource_swke6"]
+script = ExtResource("3_eub0o")
+status = &"bleed"
+chance = 0.6
+
+[resource]
+script = ExtResource("4_okwpl")
+action = SubResource("Resource_wgxjw")
+tags = Array[StringName]([&"physical", &"trap"])
+on_hit = Array[ExtResource("3_eub0o")]([SubResource("Resource_sc7d8"), SubResource("Resource_swke6")])
+damage = 22.0
+cooldown = 2.2
+cooldown_per_level = -0.03
+amount_levels = PackedInt32Array(5, 11, 17, 23)
+pierce_levels = PackedInt32Array()
+area = 22.0
+area_per_level = 0.4
+duration = 8.0
+fx_color = Color(0.75, 0.72, 0.68, 1)
+evolution = ExtResource("2_eub0o")
+id = &"bear_trap"
+kind = 0
+name_key = "SKILL_BEAR_TRAP"
+description_key = "SKILL_BEAR_TRAP_DESC"
+max_level = 20
+icon_color = Color(0.67499995, 0.648, 0.612, 1)

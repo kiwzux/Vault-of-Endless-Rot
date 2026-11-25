@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="GoodsData" format=3]
+
+[ext_resource type="Script" path="res://data/merchants/goods_data.gd" id="1_goods"]
+
+[resource]
+script = ExtResource("1_goods")
+id = &"elixir_swiftness"
+name_key = "GOODS_ELIXIR_SWIFTNESS"
+description_key = "GOODS_ELIXIR_SWIFTNESS_DESC"
+effect = 1
+price = 40
+stock = 1
+duration = 90.0
+stats = {&"swiftness": 0.2, &"haste": 0.15}
+icon_color = Color(0.35, 0.8, 0.55, 1)
+icon = &"potion_03"

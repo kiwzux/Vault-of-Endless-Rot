@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="EnemyData" format=3]
+
+[ext_resource type="Script" path="res://data/enemies/enemy_data.gd" id="1_enemy"]
+
+[resource]
+script = ExtResource("1_enemy")
+id = &"demon_brute"
+name_key = "ENEMY_DEMON_BRUTE"
+max_health = 70.0
+speed = 30.0
+contact_damage = 22.0
+xp = 5
+radius = 9.0
+placeholder_color = Color(0.6, 0.16, 0.12, 1)
+resistances = {&"fire": 0.3}
+ring_count = 8
+ring_interval = 6.0
+ring_damage = 10.0
+ring_speed = 70.0
+ring_range = 130.0

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="PassiveData" format=3]
+
+[ext_resource type="Script" path="res://data/upgrades/passive_data.gd" id="1_passive"]
+
+[resource]
+script = ExtResource("1_passive")
+stat = &"magnet"
+per_level = 0.12
+id = &"magnet"
+kind = 1
+name_key = "PASSIVE_MAGNET"
+description_key = "PASSIVE_MAGNET_DESC"
+max_level = 25
+icon_color = Color(0.35, 0.55, 0.95, 1)

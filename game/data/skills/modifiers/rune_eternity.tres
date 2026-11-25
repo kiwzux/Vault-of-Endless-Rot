@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="SkillModifier" format=3]
+
+[ext_resource type="Script" path="res://data/skills/skill_modifier.gd" id="1_hsr7u"]
+[ext_resource type="Script" path="res://data/statuses/status_application.gd" id="2_cemq2"]
+
+[resource]
+script = ExtResource("1_hsr7u")
+id = &"rune_eternity"
+name_key = "MOD_RUNE_ETERNITY"
+description_key = "MOD_RUNE_ETERNITY_DESC"
+rarity = 3
+icon_color = Color(1, 0.6, 0.15, 1)
+requires_actions = Array[StringName]([&"orbit", &"zone", &"beam", &"summon", &"trap"])
+duration = 1.0

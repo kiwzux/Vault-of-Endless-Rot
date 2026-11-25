@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="PassiveData" format=3]
+
+[ext_resource type="Script" path="res://data/upgrades/passive_data.gd" id="1_passive"]
+
+[resource]
+script = ExtResource("1_passive")
+stat = &"regen"
+per_level = 0.12
+id = &"recovery"
+kind = 1
+name_key = "PASSIVE_RECOVERY"
+description_key = "PASSIVE_RECOVERY_DESC"
+max_level = 25
+icon_color = Color(0.9, 0.35, 0.45, 1)

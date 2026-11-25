@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemBaseData" format=3]
+
+[ext_resource type="Script" path="res://data/loot/item_base_data.gd" id="1_base"]
+
+[resource]
+script = ExtResource("1_base")
+id = &"cuirass"
+name_key = "ITEM_CUIRASS"
+slot = 2
+implicit_stat = &"armor"
+implicit_min = 1.0
+implicit_max = 2.0
+icon_color = Color(0.5, 0.5, 0.55, 1)
+icons = PackedStringArray("armor_1", "armor_2", "armor_3")
+gender = &"f"

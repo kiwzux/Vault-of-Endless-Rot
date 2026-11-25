@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="EnemyData" format=3]
+
+[ext_resource type="Script" path="res://data/enemies/enemy_data.gd" id="1_enemy"]
+
+[resource]
+script = ExtResource("1_enemy")
+id = &"fire_spirit"
+name_key = "ENEMY_FIRE_SPIRIT"
+max_health = 10.0
+speed = 70.0
+contact_damage = 6.0
+xp = 2
+radius = 5.0
+placeholder_color = Color(1.0, 0.55, 0.1, 1)
+resistances = {&"fire": 0.75, &"cold": -0.5}
+suicide_damage = 22.0
+suicide_radius = 36.0

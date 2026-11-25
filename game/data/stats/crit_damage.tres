@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="StatDef" format=3]
+
+[ext_resource type="Script" path="res://data/stats/stat_def.gd" id="1_o3bpq"]
+
+[resource]
+script = ExtResource("1_o3bpq")
+id = &"crit_damage"
+line_key = "STAT_LINE_CRIT_DAMAGE"
+on_items = true

@@ -1,0 +1,32 @@
+[gd_resource type="Resource" script_class="SkillData" format=3]
+
+[ext_resource type="Script" path="res://systems/skills/actions/summon_action.gd" id="1_13g1w"]
+[ext_resource type="Script" path="res://data/skills/skill_modifier.gd" id="2_ln83e"]
+[ext_resource type="Script" path="res://data/statuses/status_application.gd" id="3_up8ml"]
+[ext_resource type="Script" path="res://data/skills/skill_data.gd" id="4_pxkr8"]
+
+[sub_resource type="Resource" id="Resource_l7lch"]
+script = ExtResource("1_13g1w")
+max_alive = 6
+
+[resource]
+script = ExtResource("4_pxkr8")
+action = SubResource("Resource_l7lch")
+tags = Array[StringName]([&"blood", &"summon"])
+damage = 14.0
+damage_per_level = 2.0
+cooldown = 4.0
+attack_range = 0.0
+amount = 2
+amount_levels = PackedInt32Array(14, 20)
+pierce_levels = PackedInt32Array()
+duration = 16.0
+duration_per_level = 0.3
+fx_color = Color(0.8, 0.2, 0.25, 1)
+is_evolution = true
+id = &"ghoul_horde"
+kind = 0
+name_key = "EVO_GHOUL_HORDE"
+description_key = "EVO_GHOUL_HORDE_DESC"
+max_level = 20
+icon_color = Color(0.71999997, 0.17999999, 0.225, 1)

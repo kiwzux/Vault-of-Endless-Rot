@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="PassiveData" format=3]
+
+[ext_resource type="Script" path="res://data/upgrades/passive_data.gd" id="1_passive"]
+
+[resource]
+script = ExtResource("1_passive")
+stat = &"max_health"
+per_level = 10.0
+id = &"ancient_blood"
+kind = 2
+name_key = "FILLER_ANCIENT_BLOOD"
+description_key = "FILLER_ANCIENT_BLOOD_DESC"
+max_level = 0
+icon_color = Color(0.55, 0.1, 0.12, 1)

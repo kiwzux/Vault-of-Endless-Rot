@@ -1,0 +1,22 @@
+{
+	"version": 1,
+	"map_size": 32,
+	"tile_size": 96,
+	"art_tile_size": 32,
+	"biomes": ["forest", "flooded_crypt", "cathedral", "abyss"],
+	"room_types": ["rooms", "caves", "halls", "arena"],
+	"classes": [
+		{"id": 0, "name": "VOID", "passable": false, "marker": false, "color": "#0b0908"},
+		{"id": 1, "name": "FLOOR", "passable": true, "marker": false, "color": "#4a3f35"},
+		{"id": 2, "name": "WALL", "passable": false, "marker": false, "color": "#8a7a62"},
+		{"id": 3, "name": "HAZARD", "passable": false, "marker": false, "color": "#3d6b4a"},
+		{"id": 4, "name": "RUBBLE", "passable": true, "marker": false, "color": "#5e5244"},
+		{"id": 5, "name": "PLAYER_SPAWN", "passable": true, "marker": true, "color": "#3fa7d6"},
+		{"id": 6, "name": "EXIT", "passable": true, "marker": true, "color": "#a35bd6"},
+		{"id": 7, "name": "ENEMY_SPAWN", "passable": true, "marker": true, "color": "#c0392b"},
+		{"id": 8, "name": "CHEST", "passable": true, "marker": true, "color": "#e0b03a"},
+		{"id": 9, "name": "FOUNTAIN", "passable": true, "marker": true, "color": "#4fd1c5"},
+		{"id": 10, "name": "STATUE", "passable": true, "marker": true, "color": "#9aa0a6"},
+		{"id": 11, "name": "OBELISK", "passable": true, "marker": true, "color": "#f2e9c9"}
+	]
+}

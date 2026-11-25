@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="TalentData" format=3]
+
+[ext_resource type="Script" path="res://data/talents/talent_data.gd" id="1_v8ocx"]
+
+[resource]
+script = ExtResource("1_v8ocx")
+id = &"pyro_power"
+order = 18
+hero = &"pyromancer"
+name_key = "TALENT_PYRO_POWER"
+description_key = "TALENT_PYRO_POWER_DESC"
+stat = &"might:fire"
+per_rank = 0.05
+cost_base = 40
+icon_color = Color(1, 0.5, 0.2, 1)

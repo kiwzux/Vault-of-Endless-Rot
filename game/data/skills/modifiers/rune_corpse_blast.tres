@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="SkillModifier" format=3]
+
+[ext_resource type="Script" path="res://data/skills/skill_modifier.gd" id="1_ecayr"]
+[ext_resource type="Script" path="res://data/statuses/status_application.gd" id="2_cxpvo"]
+
+[resource]
+script = ExtResource("1_ecayr")
+id = &"rune_corpse_blast"
+name_key = "MOD_RUNE_CORPSE_BLAST"
+description_key = "MOD_RUNE_CORPSE_BLAST_DESC"
+rarity = 2
+icon_color = Color(0.75, 0.4, 1, 1)
+kill_blast_share = 0.6
+kill_blast_radius = 36.0

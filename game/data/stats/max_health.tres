@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="StatDef" format=3]
+
+[ext_resource type="Script" path="res://data/stats/stat_def.gd" id="1_5b3yo"]
+
+[resource]
+script = ExtResource("1_5b3yo")
+id = &"max_health"
+line_key = "STAT_LINE_MAX_HEALTH"
+format = 0
+on_items = true

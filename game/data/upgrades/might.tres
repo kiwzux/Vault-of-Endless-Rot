@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="PassiveData" format=3]
+
+[ext_resource type="Script" path="res://data/upgrades/passive_data.gd" id="1_passive"]
+
+[resource]
+script = ExtResource("1_passive")
+stat = &"might"
+per_level = 0.04
+id = &"might"
+kind = 1
+name_key = "PASSIVE_MIGHT"
+description_key = "PASSIVE_MIGHT_DESC"
+max_level = 25
+icon_color = Color(0.8, 0.3, 0.2, 1)

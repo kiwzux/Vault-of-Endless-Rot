@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemBaseData" format=3]
+
+[ext_resource type="Script" path="res://data/loot/item_base_data.gd" id="1_base"]
+
+[resource]
+script = ExtResource("1_base")
+id = &"gauntlets"
+name_key = "ITEM_GAUNTLETS"
+slot = 3
+implicit_stat = &"haste"
+implicit_min = 0.03
+implicit_max = 0.06
+icon_color = Color(0.55, 0.45, 0.35, 1)
+icons = PackedStringArray("gloves_1", "gloves_2", "gloves_3")
+gender = &"pl"

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="BossSummon" format=3]
+
+[ext_resource type="Script" path="res://systems/enemies/boss_attacks/boss_summon.gd" id="1_script"]
+
+[resource]
+script = ExtResource("1_script")
+id = &"gc_banner"
+min_phase = 1
+weight = 0.7
+windup = 0.8
+recovery = 1.2
+color = Color(1.0, 0.55, 0.25, 1)
+count = 3
+count_per_phase = 0
+enemy_id = &"renegade_guard"
+health_share = 0.6

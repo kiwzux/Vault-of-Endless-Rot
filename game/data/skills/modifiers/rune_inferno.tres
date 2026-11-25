@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="SkillModifier" format=3]
+
+[ext_resource type="Script" path="res://data/skills/skill_modifier.gd" id="1_hobg3"]
+[ext_resource type="Script" path="res://data/statuses/status_application.gd" id="2_cqpku"]
+
+[sub_resource type="Resource" id="Resource_dg4rh"]
+script = ExtResource("2_cqpku")
+status = &"burn"
+
+[resource]
+script = ExtResource("1_hobg3")
+id = &"rune_inferno"
+name_key = "MOD_RUNE_INFERNO"
+description_key = "MOD_RUNE_INFERNO_DESC"
+rarity = 2
+icon_color = Color(0.75, 0.4, 1, 1)
+requires_tags = Array[StringName]([&"fire"])
+damage = 0.1
+statuses = Array[ExtResource("2_cqpku")]([SubResource("Resource_dg4rh")])

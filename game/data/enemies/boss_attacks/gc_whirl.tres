@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="BossNova" format=3]
+
+[ext_resource type="Script" path="res://systems/enemies/boss_attacks/boss_nova.gd" id="1_script"]
+
+[resource]
+script = ExtResource("1_script")
+id = &"gc_whirl"
+windup = 1.0
+recovery = 1.6
+damage = 20
+color = Color(1.0, 0.55, 0.25, 1)
+count = 10
+blast_radius = 80

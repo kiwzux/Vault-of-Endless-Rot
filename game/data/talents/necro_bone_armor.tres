@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="TalentData" format=3]
+
+[ext_resource type="Script" path="res://data/talents/talent_data.gd" id="1_talent"]
+
+[resource]
+script = ExtResource("1_talent")
+id = &"necro_bone_armor"
+order = 9
+hero = &"necromancer"
+name_key = "TALENT_NECRO_BONE_ARMOR"
+description_key = "TALENT_NECRO_BONE_ARMOR_DESC"
+stat = &"resilience"
+per_rank = 0.03
+icon_color = Color(0.85, 0.82, 0.7, 1)

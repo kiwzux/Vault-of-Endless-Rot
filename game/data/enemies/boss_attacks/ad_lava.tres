@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="BossPools" format=3]
+
+[ext_resource type="Script" path="res://systems/enemies/boss_attacks/boss_pools.gd" id="1_script"]
+
+[resource]
+script = ExtResource("1_script")
+id = &"ad_lava"
+min_phase = 1
+windup = 0.9
+recovery = 1.6
+damage = 10
+color = Color(1, 0.45, 0.15, 1)
+count = 3
+zone_radius = 30
+zone_time = 7

@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="SkillData" format=3]
+
+[ext_resource type="Script" path="res://systems/skills/actions/zone_action.gd" id="1_gjlqs"]
+[ext_resource type="Resource" path="res://data/skills/hallowed_ground.tres" id="2_hhfn7"]
+[ext_resource type="Script" path="res://data/skills/skill_modifier.gd" id="2_vir5x"]
+[ext_resource type="Script" path="res://data/statuses/status_application.gd" id="3_hhfn7"]
+[ext_resource type="Script" path="res://data/skills/skill_data.gd" id="4_a2r51"]
+
+[sub_resource type="Resource" id="Resource_8tvtk"]
+script = ExtResource("1_gjlqs")
+
+[resource]
+script = ExtResource("4_a2r51")
+action = SubResource("Resource_8tvtk")
+tags = Array[StringName]([&"holy", &"area"])
+damage = 6.0
+damage_per_level = 1.1
+cooldown = 3.0
+cooldown_per_level = -0.04
+attack_range = 180.0
+amount_levels = PackedInt32Array(4, 9, 15, 21)
+pierce_levels = PackedInt32Array()
+area = 26.0
+area_per_level = 0.6
+duration = 3.0
+duration_per_level = 0.05
+fx_color = Color(0.7, 0.85, 1, 1)
+evolution = ExtResource("2_hhfn7")
+id = &"holy_water"
+kind = 0
+name_key = "SKILL_HOLY_WATER"
+description_key = "SKILL_HOLY_WATER_DESC"
+max_level = 20
+icon_color = Color(0.63, 0.765, 0.9, 1)

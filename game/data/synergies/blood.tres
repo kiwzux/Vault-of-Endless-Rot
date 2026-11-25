@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="SynergyData" format=3]
+
+[ext_resource type="Script" path="res://data/synergies/synergy_data.gd" id="1_kpdt4"]
+
+[resource]
+script = ExtResource("1_kpdt4")
+id = &"resonance_blood"
+order = 6
+tag = &"blood"
+thresholds = PackedInt32Array(2, 3, 4)
+tiers = Array[Dictionary]([{
+&"lifesteal": 0.01,
+&"might:blood": 0.08
+}, {
+&"lifesteal": 0.02,
+&"might:blood": 0.15
+}, {
+&"lifesteal": 0.03,
+&"might:blood": 0.25
+}])

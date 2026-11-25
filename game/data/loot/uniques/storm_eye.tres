@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="UniqueItemData" format=3]
+
+[ext_resource type="Script" path="res://data/loot/unique_item_data.gd" id="1_unique"]
+[ext_resource type="Resource" path="res://data/loot/bases/amulet.tres" id="2_base"]
+[ext_resource type="Script" path="res://data/skills/skill_modifier.gd" id="3_mod"]
+
+[sub_resource type="Resource" id="Resource_rune"]
+script = ExtResource("3_mod")
+id = &"legend_storm_eye"
+name_key = "UNIQUE_STORM_EYE"
+description_key = "LEGEND_STORM_EYE_DESC"
+rarity = 3
+icon_color = Color(1, 0.55, 0.15, 1)
+requires_tags = Array[StringName]([&"lightning"])
+amount = 1
+damage = 0.15
+
+[resource]
+script = ExtResource("1_unique")
+id = &"storm_eye"
+name_key = "UNIQUE_STORM_EYE"
+base = ExtResource("2_base")
+stats = {&"crit": 0.05, &"max_mana": 20.0}
+modifier = SubResource("Resource_rune")
+icon = &"amulet_09"

@@ -1,0 +1,40 @@
+[gd_resource type="Resource" script_class="SkillData" format=3]
+
+[ext_resource type="Script" path="res://systems/skills/actions/orbit_action.gd" id="1_2cq5a"]
+[ext_resource type="Script" path="res://data/skills/skill_modifier.gd" id="2_lqvqp"]
+[ext_resource type="Script" path="res://data/statuses/status_application.gd" id="3_1cc1h"]
+[ext_resource type="Script" path="res://data/skills/skill_data.gd" id="4_6j5no"]
+
+[sub_resource type="Resource" id="Resource_ed1ik"]
+script = ExtResource("1_2cq5a")
+angular_speed = 3.4
+
+[sub_resource type="Resource" id="Resource_0mxh1"]
+script = ExtResource("3_1cc1h")
+status = &"burn"
+chance = 0.5
+
+[resource]
+script = ExtResource("4_6j5no")
+action = SubResource("Resource_ed1ik")
+tags = Array[StringName]([&"fire", &"orbit"])
+on_hit = Array[ExtResource("3_1cc1h")]([SubResource("Resource_0mxh1")])
+damage = 7.0
+damage_per_level = 1.3
+cooldown = 4.5
+cooldown_per_level = -0.06
+attack_range = 52.0
+range_per_level = 0.8
+amount = 2
+amount_levels = PackedInt32Array(5, 10, 15, 20)
+pierce_levels = PackedInt32Array()
+duration = 3.5
+duration_per_level = 0.03
+fx_kind = &"flames"
+fx_color = Color(1, 0.5, 0.15, 1)
+id = &"fire_orbs"
+kind = 0
+name_key = "SKILL_FIRE_ORBS"
+description_key = "SKILL_FIRE_ORBS_DESC"
+max_level = 20
+icon_color = Color(0.9, 0.45, 0.135, 1)

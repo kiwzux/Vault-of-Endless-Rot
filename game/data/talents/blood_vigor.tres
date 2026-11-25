@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="TalentData" format=3]
+
+[ext_resource type="Script" path="res://data/talents/talent_data.gd" id="1_jlf1u"]
+
+[resource]
+script = ExtResource("1_jlf1u")
+id = &"blood_vigor"
+order = 27
+hero = &"blood_priest"
+name_key = "TALENT_BLOOD_VIGOR"
+description_key = "TALENT_BLOOD_VIGOR_DESC"
+stat = &"max_health"
+per_rank = 15.0
+cost_base = 30
+cost_growth = 1.5
+icon_color = Color(0.7, 0.1, 0.15, 1)

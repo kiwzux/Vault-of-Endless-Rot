@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="SkillData" format=3]
+
+[ext_resource type="Script" path="res://systems/skills/actions/beam_action.gd" id="1_cqj3o"]
+[ext_resource type="Resource" path="res://data/skills/dragon_breath.tres" id="2_hqi4w"]
+[ext_resource type="Script" path="res://data/skills/skill_modifier.gd" id="2_kh0m2"]
+[ext_resource type="Script" path="res://data/statuses/status_application.gd" id="3_hqi4w"]
+[ext_resource type="Script" path="res://data/skills/skill_data.gd" id="4_v5woc"]
+
+[sub_resource type="Resource" id="Resource_ol53v"]
+script = ExtResource("1_cqj3o")
+
+[sub_resource type="Resource" id="Resource_6x1ij"]
+script = ExtResource("3_hqi4w")
+status = &"burn"
+chance = 0.25
+
+[resource]
+script = ExtResource("4_v5woc")
+action = SubResource("Resource_ol53v")
+tags = Array[StringName]([&"fire", &"beam"])
+on_hit = Array[ExtResource("3_hqi4w")]([SubResource("Resource_6x1ij")])
+damage = 4.5
+damage_per_level = 0.6
+cooldown = 2.4
+cooldown_per_level = -0.03
+attack_range = 170.0
+range_per_level = 2.0
+amount_levels = PackedInt32Array()
+pierce_levels = PackedInt32Array()
+duration = 1.2
+duration_per_level = 0.02
+fx_color = Color(1, 0.55, 0.2, 1)
+evolution = ExtResource("2_hqi4w")
+id = &"fire_beam"
+kind = 0
+name_key = "SKILL_FIRE_BEAM"
+description_key = "SKILL_FIRE_BEAM_DESC"
+max_level = 20
+icon_color = Color(0.9, 0.495, 0.17999999, 1)

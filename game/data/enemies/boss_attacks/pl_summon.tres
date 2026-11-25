@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="BossSummon" format=3]
+
+[ext_resource type="Script" path="res://systems/enemies/boss_attacks/boss_summon.gd" id="1_script"]
+
+[resource]
+script = ExtResource("1_script")
+id = &"pl_summon"
+weight = 0.7
+windup = 0.8
+recovery = 1.2
+color = Color(0.75, 0.35, 1, 1)
+count = 3
+count_per_phase = 1
+enemy_id = &"abyss_spawn"
+health_share = 0.5

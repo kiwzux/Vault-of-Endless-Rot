@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="PassiveData" format=3]
+
+[ext_resource type="Script" path="res://data/upgrades/passive_data.gd" id="1_passive"]
+
+[resource]
+script = ExtResource("1_passive")
+stat = &"gold"
+per_level = 25.0
+id = &"gold_pouch"
+kind = 2
+name_key = "FILLER_GOLD_POUCH"
+description_key = "FILLER_GOLD_POUCH_DESC"
+max_level = 0
+icon_color = Color(0.95, 0.75, 0.25, 1)

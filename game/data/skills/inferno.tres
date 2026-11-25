@@ -1,0 +1,40 @@
+[gd_resource type="Resource" script_class="SkillData" format=3]
+
+[ext_resource type="Script" path="res://systems/skills/actions/projectile_action.gd" id="1_b5w8h"]
+[ext_resource type="Script" path="res://data/skills/skill_modifier.gd" id="2_xpjg8"]
+[ext_resource type="Script" path="res://data/statuses/status_application.gd" id="3_dwfdr"]
+[ext_resource type="Script" path="res://data/skills/skill_data.gd" id="4_goi6t"]
+
+[sub_resource type="Resource" id="Resource_kg7m1"]
+script = ExtResource("1_b5w8h")
+speed = 200.0
+explode = true
+
+[sub_resource type="Resource" id="Resource_r6ac0"]
+script = ExtResource("3_dwfdr")
+status = &"burn"
+stacks = 2
+
+[resource]
+script = ExtResource("4_goi6t")
+action = SubResource("Resource_kg7m1")
+tags = Array[StringName]([&"fire", &"projectile", &"area"])
+on_hit = Array[ExtResource("3_dwfdr")]([SubResource("Resource_r6ac0")])
+damage = 18.0
+cooldown = 1.31
+cooldown_per_level = -0.012
+attack_range = 220.0
+amount = 3
+amount_levels = PackedInt32Array(16, 22)
+pierce_levels = PackedInt32Array()
+area = 34.6
+area_per_level = 0.6
+fx_kind = &"fireball"
+fx_color = Color(1, 0.35, 0.1, 1)
+is_evolution = true
+id = &"inferno"
+kind = 0
+name_key = "EVO_INFERNO"
+description_key = "EVO_INFERNO_DESC"
+max_level = 20
+icon_color = Color(1, 0.3, 0.1, 1)

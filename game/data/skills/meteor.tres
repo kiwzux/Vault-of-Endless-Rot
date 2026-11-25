@@ -1,0 +1,38 @@
+[gd_resource type="Resource" script_class="SkillData" format=3]
+
+[ext_resource type="Script" path="res://systems/skills/actions/strike_action.gd" id="1_mwvc1"]
+[ext_resource type="Script" path="res://data/skills/skill_modifier.gd" id="2_5qcdb"]
+[ext_resource type="Resource" path="res://data/skills/armageddon.tres" id="2_6e7hm"]
+[ext_resource type="Script" path="res://data/statuses/status_application.gd" id="3_6e7hm"]
+[ext_resource type="Script" path="res://data/skills/skill_data.gd" id="4_ul0ou"]
+
+[sub_resource type="Resource" id="Resource_aruo5"]
+script = ExtResource("1_mwvc1")
+fuse = 0.45
+
+[sub_resource type="Resource" id="Resource_7wnin"]
+script = ExtResource("3_6e7hm")
+status = &"burn"
+chance = 0.5
+
+[resource]
+script = ExtResource("4_ul0ou")
+action = SubResource("Resource_aruo5")
+tags = Array[StringName]([&"fire", &"area"])
+on_hit = Array[ExtResource("3_6e7hm")]([SubResource("Resource_7wnin")])
+damage = 20.0
+cooldown = 2.4
+cooldown_per_level = -0.04
+attack_range = 200.0
+amount_levels = PackedInt32Array(4, 9, 15, 21)
+pierce_levels = PackedInt32Array()
+area = 24.0
+area_per_level = 0.6
+fx_color = Color(1, 0.55, 0.2, 1)
+evolution = ExtResource("2_6e7hm")
+id = &"meteor"
+kind = 0
+name_key = "WEAPON_METEOR"
+description_key = "WEAPON_METEOR_DESC"
+max_level = 20
+icon_color = Color(0.9, 0.45, 0.15, 1)

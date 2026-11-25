@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="EnemyData" format=3]
+
+[ext_resource type="Script" path="res://data/enemies/enemy_data.gd" id="1_enemy"]
+[ext_resource type="Resource" path="res://data/enemies/power_lich.tres" id="2_upgrade"]
+
+[resource]
+script = ExtResource("1_enemy")
+id = &"lich"
+name_key = "ENEMY_LICH"
+max_health = 18.0
+speed = 30.0
+contact_damage = 7.0
+xp = 3
+radius = 6
+placeholder_color = Color(0.5, 0.4, 0.7, 1)
+upgrade = ExtResource("2_upgrade")
+shot_interval = 2.2
+shot_range = 170.0
+shot_damage = 11.0
+shot_speed = 110.0
+keep_distance = 110.0

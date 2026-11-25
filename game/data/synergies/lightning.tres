@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="SynergyData" format=3]
+
+[ext_resource type="Script" path="res://data/synergies/synergy_data.gd" id="1_selw2"]
+
+[resource]
+script = ExtResource("1_selw2")
+id = &"resonance_lightning"
+order = 3
+tag = &"lightning"
+thresholds = PackedInt32Array(2, 3, 4)
+tiers = Array[Dictionary]([{
+&"crit:lightning": 0.05
+}, {
+&"crit:lightning": 0.08,
+&"haste": 0.04
+}, {
+&"crit:lightning": 0.12,
+&"haste": 0.08
+}])

@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="SkillModifier" format=3]
+
+[ext_resource type="Script" path="res://data/skills/skill_modifier.gd" id="1_5liju"]
+[ext_resource type="Script" path="res://data/statuses/status_application.gd" id="2_75sj7"]
+
+[sub_resource type="Resource" id="Resource_det32"]
+script = ExtResource("2_75sj7")
+status = &"bleed"
+stacks = 2
+
+[resource]
+script = ExtResource("1_5liju")
+id = &"rune_artery"
+name_key = "MOD_RUNE_ARTERY"
+description_key = "MOD_RUNE_ARTERY_DESC"
+rarity = 2
+icon_color = Color(0.75, 0.4, 1, 1)
+requires_tags = Array[StringName]([&"physical", &"blood"])
+statuses = Array[ExtResource("2_75sj7")]([SubResource("Resource_det32")])

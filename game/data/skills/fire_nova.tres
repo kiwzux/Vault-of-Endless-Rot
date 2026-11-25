@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="SkillData" format=3]
+
+[ext_resource type="Script" path="res://systems/skills/actions/projectile_action.gd" id="1_fiioa"]
+[ext_resource type="Resource" path="res://data/skills/phoenix.tres" id="2_p2w0b"]
+[ext_resource type="Script" path="res://data/skills/skill_modifier.gd" id="2_y1gkn"]
+[ext_resource type="Script" path="res://data/statuses/status_application.gd" id="3_p2w0b"]
+[ext_resource type="Script" path="res://data/skills/skill_data.gd" id="4_g0p3w"]
+
+[sub_resource type="Resource" id="Resource_ohq4y"]
+script = ExtResource("1_fiioa")
+aim = 1
+speed = 150.0
+range_mult = 1.3
+per_extra = 2
+default_look = &"frost"
+
+[sub_resource type="Resource" id="Resource_rjple"]
+script = ExtResource("3_p2w0b")
+status = &"burn"
+chance = 0.35
+
+[resource]
+script = ExtResource("4_g0p3w")
+action = SubResource("Resource_ohq4y")
+tags = Array[StringName]([&"fire", &"projectile"])
+on_hit = Array[ExtResource("3_p2w0b")]([SubResource("Resource_rjple")])
+damage = 14.0
+damage_per_level = 2.2
+cooldown = 3.0
+cooldown_per_level = -0.04
+attack_range = 110.0
+amount = 10
+amount_levels = PackedInt32Array(6, 12, 18, 24)
+pierce = 2
+pierce_levels = PackedInt32Array(10, 20)
+fx_kind = &"ember"
+fx_color = Color(1, 0.6, 0.2, 1)
+evolution = ExtResource("2_p2w0b")
+id = &"fire_nova"
+kind = 0
+name_key = "WEAPON_FIRE_NOVA"
+description_key = "WEAPON_FIRE_NOVA_DESC"
+max_level = 20
+icon_color = Color(0.95, 0.5, 0.15, 1)

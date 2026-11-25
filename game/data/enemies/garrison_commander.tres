@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="EnemyData" format=3]
+
+[ext_resource type="Script" path="res://data/enemies/enemy_data.gd" id="1_enemy"]
+[ext_resource type="Script" path="res://systems/enemies/boss_attacks/boss_attack.gd" id="2_attack"]
+[ext_resource type="Resource" path="res://data/enemies/boss_attacks/gc_crush.tres" id="3_gc_crush"]
+[ext_resource type="Resource" path="res://data/enemies/boss_attacks/gc_whirl.tres" id="4_gc_whirl"]
+[ext_resource type="Resource" path="res://data/enemies/boss_attacks/gc_charge.tres" id="5_gc_charge"]
+[ext_resource type="Resource" path="res://data/enemies/boss_attacks/gc_ring.tres" id="6_gc_ring"]
+[ext_resource type="Resource" path="res://data/enemies/boss_attacks/gc_banner.tres" id="7_gc_banner"]
+[ext_resource type="Resource" path="res://data/enemies/boss_attacks/gc_fire.tres" id="8_gc_fire"]
+[ext_resource type="Resource" path="res://data/enemies/boss_attacks/gc_cross.tres" id="9_gc_cross"]
+
+[resource]
+script = ExtResource("1_enemy")
+id = &"garrison_commander"
+name_key = "ENEMY_GARRISON_COMMANDER"
+max_health = 6300
+speed = 44
+contact_damage = 27
+xp = 0
+radius = 12
+placeholder_color = Color(0.75, 0.75, 0.8, 1)
+is_boss = true
+loot_rarity = 2
+gold = Vector2i(60, 80)
+attacks = Array[ExtResource("2_attack")]([ExtResource("3_gc_crush"), ExtResource("4_gc_whirl"), ExtResource("5_gc_charge"), ExtResource("6_gc_ring"), ExtResource("7_gc_banner"), ExtResource("8_gc_fire"), ExtResource("9_gc_cross")])
+phase_thresholds = PackedFloat32Array(0.66, 0.33)

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="BossCross" format=3]
+
+[ext_resource type="Script" path="res://systems/enemies/boss_attacks/boss_cross.gd" id="1_script"]
+
+[resource]
+script = ExtResource("1_script")
+id = &"ad_whip"
+windup = 0.9
+recovery = 1.7
+damage = 22
+color = Color(1, 0.45, 0.15, 1)
+count = 3
+count_per_phase = 1
+blasts_per_line = 7
+spacing = 32
+blast_radius = 18

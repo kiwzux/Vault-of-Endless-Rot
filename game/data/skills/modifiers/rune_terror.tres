@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="SkillModifier" format=3]
+
+[ext_resource type="Script" path="res://data/skills/skill_modifier.gd" id="1_xq5qt"]
+[ext_resource type="Script" path="res://data/statuses/status_application.gd" id="2_wye1q"]
+
+[sub_resource type="Resource" id="Resource_haov8"]
+script = ExtResource("2_wye1q")
+status = &"fear"
+chance = 0.12
+
+[resource]
+script = ExtResource("1_xq5qt")
+id = &"rune_terror"
+name_key = "MOD_RUNE_TERROR"
+description_key = "MOD_RUNE_TERROR_DESC"
+rarity = 1
+icon_color = Color(0.4, 0.6, 1, 1)
+statuses = Array[ExtResource("2_wye1q")]([SubResource("Resource_haov8")])

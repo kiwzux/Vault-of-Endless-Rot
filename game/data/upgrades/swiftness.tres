@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="PassiveData" format=3]
+
+[ext_resource type="Script" path="res://data/upgrades/passive_data.gd" id="1_passive"]
+
+[resource]
+script = ExtResource("1_passive")
+stat = &"swiftness"
+per_level = 0.025
+id = &"swiftness"
+kind = 1
+name_key = "PASSIVE_SWIFTNESS"
+description_key = "PASSIVE_SWIFTNESS_DESC"
+max_level = 25
+icon_color = Color(0.4, 0.8, 0.6, 1)

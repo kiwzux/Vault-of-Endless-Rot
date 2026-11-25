@@ -1,0 +1,40 @@
+[gd_resource type="Resource" script_class="SkillData" format=3]
+
+[ext_resource type="Script" path="res://systems/skills/actions/strike_action.gd" id="1_5wy6r"]
+[ext_resource type="Script" path="res://data/skills/skill_modifier.gd" id="2_3argq"]
+[ext_resource type="Script" path="res://data/statuses/status_application.gd" id="3_o2dkc"]
+[ext_resource type="Script" path="res://data/skills/skill_data.gd" id="4_nvk3f"]
+
+[sub_resource type="Resource" id="Resource_a5xyi"]
+script = ExtResource("1_5wy6r")
+fuse = 0.1
+
+[sub_resource type="Resource" id="Resource_gx48x"]
+script = ExtResource("3_o2dkc")
+status = &"stun"
+chance = 0.35
+
+[resource]
+script = ExtResource("4_nvk3f")
+action = SubResource("Resource_a5xyi")
+tags = Array[StringName]([&"lightning", &"area"])
+on_hit = Array[ExtResource("3_o2dkc")]([SubResource("Resource_gx48x")])
+damage = 14.0
+damage_per_level = 4.0
+cooldown = 0.99
+cooldown_per_level = -0.01
+attack_range = 240.0
+amount = 4
+amount_levels = PackedInt32Array(15, 20, 25)
+pierce_levels = PackedInt32Array()
+area = 16.0
+area_per_level = 0.3
+fx_kind = &"smite"
+fx_color = Color(0.9, 0.95, 1, 1)
+is_evolution = true
+id = &"thunderstorm"
+kind = 0
+name_key = "EVO_THUNDERSTORM"
+description_key = "EVO_THUNDERSTORM_DESC"
+max_level = 20
+icon_color = Color(0.85, 0.9, 1, 1)

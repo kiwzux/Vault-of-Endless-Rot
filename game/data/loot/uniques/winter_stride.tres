@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="UniqueItemData" format=3]
+
+[ext_resource type="Script" path="res://data/loot/unique_item_data.gd" id="1_unique"]
+[ext_resource type="Resource" path="res://data/loot/bases/boots.tres" id="2_base"]
+[ext_resource type="Script" path="res://data/skills/skill_modifier.gd" id="3_mod"]
+[ext_resource type="Script" path="res://data/statuses/status_application.gd" id="4_status"]
+
+[sub_resource type="Resource" id="Resource_status"]
+script = ExtResource("4_status")
+status = &"chill"
+chance = 0.5
+
+[sub_resource type="Resource" id="Resource_rune"]
+script = ExtResource("3_mod")
+id = &"legend_winter_stride"
+name_key = "UNIQUE_WINTER_STRIDE"
+description_key = "LEGEND_WINTER_STRIDE_DESC"
+rarity = 3
+icon_color = Color(1, 0.55, 0.15, 1)
+requires_tags = Array[StringName]([&"cold"])
+area = 0.25
+statuses = Array[ExtResource("4_status")]([SubResource("Resource_status")])
+
+[resource]
+script = ExtResource("1_unique")
+id = &"winter_stride"
+name_key = "UNIQUE_WINTER_STRIDE"
+base = ExtResource("2_base")
+stats = {&"swiftness": 0.12, &"armor": 2.0}
+modifier = SubResource("Resource_rune")
+icon = &"winter_stride"

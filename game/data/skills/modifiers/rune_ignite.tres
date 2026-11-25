@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="SkillModifier" format=3]
+
+[ext_resource type="Script" path="res://data/skills/skill_modifier.gd" id="1_dodbu"]
+[ext_resource type="Script" path="res://data/statuses/status_application.gd" id="2_ipvrv"]
+
+[sub_resource type="Resource" id="Resource_8m3qa"]
+script = ExtResource("2_ipvrv")
+status = &"burn"
+chance = 0.3
+
+[resource]
+script = ExtResource("1_dodbu")
+id = &"rune_ignite"
+name_key = "MOD_RUNE_IGNITE"
+description_key = "MOD_RUNE_IGNITE_DESC"
+icon_color = Color(0.85, 0.82, 0.75, 1)
+statuses = Array[ExtResource("2_ipvrv")]([SubResource("Resource_8m3qa")])

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="TalentData" format=3]
+
+[ext_resource type="Script" path="res://data/talents/talent_data.gd" id="1_talent"]
+
+[resource]
+script = ExtResource("1_talent")
+id = &"sorc_vigor"
+order = 12
+hero = &"sorceress"
+name_key = "TALENT_SORC_VIGOR"
+description_key = "TALENT_SORC_VIGOR_DESC"
+stat = &"max_health"
+per_rank = 10.0
+cost_base = 30
+cost_growth = 1.5
+icon_color = Color(0.7, 0.3, 0.5, 1)

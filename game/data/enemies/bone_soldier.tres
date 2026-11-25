@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="EnemyData" format=3]
+
+[ext_resource type="Script" path="res://data/enemies/enemy_data.gd" id="1_enemy"]
+
+[resource]
+script = ExtResource("1_enemy")
+id = &"bone_soldier"
+name_key = "ENEMY_BONE_SOLDIER"
+max_health = 26.0
+speed = 62.0
+contact_damage = 10.0
+xp = 0
+radius = 6
+placeholder_color = Color(0.88, 0.85, 0.72, 1)

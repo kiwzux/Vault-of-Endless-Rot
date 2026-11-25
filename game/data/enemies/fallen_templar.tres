@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="EnemyData" format=3]
+
+[ext_resource type="Script" path="res://data/enemies/enemy_data.gd" id="1_enemy"]
+
+[resource]
+script = ExtResource("1_enemy")
+id = &"fallen_templar"
+name_key = "ENEMY_FALLEN_TEMPLAR"
+max_health = 52.0
+speed = 36.0
+contact_damage = 14.0
+xp = 5
+radius = 8.0
+placeholder_color = Color(0.45, 0.36, 0.28, 1)
+resistances = {&"fire": 0.3, &"holy": -0.4}
+charge_interval = 4.5
+charge_windup = 0.7
+charge_speed = 270.0
+charge_time = 0.5
+charge_range = 230.0

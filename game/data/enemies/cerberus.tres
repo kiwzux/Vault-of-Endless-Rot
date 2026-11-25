@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="EnemyData" format=3]
+
+[ext_resource type="Script" path="res://data/enemies/enemy_data.gd" id="1_enemy"]
+
+[resource]
+script = ExtResource("1_enemy")
+id = &"cerberus"
+name_key = "ENEMY_CERBERUS"
+max_health = 46.0
+speed = 66.0
+contact_damage = 18.0
+xp = 5
+radius = 8
+placeholder_color = Color(0.75, 0.15, 0.1, 1)

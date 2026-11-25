@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="BossRing" format=3]
+
+[ext_resource type="Script" path="res://systems/enemies/boss_attacks/boss_ring.gd" id="1_script"]
+
+[resource]
+script = ExtResource("1_script")
+id = &"dk_ring"
+windup = 0.6
+recovery = 1.6
+damage = 15
+color = Color(0.7, 0.4, 1, 1)
+count = 10
+waves = 2
+wave_gap = 0.45
+speed = 95
+reach = 280

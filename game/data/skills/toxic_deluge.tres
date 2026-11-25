@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="SkillData" format=3]
+
+[ext_resource type="Script" path="res://systems/skills/actions/strike_action.gd" id="1_vhat0"]
+[ext_resource type="Script" path="res://data/skills/skill_modifier.gd" id="2_dmxgb"]
+[ext_resource type="Script" path="res://data/statuses/status_application.gd" id="3_bu4vt"]
+[ext_resource type="Script" path="res://data/skills/skill_data.gd" id="4_8tr4i"]
+
+[sub_resource type="Resource" id="Resource_1m5r6"]
+script = ExtResource("1_vhat0")
+fuse = 0.3
+
+[sub_resource type="Resource" id="Resource_q3rmc"]
+script = ExtResource("3_bu4vt")
+status = &"slow"
+potency = 1.5
+duration = 1.5
+
+[sub_resource type="Resource" id="Resource_6slwn"]
+script = ExtResource("3_bu4vt")
+status = &"poison"
+stacks = 2
+
+[resource]
+script = ExtResource("4_8tr4i")
+action = SubResource("Resource_1m5r6")
+tags = Array[StringName]([&"poison", &"area"])
+on_hit = Array[ExtResource("3_bu4vt")]([SubResource("Resource_q3rmc"), SubResource("Resource_6slwn")])
+damage = 14.0
+damage_per_level = 2.2
+cooldown = 1.2
+cooldown_per_level = -0.01
+attack_range = 230.0
+amount = 7
+amount_levels = PackedInt32Array(16, 22)
+pierce_levels = PackedInt32Array()
+area = 20.0
+area_per_level = 0.5
+fx_kind = &"acid"
+fx_color = Color(0.65, 1, 0.3, 1)
+is_evolution = true
+id = &"toxic_deluge"
+kind = 0
+name_key = "EVO_TOXIC_DELUGE"
+description_key = "EVO_TOXIC_DELUGE_DESC"
+max_level = 20
+icon_color = Color(0.55, 0.95, 0.25, 1)

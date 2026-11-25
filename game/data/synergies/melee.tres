@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="SynergyData" format=3]
+
+[ext_resource type="Script" path="res://data/synergies/synergy_data.gd" id="1_wu3gg"]
+
+[resource]
+script = ExtResource("1_wu3gg")
+id = &"resonance_melee"
+order = 9
+tag = &"melee"
+thresholds = PackedInt32Array(2, 3)
+tiers = Array[Dictionary]([{
+&"armor": 1.5,
+&"might:melee": 0.1
+}, {
+&"armor": 3.0,
+&"might:melee": 0.2
+}])

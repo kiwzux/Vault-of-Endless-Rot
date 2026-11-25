@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="SkillData" format=3]
+
+[ext_resource type="Script" path="res://systems/skills/actions/projectile_action.gd" id="1_kv178"]
+[ext_resource type="Resource" path="res://data/skills/blizzard.tres" id="2_6vfcw"]
+[ext_resource type="Script" path="res://data/skills/skill_modifier.gd" id="2_rb35o"]
+[ext_resource type="Script" path="res://data/statuses/status_application.gd" id="3_6vfcw"]
+[ext_resource type="Script" path="res://data/skills/skill_data.gd" id="4_cpkrt"]
+
+[sub_resource type="Resource" id="Resource_gap2q"]
+script = ExtResource("1_kv178")
+aim = 1
+speed = 170.0
+range_mult = 1.3
+per_extra = 2
+default_look = &"frost"
+
+[sub_resource type="Resource" id="Resource_thx2p"]
+script = ExtResource("3_6vfcw")
+status = &"chill"
+duration = 1.5
+
+[resource]
+script = ExtResource("4_cpkrt")
+action = SubResource("Resource_gap2q")
+tags = Array[StringName]([&"cold", &"projectile", &"area"])
+on_hit = Array[ExtResource("3_6vfcw")]([SubResource("Resource_thx2p")])
+damage = 8.0
+damage_per_level = 1.5
+cooldown = 2.6
+cooldown_per_level = -0.04
+attack_range = 120.0
+amount = 8
+amount_levels = PackedInt32Array(5, 10, 15, 20, 25)
+pierce = 1
+pierce_levels = PackedInt32Array(9, 18)
+fx_color = Color(0.6, 0.85, 1, 1)
+evolution = ExtResource("2_6vfcw")
+id = &"frost_ring"
+kind = 0
+name_key = "WEAPON_FROST_RING"
+description_key = "WEAPON_FROST_RING_DESC"
+max_level = 20
+icon_color = Color(0.5, 0.75, 0.95, 1)

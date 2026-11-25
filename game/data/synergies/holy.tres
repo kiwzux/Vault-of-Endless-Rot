@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="SynergyData" format=3]
+
+[ext_resource type="Script" path="res://data/synergies/synergy_data.gd" id="1_krwuq"]
+
+[resource]
+script = ExtResource("1_krwuq")
+id = &"resonance_holy"
+order = 7
+tag = &"holy"
+thresholds = PackedInt32Array(2, 3, 4)
+tiers = Array[Dictionary]([{
+&"might:holy": 0.1,
+&"regen": 0.3
+}, {
+&"might:holy": 0.18,
+&"regen": 0.6
+}, {
+&"might:holy": 0.28,
+&"regen": 1.0
+}])

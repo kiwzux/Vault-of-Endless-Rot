@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="StatusReaction" format=3]
+
+[ext_resource type="Script" path="res://data/statuses/status_reaction.gd" id="1_jfi1i"]
+
+[resource]
+script = ExtResource("1_jfi1i")
+id = &"hemorrhage"
+name_key = "REACTION_HEMORRHAGE"
+requires = &"bleed"
+trigger = &"bleed"
+min_stacks = 5
+burst_share = 0.5
+burst_tags = Array[StringName]([&"physical"])
+color = Color(0.9, 0.1, 0.1, 1)

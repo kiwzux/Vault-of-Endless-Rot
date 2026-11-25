@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="SynergyData" format=3]
+
+[ext_resource type="Script" path="res://data/synergies/synergy_data.gd" id="1_nxdy2"]
+
+[resource]
+script = ExtResource("1_nxdy2")
+id = &"resonance_projectile"
+order = 8
+tag = &"projectile"
+thresholds = PackedInt32Array(3, 5)
+tiers = Array[Dictionary]([{
+&"crit:projectile": 0.04
+}, {
+&"crit:projectile": 0.08,
+&"might:projectile": 0.1
+}])

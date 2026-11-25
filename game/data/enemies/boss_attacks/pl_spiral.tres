@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="BossSpiral" format=3]
+
+[ext_resource type="Script" path="res://systems/enemies/boss_attacks/boss_spiral.gd" id="1_script"]
+
+[resource]
+script = ExtResource("1_script")
+id = &"pl_spiral"
+min_phase = 1
+windup = 0.8
+recovery = 1.6
+damage = 16
+color = Color(0.75, 0.35, 1, 1)
+count = 3
+count_per_phase = 1
+duration = 4
+rate = 4
+turn_speed = 1.6
+speed = 90
+reach = 300

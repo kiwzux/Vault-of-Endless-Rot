@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="QuestData" format=3]
+
+[ext_resource type="Script" path="res://data/quests/quest_data.gd" id="1_quest"]
+
+[resource]
+script = ExtResource("1_quest")
+id = &"liberator"
+order = 15
+name_key = "QUEST_LIBERATOR"
+description_key = "QUEST_LIBERATOR_DESC"
+counter = &"rescued"
+target = 3
+reward_souls = 150

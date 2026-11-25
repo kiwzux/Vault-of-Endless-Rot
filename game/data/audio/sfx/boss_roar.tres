@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="SfxData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://data/audio/sfx_data.gd" id="1_sfx"]
+[ext_resource type="AudioStream" path="res://assets/audio/sfx/boss_roar_1.wav" id="2_boss_roar"]
+
+[resource]
+script = ExtResource("1_sfx")
+id = &"boss_roar"
+streams = Array[AudioStream]([ExtResource("2_boss_roar")])
+volume_db = -5.0
+pitch_jitter = 0.03
+cooldown = 2.0
+max_voices = 1
+positional = false

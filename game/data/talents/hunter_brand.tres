@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="TalentData" format=3]
+
+[ext_resource type="Script" path="res://data/talents/talent_data.gd" id="1_htrn5"]
+
+[resource]
+script = ExtResource("1_htrn5")
+id = &"hunter_brand"
+order = 26
+hero = &"witch_hunter"
+name_key = "TALENT_HUNTER_BRAND"
+description_key = "TALENT_HUNTER_BRAND_DESC"
+stat = &"giant_slayer"
+per_rank = 0.04
+cost_base = 70
+cost_growth = 1.7
+icon_color = Color(0.7, 0.2, 0.2, 1)

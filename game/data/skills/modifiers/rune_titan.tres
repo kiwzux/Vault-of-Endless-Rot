@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="SkillModifier" format=3]
+
+[ext_resource type="Script" path="res://data/skills/skill_modifier.gd" id="1_dwlfr"]
+[ext_resource type="Script" path="res://data/statuses/status_application.gd" id="2_d8wq0"]
+
+[resource]
+script = ExtResource("1_dwlfr")
+id = &"rune_titan"
+name_key = "MOD_RUNE_TITAN"
+description_key = "MOD_RUNE_TITAN_DESC"
+rarity = 2
+icon_color = Color(0.75, 0.4, 1, 1)
+cooldown = 0.2
+area = 0.5

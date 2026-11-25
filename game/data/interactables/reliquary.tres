@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="InteractableData" format=3]
+
+[ext_resource type="Script" path="res://data/interactables/interactable_data.gd" id="1_data"]
+
+[resource]
+script = ExtResource("1_data")
+id = &"reliquary"
+name_key = "POINT_RELIQUARY"
+kind = 2
+placement = &"secret"
+min_depth = 2
+color = Color(0.75, 0.78, 0.9, 1)
+light_radius = 40.0
+gold = Vector2i(30, 80)
+potion_chance = 0.3
+item_chance = 1.0
+xp_gems = 12
+item_rarity = 2
+look = &"reliquary"

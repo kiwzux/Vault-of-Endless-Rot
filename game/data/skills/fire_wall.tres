@@ -1,0 +1,41 @@
+[gd_resource type="Resource" script_class="SkillData" format=3]
+
+[ext_resource type="Script" path="res://systems/skills/actions/zone_action.gd" id="1_mny24"]
+[ext_resource type="Script" path="res://data/skills/skill_modifier.gd" id="2_xd24k"]
+[ext_resource type="Script" path="res://data/statuses/status_application.gd" id="3_h0lg2"]
+[ext_resource type="Script" path="res://data/skills/skill_data.gd" id="4_wvcfs"]
+
+[sub_resource type="Resource" id="Resource_fh336"]
+script = ExtResource("1_mny24")
+tick_interval = 0.4
+line = true
+
+[sub_resource type="Resource" id="Resource_3cn5r"]
+script = ExtResource("3_h0lg2")
+status = &"burn"
+chance = 0.4
+
+[resource]
+script = ExtResource("4_wvcfs")
+action = SubResource("Resource_fh336")
+tags = Array[StringName]([&"fire", &"area"])
+on_hit = Array[ExtResource("3_h0lg2")]([SubResource("Resource_3cn5r")])
+damage = 5.0
+damage_per_level = 0.9
+cooldown = 3.6
+cooldown_per_level = -0.045
+attack_range = 170.0
+amount = 3
+amount_levels = PackedInt32Array(6, 12, 18, 24)
+pierce_levels = PackedInt32Array()
+area = 16.0
+area_per_level = 0.25
+duration = 2.5
+duration_per_level = 0.04
+fx_color = Color(1, 0.45, 0.12, 1)
+id = &"fire_wall"
+kind = 0
+name_key = "SKILL_FIRE_WALL"
+description_key = "SKILL_FIRE_WALL_DESC"
+max_level = 20
+icon_color = Color(0.9, 0.40499997, 0.107999995, 1)

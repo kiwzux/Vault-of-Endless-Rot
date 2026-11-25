@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="EnemyData" format=3]
+
+[ext_resource type="Script" path="res://data/enemies/enemy_data.gd" id="1_enemy"]
+[ext_resource type="Resource" path="res://data/enemies/horned_demon.tres" id="2_upgrade"]
+
+[resource]
+script = ExtResource("1_enemy")
+id = &"demon"
+name_key = "ENEMY_DEMON"
+max_health = 50.0
+speed = 30.0
+contact_damage = 19.0
+xp = 4
+radius = 9
+placeholder_color = Color(0.55, 0.15, 0.25, 1)
+upgrade = ExtResource("2_upgrade")

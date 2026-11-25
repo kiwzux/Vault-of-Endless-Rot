@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="PassiveData" format=3]
+
+[ext_resource type="Script" path="res://data/upgrades/passive_data.gd" id="1_passive"]
+
+[resource]
+script = ExtResource("1_passive")
+stat = &"revival"
+per_level = 1.0
+id = &"second_wind"
+kind = 1
+name_key = "PASSIVE_SECOND_WIND"
+description_key = "PASSIVE_SECOND_WIND_DESC"
+max_level = 2
+icon_color = Color(0.95, 0.95, 0.75, 1)

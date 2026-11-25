@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="SkillData" format=3]
+
+[ext_resource type="Script" path="res://systems/skills/actions/trap_action.gd" id="1_dt0g6"]
+[ext_resource type="Script" path="res://data/skills/skill_modifier.gd" id="2_e5pw3"]
+[ext_resource type="Script" path="res://data/statuses/status_application.gd" id="3_gsaao"]
+[ext_resource type="Script" path="res://data/skills/skill_data.gd" id="4_0yymj"]
+
+[sub_resource type="Resource" id="Resource_rqv2i"]
+script = ExtResource("1_dt0g6")
+arm_time = 0.3
+trigger_radius = 18.0
+
+[sub_resource type="Resource" id="Resource_5xf5q"]
+script = ExtResource("3_gsaao")
+status = &"slow"
+potency = 0.7
+
+[sub_resource type="Resource" id="Resource_32wmq"]
+script = ExtResource("3_gsaao")
+status = &"hex"
+chance = 0.6
+
+[resource]
+script = ExtResource("4_0yymj")
+action = SubResource("Resource_rqv2i")
+tags = Array[StringName]([&"holy", &"trap"])
+on_hit = Array[ExtResource("3_gsaao")]([SubResource("Resource_5xf5q"), SubResource("Resource_32wmq")])
+damage = 8.0
+damage_per_level = 1.4
+cooldown = 2.6
+cooldown_per_level = -0.035
+attack_range = 170.0
+amount_levels = PackedInt32Array(4, 10, 16, 22)
+pierce_levels = PackedInt32Array()
+area = 34.0
+area_per_level = 0.6
+duration = 9.0
+fx_color = Color(0.8, 0.85, 0.95, 1)
+id = &"silver_net"
+kind = 0
+name_key = "SKILL_SILVER_NET"
+description_key = "SKILL_SILVER_NET_DESC"
+max_level = 20
+icon_color = Color(0.71999997, 0.765, 0.85499996, 1)

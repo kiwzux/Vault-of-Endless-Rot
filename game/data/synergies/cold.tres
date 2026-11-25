@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="SynergyData" format=3]
+
+[ext_resource type="Script" path="res://data/synergies/synergy_data.gd" id="1_07d21"]
+
+[resource]
+script = ExtResource("1_07d21")
+id = &"resonance_cold"
+order = 2
+tag = &"cold"
+thresholds = PackedInt32Array(2, 3, 4)
+tiers = Array[Dictionary]([{
+&"might:cold": 0.1
+}, {
+&"might:cold": 0.18,
+&"resilience": 0.04
+}, {
+&"might:cold": 0.28,
+&"resilience": 0.08
+}])

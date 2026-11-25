@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="AudioConfig" load_steps=10 format=3]
+
+[ext_resource type="Script" path="res://data/audio/audio_config.gd" id="1_config"]
+[ext_resource type="AudioStream" path="res://assets/audio/music/menu.wav" id="2_menu"]
+[ext_resource type="AudioStream" path="res://assets/audio/music/hub.wav" id="3_hub"]
+[ext_resource type="AudioStream" path="res://assets/audio/music/boss.wav" id="4_boss"]
+[ext_resource type="AudioStream" path="res://assets/audio/ui/ui_hover_01.wav" id="5_hover"]
+[ext_resource type="AudioStream" path="res://assets/audio/ui/ui_confirm_01.wav" id="6_confirm"]
+[ext_resource type="AudioStream" path="res://assets/audio/ui/ui_item_equip_01.wav" id="7_equip"]
+[ext_resource type="AudioStream" path="res://assets/audio/ui/ui_level_up_01.wav" id="8_level_up"]
+[ext_resource type="AudioStream" path="res://assets/audio/ui/ui_magic_01.wav" id="9_magic"]
+
+[resource]
+script = ExtResource("1_config")
+menu_music = ExtResource("2_menu")
+hub_music = ExtResource("3_hub")
+boss_music = ExtResource("4_boss")
+crossfade = 2.5
+music_db = -8.0
+battle_radius = 220.0
+battle_full = 16.0
+elite_weight = 4.0
+hurt_boost = 0.35
+hurt_memory = 4.0
+rise_rate = 0.8
+fall_rate = 0.12
+battle_on = 0.55
+battle_off = 0.2
+battle_hold = 6.0
+battle_crossfade = 1.5
+calm_cutoff_hz = 2200.0
+calm_volume_db = -3.0
+ui_hover = ExtResource("5_hover")
+ui_confirm = ExtResource("6_confirm")
+ui_equip = ExtResource("7_equip")
+ui_level_up = ExtResource("8_level_up")
+ui_magic = ExtResource("9_magic")
+ui_db = -6.0
+hover_cooldown = 0.07

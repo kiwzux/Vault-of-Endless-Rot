@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="SkillData" format=3]
+
+[ext_resource type="Script" path="res://systems/skills/actions/aura_action.gd" id="1_7a6mg"]
+[ext_resource type="Script" path="res://data/skills/skill_modifier.gd" id="2_lgkyx"]
+[ext_resource type="Script" path="res://data/statuses/status_application.gd" id="3_fl16n"]
+[ext_resource type="Script" path="res://data/skills/skill_data.gd" id="4_gg57e"]
+
+[sub_resource type="Resource" id="Resource_dkqos"]
+script = ExtResource("1_7a6mg")
+
+[sub_resource type="Resource" id="Resource_var47"]
+script = ExtResource("3_fl16n")
+status = &"poison"
+
+[resource]
+script = ExtResource("4_gg57e")
+action = SubResource("Resource_dkqos")
+tags = Array[StringName]([&"poison", &"aura", &"area"])
+on_hit = Array[ExtResource("3_fl16n")]([SubResource("Resource_var47")])
+damage = 9.2
+damage_per_level = 1.2
+cooldown = 0.5
+cooldown_per_level = -0.006
+attack_range = 71.5
+range_per_level = 1.5
+amount_levels = PackedInt32Array()
+pierce_levels = PackedInt32Array()
+fx_color = Color(0.65, 0.9, 0.3, 1)
+is_evolution = true
+id = &"plague_wind"
+kind = 0
+name_key = "EVO_PLAGUE_WIND"
+description_key = "EVO_PLAGUE_WIND_DESC"
+max_level = 20
+icon_color = Color(0.55, 0.8, 0.25, 1)

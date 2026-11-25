@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="StatusEffectData" format=3]
+
+[ext_resource type="Script" path="res://data/statuses/status_effect_data.gd" id="1_du0dw"]
+
+[resource]
+script = ExtResource("1_du0dw")
+id = &"slow"
+name_key = "STATUS_SLOW"
+duration = 1.0
+slow = 0.3
+boss_resist = 0.5
+color = Color(0.7, 0.8, 0.65, 1)
+visual_bit = 4
+tint_priority = 1

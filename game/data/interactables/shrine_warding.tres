@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="InteractableData" format=3]
+
+[ext_resource type="Script" path="res://data/interactables/interactable_data.gd" id="1_data"]
+
+[resource]
+script = ExtResource("1_data")
+id = &"shrine_warding"
+name_key = "POINT_SHRINE_WARDING"
+kind = 0
+placement = &"fountain"
+color = Color(0.6, 0.65, 0.75, 1)
+light_radius = 56.0
+buff_stats = {&"armor": 6.0, &"resilience": 0.15}
+buff_time = 60.0

@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="BiomeData" load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://data/biomes/biome_data.gd" id="1_biome"]
+[ext_resource type="Script" path="res://data/biomes/object_rules.gd" id="2_rules"]
+[ext_resource type="Resource" path="res://data/waves/flooded_crypt.tres" id="3_waves"]
+[ext_resource type="AudioStream" path="res://assets/audio/music/flooded_crypt.wav" id="9_music"]
+[ext_resource type="AudioStream" path="res://assets/audio/music/flooded_crypt_battle.wav" id="10_battle"]
+
+[sub_resource type="Resource" id="Resource_rules"]
+script = ExtResource("2_rules")
+shrine_chance = 0.6
+mimic_chance = 0.15
+extra_challenges = 2
+breakables_max = 12
+lore_per_level = 3
+curse_altar_chance = 0.5
+prisoner_chance = 0.5
+prisoner_tries = 2
+extra_chests = 2
+extra_shrines = 2
+
+[resource]
+script = ExtResource("1_biome")
+id = &"flooded_crypt"
+order = 1
+name_key = "BIOME_FLOODED_CRYPT"
+final_lair = false
+waves = ExtResource("3_waves")
+objects = SubResource("Resource_rules")
+hazard_name_key = "HAZARD_WATER"
+hazard_desc_key = "HAZARD_WATER_DESC"
+hazard_hero_chill = true
+hazard_status = &"chill"
+hazard_enemy_damage = 0.0
+ambient_light = Color(0.36, 0.42, 0.5, 1)
+hazard_light = Color(0.35, 0.8, 0.85, 0.2)
+hazard_light_radius = 64.0
+music = ExtResource("9_music")
+battle_music = ExtResource("10_battle")
+decor_wall = Array[StringName]([&"decor_sarcophagus", &"decor_broken_column", &"decor_candelabra"])
+decor_open = Array[StringName]([&"decor_bone_pile", &"decor_tomb_slab"])
+decor_wall_count = 16
+decor_open_count = 12
+decor_cluster = 3

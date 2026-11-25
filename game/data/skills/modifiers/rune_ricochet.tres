@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="SkillModifier" format=3]
+
+[ext_resource type="Script" path="res://data/skills/skill_modifier.gd" id="1_a2igt"]
+[ext_resource type="Script" path="res://data/statuses/status_application.gd" id="2_ih737"]
+
+[resource]
+script = ExtResource("1_a2igt")
+id = &"rune_ricochet"
+name_key = "MOD_RUNE_RICOCHET"
+description_key = "MOD_RUNE_RICOCHET_DESC"
+rarity = 1
+icon_color = Color(0.4, 0.6, 1, 1)
+requires_actions = Array[StringName]([&"projectile"])
+ricochet = 2

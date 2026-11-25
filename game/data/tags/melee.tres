@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="TagDef" format=3]
+
+[ext_resource type="Script" path="res://data/tags/tag_def.gd" id="1_8qv86"]
+
+[resource]
+script = ExtResource("1_8qv86")
+id = &"melee"
+name_key = "TAG_MELEE"
+color = Color(0.75, 0.7, 0.6, 1)

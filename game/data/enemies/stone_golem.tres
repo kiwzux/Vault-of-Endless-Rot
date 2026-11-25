@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="EnemyData" format=3]
+
+[ext_resource type="Script" path="res://data/enemies/enemy_data.gd" id="1_enemy"]
+
+[resource]
+script = ExtResource("1_enemy")
+id = &"stone_golem"
+name_key = "ENEMY_STONE_GOLEM"
+max_health = 260.0
+speed = 30.0
+contact_damage = 20.0
+xp = 10
+radius = 11
+placeholder_color = Color(0.6, 0.6, 0.62, 1)
+loot_rarity = 2
+gold = Vector2i(25, 40)

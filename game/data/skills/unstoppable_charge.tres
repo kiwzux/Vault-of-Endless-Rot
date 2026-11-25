@@ -1,0 +1,37 @@
+[gd_resource type="Resource" script_class="SkillData" format=3]
+
+[ext_resource type="Script" path="res://systems/skills/actions/dash_action.gd" id="1_lsnme"]
+[ext_resource type="Script" path="res://data/skills/skill_modifier.gd" id="2_vmmb7"]
+[ext_resource type="Script" path="res://data/statuses/status_application.gd" id="3_ntnok"]
+[ext_resource type="Script" path="res://data/skills/skill_data.gd" id="4_cla1v"]
+
+[sub_resource type="Resource" id="Resource_xcmux"]
+script = ExtResource("1_lsnme")
+width = 30.0
+
+[sub_resource type="Resource" id="Resource_i6pj0"]
+script = ExtResource("3_ntnok")
+status = &"stun"
+chance = 0.8
+
+[resource]
+script = ExtResource("4_cla1v")
+action = SubResource("Resource_xcmux")
+tags = Array[StringName]([&"physical", &"movement", &"melee"])
+on_hit = Array[ExtResource("3_ntnok")]([SubResource("Resource_i6pj0")])
+damage = 24.0
+damage_per_level = 3.2
+cooldown = 1.8
+cooldown_per_level = -0.025
+attack_range = 150.0
+range_per_level = 2.0
+amount_levels = PackedInt32Array()
+pierce_levels = PackedInt32Array()
+fx_color = Color(0.85, 0.88, 1, 1)
+is_evolution = true
+id = &"unstoppable_charge"
+kind = 0
+name_key = "EVO_UNSTOPPABLE_CHARGE"
+description_key = "EVO_UNSTOPPABLE_CHARGE_DESC"
+max_level = 20
+icon_color = Color(0.765, 0.792, 0.9, 1)

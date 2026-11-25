@@ -1,0 +1,37 @@
+[gd_resource type="Resource" script_class="SkillData" format=3]
+
+[ext_resource type="Script" path="res://systems/skills/actions/beam_action.gd" id="1_fhurd"]
+[ext_resource type="Script" path="res://data/skills/skill_modifier.gd" id="2_1j510"]
+[ext_resource type="Script" path="res://data/statuses/status_application.gd" id="3_pgh2e"]
+[ext_resource type="Script" path="res://data/skills/skill_data.gd" id="4_ycohh"]
+
+[sub_resource type="Resource" id="Resource_3f3o7"]
+script = ExtResource("1_fhurd")
+width = 7.0
+
+[sub_resource type="Resource" id="Resource_md7h3"]
+script = ExtResource("3_pgh2e")
+status = &"chill"
+
+[resource]
+script = ExtResource("4_ycohh")
+action = SubResource("Resource_3f3o7")
+tags = Array[StringName]([&"cold", &"beam"])
+on_hit = Array[ExtResource("3_pgh2e")]([SubResource("Resource_md7h3")])
+damage = 4.0
+damage_per_level = 0.55
+cooldown = 2.6
+cooldown_per_level = -0.03
+attack_range = 180.0
+range_per_level = 2.0
+amount_levels = PackedInt32Array()
+pierce_levels = PackedInt32Array()
+duration = 1.4
+duration_per_level = 0.02
+fx_color = Color(0.6, 0.85, 1, 1)
+id = &"ice_beam"
+kind = 0
+name_key = "SKILL_ICE_BEAM"
+description_key = "SKILL_ICE_BEAM_DESC"
+max_level = 20
+icon_color = Color(0.54, 0.765, 0.9, 1)

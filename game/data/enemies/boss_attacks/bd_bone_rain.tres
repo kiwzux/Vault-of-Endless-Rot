@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="BossRain" format=3]
+
+[ext_resource type="Script" path="res://systems/enemies/boss_attacks/boss_rain.gd" id="1_script"]
+
+[resource]
+script = ExtResource("1_script")
+id = &"bd_bone_rain"
+windup = 0.5
+recovery = 1.6
+damage = 22
+color = Color(0.6, 1, 0.55, 1)
+count = 3
+count_per_phase = 1
+blast_radius = 28
+fuse = 1.1
+scatter = 80
+waves = 2
+wave_gap = 0.7

@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="UniqueItemData" format=3]
+
+[ext_resource type="Script" path="res://data/loot/unique_item_data.gd" id="1_unique"]
+[ext_resource type="Resource" path="res://data/loot/bases/ring.tres" id="2_base"]
+[ext_resource type="Script" path="res://data/skills/skill_modifier.gd" id="3_mod"]
+
+[sub_resource type="Resource" id="Resource_rune"]
+script = ExtResource("3_mod")
+id = &"legend_ash_ring"
+name_key = "UNIQUE_ASH_RING"
+description_key = "LEGEND_ASH_RING_DESC"
+rarity = 3
+icon_color = Color(1, 0.55, 0.15, 1)
+requires_tags = Array[StringName]([&"fire"])
+damage = 0.2
+
+[resource]
+script = ExtResource("1_unique")
+id = &"ash_ring"
+name_key = "UNIQUE_ASH_RING"
+base = ExtResource("2_base")
+stats = {&"crit": 0.04, &"might": 0.06}
+modifier = SubResource("Resource_rune")
+icon = &"ring_50"

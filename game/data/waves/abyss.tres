@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="WaveTable" format=3]
+
+[ext_resource type="Script" path="res://data/waves/wave_table.gd" id="1_table"]
+[ext_resource type="Script" path="res://data/waves/wave_entry.gd" id="2_entry"]
+[ext_resource type="Script" path="res://data/enemies/enemy_data.gd" id="3_enemy"]
+[ext_resource type="Resource" path="res://data/enemies/pit_lord.tres" id="4_boss"]
+[ext_resource type="Resource" path="res://data/enemies/zombie.tres" id="e_zombie"]
+[ext_resource type="Resource" path="res://data/enemies/ghost.tres" id="e_ghost"]
+[ext_resource type="Resource" path="res://data/enemies/skeleton.tres" id="e_skeleton"]
+[ext_resource type="Resource" path="res://data/enemies/rot_blob.tres" id="e_rot_blob"]
+[ext_resource type="Resource" path="res://data/enemies/plague_thrower.tres" id="e_plague_thrower"]
+[ext_resource type="Resource" path="res://data/enemies/abyss_spawn.tres" id="e_abyss_spawn"]
+[ext_resource type="Resource" path="res://data/enemies/void_eye.tres" id="e_void_eye"]
+
+[sub_resource type="Resource" id="Resource_w0"]
+script = ExtResource("2_entry")
+start_time = 0.0
+end_time = 300.0
+interval = 1.2
+batch = 6
+enemies = Array[ExtResource("3_enemy")]([ExtResource("e_zombie"), ExtResource("e_ghost"), ExtResource("e_skeleton"), ExtResource("e_rot_blob"), ExtResource("e_plague_thrower")])
+weights = PackedFloat32Array(2, 2, 1, 1, 1)
+
+[sub_resource type="Resource" id="Resource_s9_0"]
+script = ExtResource("2_entry")
+start_time = 10
+end_time = 300
+interval = 4
+batch = 6
+enemies = Array[ExtResource("3_enemy")]([ExtResource("e_abyss_spawn")])
+weights = PackedFloat32Array(1)
+
+[sub_resource type="Resource" id="Resource_s9_1"]
+script = ExtResource("2_entry")
+start_time = 40
+end_time = 300
+interval = 8
+batch = 3
+enemies = Array[ExtResource("3_enemy")]([ExtResource("e_void_eye"), ExtResource("e_abyss_spawn")])
+weights = PackedFloat32Array(1, 2)
+
+[resource]
+script = ExtResource("1_table")
+max_alive = 300
+boss = ExtResource("4_boss")
+waves = Array[ExtResource("2_entry")]([SubResource("Resource_w0"), SubResource("Resource_s9_0"), SubResource("Resource_s9_1")])

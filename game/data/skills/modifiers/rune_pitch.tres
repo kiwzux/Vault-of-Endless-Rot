@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="SkillModifier" format=3]
+
+[ext_resource type="Script" path="res://data/skills/skill_modifier.gd" id="1_bgmgi"]
+[ext_resource type="Script" path="res://data/statuses/status_application.gd" id="2_a3vlp"]
+
+[sub_resource type="Resource" id="Resource_0eysw"]
+script = ExtResource("2_a3vlp")
+status = &"oil"
+chance = 0.4
+
+[resource]
+script = ExtResource("1_bgmgi")
+id = &"rune_pitch"
+name_key = "MOD_RUNE_PITCH"
+description_key = "MOD_RUNE_PITCH_DESC"
+rarity = 1
+icon_color = Color(0.4, 0.6, 1, 1)
+statuses = Array[ExtResource("2_a3vlp")]([SubResource("Resource_0eysw")])

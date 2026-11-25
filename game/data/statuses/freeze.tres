@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="StatusEffectData" format=3]
+
+[ext_resource type="Script" path="res://data/statuses/status_effect_data.gd" id="1_7p88s"]
+
+[resource]
+script = ExtResource("1_7p88s")
+id = &"freeze"
+name_key = "STATUS_FREEZE"
+tags = Array[StringName]([&"cold"])
+duration = 1.2
+stun = true
+boss_resist = 0.5
+color = Color(0.8, 0.97, 1, 1)
+visual_bit = 5
+tint_priority = 9

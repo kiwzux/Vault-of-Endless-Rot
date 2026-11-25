@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="EnemyData" format=3]
+
+[ext_resource type="Script" path="res://data/enemies/enemy_data.gd" id="1_enemy"]
+[ext_resource type="Script" path="res://systems/enemies/boss_attacks/boss_attack.gd" id="2_attack"]
+[ext_resource type="Resource" path="res://data/enemies/boss_attacks/ad_blade.tres" id="3_ad_blade"]
+[ext_resource type="Resource" path="res://data/enemies/boss_attacks/ad_whip.tres" id="4_ad_whip"]
+[ext_resource type="Resource" path="res://data/enemies/boss_attacks/ad_ring.tres" id="5_ad_ring"]
+[ext_resource type="Resource" path="res://data/enemies/boss_attacks/ad_imps.tres" id="6_ad_imps"]
+[ext_resource type="Resource" path="res://data/enemies/boss_attacks/ad_charge.tres" id="7_ad_charge"]
+[ext_resource type="Resource" path="res://data/enemies/boss_attacks/ad_lava.tres" id="8_ad_lava"]
+[ext_resource type="Resource" path="res://data/enemies/boss_attacks/ad_spiral.tres" id="9_ad_spiral"]
+[ext_resource type="Resource" path="res://data/enemies/boss_attacks/ad_meteors.tres" id="10_ad_meteors"]
+
+[resource]
+script = ExtResource("1_enemy")
+id = &"archdemon"
+name_key = "ENEMY_ARCHDEMON"
+max_health = 27000
+speed = 36
+contact_damage = 30
+xp = 0
+radius = 14
+placeholder_color = Color(0.85, 0.25, 0.1, 1)
+is_boss = true
+loot_rarity = 2
+gold = Vector2i(100, 140)
+attacks = Array[ExtResource("2_attack")]([ExtResource("3_ad_blade"), ExtResource("4_ad_whip"), ExtResource("5_ad_ring"), ExtResource("6_ad_imps"), ExtResource("7_ad_charge"), ExtResource("8_ad_lava"), ExtResource("9_ad_spiral"), ExtResource("10_ad_meteors")])
+phase_thresholds = PackedFloat32Array(0.66, 0.33)

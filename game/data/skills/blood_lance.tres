@@ -1,0 +1,37 @@
+[gd_resource type="Resource" script_class="SkillData" format=3]
+
+[ext_resource type="Script" path="res://systems/skills/actions/projectile_action.gd" id="1_v1im4"]
+[ext_resource type="Script" path="res://data/skills/skill_modifier.gd" id="2_6opjn"]
+[ext_resource type="Script" path="res://data/statuses/status_application.gd" id="3_gcpjf"]
+[ext_resource type="Script" path="res://data/skills/skill_data.gd" id="4_oa6v6"]
+
+[sub_resource type="Resource" id="Resource_v0241"]
+script = ExtResource("1_v1im4")
+speed = 260.0
+
+[sub_resource type="Resource" id="Resource_ygv1b"]
+script = ExtResource("3_gcpjf")
+status = &"bleed"
+chance = 0.6
+
+[resource]
+script = ExtResource("4_oa6v6")
+action = SubResource("Resource_v0241")
+tags = Array[StringName]([&"blood", &"projectile"])
+on_hit = Array[ExtResource("3_gcpjf")]([SubResource("Resource_ygv1b")])
+damage = 14.0
+damage_per_level = 2.4
+cooldown = 1.7
+cooldown_per_level = -0.022
+attack_range = 200.0
+amount_levels = PackedInt32Array(7, 14, 21)
+pierce = 3
+pierce_levels = PackedInt32Array(9, 17)
+fx_kind = &"spear"
+fx_color = Color(0.85, 0.1, 0.2, 1)
+id = &"blood_lance"
+kind = 0
+name_key = "SKILL_BLOOD_LANCE"
+description_key = "SKILL_BLOOD_LANCE_DESC"
+max_level = 20
+icon_color = Color(0.765, 0.089999996, 0.17999999, 1)

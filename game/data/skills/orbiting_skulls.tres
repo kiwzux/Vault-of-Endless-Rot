@@ -1,0 +1,40 @@
+[gd_resource type="Resource" script_class="SkillData" format=3]
+
+[ext_resource type="Script" path="res://systems/skills/actions/orbit_action.gd" id="1_nokrq"]
+[ext_resource type="Script" path="res://data/skills/skill_modifier.gd" id="2_cib20"]
+[ext_resource type="Resource" path="res://data/skills/danse_macabre.tres" id="2_erbx7"]
+[ext_resource type="Script" path="res://data/statuses/status_application.gd" id="3_erbx7"]
+[ext_resource type="Script" path="res://data/skills/skill_data.gd" id="4_wduar"]
+
+[sub_resource type="Resource" id="Resource_cn4qc"]
+script = ExtResource("1_nokrq")
+angular_speed = 3.4
+
+[sub_resource type="Resource" id="Resource_ak1o0"]
+script = ExtResource("3_erbx7")
+status = &"hex"
+chance = 0.15
+
+[resource]
+script = ExtResource("4_wduar")
+action = SubResource("Resource_cn4qc")
+tags = Array[StringName]([&"dark", &"orbit"])
+on_hit = Array[ExtResource("3_erbx7")]([SubResource("Resource_ak1o0")])
+damage = 9.0
+damage_per_level = 1.5
+cooldown = 5.0
+cooldown_per_level = -0.06
+attack_range = 42.0
+range_per_level = 1.0
+amount = 2
+amount_levels = PackedInt32Array(3, 7, 12, 18, 24)
+pierce_levels = PackedInt32Array()
+duration = 3.0
+fx_color = Color(0.9, 0.85, 0.7, 1)
+evolution = ExtResource("2_erbx7")
+id = &"orbiting_skulls"
+kind = 0
+name_key = "WEAPON_ORBITING_SKULLS"
+description_key = "WEAPON_ORBITING_SKULLS_DESC"
+max_level = 20
+icon_color = Color(0.8, 0.75, 0.6, 1)

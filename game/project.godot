@@ -1,0 +1,62 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Vault of Endless Rot"
+config/version="0.1.0"
+run/main_scene="res://ui/main_menu/main_menu.tscn"
+config/features=PackedStringArray("4.7", "GL Compatibility")
+
+[autoload]
+
+Events="*res://autoload/events.gd"
+Settings="*res://autoload/settings.gd"
+RunConfig="*res://autoload/run_config.gd"
+GameState="*res://autoload/game_state.gd"
+GenLog="*res://autoload/gen_log.gd"
+Sound="*res://autoload/sound.gd"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/build_stamp/plugin.cfg")
+
+[display]
+
+window/size/viewport_width=640
+window/size/viewport_height=360
+window/size/window_width_override=1280
+window/size/window_height_override=720
+window/stretch/mode="canvas_items"
+window/stretch/scale_mode="fractional"
+
+[gui]
+
+theme/custom="res://ui/theme/main_theme.tres"
+
+[internationalization]
+
+locale/translations=PackedStringArray("res://localization/translations.ru.translation", "res://localization/translations.en.translation")
+
+[layer_names]
+
+2d_physics/layer_1="world"
+2d_physics/layer_2="players"
+2d_physics/layer_3="enemies"
+2d_physics/layer_4="player_hitbox"
+2d_physics/layer_5="enemy_hitbox"
+2d_physics/layer_6="pickups"
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/canvas_textures/default_texture_filter=1
+2d/snap/snap_2d_transforms_to_pixel=true

@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="SkillData" format=3]
+
+[ext_resource type="Script" path="res://systems/skills/actions/projectile_action.gd" id="1_p1c3o"]
+[ext_resource type="Script" path="res://data/skills/skill_modifier.gd" id="2_ahery"]
+[ext_resource type="Script" path="res://data/statuses/status_application.gd" id="3_budop"]
+[ext_resource type="Script" path="res://data/skills/skill_data.gd" id="4_55815"]
+
+[sub_resource type="Resource" id="Resource_au7fn"]
+script = ExtResource("1_p1c3o")
+speed = 420.0
+
+[sub_resource type="Resource" id="Resource_uxcts"]
+script = ExtResource("3_budop")
+status = &"bleed"
+chance = 0.35
+
+[resource]
+script = ExtResource("4_55815")
+action = SubResource("Resource_au7fn")
+tags = Array[StringName]([&"physical", &"projectile"])
+on_hit = Array[ExtResource("3_budop")]([SubResource("Resource_uxcts")])
+damage = 9.0
+damage_per_level = 1.3
+cooldown = 0.45
+cooldown_per_level = -0.006
+attack_range = 230.0
+amount = 6
+amount_levels = PackedInt32Array(16, 22)
+pierce = 1
+pierce_levels = PackedInt32Array(18)
+fx_kind = &"dagger"
+fx_color = Color(0.95, 0.97, 1, 1)
+is_evolution = true
+id = &"thousand_blades"
+kind = 0
+name_key = "EVO_THOUSAND_BLADES"
+description_key = "EVO_THOUSAND_BLADES_DESC"
+max_level = 20
+icon_color = Color(0.85, 0.9, 1, 1)

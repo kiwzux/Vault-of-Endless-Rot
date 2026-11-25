@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="EnemyData" format=3]
+
+[ext_resource type="Script" path="res://data/enemies/enemy_data.gd" id="1_enemy"]
+
+[resource]
+script = ExtResource("1_enemy")
+id = &"plague_rat"
+name_key = "ENEMY_PLAGUE_RAT"
+max_health = 5.0
+speed = 66.0
+contact_damage = 4.0
+xp = 1
+radius = 4.0
+placeholder_color = Color(0.42, 0.36, 0.3, 1)

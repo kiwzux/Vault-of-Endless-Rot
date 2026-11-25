@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="EnemyData" format=3]
+
+[ext_resource type="Script" path="res://data/enemies/enemy_data.gd" id="1_enemy"]
+
+[resource]
+script = ExtResource("1_enemy")
+id = &"necro_acolyte"
+name_key = "ENEMY_NECRO_ACOLYTE"
+max_health = 22.0
+speed = 28.0
+contact_damage = 6.0
+xp = 4
+radius = 6.0
+placeholder_color = Color(0.35, 1.0, 0.48, 1)
+shot_interval = 3.2
+shot_range = 170.0
+shot_damage = 7.0
+shot_speed = 110.0
+keep_distance = 140.0
+summon_id = &"bone_soldier"
+summon_count = 3
+summon_interval = 9.0

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="TalentData" format=3]
+
+[ext_resource type="Script" path="res://data/talents/talent_data.gd" id="1_jji3s"]
+
+[resource]
+script = ExtResource("1_jji3s")
+id = &"pyro_vigor"
+order = 17
+hero = &"pyromancer"
+name_key = "TALENT_PYRO_VIGOR"
+description_key = "TALENT_PYRO_VIGOR_DESC"
+stat = &"max_health"
+per_rank = 10.0
+cost_base = 30
+cost_growth = 1.5
+icon_color = Color(0.8, 0.3, 0.2, 1)

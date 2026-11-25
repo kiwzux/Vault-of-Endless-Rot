@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="SkillData" format=3]
+
+[ext_resource type="Script" path="res://systems/skills/actions/orbit_action.gd" id="1_d4voh"]
+[ext_resource type="Script" path="res://data/skills/skill_modifier.gd" id="2_gs15x"]
+[ext_resource type="Script" path="res://data/statuses/status_application.gd" id="3_6b72s"]
+[ext_resource type="Script" path="res://data/skills/skill_data.gd" id="4_337mj"]
+
+[sub_resource type="Resource" id="Resource_rgh1x"]
+script = ExtResource("1_d4voh")
+angular_speed = 4.0
+
+[sub_resource type="Resource" id="Resource_cay4b"]
+script = ExtResource("3_6b72s")
+status = &"hex"
+chance = 0.3
+
+[sub_resource type="Resource" id="Resource_ydj5s"]
+script = ExtResource("3_6b72s")
+status = &"fear"
+chance = 0.05
+
+[resource]
+script = ExtResource("4_337mj")
+action = SubResource("Resource_rgh1x")
+tags = Array[StringName]([&"dark", &"orbit"])
+on_hit = Array[ExtResource("3_6b72s")]([SubResource("Resource_cay4b"), SubResource("Resource_ydj5s")])
+damage = 8.0
+damage_per_level = 2.0
+cooldown = 2.5
+cooldown_per_level = 0.0
+attack_range = 49.0
+range_per_level = 1.0
+amount = 6
+amount_levels = PackedInt32Array(16, 22)
+pierce_levels = PackedInt32Array()
+duration = 2.5
+fx_color = Color(1, 0.95, 0.75, 1)
+is_evolution = true
+id = &"danse_macabre"
+kind = 0
+name_key = "EVO_DANSE_MACABRE"
+description_key = "EVO_DANSE_MACABRE_DESC"
+max_level = 20
+icon_color = Color(0.95, 0.9, 0.7, 1)

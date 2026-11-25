@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="EnemyData" format=3]
+
+[ext_resource type="Script" path="res://data/enemies/enemy_data.gd" id="1_enemy"]
+[ext_resource type="Script" path="res://systems/enemies/boss_attacks/boss_attack.gd" id="2_attack"]
+[ext_resource type="Resource" path="res://data/enemies/boss_attacks/bd_breath.tres" id="3_bd_breath"]
+[ext_resource type="Resource" path="res://data/enemies/boss_attacks/bd_bone_rain.tres" id="4_bd_bone_rain"]
+[ext_resource type="Resource" path="res://data/enemies/boss_attacks/bd_spiral.tres" id="5_bd_spiral"]
+[ext_resource type="Resource" path="res://data/enemies/boss_attacks/bd_summon.tres" id="6_bd_summon"]
+[ext_resource type="Resource" path="res://data/enemies/boss_attacks/bd_pools.tres" id="7_bd_pools"]
+[ext_resource type="Resource" path="res://data/enemies/boss_attacks/bd_wing.tres" id="8_bd_wing"]
+
+[resource]
+script = ExtResource("1_enemy")
+id = &"bone_dragon"
+name_key = "ENEMY_BONE_DRAGON"
+max_health = 15000
+speed = 34
+contact_damage = 28
+xp = 0
+radius = 14
+placeholder_color = Color(0.9, 0.86, 0.74, 1)
+is_boss = true
+loot_rarity = 2
+gold = Vector2i(80, 110)
+attacks = Array[ExtResource("2_attack")]([ExtResource("3_bd_breath"), ExtResource("4_bd_bone_rain"), ExtResource("5_bd_spiral"), ExtResource("6_bd_summon"), ExtResource("7_bd_pools"), ExtResource("8_bd_wing")])
+phase_thresholds = PackedFloat32Array(0.66, 0.33)

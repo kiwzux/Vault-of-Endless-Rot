@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="StatDef" format=3]
+
+[ext_resource type="Script" path="res://data/stats/stat_def.gd" id="1_0ieg0"]
+
+[resource]
+script = ExtResource("1_0ieg0")
+id = &"thorns"
+line_key = "STAT_LINE_THORNS"
+format = 0
+on_items = true

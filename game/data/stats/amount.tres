@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="StatDef" format=3]
+
+[ext_resource type="Script" path="res://data/stats/stat_def.gd" id="1_kthwn"]
+
+[resource]
+script = ExtResource("1_kthwn")
+id = &"amount"
+line_key = "STAT_LINE_AMOUNT"
+format = 0
+whole = true

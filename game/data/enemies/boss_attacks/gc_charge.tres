@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="BossCharge" format=3]
+
+[ext_resource type="Script" path="res://systems/enemies/boss_attacks/boss_charge.gd" id="1_script"]
+
+[resource]
+script = ExtResource("1_script")
+id = &"gc_charge"
+max_range = 320
+windup = 0.7
+recovery = 1.6
+damage = 0
+color = Color(1.0, 0.55, 0.25, 1)
+count = 3
+count_per_phase = 1
+speed = 310
+dash_time = 0.42
+pause = 0.4

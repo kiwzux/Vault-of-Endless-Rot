@@ -1,0 +1,126 @@
+[gd_resource type="Resource" script_class="WaveTable" format=3]
+
+[ext_resource type="Script" path="res://data/waves/wave_table.gd" id="1_table"]
+[ext_resource type="Script" path="res://data/waves/wave_entry.gd" id="2_entry"]
+[ext_resource type="Script" path="res://data/enemies/enemy_data.gd" id="3_enemy"]
+[ext_resource type="Resource" path="res://data/enemies/lich_king.tres" id="4_boss"]
+[ext_resource type="Resource" path="res://data/enemies/skeleton.tres" id="e_skeleton"]
+[ext_resource type="Resource" path="res://data/enemies/ghost.tres" id="e_ghost"]
+[ext_resource type="Resource" path="res://data/enemies/lich.tres" id="e_lich"]
+[ext_resource type="Resource" path="res://data/enemies/dark_priest.tres" id="e_dark_priest"]
+[ext_resource type="Resource" path="res://data/enemies/phantom_mage.tres" id="e_phantom_mage"]
+[ext_resource type="Resource" path="res://data/enemies/zombie.tres" id="e_zombie"]
+[ext_resource type="Resource" path="res://data/enemies/bloated_corpse.tres" id="e_bloated_corpse"]
+[ext_resource type="Resource" path="res://data/enemies/drowned.tres" id="e_drowned"]
+[ext_resource type="Resource" path="res://data/enemies/water_wraith.tres" id="e_water_wraith"]
+[ext_resource type="Resource" path="res://data/enemies/skeleton_archer.tres" id="e_skeleton_archer"]
+[ext_resource type="Resource" path="res://data/enemies/vampire_bat.tres" id="e_vampire_bat"]
+[ext_resource type="Resource" path="res://data/enemies/necro_acolyte.tres" id="e_necro_acolyte"]
+[ext_resource type="Resource" path="res://data/enemies/bone_spider.tres" id="e_bone_spider"]
+[ext_resource type="Resource" path="res://data/enemies/banshee.tres" id="e_banshee"]
+[ext_resource type="Resource" path="res://data/enemies/crypt_golem.tres" id="e_crypt_golem"]
+
+[sub_resource type="Resource" id="Resource_w0"]
+script = ExtResource("2_entry")
+start_time = 0.0
+end_time = 90.0
+interval = 0.8
+batch = 4
+enemies = Array[ExtResource("3_enemy")]([ExtResource("e_skeleton"), ExtResource("e_ghost")])
+weights = PackedFloat32Array(3, 1)
+
+[sub_resource type="Resource" id="Resource_w1"]
+script = ExtResource("2_entry")
+start_time = 30.0
+end_time = 150.0
+interval = 3.0
+batch = 6
+enemies = Array[ExtResource("3_enemy")]([ExtResource("e_lich")])
+weights = PackedFloat32Array(1)
+
+[sub_resource type="Resource" id="Resource_w2"]
+script = ExtResource("2_entry")
+start_time = 40.0
+end_time = 200.0
+interval = 3.5
+batch = 3
+enemies = Array[ExtResource("3_enemy")]([ExtResource("e_dark_priest"), ExtResource("e_phantom_mage")])
+weights = PackedFloat32Array(1, 1)
+
+[sub_resource type="Resource" id="Resource_w3"]
+script = ExtResource("2_entry")
+start_time = 60.0
+end_time = 220.0
+interval = 0.7
+batch = 6
+enemies = Array[ExtResource("3_enemy")]([ExtResource("e_skeleton"), ExtResource("e_zombie"), ExtResource("e_ghost"), ExtResource("e_bloated_corpse")])
+weights = PackedFloat32Array(3, 2, 2, 1)
+
+[sub_resource type="Resource" id="Resource_w4"]
+script = ExtResource("2_entry")
+start_time = 150.0
+end_time = 300.0
+interval = 0.45
+batch = 8
+enemies = Array[ExtResource("3_enemy")]([ExtResource("e_skeleton"), ExtResource("e_zombie"), ExtResource("e_ghost"), ExtResource("e_lich"), ExtResource("e_phantom_mage"), ExtResource("e_dark_priest")])
+weights = PackedFloat32Array(2, 3, 2, 1, 1, 1)
+
+[sub_resource type="Resource" id="Resource_s9_0"]
+script = ExtResource("2_entry")
+start_time = 15
+end_time = 270
+interval = 2.5
+batch = 4
+enemies = Array[ExtResource("3_enemy")]([ExtResource("e_drowned")])
+weights = PackedFloat32Array(1)
+
+[sub_resource type="Resource" id="Resource_s9_1"]
+script = ExtResource("2_entry")
+start_time = 70
+end_time = 290
+interval = 6
+batch = 3
+enemies = Array[ExtResource("3_enemy")]([ExtResource("e_water_wraith"), ExtResource("e_drowned")])
+weights = PackedFloat32Array(1, 2)
+
+[sub_resource type="Resource" id="Resource_sk_0"]
+script = ExtResource("2_entry")
+start_time = 10
+end_time = 160
+interval = 2.5
+batch = 6
+enemies = Array[ExtResource("3_enemy")]([ExtResource("e_skeleton_archer"), ExtResource("e_vampire_bat")])
+weights = PackedFloat32Array(2, 3)
+
+[sub_resource type="Resource" id="Resource_sk_1"]
+script = ExtResource("2_entry")
+start_time = 45
+end_time = 230
+interval = 4.0
+batch = 3
+enemies = Array[ExtResource("3_enemy")]([ExtResource("e_necro_acolyte"), ExtResource("e_banshee")])
+weights = PackedFloat32Array(1, 1)
+
+[sub_resource type="Resource" id="Resource_sk_2"]
+script = ExtResource("2_entry")
+start_time = 60
+end_time = 260
+interval = 3.0
+batch = 4
+enemies = Array[ExtResource("3_enemy")]([ExtResource("e_bone_spider")])
+weights = PackedFloat32Array(1)
+
+[sub_resource type="Resource" id="Resource_sk_3"]
+script = ExtResource("2_entry")
+start_time = 110
+end_time = 290
+interval = 15.0
+batch = 1
+enemies = Array[ExtResource("3_enemy")]([ExtResource("e_crypt_golem")])
+weights = PackedFloat32Array(1)
+
+[resource]
+script = ExtResource("1_table")
+max_alive = 300
+boss = ExtResource("4_boss")
+waves = Array[ExtResource("2_entry")]([SubResource("Resource_w0"), SubResource("Resource_w1"), SubResource("Resource_w2"), SubResource("Resource_w3"), SubResource("Resource_w4"), SubResource("Resource_s9_0"), SubResource("Resource_s9_1"), SubResource("Resource_sk_0"), SubResource("Resource_sk_1"), SubResource("Resource_sk_2"), SubResource("Resource_sk_3")])

@@ -1,0 +1,11 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://tools/dataset/dataset_preview.gd" id="1_preview"]
+
+[node name="DatasetPreview" type="Node2D"]
+script = ExtResource("1_preview")
+
+[node name="Ground" type="TileMapLayer" parent="."]
+
+[node name="Markers" type="TileMapLayer" parent="."]
+collision_enabled = false

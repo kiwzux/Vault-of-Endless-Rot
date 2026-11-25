@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="BossNova" format=3]
+
+[ext_resource type="Script" path="res://systems/enemies/boss_attacks/boss_nova.gd" id="1_script"]
+
+[resource]
+script = ExtResource("1_script")
+id = &"lk_death_nova"
+min_phase = 2
+windup = 1.2
+recovery = 2
+damage = 26
+color = Color(0.6, 0.8, 1, 1)
+count = 16
+blast_radius = 100

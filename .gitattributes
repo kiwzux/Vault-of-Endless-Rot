@@ -1,0 +1,13 @@
+# Godot и Python работают с LF; скрипты Windows оставляем с CRLF.
+* text=auto eol=lf
+*.ps1 text eol=crlf
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+*.onnx binary
+*.dll binary
+*.png binary
+*.npz binary
+*.ttf binary
+*.wav binary
+*.ogg binary

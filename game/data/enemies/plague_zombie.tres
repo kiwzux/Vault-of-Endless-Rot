@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="EnemyData" format=3]
+
+[ext_resource type="Script" path="res://data/enemies/enemy_data.gd" id="1_enemy"]
+
+[resource]
+script = ExtResource("1_enemy")
+id = &"plague_zombie"
+name_key = "ENEMY_PLAGUE_ZOMBIE"
+max_health = 55.0
+speed = 30.0
+contact_damage = 19.0
+xp = 5
+radius = 8.5
+placeholder_color = Color(0.55, 0.7, 0.2, 1)

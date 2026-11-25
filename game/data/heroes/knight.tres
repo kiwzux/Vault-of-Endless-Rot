@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="HeroData" format=3]
+
+[ext_resource type="Script" path="res://data/skills/skill_modifier.gd" id="1_7mnt7"]
+[ext_resource type="Script" path="res://data/heroes/hero_data.gd" id="1_hero"]
+[ext_resource type="Texture2D" path="res://assets/heroes/knight.png" id="2_sheet"]
+
+[resource]
+script = ExtResource("1_hero")
+id = &"knight"
+name_key = "HERO_KNIGHT"
+description_key = "HERO_KNIGHT_DESC"
+max_health = 170.0
+move_speed = 85.0
+starting_weapon = &"sword_arc"
+passive = &"leadership"
+sprite_sheet = ExtResource("2_sheet")
+affinity_tags = Array[StringName]([&"physical", &"melee", &"holy"])

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="PassiveData" format=3]
+
+[ext_resource type="Script" path="res://data/upgrades/passive_data.gd" id="1_passive"]
+
+[resource]
+script = ExtResource("1_passive")
+stat = &"lifesteal"
+per_level = 0.003
+id = &"vampirism"
+kind = 1
+name_key = "PASSIVE_VAMPIRISM"
+description_key = "PASSIVE_VAMPIRISM_DESC"
+max_level = 25
+icon_color = Color(0.7, 0.1, 0.25, 1)

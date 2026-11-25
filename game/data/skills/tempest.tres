@@ -1,0 +1,37 @@
+[gd_resource type="Resource" script_class="SkillData" format=3]
+
+[ext_resource type="Script" path="res://systems/skills/actions/chain_action.gd" id="1_4yfbh"]
+[ext_resource type="Script" path="res://data/skills/skill_modifier.gd" id="2_pr300"]
+[ext_resource type="Script" path="res://data/statuses/status_application.gd" id="3_44tij"]
+[ext_resource type="Script" path="res://data/skills/skill_data.gd" id="4_pj02j"]
+
+[sub_resource type="Resource" id="Resource_x4ppe"]
+script = ExtResource("1_4yfbh")
+jump_radius = 130.0
+
+[sub_resource type="Resource" id="Resource_h342g"]
+script = ExtResource("3_44tij")
+status = &"stun"
+chance = 0.12
+
+[resource]
+script = ExtResource("4_pj02j")
+action = SubResource("Resource_x4ppe")
+tags = Array[StringName]([&"lightning", &"chain"])
+on_hit = Array[ExtResource("3_44tij")]([SubResource("Resource_h342g")])
+damage = 22.0
+damage_per_level = 1.6
+cooldown = 0.99
+cooldown_per_level = -0.01
+attack_range = 200.0
+amount = 8
+amount_levels = PackedInt32Array(15, 20, 25)
+pierce_levels = PackedInt32Array()
+fx_color = Color(0.8, 0.95, 1, 1)
+is_evolution = true
+id = &"tempest"
+kind = 0
+name_key = "EVO_TEMPEST"
+description_key = "EVO_TEMPEST_DESC"
+max_level = 20
+icon_color = Color(0.6, 0.85, 1, 1)

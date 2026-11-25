@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="EliteAffixData" format=3]
+
+[ext_resource type="Script" path="res://data/enemies/elite_affix_data.gd" id="1_affix"]
+
+
+[resource]
+script = ExtResource("1_affix")
+id = &"fiery"
+name_key = "ELITE_FIERY"
+color = Color(1, 0.45, 0.15, 1)
+trail_damage = 6.0

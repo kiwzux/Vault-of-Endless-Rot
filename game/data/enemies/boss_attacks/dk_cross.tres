@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="BossCross" format=3]
+
+[ext_resource type="Script" path="res://systems/enemies/boss_attacks/boss_cross.gd" id="1_script"]
+
+[resource]
+script = ExtResource("1_script")
+id = &"dk_cross"
+min_phase = 1
+windup = 0.9
+recovery = 1.8
+damage = 22
+color = Color(0.7, 0.4, 1, 1)
+count = 4
+blasts_per_line = 6
+spacing = 34
+blast_radius = 18

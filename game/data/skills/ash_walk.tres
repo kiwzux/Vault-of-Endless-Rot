@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="SkillData" format=3]
+
+[ext_resource type="Script" path="res://systems/skills/actions/dash_action.gd" id="1_fvsv0"]
+[ext_resource type="Script" path="res://data/skills/skill_modifier.gd" id="2_ycbhb"]
+[ext_resource type="Script" path="res://data/statuses/status_application.gd" id="3_r0arj"]
+[ext_resource type="Script" path="res://data/skills/skill_data.gd" id="4_1xr7c"]
+
+[sub_resource type="Resource" id="Resource_36ovk"]
+script = ExtResource("1_fvsv0")
+width = 26.0
+
+[sub_resource type="Resource" id="Resource_codl0"]
+script = ExtResource("3_r0arj")
+status = &"burn"
+stacks = 2
+
+[resource]
+script = ExtResource("4_1xr7c")
+action = SubResource("Resource_36ovk")
+tags = Array[StringName]([&"fire", &"movement"])
+on_hit = Array[ExtResource("3_r0arj")]([SubResource("Resource_codl0")])
+damage = 26.0
+damage_per_level = 3.4
+cooldown = 1.8
+cooldown_per_level = -0.025
+range_per_level = 2.0
+amount_levels = PackedInt32Array()
+pierce_levels = PackedInt32Array()
+fx_color = Color(1, 0.35, 0.1, 1)
+is_evolution = true
+id = &"ash_walk"
+kind = 0
+name_key = "EVO_ASH_WALK"
+description_key = "EVO_ASH_WALK_DESC"
+max_level = 20
+icon_color = Color(0.9, 0.315, 0.089999996, 1)

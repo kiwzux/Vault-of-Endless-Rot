@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="StatusReaction" format=3]
+
+[ext_resource type="Script" path="res://data/statuses/status_reaction.gd" id="1_pesn7"]
+
+[resource]
+script = ExtResource("1_pesn7")
+id = &"chill_freeze"
+name_key = "REACTION_CHILL_FREEZE"
+requires = &"chill"
+trigger = &"chill"
+min_stacks = 5
+apply_status = &"freeze"
+color = Color(0.75, 0.95, 1, 1)

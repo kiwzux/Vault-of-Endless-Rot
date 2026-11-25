@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="QuestData" format=3]
+
+[ext_resource type="Script" path="res://data/quests/quest_data.gd" id="1_quest"]
+
+[resource]
+script = ExtResource("1_quest")
+id = &"abyss_lord"
+order = 3
+name_key = "QUEST_ABYSS_LORD"
+description_key = "QUEST_ABYSS_LORD_DESC"
+counter = &"victories"
+target = 1
+unlock = &"blood_priest"
+reward_souls = 100

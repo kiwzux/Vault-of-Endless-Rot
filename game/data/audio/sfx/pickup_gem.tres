@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="SfxData" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://data/audio/sfx_data.gd" id="1_sfx"]
+[ext_resource type="AudioStream" path="res://assets/audio/sfx/pickup_gem_1.wav" id="2_pickup_gem"]
+[ext_resource type="AudioStream" path="res://assets/audio/sfx/pickup_gem_2.wav" id="3_pickup_gem"]
+
+[resource]
+script = ExtResource("1_sfx")
+id = &"pickup_gem"
+streams = Array[AudioStream]([ExtResource("2_pickup_gem"), ExtResource("3_pickup_gem")])
+volume_db = -18.0
+pitch_jitter = 0.12
+cooldown = 0.05
+max_voices = 2
+positional = false

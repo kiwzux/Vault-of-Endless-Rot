@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="EnemyData" format=3]
+
+[ext_resource type="Script" path="res://data/enemies/enemy_data.gd" id="1_enemy"]
+
+[resource]
+script = ExtResource("1_enemy")
+id = &"cursed_soul"
+name_key = "ENEMY_CURSED_SOUL"
+max_health = 22.0
+speed = 44.0
+contact_damage = 8.0
+xp = 3
+radius = 6.0
+placeholder_color = Color(1.0, 0.5, 0.2, 1)
+resistances = {&"holy": -0.5}
+shot_interval = 3.0
+shot_range = 170.0
+shot_damage = 10.0
+shot_speed = 120.0
+keep_distance = 90.0

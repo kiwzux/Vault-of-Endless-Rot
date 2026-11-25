@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="SkillModifier" format=3]
+
+[ext_resource type="Script" path="res://data/skills/skill_modifier.gd" id="1_bqbkv"]
+[ext_resource type="Script" path="res://data/statuses/status_application.gd" id="2_g5rss"]
+
+[resource]
+script = ExtResource("1_bqbkv")
+id = &"rune_blood"
+name_key = "MOD_RUNE_BLOOD"
+description_key = "MOD_RUNE_BLOOD_DESC"
+rarity = 1
+icon_color = Color(0.4, 0.6, 1, 1)
+lifesteal = 0.02
+add_tags = Array[StringName]([&"blood"])

@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="AffixData" format=3]
+
+[ext_resource type="Script" path="res://data/loot/affix_data.gd" id="1_affix"]
+
+[resource]
+script = ExtResource("1_affix")
+id = &"curse_rot"
+name_key = "CURSE_ROT"
+kind = 2
+stat = &"regen"
+min_value = -1.2
+max_value = -0.6

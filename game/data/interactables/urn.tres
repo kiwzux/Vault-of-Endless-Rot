@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="InteractableData" format=3]
+
+[ext_resource type="Script" path="res://data/interactables/interactable_data.gd" id="1_data"]
+
+[resource]
+script = ExtResource("1_data")
+id = &"urn"
+name_key = "POINT_URN"
+kind = 2
+placement = &"rubble"
+weight = 2.0
+color = Color(0.62, 0.5, 0.36, 1)
+gold = Vector2i(5, 14)
+item_chance = 0.05
+xp_gems = 2
+look = &"urn"

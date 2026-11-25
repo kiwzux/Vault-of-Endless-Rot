@@ -1,0 +1,153 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://ui/settings/settings_menu.gd" id="1_settings"]
+
+[node name="SettingsMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_settings")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.06, 0.045, 0.04, 1)
+
+[node name="Center" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="PanelContainer" parent="Center"]
+custom_minimum_size = Vector2(280, 0)
+layout_mode = 2
+
+[node name="Column" type="VBoxContainer" parent="Center/Panel"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Title" type="Label" parent="Center/Panel/Column"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.95, 0.78, 0.4, 1)
+theme_override_font_sizes/font_size = 18
+text = "SETTINGS_TITLE"
+horizontal_alignment = 1
+
+[node name="Grid" type="GridContainer" parent="Center/Panel/Column"]
+layout_mode = 2
+theme_override_constants/h_separation = 12
+theme_override_constants/v_separation = 5
+columns = 2
+
+[node name="LanguageLabel" type="Label" parent="Center/Panel/Column/Grid"]
+layout_mode = 2
+text = "SETTINGS_LANGUAGE"
+
+[node name="LanguageOption" type="OptionButton" parent="Center/Panel/Column/Grid"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="VolumeLabel" type="Label" parent="Center/Panel/Column/Grid"]
+layout_mode = 2
+text = "SETTINGS_VOLUME"
+
+[node name="VolumeSlider" type="HSlider" parent="Center/Panel/Column/Grid"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+max_value = 1.0
+step = 0.05
+
+[node name="DisplayModeLabel" type="Label" parent="Center/Panel/Column/Grid"]
+layout_mode = 2
+text = "SETTINGS_DISPLAY_MODE"
+
+[node name="DisplayModeOption" type="OptionButton" parent="Center/Panel/Column/Grid"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="WindowSizeLabel" type="Label" parent="Center/Panel/Column/Grid"]
+layout_mode = 2
+text = "SETTINGS_WINDOW_SIZE"
+
+[node name="WindowSizeOption" type="OptionButton" parent="Center/Panel/Column/Grid"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="LootFilterLabel" type="Label" parent="Center/Panel/Column/Grid"]
+layout_mode = 2
+text = "SETTINGS_LOOT_FILTER"
+
+[node name="LootFilterOption" type="OptionButton" parent="Center/Panel/Column/Grid"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="QualityLabel" type="Label" parent="Center/Panel/Column/Grid"]
+layout_mode = 2
+text = "SETTINGS_QUALITY"
+
+[node name="QualityOption" type="OptionButton" parent="Center/Panel/Column/Grid"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="FpsLabel" type="Label" parent="Center/Panel/Column/Grid"]
+layout_mode = 2
+text = "SETTINGS_FPS_LIMIT"
+
+[node name="FpsOption" type="OptionButton" parent="Center/Panel/Column/Grid"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Toggles" type="GridContainer" parent="Center/Panel/Column"]
+layout_mode = 2
+theme_override_constants/h_separation = 12
+theme_override_constants/v_separation = 6
+columns = 2
+
+[node name="DamageNumbersToggle" type="CheckButton" parent="Center/Panel/Column/Toggles"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "SETTINGS_DAMAGE_NUMBERS"
+
+[node name="ShakeToggle" type="CheckButton" parent="Center/Panel/Column/Toggles"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "SETTINGS_SCREEN_SHAKE"
+
+[node name="HitStopToggle" type="CheckButton" parent="Center/Panel/Column/Toggles"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+tooltip_text = "SETTINGS_HIT_STOP_HINT"
+text = "SETTINGS_HIT_STOP"
+
+[node name="PostEffectsToggle" type="CheckButton" parent="Center/Panel/Column/Toggles"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "SETTINGS_POST_EFFECTS"
+
+[node name="BackButton" type="Button" parent="Center/Panel/Column"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+text = "MENU_BACK"

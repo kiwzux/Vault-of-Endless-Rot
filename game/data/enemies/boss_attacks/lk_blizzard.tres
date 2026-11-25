@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="BossRain" format=3]
+
+[ext_resource type="Script" path="res://systems/enemies/boss_attacks/boss_rain.gd" id="1_script"]
+
+[resource]
+script = ExtResource("1_script")
+id = &"lk_blizzard"
+windup = 0.6
+recovery = 1.6
+damage = 22
+color = Color(0.7, 0.9, 1, 1)
+count = 4
+count_per_phase = 1
+blast_radius = 26
+fuse = 1.1
+scatter = 90
+waves = 2
+wave_gap = 0.7

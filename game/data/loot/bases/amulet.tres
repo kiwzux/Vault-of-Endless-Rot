@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemBaseData" format=3]
+
+[ext_resource type="Script" path="res://data/loot/item_base_data.gd" id="1_base"]
+
+[resource]
+script = ExtResource("1_base")
+id = &"amulet"
+name_key = "ITEM_AMULET"
+slot = 5
+implicit_stat = &"magnet"
+implicit_min = 0.1
+implicit_max = 0.25
+icon_color = Color(0.85, 0.7, 0.3, 1)
+icons = PackedStringArray("amulet_04", "amulet_06", "amulet_15", "amulet_20", "amulet_24", "amulet_29", "amulet_33", "amulet_35", "amulet_44", "amulet_49", "amulet_53", "amulet_57", "amulet_62", "amulet_66", "amulet_74")
+gender = &"m"

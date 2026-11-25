@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="TalentData" format=3]
+
+[ext_resource type="Script" path="res://data/talents/talent_data.gd" id="1_talent"]
+
+[resource]
+script = ExtResource("1_talent")
+id = &"inheritance"
+name_key = "TALENT_INHERITANCE"
+description_key = "TALENT_INHERITANCE_DESC"
+stat = &"start_gold"
+per_rank = 40.0
+cost_base = 40
+icon_color = Color(1, 0.8, 0.3, 1)

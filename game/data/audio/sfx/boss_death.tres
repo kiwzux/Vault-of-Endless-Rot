@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="SfxData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://data/audio/sfx_data.gd" id="1_sfx"]
+[ext_resource type="AudioStream" path="res://assets/audio/sfx/boss_death_1.wav" id="2_boss_death"]
+
+[resource]
+script = ExtResource("1_sfx")
+id = &"boss_death"
+streams = Array[AudioStream]([ExtResource("2_boss_death")])
+volume_db = -3.0
+pitch_jitter = 0.0
+cooldown = 1.0
+max_voices = 1
+positional = false

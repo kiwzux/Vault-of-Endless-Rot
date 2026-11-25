@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="TalentData" format=3]
+
+[ext_resource type="Script" path="res://data/talents/talent_data.gd" id="1_dwi3d"]
+
+[resource]
+script = ExtResource("1_dwi3d")
+id = &"hunter_vigor"
+order = 22
+hero = &"witch_hunter"
+name_key = "TALENT_HUNTER_VIGOR"
+description_key = "TALENT_HUNTER_VIGOR_DESC"
+stat = &"max_health"
+per_rank = 12.0
+cost_base = 30
+cost_growth = 1.5
+icon_color = Color(0.6, 0.6, 0.65, 1)

@@ -1,0 +1,40 @@
+[gd_resource type="Resource" script_class="SkillData" format=3]
+
+[ext_resource type="Script" path="res://systems/skills/actions/orbit_action.gd" id="1_r0rdr"]
+[ext_resource type="Script" path="res://data/skills/skill_modifier.gd" id="2_4o6t8"]
+[ext_resource type="Resource" path="res://data/skills/night_flock.tres" id="2_cfrhm"]
+[ext_resource type="Script" path="res://data/statuses/status_application.gd" id="3_cfrhm"]
+[ext_resource type="Script" path="res://data/skills/skill_data.gd" id="4_pdop6"]
+
+[sub_resource type="Resource" id="Resource_1b2l0"]
+script = ExtResource("1_r0rdr")
+angular_speed = 4.5
+
+[sub_resource type="Resource" id="Resource_62a0b"]
+script = ExtResource("3_cfrhm")
+status = &"bleed"
+chance = 0.2
+
+[resource]
+script = ExtResource("4_pdop6")
+action = SubResource("Resource_1b2l0")
+tags = Array[StringName]([&"blood", &"orbit", &"summon"])
+on_hit = Array[ExtResource("3_cfrhm")]([SubResource("Resource_62a0b")])
+damage = 6.0
+damage_per_level = 1.2
+cooldown = 4.5
+attack_range = 60.0
+range_per_level = 1.2
+amount = 3
+amount_levels = PackedInt32Array(4, 8, 12, 16, 20, 24)
+pierce_levels = PackedInt32Array()
+duration = 3.5
+fx_kind = &"bats"
+fx_color = Color(0.45, 0.3, 0.55, 1)
+evolution = ExtResource("2_cfrhm")
+id = &"bat_swarm"
+kind = 0
+name_key = "WEAPON_BAT_SWARM"
+description_key = "WEAPON_BAT_SWARM_DESC"
+max_level = 20
+icon_color = Color(0.5, 0.32, 0.6, 1)

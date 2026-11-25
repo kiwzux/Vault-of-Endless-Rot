@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="SkillData" format=3]
+
+[ext_resource type="Script" path="res://systems/skills/actions/strike_action.gd" id="1_g66ng"]
+[ext_resource type="Script" path="res://data/skills/skill_modifier.gd" id="2_ahbgk"]
+[ext_resource type="Script" path="res://data/statuses/status_application.gd" id="3_mlxw8"]
+[ext_resource type="Script" path="res://data/skills/skill_data.gd" id="4_naovr"]
+
+[sub_resource type="Resource" id="Resource_imiqq"]
+script = ExtResource("1_g66ng")
+fuse = 0.4
+
+[sub_resource type="Resource" id="Resource_qcjw6"]
+script = ExtResource("3_mlxw8")
+status = &"burn"
+stacks = 2
+
+[resource]
+script = ExtResource("4_naovr")
+action = SubResource("Resource_imiqq")
+tags = Array[StringName]([&"fire", &"area"])
+on_hit = Array[ExtResource("3_mlxw8")]([SubResource("Resource_qcjw6")])
+damage = 19.0
+damage_per_level = 4.0
+cooldown = 1.78
+cooldown_per_level = -0.02
+attack_range = 240.0
+amount = 5
+amount_levels = PackedInt32Array(14, 20, 25)
+pierce_levels = PackedInt32Array()
+area = 35.5
+area_per_level = 0.5
+fx_color = Color(1, 0.4, 0.15, 1)
+is_evolution = true
+id = &"armageddon"
+kind = 0
+name_key = "EVO_ARMAGEDDON"
+description_key = "EVO_ARMAGEDDON_DESC"
+max_level = 20
+icon_color = Color(1, 0.45, 0.2, 1)

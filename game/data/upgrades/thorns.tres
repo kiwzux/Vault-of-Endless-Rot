@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="PassiveData" format=3]
+
+[ext_resource type="Script" path="res://data/upgrades/passive_data.gd" id="1_passive"]
+
+[resource]
+script = ExtResource("1_passive")
+stat = &"thorns"
+per_level = 2.0
+id = &"thorns"
+kind = 1
+name_key = "PASSIVE_THORNS"
+description_key = "PASSIVE_THORNS_DESC"
+max_level = 25
+icon_color = Color(0.55, 0.65, 0.3, 1)

@@ -1,0 +1,128 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://ui/shop/shop_panel.gd" id="1_shop"]
+
+[node name="ShopPanel" type="CanvasLayer"]
+process_mode = 3
+layer = 9
+script = ExtResource("1_shop")
+
+[node name="Dim" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.02, 0.015, 0.01, 0.6)
+
+[node name="Center" type="CenterContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="PanelContainer" parent="Center"]
+layout_mode = 2
+
+[node name="Column" type="VBoxContainer" parent="Center/Panel"]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="Header" type="HBoxContainer" parent="Center/Panel/Column"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="Title" type="Label" parent="Center/Panel/Column/Header"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+auto_translate_mode = 2
+theme_override_colors/font_color = Color(0.95, 0.78, 0.4, 1)
+theme_override_font_sizes/font_size = 16
+
+[node name="Gold" type="Label" parent="Center/Panel/Column/Header"]
+unique_name_in_owner = true
+layout_mode = 2
+auto_translate_mode = 2
+theme_override_colors/font_color = Color(1, 0.8, 0.25, 1)
+theme_override_font_sizes/font_size = 12
+horizontal_alignment = 2
+
+[node name="Greeting" type="Label" parent="Center/Panel/Column"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(420, 0)
+layout_mode = 2
+auto_translate_mode = 2
+theme_override_colors/font_color = Color(0.7, 0.64, 0.52, 1)
+theme_override_font_sizes/font_size = 10
+autowrap_mode = 3
+
+[node name="Row" type="HBoxContainer" parent="Center/Panel/Column"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="Offers" type="VBoxContainer" parent="Center/Panel/Column/Row"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(230, 0)
+layout_mode = 2
+theme_override_constants/separation = 3
+
+[node name="Details" type="VBoxContainer" parent="Center/Panel/Column/Row"]
+custom_minimum_size = Vector2(180, 0)
+layout_mode = 2
+theme_override_constants/separation = 2
+
+[node name="DetailName" type="Label" parent="Center/Panel/Column/Row/Details"]
+unique_name_in_owner = true
+layout_mode = 2
+auto_translate_mode = 2
+theme_override_font_sizes/font_size = 13
+autowrap_mode = 3
+
+[node name="DetailType" type="Label" parent="Center/Panel/Column/Row/Details"]
+unique_name_in_owner = true
+layout_mode = 2
+auto_translate_mode = 2
+theme_override_colors/font_color = Color(0.6, 0.55, 0.45, 1)
+theme_override_font_sizes/font_size = 10
+autowrap_mode = 3
+
+[node name="DetailStats" type="Label" parent="Center/Panel/Column/Row/Details"]
+unique_name_in_owner = true
+layout_mode = 2
+auto_translate_mode = 2
+theme_override_colors/font_color = Color(0.55, 0.7, 1, 1)
+theme_override_font_sizes/font_size = 10
+autowrap_mode = 3
+
+[node name="DetailCurse" type="Label" parent="Center/Panel/Column/Row/Details"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+auto_translate_mode = 2
+theme_override_colors/font_color = Color(0.95, 0.35, 0.35, 1)
+theme_override_font_sizes/font_size = 10
+autowrap_mode = 3
+
+[node name="DetailCompare" type="Label" parent="Center/Panel/Column/Row/Details"]
+unique_name_in_owner = true
+layout_mode = 2
+auto_translate_mode = 2
+theme_override_colors/font_color = Color(0.6, 0.55, 0.45, 1)
+theme_override_font_sizes/font_size = 9
+autowrap_mode = 3
+
+[node name="DetailPrice" type="Label" parent="Center/Panel/Column/Row/Details"]
+unique_name_in_owner = true
+layout_mode = 2
+auto_translate_mode = 2
+theme_override_colors/font_color = Color(1, 0.8, 0.25, 1)
+theme_override_font_sizes/font_size = 11
+
+[node name="Hint" type="Label" parent="Center/Panel/Column"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.6, 0.55, 0.45, 1)
+theme_override_font_sizes/font_size = 9
+text = "SHOP_HINT"
+horizontal_alignment = 1

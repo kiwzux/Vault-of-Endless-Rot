@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="TalentData" format=3]
+
+[ext_resource type="Script" path="res://data/talents/talent_data.gd" id="1_talent"]
+
+[resource]
+script = ExtResource("1_talent")
+id = &"knight_plate"
+order = 4
+hero = &"knight"
+name_key = "TALENT_KNIGHT_PLATE"
+description_key = "TALENT_KNIGHT_PLATE_DESC"
+stat = &"armor"
+per_rank = 1.0
+icon_color = Color(0.6, 0.62, 0.68, 1)

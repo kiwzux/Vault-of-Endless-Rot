@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="BossFan" format=3]
+
+[ext_resource type="Script" path="res://systems/enemies/boss_attacks/boss_fan.gd" id="1_script"]
+
+[resource]
+script = ExtResource("1_script")
+id = &"ad_blade"
+max_range = 300
+windup = 0.7
+recovery = 1.4
+damage = 20
+color = Color(1, 0.45, 0.15, 1)
+count = 5
+count_per_phase = 1
+spread_deg = 80
+volleys = 3
+volley_gap = 0.3
+speed = 150
+reach = 300

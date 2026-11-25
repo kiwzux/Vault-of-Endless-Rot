@@ -1,0 +1,38 @@
+[gd_resource type="Resource" script_class="SkillData" format=3]
+
+[ext_resource type="Script" path="res://systems/skills/actions/projectile_action.gd" id="1_560hn"]
+[ext_resource type="Script" path="res://data/skills/skill_modifier.gd" id="2_7bweu"]
+[ext_resource type="Script" path="res://data/statuses/status_application.gd" id="3_8xfn8"]
+[ext_resource type="Script" path="res://data/skills/skill_data.gd" id="4_lqw1y"]
+
+[sub_resource type="Resource" id="Resource_eawet"]
+script = ExtResource("1_560hn")
+speed = 300.0
+
+[sub_resource type="Resource" id="Resource_p1p2o"]
+script = ExtResource("3_8xfn8")
+status = &"bleed"
+chance = 0.15
+
+[resource]
+script = ExtResource("4_lqw1y")
+action = SubResource("Resource_eawet")
+tags = Array[StringName]([&"physical", &"projectile"])
+on_hit = Array[ExtResource("3_8xfn8")]([SubResource("Resource_p1p2o")])
+damage = 14.5
+damage_per_level = 1.5
+cooldown = 0.57
+cooldown_per_level = -0.008
+attack_range = 240.0
+amount = 6
+amount_levels = PackedInt32Array(15, 20, 25)
+pierce = 3
+pierce_levels = PackedInt32Array(18)
+fx_color = Color(1, 1, 0.9, 1)
+is_evolution = true
+id = &"bone_storm"
+kind = 0
+name_key = "EVO_BONE_STORM"
+description_key = "EVO_BONE_STORM_DESC"
+max_level = 20
+icon_color = Color(0.75, 0.7, 0.95, 1)

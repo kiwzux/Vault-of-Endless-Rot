@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="TalentData" format=3]
+
+[ext_resource type="Script" path="res://data/talents/talent_data.gd" id="1_rt7j4"]
+
+[resource]
+script = ExtResource("1_rt7j4")
+id = &"pyro_kindling"
+order = 19
+hero = &"pyromancer"
+name_key = "TALENT_PYRO_KINDLING"
+description_key = "TALENT_PYRO_KINDLING_DESC"
+stat = &"area"
+per_rank = 0.04
+icon_color = Color(0.95, 0.65, 0.3, 1)

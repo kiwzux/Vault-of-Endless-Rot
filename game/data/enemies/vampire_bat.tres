@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="EnemyData" format=3]
+
+[ext_resource type="Script" path="res://data/enemies/enemy_data.gd" id="1_enemy"]
+
+[resource]
+script = ExtResource("1_enemy")
+id = &"vampire_bat"
+name_key = "ENEMY_VAMPIRE_BAT"
+max_health = 7.0
+speed = 80.0
+contact_damage = 5.0
+xp = 1
+radius = 4.5
+placeholder_color = Color(0.5, 0.2, 0.5, 1)
+innate_affixes = Array[StringName]([&"vampire"])

@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="SynergyData" format=3]
+
+[ext_resource type="Script" path="res://data/synergies/synergy_data.gd" id="1_jv5v3"]
+
+[resource]
+script = ExtResource("1_jv5v3")
+id = &"resonance_poison"
+order = 4
+tag = &"poison"
+thresholds = PackedInt32Array(2, 3, 4)
+tiers = Array[Dictionary]([{
+&"might:poison": 0.12
+}, {
+&"max_health": 10.0,
+&"might:poison": 0.2
+}, {
+&"max_health": 25.0,
+&"might:poison": 0.3
+}])

@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="HeroData" format=3]
+
+[ext_resource type="Script" path="res://data/skills/skill_modifier.gd" id="1_678yv"]
+[ext_resource type="Script" path="res://data/heroes/hero_data.gd" id="1_hero"]
+[ext_resource type="Texture2D" path="res://assets/heroes/sorceress.png" id="2_sheet"]
+
+[resource]
+script = ExtResource("1_hero")
+id = &"sorceress"
+order = 2
+name_key = "HERO_SORCERESS"
+description_key = "HERO_SORCERESS_DESC"
+move_speed = 95.0
+starting_weapon = &"chain_lightning"
+passive = &"mana_shield"
+max_mana = 60.0
+mana_regen = 4.0
+sprite_sheet = ExtResource("2_sheet")
+affinity_tags = Array[StringName]([&"lightning", &"cold"])

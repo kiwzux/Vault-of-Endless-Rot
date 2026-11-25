@@ -1,0 +1,1629 @@
+{
+ "atlas": "props.png",
+ "props": {
+  "decor_dead_tree": {
+   "origin": [
+    0,
+    0
+   ],
+   "frame": [
+    232,
+    432
+   ],
+   "columns": 1,
+   "rows": 1,
+   "scale": 0.25,
+   "anchor": [
+    116,
+    383
+   ],
+   "height": 348.0,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "count": 1,
+     "fps": 1.0
+    }
+   }
+  },
+  "decor_angel_statue": {
+   "origin": [
+    232,
+    0
+   ],
+   "frame": [
+    152,
+    288
+   ],
+   "columns": 1,
+   "rows": 1,
+   "scale": 0.25,
+   "anchor": [
+    77,
+    259
+   ],
+   "height": 230.39999999999998,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "count": 1,
+     "fps": 1.0
+    }
+   }
+  },
+  "decor_marble_column": {
+   "origin": [
+    384,
+    0
+   ],
+   "frame": [
+    176,
+    288
+   ],
+   "columns": 1,
+   "rows": 1,
+   "scale": 0.25,
+   "anchor": [
+    67,
+    259
+   ],
+   "height": 230.39999999999998,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "count": 1,
+     "fps": 1.0
+    }
+   }
+  },
+  "decor_bone_spire": {
+   "origin": [
+    560,
+    0
+   ],
+   "frame": [
+    112,
+    288
+   ],
+   "columns": 1,
+   "rows": 1,
+   "scale": 0.25,
+   "anchor": [
+    58,
+    259
+   ],
+   "height": 249.6,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "count": 1,
+     "fps": 1.0
+    }
+   }
+  },
+  "decor_broken_column": {
+   "origin": [
+    672,
+    0
+   ],
+   "frame": [
+    176,
+    248
+   ],
+   "columns": 1,
+   "rows": 1,
+   "scale": 0.25,
+   "anchor": [
+    67,
+    221
+   ],
+   "height": 201.6,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "count": 1,
+     "fps": 1.0
+    }
+   }
+  },
+  "portal": {
+   "origin": [
+    848,
+    0
+   ],
+   "frame": [
+    192,
+    224
+   ],
+   "columns": 4,
+   "rows": 1,
+   "scale": 0.25,
+   "anchor": [
+    96,
+    200
+   ],
+   "height": 200.0,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "count": 4,
+     "fps": 4.0
+    }
+   }
+  },
+  "portal_next": {
+   "origin": [
+    1616,
+    0
+   ],
+   "frame": [
+    192,
+    224
+   ],
+   "columns": 8,
+   "rows": 1,
+   "scale": 0.25,
+   "anchor": [
+    96,
+    200
+   ],
+   "height": 200.0,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "count": 8,
+     "fps": 10.0
+    }
+   }
+  },
+  "portal_continue": {
+   "origin": [
+    0,
+    432
+   ],
+   "frame": [
+    192,
+    224
+   ],
+   "columns": 8,
+   "rows": 1,
+   "scale": 0.25,
+   "anchor": [
+    96,
+    200
+   ],
+   "height": 200.0,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "count": 8,
+     "fps": 10.0
+    }
+   }
+  },
+  "portal_finish": {
+   "origin": [
+    1536,
+    432
+   ],
+   "frame": [
+    192,
+    224
+   ],
+   "columns": 8,
+   "rows": 1,
+   "scale": 0.25,
+   "anchor": [
+    96,
+    200
+   ],
+   "height": 200.0,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "count": 8,
+     "fps": 10.0
+    }
+   }
+  },
+  "decor_lantern_post": {
+   "origin": [
+    3072,
+    432
+   ],
+   "frame": [
+    112,
+    224
+   ],
+   "columns": 4,
+   "rows": 1,
+   "scale": 0.25,
+   "anchor": [
+    46,
+    193
+   ],
+   "height": 184.0,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "count": 4,
+     "fps": 6.0
+    }
+   },
+   "light": [
+    "#ffb060",
+    0.6,
+    83,
+    9.2,
+    -29.9
+   ]
+  },
+  "decor_brazier": {
+   "origin": [
+    0,
+    656
+   ],
+   "frame": [
+    112,
+    224
+   ],
+   "columns": 8,
+   "rows": 1,
+   "scale": 0.25,
+   "anchor": [
+    55,
+    193
+   ],
+   "height": 119.6,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "count": 8,
+     "fps": 10.0
+    }
+   },
+   "light": [
+    "#ff8a30",
+    0.8,
+    101,
+    0.0,
+    -25.3
+   ]
+  },
+  "decor_rune_stone": {
+   "origin": [
+    896,
+    656
+   ],
+   "frame": [
+    112,
+    200
+   ],
+   "columns": 4,
+   "rows": 1,
+   "scale": 0.25,
+   "anchor": [
+    55,
+    175
+   ],
+   "height": 147.2,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "count": 4,
+     "fps": 4.0
+    }
+   },
+   "light": [
+    "#b070ff",
+    0.45,
+    69,
+    0.0,
+    -20.7
+   ]
+  },
+  "cursed_totem": {
+   "origin": [
+    1344,
+    656
+   ],
+   "frame": [
+    96,
+    176
+   ],
+   "columns": 8,
+   "rows": 1,
+   "scale": 0.25,
+   "anchor": [
+    48,
+    156
+   ],
+   "height": 152.0,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "count": 8,
+     "fps": 10.0
+    }
+   }
+  },
+  "cursed_totem_used": {
+   "origin": [
+    2112,
+    656
+   ],
+   "frame": [
+    96,
+    176
+   ],
+   "columns": 1,
+   "rows": 1,
+   "scale": 0.25,
+   "anchor": [
+    48,
+    156
+   ],
+   "height": 136.0,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "count": 1,
+     "fps": 1.0
+    }
+   }
+  },
+  "merchant_alchemist": {
+   "origin": [
+    2208,
+    656
+   ],
+   "frame": [
+    160,
+    176
+   ],
+   "columns": 8,
+   "rows": 1,
+   "scale": 0.25,
+   "anchor": [
+    80,
+    144
+   ],
+   "height": 136.0,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "count": 8,
+     "fps": 6.0
+    }
+   }
+  },
+  "merchant_artifact_merchant": {
+   "origin": [
+    0,
+    880
+   ],
+   "frame": [
+    160,
+    176
+   ],
+   "columns": 8,
+   "rows": 1,
+   "scale": 0.25,
+   "anchor": [
+    80,
+    144
+   ],
+   "height": 136.0,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "count": 8,
+     "fps": 6.0
+    }
+   }
+  },
+  "decor_candelabra": {
+   "origin": [
+    1280,
+    880
+   ],
+   "frame": [
+    88,
+    176
+   ],
+   "columns": 8,
+   "rows": 1,
+   "scale": 0.25,
+   "anchor": [
+    44,
+    150
+   ],
+   "height": 136.4,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "count": 8,
+     "fps": 10.0
+    }
+   },
+   "light": [
+    "#ffb050",
+    0.6,
+    70,
+    0.0,
+    -30.8
+   ]
+  },
+  "shrine": {
+   "origin": [
+    1984,
+    880
+   ],
+   "frame": [
+    96,
+    168
+   ],
+   "columns": 1,
+   "rows": 1,
+   "scale": 0.25,
+   "anchor": [
+    46,
+    143
+   ],
+   "height": 138.0,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "count": 1,
+     "fps": 1.0
+    }
+   }
+  },
+  "shrine_used": {
+   "origin": [
+    2080,
+    880
+   ],
+   "frame": [
+    96,
+    168
+   ],
+   "columns": 1,
+   "rows": 1,
+   "scale": 0.25,
+   "anchor": [
+    46,
+    143
+   ],
+   "height": 138.0,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "count": 1,
+     "fps": 1.0
+    }
+   }
+  },
+  "obelisk": {
+   "origin": [
+    2176,
+    880
+   ],
+   "frame": [
+    80,
+    160
+   ],
+   "columns": 4,
+   "rows": 1,
+   "scale": 0.25,
+   "anchor": [
+    40,
+    140
+   ],
+   "height": 128.0,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "count": 4,
+     "fps": 4.0
+    }
+   }
+  },
+  "obelisk_used": {
+   "origin": [
+    2496,
+    880
+   ],
+   "frame": [
+    80,
+    160
+   ],
+   "columns": 1,
+   "rows": 1,
+   "scale": 0.25,
+   "anchor": [
+    40,
+    140
+   ],
+   "height": 128.0,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "count": 1,
+     "fps": 1.0
+    }
+   }
+  },
+  "decor_obsidian_spikes": {
+   "origin": [
+    2576,
+    880
+   ],
+   "frame": [
+    144,
+    160
+   ],
+   "columns": 1,
+   "rows": 1,
+   "scale": 0.25,
+   "anchor": [
+    70,
+    130
+   ],
+   "height": 110.0,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "count": 1,
+     "fps": 1.0
+    }
+   }
+  },
+  "chest_open": {
+   "origin": [
+    2720,
+    880
+   ],
+   "frame": [
+    128,
+    152
+   ],
+   "columns": 1,
+   "rows": 1,
+   "scale": 0.25,
+   "anchor": [
+    65,
+    113
+   ],
+   "height": 97.2,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "count": 1,
+     "fps": 1.0
+    }
+   }
+  },
+  "statue": {
+   "origin": [
+    2848,
+    880
+   ],
+   "frame": [
+    96,
+    144
+   ],
+   "columns": 4,
+   "rows": 1,
+   "scale": 0.25,
+   "anchor": [
+    48,
+    124
+   ],
+   "height": 136.0,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "count": 4,
+     "fps": 4.0
+    }
+   }
+  },
+  "golden_bucket": {
+   "origin": [
+    0,
+    1056
+   ],
+   "frame": [
+    128,
+    144
+   ],
+   "columns": 8,
+   "rows": 1,
+   "scale": 0.25,
+   "anchor": [
+    62,
+    114
+   ],
+   "height": 93.60000000000001,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "count": 8,
+     "fps": 8.0
+    }
+   }
+  },
+  "decor_void_crystal": {
+   "origin": [
+    1024,
+    1056
+   ],
+   "frame": [
+    120,
+    144
+   ],
+   "columns": 4,
+   "rows": 1,
+   "scale": 0.25,
+   "anchor": [
+    60,
+    110
+   ],
+   "height": 90.0,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "count": 4,
+     "fps": 4.0
+    }
+   },
+   "light": [
+    "#b060ff",
+    0.5,
+    70,
+    0.0,
+    -12.5
+   ]
+  },
+  "chest": {
+   "origin": [
+    1504,
+    1056
+   ],
+   "frame": [
+    128,
+    128
+   ],
+   "columns": 8,
+   "rows": 1,
+   "scale": 0.25,
+   "anchor": [
+    65,
+    103
+   ],
+   "height": 97.2,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "count": 8,
+     "fps": 8.0
+    }
+   }
+  },
+  "trial_altar": {
+   "origin": [
+    2528,
+    1056
+   ],
+   "frame": [
+    128,
+    128
+   ],
+   "columns": 8,
+   "rows": 1,
+   "scale": 0.25,
+   "anchor": [
+    64,
+    104
+   ],
+   "height": 96.0,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "count": 8,
+     "fps": 10.0
+    }
+   }
+  },
+  "curse_altar": {
+   "origin": [
+    0,
+    1200
+   ],
+   "frame": [
+    128,
+    128
+   ],
+   "columns": 8,
+   "rows": 1,
+   "scale": 0.25,
+   "anchor": [
+    64,
+    104
+   ],
+   "height": 96.0,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "count": 8,
+     "fps": 10.0
+    }
+   }
+  },
+  "curse_altar_used": {
+   "origin": [
+    1024,
+    1200
+   ],
+   "frame": [
+    128,
+    128
+   ],
+   "columns": 1,
+   "rows": 1,
+   "scale": 0.25,
+   "anchor": [
+    64,
+    104
+   ],
+   "height": 72.0,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "count": 1,
+     "fps": 1.0
+    }
+   }
+  },
+  "prisoner": {
+   "origin": [
+    1152,
+    1200
+   ],
+   "frame": [
+    96,
+    128
+   ],
+   "columns": 4,
+   "rows": 1,
+   "scale": 0.25,
+   "anchor": [
+    48,
+    108
+   ],
+   "height": 104.0,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "count": 4,
+     "fps": 4.0
+    }
+   }
+  },
+  "prisoner_open": {
+   "origin": [
+    1536,
+    1200
+   ],
+   "frame": [
+    128,
+    128
+   ],
+   "columns": 1,
+   "rows": 1,
+   "scale": 0.25,
+   "anchor": [
+    64,
+    108
+   ],
+   "height": 104.0,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "count": 1,
+     "fps": 1.0
+    }
+   }
+  },
+  "decor_gravestone": {
+   "origin": [
+    1664,
+    1200
+   ],
+   "frame": [
+    80,
+    120
+   ],
+   "columns": 1,
+   "rows": 1,
+   "scale": 0.25,
+   "anchor": [
+    40,
+    95
+   ],
+   "height": 90.0,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "count": 1,
+     "fps": 1.0
+    }
+   }
+  },
+  "fountain": {
+   "origin": [
+    1744,
+    1200
+   ],
+   "frame": [
+    128,
+    112
+   ],
+   "columns": 8,
+   "rows": 1,
+   "scale": 0.25,
+   "anchor": [
+    64,
+    84
+   ],
+   "height": 64.0,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "count": 8,
+     "fps": 8.0
+    }
+   }
+  },
+  "lore_inscription": {
+   "origin": [
+    2768,
+    1200
+   ],
+   "frame": [
+    80,
+    112
+   ],
+   "columns": 4,
+   "rows": 1,
+   "scale": 0.25,
+   "anchor": [
+    40,
+    92
+   ],
+   "height": 88.0,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "count": 4,
+     "fps": 4.0
+    }
+   }
+  },
+  "decor_sarcophagus": {
+   "origin": [
+    3088,
+    1200
+   ],
+   "frame": [
+    184,
+    112
+   ],
+   "columns": 1,
+   "rows": 1,
+   "scale": 0.25,
+   "anchor": [
+    92,
+    78
+   ],
+   "height": 55.199999999999996,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "count": 1,
+     "fps": 1.0
+    }
+   }
+  },
+  "decor_stump": {
+   "origin": [
+    3272,
+    1200
+   ],
+   "frame": [
+    96,
+    104
+   ],
+   "columns": 1,
+   "rows": 1,
+   "scale": 0.25,
+   "anchor": [
+    48,
+    77
+   ],
+   "height": 67.2,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "count": 1,
+     "fps": 1.0
+    }
+   }
+  },
+  "decor_fence": {
+   "origin": [
+    3368,
+    1200
+   ],
+   "frame": [
+    176,
+    104
+   ],
+   "columns": 1,
+   "rows": 1,
+   "scale": 0.25,
+   "anchor": [
+    86,
+    82
+   ],
+   "height": 67.2,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "count": 1,
+     "fps": 1.0
+    }
+   }
+  },
+  "decor_pew": {
+   "origin": [
+    3544,
+    1200
+   ],
+   "frame": [
+    176,
+    104
+   ],
+   "columns": 1,
+   "rows": 1,
+   "scale": 0.25,
+   "anchor": [
+    88,
+    75
+   ],
+   "height": 61.60000000000001,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "count": 1,
+     "fps": 1.0
+    }
+   }
+  },
+  "trial_altar_used": {
+   "origin": [
+    3720,
+    1200
+   ],
+   "frame": [
+    128,
+    96
+   ],
+   "columns": 1,
+   "rows": 1,
+   "scale": 0.25,
+   "anchor": [
+    64,
+    76
+   ],
+   "height": 56.0,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "count": 1,
+     "fps": 1.0
+    }
+   }
+  },
+  "grail_site": {
+   "origin": [
+    0,
+    1328
+   ],
+   "frame": [
+    96,
+    96
+   ],
+   "columns": 4,
+   "rows": 1,
+   "scale": 0.25,
+   "anchor": [
+    48,
+    68
+   ],
+   "height": 40.0,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "count": 4,
+     "fps": 4.0
+    }
+   }
+  },
+  "barrel": {
+   "origin": [
+    384,
+    1328
+   ],
+   "frame": [
+    80,
+    96
+   ],
+   "columns": 1,
+   "rows": 1,
+   "scale": 0.25,
+   "anchor": [
+    38,
+    77
+   ],
+   "height": 67.2,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "count": 1,
+     "fps": 1.0
+    }
+   }
+  },
+  "urn": {
+   "origin": [
+    464,
+    1328
+   ],
+   "frame": [
+    80,
+    96
+   ],
+   "columns": 1,
+   "rows": 1,
+   "scale": 0.25,
+   "anchor": [
+    38,
+    77
+   ],
+   "height": 67.2,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "count": 1,
+     "fps": 1.0
+    }
+   }
+  },
+  "hoard": {
+   "origin": [
+    544,
+    1328
+   ],
+   "frame": [
+    136,
+    96
+   ],
+   "columns": 1,
+   "rows": 1,
+   "scale": 0.25,
+   "anchor": [
+    67,
+    67
+   ],
+   "height": 57.599999999999994,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "count": 1,
+     "fps": 1.0
+    }
+   }
+  },
+  "reliquary": {
+   "origin": [
+    680,
+    1328
+   ],
+   "frame": [
+    96,
+    96
+   ],
+   "columns": 4,
+   "rows": 1,
+   "scale": 0.25,
+   "anchor": [
+    48,
+    72
+   ],
+   "height": 57.599999999999994,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "count": 4,
+     "fps": 4.0
+    }
+   }
+  },
+  "lore_book": {
+   "origin": [
+    1064,
+    1328
+   ],
+   "frame": [
+    80,
+    96
+   ],
+   "columns": 8,
+   "rows": 1,
+   "scale": 0.25,
+   "anchor": [
+    40,
+    76
+   ],
+   "height": 64.0,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "count": 8,
+     "fps": 10.0
+    }
+   }
+  },
+  "decor_rubble": {
+   "origin": [
+    1704,
+    1328
+   ],
+   "frame": [
+    112,
+    88
+   ],
+   "columns": 1,
+   "rows": 1,
+   "scale": 0.25,
+   "anchor": [
+    56,
+    56
+   ],
+   "height": 22.4,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "count": 1,
+     "fps": 1.0
+    }
+   }
+  },
+  "coffin": {
+   "origin": [
+    1816,
+    1328
+   ],
+   "frame": [
+    136,
+    80
+   ],
+   "columns": 1,
+   "rows": 1,
+   "scale": 0.25,
+   "anchor": [
+    67,
+    53
+   ],
+   "height": 48.0,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "count": 1,
+     "fps": 1.0
+    }
+   }
+  },
+  "debris_wood": {
+   "origin": [
+    1952,
+    1328
+   ],
+   "frame": [
+    96,
+    80
+   ],
+   "columns": 1,
+   "rows": 1,
+   "scale": 0.25,
+   "anchor": [
+    48,
+    48
+   ],
+   "height": 19.2,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "count": 1,
+     "fps": 1.0
+    }
+   }
+  },
+  "debris_stone": {
+   "origin": [
+    2048,
+    1328
+   ],
+   "frame": [
+    96,
+    80
+   ],
+   "columns": 1,
+   "rows": 1,
+   "scale": 0.25,
+   "anchor": [
+    48,
+    48
+   ],
+   "height": 19.2,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "count": 1,
+     "fps": 1.0
+    }
+   }
+  },
+  "debris_gold": {
+   "origin": [
+    2144,
+    1328
+   ],
+   "frame": [
+    96,
+    80
+   ],
+   "columns": 1,
+   "rows": 1,
+   "scale": 0.25,
+   "anchor": [
+    48,
+    48
+   ],
+   "height": 19.2,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "count": 1,
+     "fps": 1.0
+    }
+   }
+  },
+  "decor_mushrooms": {
+   "origin": [
+    2240,
+    1328
+   ],
+   "frame": [
+    96,
+    80
+   ],
+   "columns": 1,
+   "rows": 1,
+   "scale": 0.25,
+   "anchor": [
+    50,
+    55
+   ],
+   "height": 40.0,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "count": 1,
+     "fps": 1.0
+    }
+   },
+   "light": [
+    "#70ff90",
+    0.35,
+    50,
+    0.0,
+    -7.5
+   ]
+  },
+  "decor_bone_pile": {
+   "origin": [
+    2336,
+    1328
+   ],
+   "frame": [
+    128,
+    80
+   ],
+   "columns": 1,
+   "rows": 1,
+   "scale": 0.25,
+   "anchor": [
+    62,
+    57
+   ],
+   "height": 41.6,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "count": 1,
+     "fps": 1.0
+    }
+   }
+  },
+  "decor_tomb_slab": {
+   "origin": [
+    2464,
+    1328
+   ],
+   "frame": [
+    112,
+    80
+   ],
+   "columns": 1,
+   "rows": 1,
+   "scale": 0.25,
+   "anchor": [
+    58,
+    48
+   ],
+   "height": 14.399999999999999,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "count": 1,
+     "fps": 1.0
+    }
+   }
+  },
+  "decor_flesh_mound": {
+   "origin": [
+    2576,
+    1328
+   ],
+   "frame": [
+    128,
+    80
+   ],
+   "columns": 1,
+   "rows": 1,
+   "scale": 0.25,
+   "anchor": [
+    62,
+    57
+   ],
+   "height": 41.6,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "count": 1,
+     "fps": 1.0
+    }
+   },
+   "light": [
+    "#c040ff",
+    0.25,
+    47,
+    0.0,
+    -5.2
+   ]
+  },
+  "statue_empty": {
+   "origin": [
+    2704,
+    1328
+   ],
+   "frame": [
+    96,
+    64
+   ],
+   "columns": 1,
+   "rows": 1,
+   "scale": 0.25,
+   "anchor": [
+    48,
+    44
+   ],
+   "height": 32.0,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "count": 1,
+     "fps": 1.0
+    }
+   }
+  },
+  "lore_corpse": {
+   "origin": [
+    2800,
+    1328
+   ],
+   "frame": [
+    96,
+    64
+   ],
+   "columns": 1,
+   "rows": 1,
+   "scale": 0.25,
+   "anchor": [
+    52,
+    40
+   ],
+   "height": 24.0,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "count": 1,
+     "fps": 1.0
+    }
+   }
+  },
+  "xp_3": {
+   "origin": [
+    2896,
+    1328
+   ],
+   "frame": [
+    56,
+    64
+   ],
+   "columns": 1,
+   "rows": 1,
+   "scale": 0.25,
+   "anchor": [
+    28,
+    52
+   ],
+   "height": 32.0,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "count": 1,
+     "fps": 1.0
+    }
+   }
+  },
+  "xp_2": {
+   "origin": [
+    2952,
+    1328
+   ],
+   "frame": [
+    48,
+    56
+   ],
+   "columns": 1,
+   "rows": 1,
+   "scale": 0.25,
+   "anchor": [
+    24,
+    44
+   ],
+   "height": 28.0,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "count": 1,
+     "fps": 1.0
+    }
+   }
+  },
+  "xp_1": {
+   "origin": [
+    3000,
+    1328
+   ],
+   "frame": [
+    48,
+    48
+   ],
+   "columns": 1,
+   "rows": 1,
+   "scale": 0.25,
+   "anchor": [
+    24,
+    38
+   ],
+   "height": 24.0,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "count": 1,
+     "fps": 1.0
+    }
+   }
+  },
+  "gold_3": {
+   "origin": [
+    3048,
+    1328
+   ],
+   "frame": [
+    48,
+    48
+   ],
+   "columns": 1,
+   "rows": 1,
+   "scale": 0.25,
+   "anchor": [
+    24,
+    28
+   ],
+   "height": 16.0,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "count": 1,
+     "fps": 1.0
+    }
+   }
+  },
+  "gold_2": {
+   "origin": [
+    3096,
+    1328
+   ],
+   "frame": [
+    48,
+    40
+   ],
+   "columns": 1,
+   "rows": 1,
+   "scale": 0.25,
+   "anchor": [
+    24,
+    24
+   ],
+   "height": 12.0,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "count": 1,
+     "fps": 1.0
+    }
+   }
+  },
+  "gold_1": {
+   "origin": [
+    3144,
+    1328
+   ],
+   "frame": [
+    32,
+    32
+   ],
+   "columns": 1,
+   "rows": 1,
+   "scale": 0.25,
+   "anchor": [
+    16,
+    20
+   ],
+   "height": 12.0,
+   "animations": {
+    "idle": {
+     "row": 0,
+     "count": 1,
+     "fps": 1.0
+    }
+   }
+  }
+ }
+}

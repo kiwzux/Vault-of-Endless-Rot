@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="EnemyData" format=3]
+
+[ext_resource type="Script" path="res://data/enemies/enemy_data.gd" id="1_enemy"]
+
+[resource]
+script = ExtResource("1_enemy")
+id = &"swamp_slime"
+name_key = "ENEMY_SWAMP_SLIME"
+max_health = 30.0
+speed = 22.0
+contact_damage = 9.0
+xp = 3
+radius = 8.0
+placeholder_color = Color(0.36, 0.66, 0.23, 1)
+resistances = {&"poison": 0.5}
+split_id = &"slimeling"
+split_count = 2

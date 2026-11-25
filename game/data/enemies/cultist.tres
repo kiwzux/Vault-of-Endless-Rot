@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="EnemyData" format=3]
+
+[ext_resource type="Script" path="res://data/enemies/enemy_data.gd" id="1_enemy"]
+
+[resource]
+script = ExtResource("1_enemy")
+id = &"cultist"
+name_key = "ENEMY_CULTIST"
+max_health = 20.0
+speed = 30.0
+contact_damage = 6.0
+xp = 3
+radius = 6.0
+placeholder_color = Color(0.6, 0.25, 0.95, 1)
+shot_interval = 3.0
+shot_range = 180.0
+shot_damage = 9.0
+shot_speed = 80.0
+keep_distance = 130.0
+heal_interval = 5.0
+heal_radius = 100.0
+heal_share = 0.3
+summon_id = &"plague_rat"
+summon_count = 2
+summon_interval = 10.0

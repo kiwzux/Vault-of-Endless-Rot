@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="EnemyData" format=3]
+
+[ext_resource type="Script" path="res://data/enemies/enemy_data.gd" id="1_enemy"]
+
+[resource]
+script = ExtResource("1_enemy")
+id = &"mimic"
+name_key = "ENEMY_MIMIC"
+max_health = 150.0
+speed = 58.0
+contact_damage = 14.0
+xp = 15
+radius = 9
+placeholder_color = Color(0.6, 0.4, 0.2, 1)
+loot_rarity = 2
+loot_items = 2
+gold = Vector2i(40, 80)

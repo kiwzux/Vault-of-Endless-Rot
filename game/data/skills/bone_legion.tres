@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="SkillData" format=3]
+
+[ext_resource type="Script" path="res://systems/skills/actions/summon_action.gd" id="1_kkr0v"]
+[ext_resource type="Script" path="res://data/skills/skill_modifier.gd" id="2_tff0v"]
+[ext_resource type="Script" path="res://data/statuses/status_application.gd" id="3_4xkng"]
+[ext_resource type="Script" path="res://data/skills/skill_data.gd" id="4_2kl7k"]
+
+[sub_resource type="Resource" id="Resource_n45ht"]
+script = ExtResource("1_kkr0v")
+ally_id = &"bone_soldier"
+max_alive = 4
+
+[resource]
+script = ExtResource("4_2kl7k")
+action = SubResource("Resource_n45ht")
+tags = Array[StringName]([&"dark", &"summon"])
+damage = 9.0
+damage_per_level = 1.6
+cooldown = 5.0
+cooldown_per_level = -0.07
+attack_range = 0.0
+amount = 2
+amount_levels = PackedInt32Array(6, 12, 18, 24)
+pierce_levels = PackedInt32Array()
+duration = 14.0
+duration_per_level = 0.3
+fx_color = Color(0.9, 0.88, 0.75, 1)
+id = &"bone_legion"
+kind = 0
+name_key = "SKILL_BONE_LEGION"
+description_key = "SKILL_BONE_LEGION_DESC"
+max_level = 20
+icon_color = Color(0.80999994, 0.792, 0.67499995, 1)

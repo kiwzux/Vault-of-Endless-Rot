@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="TalentData" format=3]
+
+[ext_resource type="Script" path="res://data/talents/talent_data.gd" id="1_uk772"]
+
+[resource]
+script = ExtResource("1_uk772")
+id = &"blood_mastery"
+order = 30
+hero = &"blood_priest"
+name_key = "TALENT_BLOOD_MASTERY"
+description_key = "TALENT_BLOOD_MASTERY_DESC"
+stat = &"weapon_mastery"
+per_rank = 1.0
+max_rank = 4
+cost_base = 60
+cost_growth = 1.8
+icon_color = Color(0.85, 0.72, 0.38, 1)

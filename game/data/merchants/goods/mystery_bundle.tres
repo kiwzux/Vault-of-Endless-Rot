@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="GoodsData" format=3]
+
+[ext_resource type="Script" path="res://data/merchants/goods_data.gd" id="1_goods"]
+
+[resource]
+script = ExtResource("1_goods")
+id = &"mystery_bundle"
+name_key = "GOODS_MYSTERY_BUNDLE"
+description_key = "GOODS_MYSTERY_BUNDLE_DESC"
+effect = 3
+price = 70
+stock = 2
+duration = 0.0
+stats = {}
+icon_color = Color(0.6, 0.45, 0.8, 1)
+icon = &"relic_61"

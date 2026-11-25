@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="SkillData" format=3]
+
+[ext_resource type="Script" path="res://systems/skills/actions/projectile_action.gd" id="1_igkum"]
+[ext_resource type="Script" path="res://data/skills/skill_modifier.gd" id="2_ru24x"]
+[ext_resource type="Script" path="res://data/statuses/status_application.gd" id="3_00ts4"]
+[ext_resource type="Script" path="res://data/skills/skill_data.gd" id="4_76gki"]
+
+[sub_resource type="Resource" id="Resource_071t0"]
+script = ExtResource("1_igkum")
+speed = 270.0
+returns = true
+
+[sub_resource type="Resource" id="Resource_4cvd8"]
+script = ExtResource("3_00ts4")
+status = &"hex"
+chance = 0.5
+
+[sub_resource type="Resource" id="Resource_x5a72"]
+script = ExtResource("3_00ts4")
+status = &"fear"
+chance = 0.1
+
+[resource]
+script = ExtResource("4_76gki")
+action = SubResource("Resource_071t0")
+tags = Array[StringName]([&"dark", &"projectile"])
+on_hit = Array[ExtResource("3_00ts4")]([SubResource("Resource_4cvd8"), SubResource("Resource_x5a72")])
+damage = 20.0
+damage_per_level = 2.6
+cooldown = 1.1
+cooldown_per_level = -0.01
+attack_range = 170.0
+amount = 3
+amount_levels = PackedInt32Array(16, 22)
+pierce = 99
+pierce_levels = PackedInt32Array()
+fx_kind = &"sickle"
+fx_color = Color(0.7, 0.95, 0.85, 1)
+is_evolution = true
+id = &"deaths_scythe"
+kind = 0
+name_key = "EVO_DEATHS_SCYTHE"
+description_key = "EVO_DEATHS_SCYTHE_DESC"
+max_level = 20
+icon_color = Color(0.55, 0.85, 0.75, 1)

@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="SkillModifier" format=3]
+
+[ext_resource type="Script" path="res://data/skills/skill_modifier.gd" id="1_ov4gh"]
+[ext_resource type="Script" path="res://data/statuses/status_application.gd" id="2_56a1d"]
+
+[sub_resource type="Resource" id="Resource_4sxo8"]
+script = ExtResource("2_56a1d")
+status = &"chill"
+chance = 0.2
+
+[resource]
+script = ExtResource("1_ov4gh")
+id = &"rune_cold"
+name_key = "MOD_RUNE_COLD"
+description_key = "MOD_RUNE_COLD_DESC"
+rarity = 1
+icon_color = Color(0.4, 0.6, 1, 1)
+statuses = Array[ExtResource("2_56a1d")]([SubResource("Resource_4sxo8")])
+add_tags = Array[StringName]([&"cold"])

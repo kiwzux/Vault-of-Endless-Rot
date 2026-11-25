@@ -1,0 +1,128 @@
+[gd_resource type="Resource" script_class="WaveTable" format=3]
+
+[ext_resource type="Script" path="res://data/waves/wave_table.gd" id="1_table"]
+[ext_resource type="Script" path="res://data/waves/wave_entry.gd" id="2_entry"]
+[ext_resource type="Script" path="res://data/enemies/enemy_data.gd" id="3_enemy"]
+[ext_resource type="Resource" path="res://data/enemies/archdemon.tres" id="4_boss"]
+[ext_resource type="Resource" path="res://data/enemies/imp.tres" id="e_imp"]
+[ext_resource type="Resource" path="res://data/enemies/hell_hound.tres" id="e_hell_hound"]
+[ext_resource type="Resource" path="res://data/enemies/pyromancer.tres" id="e_pyromancer"]
+[ext_resource type="Resource" path="res://data/enemies/succubus.tres" id="e_succubus"]
+[ext_resource type="Resource" path="res://data/enemies/demon.tres" id="e_demon"]
+[ext_resource type="Resource" path="res://data/enemies/gog.tres" id="e_gog"]
+[ext_resource type="Resource" path="res://data/enemies/efreet.tres" id="e_efreet"]
+[ext_resource type="Resource" path="res://data/enemies/burning_cleric.tres" id="e_burning_cleric"]
+[ext_resource type="Resource" path="res://data/enemies/fallen_templar.tres" id="e_fallen_templar"]
+[ext_resource type="Resource" path="res://data/enemies/fire_spirit.tres" id="e_fire_spirit"]
+[ext_resource type="Resource" path="res://data/enemies/lava_slime.tres" id="e_lava_slime"]
+[ext_resource type="Resource" path="res://data/enemies/abyss_eye.tres" id="e_abyss_eye"]
+[ext_resource type="Resource" path="res://data/enemies/demon_caster.tres" id="e_demon_caster"]
+[ext_resource type="Resource" path="res://data/enemies/cursed_soul.tres" id="e_cursed_soul"]
+[ext_resource type="Resource" path="res://data/enemies/demon_brute.tres" id="e_demon_brute"]
+[ext_resource type="Resource" path="res://data/enemies/infernal_guard.tres" id="e_infernal_guard"]
+[ext_resource type="Resource" path="res://data/enemies/devourer.tres" id="e_devourer"]
+
+[sub_resource type="Resource" id="Resource_w0"]
+script = ExtResource("2_entry")
+start_time = 0.0
+end_time = 90.0
+interval = 0.8
+batch = 6
+enemies = Array[ExtResource("3_enemy")]([ExtResource("e_imp")])
+weights = PackedFloat32Array(1)
+
+[sub_resource type="Resource" id="Resource_w1"]
+script = ExtResource("2_entry")
+start_time = 30.0
+end_time = 160.0
+interval = 1.2
+batch = 6
+enemies = Array[ExtResource("3_enemy")]([ExtResource("e_hell_hound")])
+weights = PackedFloat32Array(1)
+
+[sub_resource type="Resource" id="Resource_w2"]
+script = ExtResource("2_entry")
+start_time = 45.0
+end_time = 200.0
+interval = 3.0
+batch = 3
+enemies = Array[ExtResource("3_enemy")]([ExtResource("e_pyromancer"), ExtResource("e_succubus")])
+weights = PackedFloat32Array(1, 1)
+
+[sub_resource type="Resource" id="Resource_w3"]
+script = ExtResource("2_entry")
+start_time = 60.0
+end_time = 220.0
+interval = 0.8
+batch = 6
+enemies = Array[ExtResource("3_enemy")]([ExtResource("e_imp"), ExtResource("e_demon"), ExtResource("e_gog"), ExtResource("e_efreet")])
+weights = PackedFloat32Array(3, 1, 1, 1)
+
+[sub_resource type="Resource" id="Resource_w4"]
+script = ExtResource("2_entry")
+start_time = 150.0
+end_time = 300.0
+interval = 0.45
+batch = 8
+enemies = Array[ExtResource("3_enemy")]([ExtResource("e_imp"), ExtResource("e_hell_hound"), ExtResource("e_demon"), ExtResource("e_gog"), ExtResource("e_succubus"), ExtResource("e_efreet"), ExtResource("e_pyromancer")])
+weights = PackedFloat32Array(2, 2, 2, 1, 1, 1, 1)
+
+[sub_resource type="Resource" id="Resource_s9_0"]
+script = ExtResource("2_entry")
+start_time = 50
+end_time = 280
+interval = 9
+batch = 2
+enemies = Array[ExtResource("3_enemy")]([ExtResource("e_burning_cleric")])
+weights = PackedFloat32Array(1)
+
+[sub_resource type="Resource" id="Resource_s9_1"]
+script = ExtResource("2_entry")
+start_time = 80
+end_time = 290
+interval = 7
+batch = 2
+enemies = Array[ExtResource("3_enemy")]([ExtResource("e_fallen_templar")])
+weights = PackedFloat32Array(1)
+
+[sub_resource type="Resource" id="Resource_sk_0"]
+script = ExtResource("2_entry")
+start_time = 10
+end_time = 160
+interval = 2.2
+batch = 6
+enemies = Array[ExtResource("3_enemy")]([ExtResource("e_fire_spirit"), ExtResource("e_lava_slime")])
+weights = PackedFloat32Array(3, 1)
+
+[sub_resource type="Resource" id="Resource_sk_1"]
+script = ExtResource("2_entry")
+start_time = 40
+end_time = 230
+interval = 3.5
+batch = 3
+enemies = Array[ExtResource("3_enemy")]([ExtResource("e_abyss_eye"), ExtResource("e_demon_caster"), ExtResource("e_cursed_soul")])
+weights = PackedFloat32Array(1, 1, 1)
+
+[sub_resource type="Resource" id="Resource_sk_2"]
+script = ExtResource("2_entry")
+start_time = 70
+end_time = 260
+interval = 4.0
+batch = 3
+enemies = Array[ExtResource("3_enemy")]([ExtResource("e_demon_brute"), ExtResource("e_infernal_guard")])
+weights = PackedFloat32Array(1, 1)
+
+[sub_resource type="Resource" id="Resource_sk_3"]
+script = ExtResource("2_entry")
+start_time = 120
+end_time = 290
+interval = 14.0
+batch = 1
+enemies = Array[ExtResource("3_enemy")]([ExtResource("e_devourer")])
+weights = PackedFloat32Array(1)
+
+[resource]
+script = ExtResource("1_table")
+max_alive = 300
+boss = ExtResource("4_boss")
+waves = Array[ExtResource("2_entry")]([SubResource("Resource_w0"), SubResource("Resource_w1"), SubResource("Resource_w2"), SubResource("Resource_w3"), SubResource("Resource_w4"), SubResource("Resource_s9_0"), SubResource("Resource_s9_1"), SubResource("Resource_sk_0"), SubResource("Resource_sk_1"), SubResource("Resource_sk_2"), SubResource("Resource_sk_3")])

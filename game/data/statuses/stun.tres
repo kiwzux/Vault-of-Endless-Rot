@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="StatusEffectData" format=3]
+
+[ext_resource type="Script" path="res://data/statuses/status_effect_data.gd" id="1_4ewdt"]
+
+[resource]
+script = ExtResource("1_4ewdt")
+id = &"stun"
+name_key = "STATUS_STUN"
+duration = 0.8
+stun = true
+boss_resist = 0.75
+color = Color(1, 0.95, 0.5, 1)
+visual_bit = 5
+tint_priority = 8

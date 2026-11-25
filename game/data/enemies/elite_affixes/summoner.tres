@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="EliteAffixData" format=3]
+
+[ext_resource type="Script" path="res://data/enemies/elite_affix_data.gd" id="1_affix"]
+
+
+[resource]
+script = ExtResource("1_affix")
+id = &"summoner"
+name_key = "ELITE_SUMMONER"
+color = Color(0.55, 0.95, 0.5, 1)
+summon_interval = 8.0

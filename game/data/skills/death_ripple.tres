@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="SkillData" format=3]
+
+[ext_resource type="Script" path="res://systems/skills/actions/aura_action.gd" id="1_ln7tn"]
+[ext_resource type="Script" path="res://data/skills/skill_modifier.gd" id="2_65y53"]
+[ext_resource type="Resource" path="res://data/skills/soul_harvest.tres" id="2_ts6xa"]
+[ext_resource type="Script" path="res://data/statuses/status_application.gd" id="3_ts6xa"]
+[ext_resource type="Script" path="res://data/skills/skill_data.gd" id="4_gmqgx"]
+
+[sub_resource type="Resource" id="Resource_483nl"]
+script = ExtResource("1_ln7tn")
+
+[sub_resource type="Resource" id="Resource_25jcw"]
+script = ExtResource("3_ts6xa")
+status = &"fear"
+chance = 0.15
+
+[resource]
+script = ExtResource("4_gmqgx")
+action = SubResource("Resource_483nl")
+tags = Array[StringName]([&"dark", &"area", &"curse"])
+on_hit = Array[ExtResource("3_ts6xa")]([SubResource("Resource_25jcw")])
+damage_per_level = 1.6
+cooldown = 4.0
+attack_range = 120.0
+range_per_level = 2.0
+amount_levels = PackedInt32Array()
+pierce_levels = PackedInt32Array()
+fx_color = Color(0.6, 0.3, 0.75, 1)
+evolution = ExtResource("2_ts6xa")
+id = &"death_ripple"
+kind = 0
+name_key = "WEAPON_DEATH_RIPPLE"
+description_key = "WEAPON_DEATH_RIPPLE_DESC"
+max_level = 20
+icon_color = Color(0.5, 0.25, 0.6, 1)

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="StatDef" format=3]
+
+[ext_resource type="Script" path="res://data/stats/stat_def.gd" id="1_nic6c"]
+
+[resource]
+script = ExtResource("1_nic6c")
+id = &"xp_gain"
+line_key = "STAT_LINE_XP_GAIN"
+on_items = true

@@ -1,0 +1,37 @@
+[gd_resource type="Resource" script_class="SkillData" format=3]
+
+[ext_resource type="Script" path="res://systems/skills/actions/cone_action.gd" id="1_hat13"]
+[ext_resource type="Script" path="res://data/skills/skill_modifier.gd" id="2_pujlo"]
+[ext_resource type="Script" path="res://data/statuses/status_application.gd" id="3_r1icm"]
+[ext_resource type="Script" path="res://data/skills/skill_data.gd" id="4_wwwsx"]
+
+[sub_resource type="Resource" id="Resource_sw1ex"]
+script = ExtResource("1_hat13")
+arc_degrees = 360.0
+
+[sub_resource type="Resource" id="Resource_4530n"]
+script = ExtResource("3_r1icm")
+status = &"bleed"
+chance = 0.25
+
+[resource]
+script = ExtResource("4_wwwsx")
+action = SubResource("Resource_sw1ex")
+tags = Array[StringName]([&"physical", &"melee", &"area"])
+on_hit = Array[ExtResource("3_r1icm")]([SubResource("Resource_4530n")])
+damage = 22.5
+damage_per_level = 2.5
+cooldown = 0.91
+cooldown_per_level = -0.012
+attack_range = 61.0
+range_per_level = 1.0
+amount_levels = PackedInt32Array()
+pierce_levels = PackedInt32Array()
+fx_color = Color(1, 0.95, 0.6, 1)
+is_evolution = true
+id = &"whirling_blades"
+kind = 0
+name_key = "EVO_WHIRLING_BLADES"
+description_key = "EVO_WHIRLING_BLADES_DESC"
+max_level = 20
+icon_color = Color(1, 0.85, 0.4, 1)

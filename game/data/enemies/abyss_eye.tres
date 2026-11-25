@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="EnemyData" format=3]
+
+[ext_resource type="Script" path="res://data/enemies/enemy_data.gd" id="1_enemy"]
+
+[resource]
+script = ExtResource("1_enemy")
+id = &"abyss_eye"
+name_key = "ENEMY_ABYSS_EYE"
+max_health = 24.0
+speed = 24.0
+contact_damage = 5.0
+xp = 4
+radius = 7.0
+placeholder_color = Color(1.0, 0.3, 0.1, 1)
+resistances = {&"dark": 0.5, &"holy": -0.5}
+shot_interval = 2.0
+shot_range = 220.0
+shot_damage = 10.0
+shot_speed = 170.0
+keep_distance = 130.0

@@ -1,0 +1,135 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://world/world.gd" id="1_world"]
+[ext_resource type="PackedScene" path="res://ui/hud/hud.tscn" id="2_hud"]
+[ext_resource type="Script" path="res://systems/enemies/enemy_director.gd" id="3_director"]
+[ext_resource type="Script" path="res://systems/waves/wave_spawner.gd" id="4_waves"]
+[ext_resource type="Script" path="res://systems/upgrades/upgrade_system.gd" id="5_upgrades"]
+[ext_resource type="Script" path="res://systems/level_flow.gd" id="6_flow"]
+[ext_resource type="Script" path="res://systems/loot/loot_system.gd" id="7_loot"]
+[ext_resource type="PackedScene" path="res://ui/level_up/level_up_panel.tscn" id="8_level_up"]
+[ext_resource type="Script" path="res://systems/heroes/hero_passive_system.gd" id="9_passives"]
+[ext_resource type="Script" path="res://systems/economy/economy_system.gd" id="11_economy"]
+[ext_resource type="Script" path="res://world/damage_numbers.gd" id="12_numbers"]
+[ext_resource type="PackedScene" path="res://ui/pause/pause_menu.tscn" id="13_pause"]
+[ext_resource type="PackedScene" path="res://ui/shop/shop_panel.tscn" id="14_shop"]
+[ext_resource type="Script" path="res://systems/combat/status_system.gd" id="17_statuses"]
+[ext_resource type="Script" path="res://world/enemy_corpses.gd" id="18_corpses"]
+[ext_resource type="Script" path="res://systems/enemies/enemy_animator.gd" id="19_enemy_anim"]
+[ext_resource type="Script" path="res://systems/meta/chronicle_recorder.gd" id="20_chronicle"]
+[ext_resource type="Script" path="res://systems/meta/run_stats.gd" id="21_run_stats"]
+[ext_resource type="Script" path="res://systems/combat/hazard_system.gd" id="22_hazards"]
+[ext_resource type="Script" path="res://world/light_map.gd" id="23_lights"]
+[ext_resource type="Script" path="res://world/juice.gd" id="24_juice"]
+[ext_resource type="Script" path="res://world/post_fx.gd" id="25_post"]
+[ext_resource type="Script" path="res://world/skill_fx_layer.gd" id="26_skill_fx"]
+[ext_resource type="Script" path="res://systems/meta/balance_log.gd" id="27_balance_log"]
+[ext_resource type="Script" path="res://world/combat_sound.gd" id="28_combat_sound"]
+[ext_resource type="Script" path="res://world/level_decor.gd" id="29_decor"]
+
+[node name="World" type="Node2D"]
+y_sort_enabled = true
+script = ExtResource("1_world")
+
+[node name="Level" type="Node2D" parent="."]
+z_index = -1
+
+[node name="Ground" type="TileMapLayer" parent="Level"]
+visible = false
+
+[node name="Art" type="TileMapLayer" parent="Level"]
+collision_enabled = false
+
+[node name="Markers" type="TileMapLayer" parent="Level"]
+modulate = Color(1, 1, 1, 0.7)
+collision_enabled = false
+
+[node name="Corpses" type="Node2D" parent="."]
+z_index = -1
+script = ExtResource("18_corpses")
+
+[node name="Systems" type="Node" parent="."]
+
+[node name="EnemyDirector" type="Node" parent="Systems"]
+script = ExtResource("3_director")
+
+[node name="EnemyAnimator" type="Node" parent="Systems"]
+script = ExtResource("19_enemy_anim")
+
+[node name="WaveSpawner" type="Node" parent="Systems"]
+script = ExtResource("4_waves")
+
+[node name="UpgradeSystem" type="Node" parent="Systems"]
+script = ExtResource("5_upgrades")
+
+[node name="LootSystem" type="Node" parent="Systems"]
+script = ExtResource("7_loot")
+
+[node name="Economy" type="Node" parent="Systems"]
+script = ExtResource("11_economy")
+
+[node name="HeroPassives" type="Node" parent="Systems"]
+script = ExtResource("9_passives")
+
+[node name="LevelFlow" type="Node" parent="Systems"]
+script = ExtResource("6_flow")
+
+[node name="Statuses" type="Node" parent="Systems"]
+script = ExtResource("17_statuses")
+
+[node name="Chronicle" type="Node" parent="Systems"]
+script = ExtResource("20_chronicle")
+
+[node name="RunStats" type="Node" parent="Systems"]
+script = ExtResource("21_run_stats")
+
+[node name="BalanceLog" type="Node" parent="Systems"]
+script = ExtResource("27_balance_log")
+
+[node name="Hazards" type="Node" parent="Systems"]
+script = ExtResource("22_hazards")
+
+[node name="Players" type="Node2D" parent="."]
+y_sort_enabled = true
+
+[node name="Enemies" type="Node2D" parent="."]
+y_sort_enabled = true
+
+[node name="Projectiles" type="Node2D" parent="."]
+y_sort_enabled = true
+
+[node name="Pickups" type="Node2D" parent="."]
+y_sort_enabled = true
+
+[node name="Props" type="Node2D" parent="."]
+y_sort_enabled = true
+
+[node name="Decor" type="Node2D" parent="."]
+y_sort_enabled = true
+script = ExtResource("29_decor")
+
+[node name="LightMap" type="Node2D" parent="."]
+script = ExtResource("23_lights")
+
+[node name="SkillFx" type="Node2D" parent="."]
+script = ExtResource("26_skill_fx")
+
+[node name="Juice" type="Node2D" parent="."]
+script = ExtResource("24_juice")
+
+[node name="CombatSound" type="Node2D" parent="."]
+script = ExtResource("28_combat_sound")
+
+[node name="PostFx" type="Node2D" parent="."]
+script = ExtResource("25_post")
+
+[node name="DamageNumbers" type="Node2D" parent="."]
+script = ExtResource("12_numbers")
+
+[node name="HUD" parent="." instance=ExtResource("2_hud")]
+
+[node name="PauseMenu" parent="." instance=ExtResource("13_pause")]
+
+[node name="LevelUpPanel" parent="." instance=ExtResource("8_level_up")]
+
+[node name="ShopPanel" parent="." instance=ExtResource("14_shop")]

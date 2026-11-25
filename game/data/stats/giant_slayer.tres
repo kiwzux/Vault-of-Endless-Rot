@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="StatDef" format=3]
+
+[ext_resource type="Script" path="res://data/stats/stat_def.gd" id="1_1ging"]
+
+[resource]
+script = ExtResource("1_1ging")
+id = &"giant_slayer"
+line_key = "STAT_LINE_GIANT_SLAYER"
+on_items = true

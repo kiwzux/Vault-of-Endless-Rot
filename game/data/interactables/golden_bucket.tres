@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="InteractableData" format=3]
+
+[ext_resource type="Script" path="res://data/interactables/interactable_data.gd" id="1_data"]
+
+[resource]
+script = ExtResource("1_data")
+id = &"golden_bucket"
+name_key = "POINT_GOLDEN_BUCKET"
+kind = 2
+placement = &"easter"
+color = Color(1, 0.82, 0.3, 1)
+light_radius = 56.0
+gold = Vector2i(300, 500)
+potion_chance = 1.0
+item_chance = 1.0
+xp_gems = 20
+item_rarity = 3
+look = &"golden_bucket"

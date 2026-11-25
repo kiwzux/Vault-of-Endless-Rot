@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="EnemyData" format=3]
+
+[ext_resource type="Script" path="res://data/enemies/enemy_data.gd" id="1_enemy"]
+
+[resource]
+script = ExtResource("1_enemy")
+id = &"death_rider"
+name_key = "ENEMY_DEATH_RIDER"
+max_health = 40.0
+speed = 40.0
+contact_damage = 16.0
+xp = 4
+radius = 9.0
+placeholder_color = Color(0.35, 0.3, 0.42, 1)
+charge_interval = 4.0
+charge_windup = 0.6
+charge_speed = 280.0
+charge_time = 0.5
+charge_range = 240.0

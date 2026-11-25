@@ -1,0 +1,67 @@
+{
+ "frame": [
+  128,
+  128
+ ],
+ "columns": 16,
+ "rows": 45,
+ "scale": 0.25,
+ "anchor": [
+  64.0,
+  102.66666666666666
+ ],
+ "stride": 6.8,
+ "animations": {
+  "idle": {
+   "row": 0,
+   "col": 0,
+   "count": 16,
+   "fps": 10.666666666666666
+  },
+  "walk": {
+   "row": 1,
+   "col": 0,
+   "count": 16,
+   "fps": 26.0
+  },
+  "attack": {
+   "row": 2,
+   "col": 0,
+   "count": 8,
+   "fps": 24.0
+  },
+  "hurt": {
+   "row": 2,
+   "col": 8,
+   "count": 6,
+   "fps": 20.0
+  },
+  "cast": {
+   "row": 3,
+   "col": 0,
+   "count": 12,
+   "fps": 16.0
+  },
+  "death": {
+   "row": 4,
+   "col": 0,
+   "count": 12,
+   "fps": 12.0
+  },
+  "attack_walk": {
+   "row": 5,
+   "count": 8,
+   "fps": 24.0,
+   "rows": 8,
+   "per_row": 2
+  }
+ },
+ "directions": [
+  "e",
+  "ne",
+  "n",
+  "se",
+  "s"
+ ],
+ "dir_rows": 9
+}

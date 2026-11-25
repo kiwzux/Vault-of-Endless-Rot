@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="TagDef" format=3]
+
+[ext_resource type="Script" path="res://data/tags/tag_def.gd" id="1_a2itr"]
+
+[resource]
+script = ExtResource("1_a2itr")
+id = &"trap"
+name_key = "TAG_TRAP"
+color = Color(0.75, 0.7, 0.6, 1)

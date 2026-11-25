@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="HeroData" format=3]
+
+[ext_resource type="Script" path="res://data/skills/skill_modifier.gd" id="1_msajw"]
+[ext_resource type="Resource" path="res://data/heroes/traits/hunter_mark.tres" id="2_qrgcl"]
+[ext_resource type="Script" path="res://data/heroes/hero_data.gd" id="3_4h802"]
+[ext_resource type="Texture2D" path="res://assets/heroes/witch_hunter.png" id="4_3rtrd"]
+
+[resource]
+script = ExtResource("3_4h802")
+id = &"witch_hunter"
+order = 4
+name_key = "HERO_WITCH_HUNTER"
+description_key = "HERO_WITCH_HUNTER_DESC"
+max_health = 120.0
+move_speed = 96.0
+starting_weapon = &"silver_bolts"
+sprite_sheet = ExtResource("4_3rtrd")
+base_stats = {
+&"giant_slayer": 0.15
+}
+class_modifiers = Array[ExtResource("1_msajw")]([ExtResource("2_qrgcl")])
+affinity_tags = Array[StringName]([&"holy", &"trap", &"projectile"])

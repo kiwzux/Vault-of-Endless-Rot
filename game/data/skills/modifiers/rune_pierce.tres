@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="SkillModifier" format=3]
+
+[ext_resource type="Script" path="res://data/skills/skill_modifier.gd" id="1_oc64i"]
+[ext_resource type="Script" path="res://data/statuses/status_application.gd" id="2_jh4sp"]
+
+[resource]
+script = ExtResource("1_oc64i")
+id = &"rune_pierce"
+name_key = "MOD_RUNE_PIERCE"
+description_key = "MOD_RUNE_PIERCE_DESC"
+icon_color = Color(0.85, 0.82, 0.75, 1)
+requires_actions = Array[StringName]([&"projectile"])
+pierce = 2

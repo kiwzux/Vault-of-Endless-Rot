@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="SfxData" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://data/audio/sfx_data.gd" id="1_sfx"]
+[ext_resource type="AudioStream" path="res://assets/audio/sfx/swing_1.wav" id="2_swing"]
+[ext_resource type="AudioStream" path="res://assets/audio/sfx/swing_2.wav" id="3_swing"]
+[ext_resource type="AudioStream" path="res://assets/audio/sfx/swing_3.wav" id="4_swing"]
+
+[resource]
+script = ExtResource("1_sfx")
+id = &"swing"
+streams = Array[AudioStream]([ExtResource("2_swing"), ExtResource("3_swing"), ExtResource("4_swing")])
+volume_db = -9.0
+pitch_jitter = 0.08
+cooldown = 0.06
+max_voices = 3
+positional = true
+max_distance = 520.0

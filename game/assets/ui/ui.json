@@ -1,0 +1,13 @@
+{
+ "scale": 4,
+ "margins": {
+  "frame_panel": 8,
+  "frame_slot": 3,
+  "button_normal": 4,
+  "button_hover": 4,
+  "button_pressed": 4,
+  "button_disabled": 4,
+  "button_dark": 4,
+  "divider": 8
+ }
+}

@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="EnemyData" format=3]
+
+[ext_resource type="Script" path="res://data/enemies/enemy_data.gd" id="1_enemy"]
+
+[resource]
+script = ExtResource("1_enemy")
+id = &"succubus"
+name_key = "ENEMY_SUCCUBUS"
+max_health = 24.0
+speed = 38.0
+contact_damage = 7.0
+xp = 4
+radius = 6.0
+placeholder_color = Color(0.85, 0.25, 0.5, 1)
+shot_interval = 2.4
+shot_range = 190.0
+shot_damage = 9.0
+shot_speed = 130.0
+keep_distance = 120.0
+shot_count = 5
+shot_spread_deg = 50.0
