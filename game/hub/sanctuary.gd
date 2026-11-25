@@ -4,8 +4,14 @@ extends Node2D
 ## Герой ходит по залу и у станций нажимает E:
 ## - статуи классов (Зал героев) — встать другим героем; закрытый класс показывает задание, которое его открывает;
 ## - Алтарь душ — таланты героя; Доска заданий — цели «Летописи» и награды; Летопись — рекорды, бестиарий, трофеи;
-## - Врата бездны — настройка сложности и начало забега; дверь — главное меню.
+## - Врата бездны — «Хардкор» и начало забега; стол кооператива — лобби; дверь — главное меню.
 ## Профиль — MetaProfile; зал — SanctuaryMap.
+## Кооператив (14.10.2026): в сессии (Net.is_online) Убежище общее — сюда ведёт лобби после создания сервера или
+## подключения, сюда же все возвращаются после забега. Свой герой рассылается остальным (Net.send_hub_state), чужие
+## ходят по залу (HubHero.remote). Герой и таланты уходят хосту (Net.choose_hero) при выборе у статуи и после
+## окон станций; забег у Врат начинает хост для всех, «Хардкор» — его; стол кооператива показывает отряд;
+## дверь и Esc — выход из отряда в главное меню. Профиль у каждого участника свой.
+
 const HERO_SCENE := preload("res://hub/hub_hero.tscn")
 const NOTICE_TIME := 5.0
 ## Зал тёмный, главный свет — костёр (шаг 11.12: «строгий dark fantasy»).
@@ -15,10 +21,14 @@ const FIRE_ENERGY := 1.7
 const PORTAL_LIGHT := Color(1.0, 0.45, 0.15)
 const PROMPT_COLOR := Color(1.0, 0.9, 0.6)
 const LOCKED_COLOR := Color(0.85, 0.45, 0.35)
+## Как часто свой герой рассылается остальным участникам, с.
+const SEND_INTERVAL := 0.05
+
 ## Герой, который уйдёт в забег (выбран у статуи).
 var hero: HeroData
 var hardcore := false
-## Выбранные Печати Скверны сохраняются в профиле.
+## Печати Скверны на следующий забег (шаг 12.3): {id печати: ранг}. В одиночной игре — с прошлого забега
+## (профиль), в кооперативе — выбор хоста (Net.seals).
 var seals := {}
 var stations: Array[HubStation] = []
 
@@ -28,6 +38,10 @@ var _windows := {}
 var _notice_left := 0.0
 var _fire_time := 0.0
 var _fire_light: PointLight2D
+## Кооператив: герои других участников (peer id → HubHero) и таймер рассылки своего.
+var _remote := {}
+var _send_left := 0.0
+
 @onready var ground: TileMapLayer = $Level/Ground
 @onready var art: TileMapLayer = $Level/Art
 @onready var markers: TileMapLayer = $Level/Markers
@@ -37,6 +51,7 @@ var _fire_light: PointLight2D
 @onready var souls_label: Label = %Souls
 @onready var notice_label: Label = %Notice
 @onready var hero_card: PanelContainer = %HeroCard
+@onready var host_info: Label = %HostInfo
 
 
 func _ready() -> void:
@@ -67,12 +82,28 @@ func _ready() -> void:
 			&"chronicle": %Windows.get_child(2), &"gate": %Windows.get_child(3), &"seals": %Windows.get_child(4)}
 	_update_statues()
 	seals = MetaProfile.last_seals.duplicate()
+	if Net.is_online():
+		hardcore = Net.hardcore
+		if Net.is_host():
+			Net.set_seals(seals)  # отряд сразу видит печати хоста
+		else:
+			seals = Net.seals.duplicate()
+	Net.hub_state_received.connect(_on_hub_state)
+	Net.roster_changed.connect(_on_roster_changed)
+	Net.session_ended.connect(_on_session_ended)
+	Net.port_mapper.changed.connect(refresh_status)
+	_sync_choice()
 	refresh_status()
 	_greet()
 
 
 func _process(delta: float) -> void:
 	_fire_time += delta
+	if Net.is_online():
+		_send_left -= delta
+		if _send_left <= 0.0:
+			_send_left = SEND_INTERVAL
+			Net.send_hub_state(hero.id, _hero_node.position)
 	# Костёр дышит: свет колышется двумя несоизмеримыми частотами, без рывков.
 	_fire_light.energy = FIRE_ENERGY * (1.0 + 0.12 * sin(_fire_time * 7.3) * sin(_fire_time * 2.9 + 1.0))
 	if _notice_left > 0.0:
@@ -110,21 +141,26 @@ func _unhandled_input(event: InputEvent) -> void:
 ## Действие станции (E). Проверки вызывают его напрямую.
 func interact(station: HubStation) -> void:
 	match station.kind:
-		HubStation.Kind.WAR_TABLE:
-			return
 		HubStation.Kind.STATUE:
 			if station.locked:
 				show_notice(_locked_text(station.hero.id))
 			elif station.hero != hero:
 				choose_hero(station.hero)
+		HubStation.Kind.WAR_TABLE:
+			if Net.is_online():  # уже в отряде: стол показывает, кто в нём
+				show_notice(party_text())
+				return
+			MetaProfile.set_last_hero(hero)
+			get_tree().change_scene_to_file(ScenePaths.LOBBY)
 		HubStation.Kind.EXIT:
 			to_main_menu()
 		_:
 			open_window(station.id)
 
 
-## Вернуться в главное меню.
+## В главное меню; в кооперативе — выйти из отряда.
 func to_main_menu() -> void:
+	Net.leave()
 	get_tree().change_scene_to_file(ScenePaths.MAIN_MENU)
 
 
@@ -135,7 +171,28 @@ func choose_hero(p_hero: HeroData) -> void:
 	_hero_node.set_hero(hero)
 	MetaProfile.set_last_hero(hero)
 	_update_statues()
+	_sync_choice()
 	show_notice(tr("HUB_HERO_CHOSEN").format({"name": tr(hero.name_key)}))
+
+
+## Кооператив: свой герой, его таланты и закрытые навыки — хосту (с ними участник уйдёт в забег).
+func _sync_choice() -> void:
+	if Net.is_online():
+		Net.choose_hero(hero, MetaProfile.talents_for(hero), MetaProfile.locked_skills())
+
+
+## Состав отряда: «Отряд 2/4: Рыцарь-отступник (хост), Некромант (вы)».
+func party_text() -> String:
+	var names := PackedStringArray()
+	for peer in Net.players():
+		var member := DataRegistry.hero(Net.roster[peer].get("hero", &""))
+		var text := tr(member.name_key) if member != null else "—"
+		if peer == 1:
+			text += " " + tr("LOBBY_MARK_HOST")
+		if peer == multiplayer.get_unique_id():
+			text += " " + tr("LOBBY_MARK_YOU")
+		names.append(text)
+	return tr("HUB_PARTY").format({"count": Net.players().size(), "max": Net.MAX_PLAYERS, "list": ", ".join(names)})
 
 
 func open_window(id: StringName) -> HubWindow:
@@ -151,23 +208,36 @@ func window_open() -> bool:
 
 
 ## Врата: забег с выбранным героем, его талантами и закрытыми навыками профиля.
+## В кооперативе забег начинает хост — для всего отряда (Net.start_run); клиент ждёт хоста.
 func start_run() -> void:
 	MetaProfile.set_last_hero(hero)
+	if Net.is_online():
+		if not Net.is_host():
+			show_notice(tr("HUB_GATE_WAIT_HOST"))
+			return
+		_sync_choice()
+		Net.set_hardcore(hardcore)
+		Net.set_seals(seals)
+		MetaProfile.set_last_seals(seals)
+		Net.start_run()
+		return
 	MetaProfile.set_last_seals(seals)
 	RunConfig.start_new_run(hero, hardcore, 0, MetaProfile.talents_for(hero), MetaProfile.locked_skills(), seals)
 	get_tree().change_scene_to_file(ScenePaths.WORLD)
 
 
-## Установить ранг печати на следующий забег.
+## Ранг печати id на следующий забег (окно печатей); у клиента кооператива печати ставит хост.
 func set_seal(id: StringName, rank: int) -> void:
 	var seal := DataRegistry.seal(id)
-	if seal == null:
+	if seal == null or (Net.is_online() and not Net.is_host()):
 		return
 	var clamped := clampi(rank, 0, seal.max_rank)
 	if clamped > 0:
 		seals[id] = clamped
 	else:
 		seals.erase(id)
+	if Net.is_online():
+		Net.set_seals(seals)
 
 
 func on_quest_claimed(quest: QuestData) -> void:
@@ -179,9 +249,35 @@ func on_quest_claimed(quest: QuestData) -> void:
 
 func refresh_status() -> void:
 	souls_label.text = tr("HUB_SOULS").format({"souls": MetaProfile.souls})
+	if Net.is_online():
+		souls_label.text = tr("HUB_PARTY_SHORT").format({"count": Net.players().size(), "max": Net.MAX_PLAYERS}) \
+				+ "  " + souls_label.text
 	var board := _station(&"board")
 	if board != null:
 		board.attention = not MetaProfile.claimable_quests().is_empty()
+	host_info.visible = Net.is_host()
+	if host_info.visible:
+		host_info.text = host_info_text()
+
+
+## Хост: куда подключаться друзьям — адреса ПК (локальная сеть, Radmin VPN) и итог UPnP для Интернета.
+func host_info_text() -> String:
+	var mapper := Net.port_mapper
+	var lines := PackedStringArray([tr("HUB_HOST_LOCAL").format({"addresses": ", ".join(Net.local_addresses()),
+			"port": Net.host_port})])
+	var args := {"address": mapper.external_address, "port": Net.host_port, "code": mapper.error_code}
+	match mapper.status:
+		PortMapper.Status.WORKING:
+			lines.append(tr("NET_UPNP_WORKING"))
+		PortMapper.Status.OPEN:
+			lines.append(tr("NET_UPNP_OPEN").format(args))
+		PortMapper.Status.NO_ROUTER:
+			lines.append(tr("NET_UPNP_NO_ROUTER").format(args))
+		PortMapper.Status.REFUSED:
+			lines.append(tr("NET_UPNP_REFUSED").format(args))
+		PortMapper.Status.SHARED_ADDRESS:
+			lines.append(tr("NET_UPNP_SHARED").format(args))
+	return "\n".join(lines)
 
 
 func show_notice(text: String) -> void:
@@ -308,9 +404,7 @@ func _nearest_station() -> HubStation:
 	var best: HubStation = null
 	var best_score := 1.0
 	for station in stations:
-		if station.kind == HubStation.Kind.WAR_TABLE:
-			continue
-		# Доля радиуса станции: у крупных предметов радиус взаимодействия больше.
+		# Доля радиуса станции: у крупного стола и портала «нажать E» дальше, чем у статуи.
 		var score := station.position.distance_to(_hero_node.position) / station.reach()
 		if score <= best_score:
 			best = station
@@ -352,7 +446,61 @@ func _open_window() -> HubWindow:
 
 func _on_window_closed() -> void:
 	_near = null  # подсказка и карточка героя вернутся на следующем кадре
+	_sync_choice()  # у Алтаря могли смениться таланты
 	refresh_status()
+
+
+# --- Кооператив ---
+
+## Герой участника peer_id в зале: появился — встаёт на место, дальше догоняет присланную позицию.
+func _on_hub_state(peer_id: int, hero_id: StringName, pos: Vector2) -> void:
+	var other: HubHero = _remote.get(peer_id)
+	var member := DataRegistry.hero(hero_id)
+	if other == null or not is_instance_valid(other):
+		other = HERO_SCENE.instantiate()
+		other.remote = true
+		other.hero = member
+		other.position = pos
+		other.tag = tr("HUB_PLAYER_TAG").format({"n": Net.players().find(peer_id) + 1})
+		props.add_child(other)
+		_remote[peer_id] = other
+	elif other.hero != member:
+		other.set_hero(member)
+	other.target = pos
+
+
+## Ушедшие из отряда пропадают из зала.
+func _on_roster_changed() -> void:
+	for peer: int in _remote.keys():
+		if not Net.roster.has(peer):
+			_drop_remote(peer)
+	if Net.is_online() and not Net.is_host() and seals != Net.seals:  # хост сменил печати — окна показывают новые
+		seals = Net.seals.duplicate()
+		for id: StringName in [&"gate", &"seals"]:
+			var window: HubWindow = _windows.get(id)
+			if window != null:
+				window.refresh()
+	refresh_status()
+
+
+func _on_session_ended(reason: String) -> void:
+	for peer: int in _remote.keys():
+		_drop_remote(peer)
+	refresh_status()
+	if reason != "":
+		show_notice(tr(reason))
+
+
+func _drop_remote(peer: int) -> void:
+	var other: HubHero = _remote.get(peer)
+	_remote.erase(peer)
+	if other != null and is_instance_valid(other):
+		other.queue_free()
+
+
+## Для проверок: герои других участников в зале.
+func remote_heroes() -> Dictionary:
+	return _remote
 
 
 ## При входе: награда за забег, сообщение профиля, награды на доске.

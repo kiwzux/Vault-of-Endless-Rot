@@ -79,7 +79,7 @@ func _ready() -> void:
 
 ## Выбор откладывается до клавиши R: в кооперативе (мир не ждёт, окно не должно всплывать посреди боя).
 func deferred() -> bool:
-	return defer_always
+	return Net.is_online() or defer_always
 
 
 ## Есть ли предложение, которое ждёт выбора (для подсказки HUD).

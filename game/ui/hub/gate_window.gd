@@ -3,6 +3,7 @@ extends HubWindow
 ## Врата бездны (шаг 10.3): герой, таланты которого уйдут в забег, переключатель «Хардкор», печати Скверны
 ## (шаг 12.3: сумма и награда, кнопка — окно печатей SealsWindow) и спуск.
 ## Забег начинается так же, как раньше из меню хаба: RunConfig.start_new_run → сцена уровня.
+## В кооперативе: состав отряда; «Хардкор», печати и спуск — у хоста (для всех), клиент видит выбор хоста и ждёт.
 
 const HEAT_COLOR := Color(0.78, 0.45, 1.0)
 
@@ -28,9 +29,18 @@ func build() -> void:
 	for id: StringName in talents:
 		ranks += int(talents[id])
 	body.add_child(HubWindow.make_label(tr("HUB_GATE_TALENTS").format({"ranks": ranks}), 9, TEXT_COLOR))
+	var guest := Net.is_online() and not Net.is_host()
+	if Net.is_online():
+		var party := HubWindow.make_label(sanctuary.party_text(), 9, TEXT_COLOR)
+		party.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+		party.custom_minimum_size = Vector2(WRAP_WIDTH, 0)
+		body.add_child(party)
+		if guest:
+			sanctuary.hardcore = Net.hardcore
 	hardcore_toggle = CheckButton.new()
 	hardcore_toggle.text = "HARDCORE"
 	hardcore_toggle.button_pressed = sanctuary.hardcore
+	hardcore_toggle.disabled = guest
 	body.add_child(hardcore_toggle)
 	var hint := HubWindow.make_label(tr("HARDCORE_DESC"), 8, Color(0.85, 0.25, 0.18))
 	hint.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
@@ -58,7 +68,8 @@ func build() -> void:
 	spacer.size_flags_vertical = Control.SIZE_EXPAND_FILL
 	body.add_child(spacer)
 	var start := Button.new()
-	start.text = "START_RUN"
+	start.text = "HUB_GATE_WAIT_HOST" if guest else ("START_RUN_PARTY" if Net.is_online() else "START_RUN")
+	start.disabled = guest
 	start.add_theme_color_override("font_color", Color(1, 0.88, 0.55))
 	start.size_flags_horizontal = Control.SIZE_SHRINK_END
 	start.pressed.connect(sanctuary.start_run)

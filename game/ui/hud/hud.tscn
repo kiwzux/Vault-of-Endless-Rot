@@ -8,6 +8,7 @@
 [ext_resource type="Script" path="res://ui/hud/potion_belt.gd" id="6_belt"]
 [ext_resource type="Script" path="res://ui/hud/run_counters.gd" id="7_counters"]
 [ext_resource type="Script" path="res://ui/hud/passives_panel.gd" id="8_passives"]
+[ext_resource type="Script" path="res://ui/hud/allies_panel.gd" id="9_allies"]
 [ext_resource type="Script" path="res://ui/hud/vitals_panel.gd" id="10_vitals"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bar_bg"]
@@ -104,6 +105,14 @@ layout_mode = 2
 auto_translate_mode = 2
 theme_override_colors/font_color = Color(0.95, 0.85, 0.55, 1)
 theme_override_font_sizes/font_size = 10
+
+[node name="Allies" type="Control" parent="PlayLeft"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+mouse_filter = 2
+script = ExtResource("9_allies")
 
 [node name="LeftPanel" type="Panel" parent="."]
 unique_name_in_owner = true

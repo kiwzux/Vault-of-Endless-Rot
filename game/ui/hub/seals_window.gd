@@ -2,18 +2,20 @@ class_name SealsWindow
 extends HubWindow
 ## Печати Скверны (шаг 12.3, как Пакт наказания в Hades) — окно от Врат: у каждой печати ранг кнопками - и +,
 ## что даёт ранг и сколько он стоит Скверны; внизу сумма Скверны и награда — души и шанс редкого лута.
-## Выбор хранится в Sanctuary.seals.
+## Выбор хранит Sanctuary.seals (в кооперативе его ставит хост, Net.set_seals); клиент видит выбор хоста без кнопок.
 
 const HEAT_COLOR := Color(0.78, 0.45, 1.0)
 
 var _rows := {}
 var _total: Label
+var _guest := false
 
 
 func build() -> void:
 	set_title(tr("HUB_SEALS_TITLE"))
 	_rows.clear()
-	var hint := make_label(tr("HUB_SEALS_HINT"), 8, DIM_COLOR)
+	_guest = Net.is_online() and not Net.is_host()
+	var hint := make_label(tr("HUB_SEALS_GUEST" if _guest else "HUB_SEALS_HINT"), 8, DIM_COLOR)
 	hint.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 	hint.custom_minimum_size = Vector2(WRAP_WIDTH, 0)
 	body.add_child(hint)
@@ -30,6 +32,7 @@ func build() -> void:
 	footer.add_child(_total)
 	var reset := Button.new()
 	reset.text = "HUB_SEALS_RESET"
+	reset.disabled = _guest
 	reset.add_theme_font_size_override("font_size", 9)
 	reset.pressed.connect(_reset)
 	footer.add_child(reset)
@@ -80,6 +83,7 @@ func _step_button(text: String, seal: SealData, delta: int) -> Button:
 	button.add_theme_font_size_override("font_size", 18)  # знаки шрифта заголовков мелкие — крупнее
 	button.custom_minimum_size = Vector2(18, 18)
 	button.size_flags_vertical = Control.SIZE_SHRINK_CENTER
+	button.disabled = _guest
 	button.pressed.connect(func() -> void:
 		sanctuary.set_seal(seal.id, rank_of(seal.id) + delta)
 		_update())
@@ -96,8 +100,9 @@ func _update() -> void:
 		var cells: Array = _rows[id]
 		var rank := rank_of(id)
 		(cells[0] as Label).text = "%d / %d" % [rank, seal.max_rank]
-		(cells[1] as Button).disabled = rank <= 0
-		(cells[2] as Button).disabled = rank >= seal.max_rank
+		if not _guest:
+			(cells[1] as Button).disabled = rank <= 0
+			(cells[2] as Button).disabled = rank >= seal.max_rank
 	_total.text = GateWindow.heat_text(sanctuary.seals)
 
 

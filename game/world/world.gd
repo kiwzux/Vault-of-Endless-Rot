@@ -3,6 +3,11 @@ extends Node2D
 ## Сцена уровня. Контейнеры Players/Enemies/Projectiles/Pickups/Props — точки наблюдения
 ## MultiplayerSpawner (DESIGN 5.1); общие объекты создаёт только хост и только внутри них.
 ##
+## Хост создаёт объекты через spawn_*(data): data — словарь из простых типов, его понимает фабрика
+## сущности (Enemy.create, ProjectileFactory.create, Pickup.create, PropFactory.create).
+## Создаёт их MultiplayerSpawner узла Net (WorldNet, ФТ-13): та же фабрика стоит в его spawn_function,
+## и у клиентов появляется такой же узел. В одиночной игре спавнеры работают так же, без сети.
+
 ## Клиент нажал E у объекта карты (платный сундук, испытание). game/net: RPC хосту →
 ## apply_interact(get_remote_sender_id(), object_id).
 signal interact_submitted(object_id: int)
@@ -27,6 +32,7 @@ const PLAYER_SCENE := preload("res://entities/player/player.tscn")
 @onready var statuses: StatusSystem = $Systems/Statuses
 ## Статистика забега (как в Megabonk): урон по навыкам, убийства, опыт — для экрана конца забега.
 @onready var run_stats: RunStats = $Systems/RunStats
+@onready var net: WorldNet = $Net
 ## Падение убитых врагов доигрывается здесь у каждого участника (шаг 11.2), сетью не передаётся.
 @onready var corpses: EnemyCorpses = $Corpses
 ## Тьма и свет уровня (шаг 11.8) — у каждого участника свои, по сети не передаются.
@@ -60,13 +66,19 @@ func _ready() -> void:
 	# Метки уровня (рамки цвета палитры под сундуками, статуями, порталом) — только для отладки, по ключу
 	# «-- --markers»: в обычной игре объекты на метках рисуют себя сами (шаг 11.20).
 	markers.visible = OS.get_cmdline_user_args().has("--markers")
+	if not multiplayer.is_server():
+		return  # клиент получает LevelData от хоста через WorldNet (ФТ-15)
 	var level := GameState.current_level
 	if level == null:
 		level = (await make_next_level()).level
 		if not is_inside_tree():
 			return  # игрок вышел в меню, пока шла генерация
+	await net.wait_for_clients()  # в кооперативе: у всех участников загружена сцена уровня
+	if not is_inside_tree():
+		return
 	load_level(level)
 	spawn_player(multiplayer.get_unique_id(), RunConfig.get_hero(), RunConfig.talents, RunConfig.locked_skills)
+	net.spawn_remote_players()
 
 
 func load_level(level: LevelData) -> void:
@@ -102,21 +114,19 @@ func player_spawn_position() -> Vector2:
 	return ground.map_to_local(GameState.current_level.find_first(Palette.Tile.PLAYER_SPAWN))
 
 
-## talents — ранги талантов героя из Убежища.
+## talents — ранги талантов героя из хаба (CR-04); для удалённого игрока они пришли в лобби (Net.roster).
 ## locked — навыки, ещё не открытые в профиле игрока (шаг 10): в его левел-апе их нет.
 func spawn_player(peer_id: int, hero: HeroData, talents: Dictionary = {}, locked: Array = []) -> Player:
-	var player: Player = PLAYER_SCENE.instantiate()
-	player.name = str(peer_id)
-	player.hero = hero
-	player.talents = talents.duplicate()
-	player.locked_skills.assign(locked)
-	player.position = player_spawn_position()
-	players.add_child(player, true)
-	setup_player(player)
+	var player := net.spawn_player({
+		"peer": peer_id, "hero": hero.id, "talents": talents.duplicate(), "locked": locked.duplicate(),
+		"pos": player_spawn_position(),
+	})
+	if player != null:
+		setup_player(player)
 	return player
 
 
-## Ограничить камеру картой и сообщить системам о появлении героя.
+## Герой появился в сцене (у хоста — после spawn_player, у клиента — когда его создал спавнер).
 func setup_player(player: Player) -> void:
 	var size: int = GameState.current_level.size if GameState.current_level != null else LevelData.ALLOWED_SIZES.back()
 	player.set_camera_limits(Rect2i(Vector2i.ZERO, Vector2i.ONE * size * Palette.tile_size()))
@@ -156,10 +166,7 @@ func enemy_near(pos: Vector2, reach: float) -> Enemy:
 
 
 func spawn_enemy(data: Dictionary) -> Enemy:
-	var enemy := Enemy.create(data)
-	if enemy != null:
-		enemies.add_child(enemy, true)
-	return enemy
+	return net.spawn_enemy(data)
 
 
 ## Летящие снаряды врагов медленнее и слабее (BalanceConfig.enemy_projectile_speed_mult, _damage_mult); хост меняет
@@ -170,10 +177,7 @@ func spawn_projectile(data: Dictionary) -> Node2D:
 		data["speed"] = float(data["speed"]) * DataRegistry.BALANCE.enemy_projectile_speed_mult
 		if data.has("damage"):
 			data["damage"] = float(data["damage"]) * DataRegistry.BALANCE.enemy_projectile_damage_mult
-	var projectile := ProjectileFactory.create(data)
-	if projectile != null:
-		projectiles.add_child(projectile, true)
-	return projectile
+	return net.spawn_projectile(data)
 
 
 ## Предел снарядов героев (шаг 5, BalanceConfig.max_hero_projectiles): узлов в World/Projectiles уже столько,
@@ -183,17 +187,11 @@ func projectiles_full() -> bool:
 
 
 func spawn_pickup(data: Dictionary) -> Pickup:
-	var pickup := Pickup.create(data)
-	if pickup != null:
-		pickups.add_child(pickup, true)
-	return pickup
+	return net.spawn_pickup(data)
 
 
 func spawn_prop(data: Dictionary) -> Node2D:
-	var prop := PropFactory.create(data)
-	if prop != null:
-		props.add_child(prop, true)
-	return prop
+	return net.spawn_prop(data)
 
 
 ## Объект карты по его номеру на уровне (MapObject.object_id); null — нет такого.
@@ -233,6 +231,7 @@ func set_cell_tile(cell: Vector2i, tile: int) -> void:
 	if not multiplayer.is_server():
 		return
 	apply_cell_tile(cell, tile)
+	net.send_cell(cell, tile)
 
 
 ## У каждого участника: данные карты, физика клетки, графика уровня и событие для поля потока и миникарты.
@@ -286,12 +285,18 @@ func souls_earned() -> int:
 
 
 ## Выход из забега в хаб (меню паузы, экран конца забега): души начисляются один раз.
+## В кооперативе хост уводит в Убежище всех — сессия остаётся (Net.return_to_hub); клиент, вышедший сам,
+## покидает сессию. target — куда уйти (после разрыва с хостом — главное меню, ФТ-12).
 func leave_run(target: String = ScenePaths.HUB) -> void:
+	if Net.is_host() and Net.state == Net.State.IN_RUN and target == ScenePaths.HUB:
+		Net.return_to_hub()
+		return
 	finish_run(target)
 
 
 ## Начислить души за забег (один раз), снять паузу, закончить забег и уйти в target.
-func finish_run(target: String) -> void:
+## leave_session — закрыть сетевую сессию; false — общий возврат в Убежище (Net._return_to_hub).
+func finish_run(target: String, leave_session: bool = true) -> void:
 	if not RunConfig.reward_claimed:
 		RunConfig.reward_claimed = true
 		RunConfig.last_reward = souls_earned()
@@ -300,4 +305,6 @@ func finish_run(target: String) -> void:
 	_pause_reasons.clear()
 	get_tree().paused = false
 	GameState.end_run()
+	if leave_session:
+		Net.leave()
 	get_tree().change_scene_to_file(target)
